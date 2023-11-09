@@ -18,11 +18,13 @@ class Model{
         int startTime;
         int endTime;
 
+
+        Model& operator=(const Model& other); // Operador de atribuição
+
     public:
         //Contructors
         Model(const std::string& name, const int& startTime, const int& endTime);
-        Model(const Model& other); //Copia outro flow //* Proibir a copia para resolver os problemas a dos vetores
-
+        Model(const Model& other); //Copia outro flow 
         //Destrutor
         virtual ~Model();
 
@@ -47,8 +49,6 @@ class Model{
         //Others
         bool run();
 
-        //Sobrecarga de operadores
-        Model& operator=(const Model& other); // Operador de atribuição //* Proibir a copia para resolver os problemas a dos vetores
         bool operator==(const Model& other) const; // Operador de igualdade
         friend std::ostream& operator<<(std::ostream& out, const Model& obj); //Operador de saida
 };

@@ -11,11 +11,10 @@ funct_tests:
 	g++ tests/functional_tests/src/Functional_tests.cpp -c -Wall
 	g++ tests/functional_tests/src/main.cpp -c -Wall
 	mv -f *.o tests/functional_tests/obj/
-	g++ obj/*.o tests/functional_tests/obj/*.o -o exec.exe
-	mv *.exe bin/
 	
 run:
 	make funct_tests
+	g++ obj/*.o tests/functional_tests/obj/*.o -o bin/exec.exe
 	./bin/exec.exe
 
 clean:

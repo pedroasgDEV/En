@@ -7,11 +7,11 @@
 class Logistical : public Flow{
     public:
         //Contructor
-        Logistical(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL); //! O Construtor é reduntante
-        Logistical(const Logistical& other); //! O Construtor é reduntante
+        Logistical(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL);
+        Logistical(const Logistical& other);
 
         //Destructor
-        virtual ~Logistical(); //! O Destrutor é reduntante
+        virtual ~Logistical();
 
         //Metodos
         virtual bool execute() override;

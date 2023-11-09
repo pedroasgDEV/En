@@ -12,14 +12,7 @@ class Flow{
         System* source;
         System* target;
         
-    public:
-        //Contructors
-        Flow(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL);
-        Flow(const Flow& other); //Copia outro flow
-        
-        //Destrutor
-        virtual ~Flow();
-
+    public:        
         //Geters e seters
         //Name
         std::string getName() const;

@@ -3,15 +3,13 @@
 
 #include <string.h>
 #include "../../../src/Flow.h"
-
 class Exponencial : public Flow{
     public:
         //Contructor
-        Exponencial(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL); //! O Construtor é reduntante
-        Exponencial(const Exponencial& other); //! O Construtor é reduntante
-
+        Exponencial(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL);
+        Exponencial(const Exponencial& other);
         //Destructor
-        virtual ~Exponencial(); //! O destrutor é reduntante
+        virtual ~Exponencial();
 
         //Metodos
         virtual bool execute() override;

@@ -1,13 +1,5 @@
 #include "Flow.h"
 
-//Contructors
-Flow::Flow(const std::string& name , System* source, System* target) : name(name), source(source), target(target){}
-//Copia outro system
-Flow::Flow (const Flow& other) : name(other.name), source(other.source), target(other.target){}
-
-//Destructor
-Flow::~Flow(){}
-
 //Geters e seters
 //Name
 std::string Flow::getName() const { return name; }

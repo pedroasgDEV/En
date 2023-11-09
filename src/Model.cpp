@@ -2,8 +2,10 @@
 
 //Constructors
 Model::Model (const std::string& name, const int& startTime, const int& endTime) : name(name), startTime(startTime), endTime(endTime) {}
-//Copia outro system
-Model::Model (const Model& other) : name(other.name), systems(other.systems), flows(other.flows), startTime(other.startTime), endTime(other.endTime) {}
+//Copia outro model
+Model::Model (const Model& other) : name(other.name), systems(other.systems), flows(other.flows), startTime(other.startTime), endTime(other.endTime) {
+    delete(&other);
+}
 
 //Destructor
 Model::~Model(){systems.clear(); flows.clear();}
@@ -41,8 +43,8 @@ Model& Model::operator=(const Model& other){
     if(other == *this) return *this;
     name = other.name;
     systems = other.systems;
-    flows = other.flows; //! Erro de sematica, pois o vetor do this e do other apontam para os msm objetos e se a this.run() a other tbm muda
-    startTime = other.startTime; //! Erro de sematica, pois o vetor do this e do other apontam para os msm objetos e se a this.run() a other tbm muda
+    flows = other.flows;
+    startTime = other.startTime;
     endTime = other.endTime;
     return *this;
 }

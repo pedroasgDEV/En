@@ -90,11 +90,11 @@ void Complex_test_run(){
 
     complex->run();
 
-    assert(round(abs(q1->getValue() - 31.8513) * 10000) < 0.0001);
-    assert(round(abs(q2->getValue() - 18.4003) * 10000) < 0.0001);
-    assert(round(abs(q3->getValue() - 77.1143) * 10000) < 0.0001);
-    assert(round(abs(q4->getValue() - 56.1728) * 10000) < 0.0001);
-    assert(round(abs(q5->getValue() - 16.4612) * 10000) < 0.0001);
+    assert(abs(q1->getValue() - 31.8513) * 10000 < 0.0001);
+    assert(abs(q2->getValue() - 18.4003) * 10000 < 0.0001);
+    assert(abs(q3->getValue() - 77.1143) * 10000 < 0.0001);
+    assert(abs(q4->getValue() - 56.1728) * 10000 < 0.0001);
+    assert(abs(q5->getValue() - 16.4612) * 10000 < 0.0001);
 
     delete(complex);
     delete(q1);

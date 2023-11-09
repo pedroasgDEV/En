@@ -1,8 +1,18 @@
 #include "Exponencial.h"
 
 //Constructors
-Exponencial::Exponencial(const std::string& name, System* source, System* target) : Flow(name, source, target) {}
-Exponencial::Exponencial(const Exponencial& other) : Flow(other.name, other.source, other.target) {}
+Exponencial::Exponencial(const std::string& name, System* source, System* target){
+    this->name = name;
+    this->source = source;
+    this->target = target;
+}
+
+//Copia de other
+Exponencial::Exponencial(const Exponencial& other){
+    this->name = other.name;
+    this->source = other.source;
+    this->target = other.target;
+}
 
 //Destructors
 Exponencial::~Exponencial(){}

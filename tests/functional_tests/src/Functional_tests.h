@@ -1,7 +1,6 @@
 #ifndef FUNCTIONAL_TESTS_H  
 #define FUNCTIONAL_TESTS_H  
 
-#include "../../../src/Flow.h"
 #include "../../../src/Model.h"
 #include "../../../src/System.h"
 #include "Exponencial.h"

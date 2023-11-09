@@ -1,8 +1,18 @@
 #include "Logistical.h"
 
 //Constructors
-Logistical::Logistical(const std::string& name, System* source, System* target) : Flow(name, source, target) {}
-Logistical::Logistical(const Logistical& other) : Flow(other.name, other.source, other.target) {}
+Logistical::Logistical(const std::string& name, System* source, System* target){
+    this->name = name;
+    this->source = source;
+    this->target = target;
+}
+
+
+Logistical::Logistical(const Logistical& other){
+    this->name = other.name;
+    this->source = other.source;
+    this->target = other.target;
+}
 
 //Destructors
 Logistical::~Logistical(){}
