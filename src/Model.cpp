@@ -3,8 +3,11 @@
 //Constructors
 Model::Model (const std::string& name, const int& startTime, const int& endTime) : name(name), startTime(startTime), endTime(endTime) {}
 //Copia outro model
-Model::Model (const Model& other) : name(other.name), systems(other.systems), flows(other.flows), startTime(other.startTime), endTime(other.endTime) {
-    delete(&other);
+Model::Model (const Model& other) : name(other.name), startTime(other.startTime), endTime(other.endTime) {
+    flows.clear();
+    systems.clear();
+    for (auto i : other.flows) flows.push_back(i);
+    for (auto i : other.systems) systems.push_back(i);
 }
 
 //Destructor
@@ -23,17 +26,46 @@ void Model::setTime(const int& startTime, const int& endTime) { this->startTime 
 
 //Metodos
 //add
-void Model::add(System* system) { this->systems.push_back(system); } 
-void Model::add(Flow* flow) { this->flows.push_back(flow); } 
+void Model::add(System* system) { systems.push_back(system); } 
+void Model::add(Flow* flow) { flows.push_back(flow); } 
 //remove
-bool Model::rmv(const systemIterator& system) { return (this->systems.erase(system) != systems.end()); }
-bool Model::rmv(const flowIterator& flow) { return (this->flows.erase(flow) != flows.end()); }
+bool Model::rmv(const systemIterator& system) { return (systems.erase(system) != systems.end()); }
+bool Model::rmv(const flowIterator& flow) { return (flows.erase(flow) != flows.end()); }
+
 //Others
 bool Model::run(){
-    for(int i = startTime; i < endTime; i++)
-        for(auto item : flows) if(!item->execute()) return false;
+    std::vector<double> flowValue;
+    flowIterator f;
+    std::vector<double>::iterator d;
+    double calcValue;
+
+    for(int i = this->startTime; i < this->endTime; i++){
+
+        f = flows.begin();
+
+        while (f != flows.end()) {
+            flowValue.push_back((*f)->execute());
+            f++;
+        }
+        
+        f = flows.begin();
+        d = flowValue.begin();
+        
+        while(f != flows.end()){
+            calcValue = (*f)->getSource()->getValue() - (*d);
+            (*f)->getSource()->setValue(calcValue);
+            calcValue = (*f)->getTarget()->getValue() + (*d);
+            (*f)->getTarget()->setValue(calcValue);
+            f++;
+            d++;
+        }
+
+        flowValue.clear();
+
+    }
+
     return true;
-}
+} 
 
 //* Proibir a copia para resolver os problemas a dos vetores
 
@@ -43,7 +75,10 @@ Model& Model::operator=(const Model& other){
     if(other == *this) return *this;
     name = other.name;
     systems = other.systems;
-    flows = other.flows;
+    flows.clear();
+    systems.clear();
+    for (auto i : other.flows) flows.push_back(i);
+    for (auto i : other.systems) systems.push_back(i);
     startTime = other.startTime;
     endTime = other.endTime;
     return *this;

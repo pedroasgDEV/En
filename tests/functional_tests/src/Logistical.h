@@ -14,7 +14,7 @@ class Logistical : public Flow{
         virtual ~Logistical();
 
         //Metodos
-        virtual bool execute() override;
+        virtual double execute() override;
 };
 
 #endif

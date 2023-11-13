@@ -18,13 +18,14 @@ class Model{
         int startTime;
         int endTime;
 
-
+    private:
         Model& operator=(const Model& other); // Operador de atribuição
-
+        Model(const Model& other); //Copia outro flow 
+        
     public:
         //Contructors
-        Model(const std::string& name, const int& startTime, const int& endTime);
-        Model(const Model& other); //Copia outro flow 
+        Model(const std::string& name = "NO_NAME", const int& startTime = 0, const int& endTime = 1);
+
         //Destrutor
         virtual ~Model();
 

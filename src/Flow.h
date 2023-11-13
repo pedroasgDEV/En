@@ -25,7 +25,7 @@ class Flow{
         void setTarget(System* target);
 
         //Metodos
-        virtual bool execute() = 0;
+        virtual double execute() = 0;
     
         //Sobrecarga de operadores
         Flow& operator=(const Flow& other); // Operador de atribuição

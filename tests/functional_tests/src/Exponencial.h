@@ -12,7 +12,7 @@ class Exponencial : public Flow{
         virtual ~Exponencial();
 
         //Metodos
-        virtual bool execute() override;
+        virtual double execute() override;
 };
 
 #endif

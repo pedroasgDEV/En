@@ -17,9 +17,6 @@ Exponencial::Exponencial(const Exponencial& other){
 //Destructors
 Exponencial::~Exponencial(){}
 
-bool Exponencial::execute(){
-    double exc = source->getValue() * 0.01;
-    target->setValue( exc + target->getValue());
-    source->setValue(source->getValue() - exc);
-    return true;
+double Exponencial::execute(){
+    return getSource()->getValue() * 0.01;
 }

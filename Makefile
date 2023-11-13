@@ -1,15 +1,15 @@
 all:
-	g++ src/System.cpp -c -Wall 
-	g++ src/Flow.cpp -c -Wall
-	g++ src/Model.cpp -c -Wall
+	g++ src/System.cpp -c 
+	g++ src/Flow.cpp -c
+	g++ src/Model.cpp -c
 	mv -f *.o obj/
 
 funct_tests:
 	make
-	g++ tests/functional_tests/src/Exponencial.cpp -c -Wall
-	g++ tests/functional_tests/src/Logistical.cpp -c -Wall
-	g++ tests/functional_tests/src/Functional_tests.cpp -c -Wall
-	g++ tests/functional_tests/src/main.cpp -c -Wall
+	g++ tests/functional_tests/src/Exponencial.cpp -c
+	g++ tests/functional_tests/src/Logistical.cpp -c
+	g++ tests/functional_tests/src/Functional_tests.cpp -c
+	g++ tests/functional_tests/src/main.cpp -c
 	mv -f *.o tests/functional_tests/obj/
 	g++ obj/*.o tests/functional_tests/obj/*.o -o bin/exec.exe
 	

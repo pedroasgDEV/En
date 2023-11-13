@@ -17,9 +17,6 @@ Logistical::Logistical(const Logistical& other){
 //Destructors
 Logistical::~Logistical(){}
 
-bool Logistical::execute(){
-    double exc = target->getValue() * 0.01 * (1 - target->getValue()/70);
-    target->setValue( exc + target->getValue());
-    source->setValue(source->getValue() - exc);
-    return true;
+double Logistical::execute(){
+    return 0.01 * getTarget()->getValue() * (1.0 - getTarget()->getValue() / 70.0);
 }
