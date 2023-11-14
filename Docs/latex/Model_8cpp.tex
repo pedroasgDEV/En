@@ -1,0 +1,37 @@
+\doxysection{/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+TP/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\+Model.cpp File Reference}
+\hypertarget{Model_8cpp}{}\label{Model_8cpp}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/TP/Engenharia\_de\_Software1\_tp1/src/Model.cpp@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/TP/Engenharia\_de\_Software1\_tp1/src/Model.cpp}}
+{\ttfamily \#include "{}Model.\+h"{}}\newline
+Include dependency graph for Model.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{Model_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{Model_8cpp_ae1ba6c4b318b55b87c0f0588254de52b}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classModel}{Model}} \&obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Model_8cpp_ae1ba6c4b318b55b87c0f0588254de52b}\label{Model_8cpp_ae1ba6c4b318b55b87c0f0588254de52b} 
+\index{Model.cpp@{Model.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Model.cpp@{Model.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classModel}{Model}} \&}]{obj }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00092\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}Name:\ "{}}\ <<\ obj.\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}\ <<\ \textcolor{stringliteral}{"{};\(\backslash\)n"{}}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}Systems:\(\backslash\)n"{}};}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ item\ :\ obj.systems)\ out\ <<\ item\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00095\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}Flows:\(\backslash\)n"{}};}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ item\ :\ obj.flows)\ out\ <<\ item\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
+\DoxyCodeLine{00098\ \}}
+
+\end{DoxyCode}

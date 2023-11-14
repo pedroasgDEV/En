@@ -39,7 +39,7 @@ bool Model::run(){
     std::vector<double>::iterator d;
     double calcValue;
 
-    for(int i = this->startTime; i < this->endTime; i++){
+    for(int i = startTime; i < endTime; i++){
 
         f = flows.begin();
 

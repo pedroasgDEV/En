@@ -1,0 +1,322 @@
+\doxysection{Model Class Reference}
+\hypertarget{classModel}{}\label{classModel}\index{Model@{Model}}
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModel_ad83e9c834f29280b5a58f7cd17225278}{Model}} (const std\+::string \&\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}="{}NO\+\_\+\+NAME"{}, const int \&\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{start\+Time}}=0, const int \&\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{end\+Time}}=1)
+\item 
+virtual \mbox{\hyperlink{classModel_ad6ebd2062a0b823db841a0b88baac4c0}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\item 
+std\+::string \mbox{\hyperlink{classModel_ad98a14258e1e21e529b8df8ac930dc3e}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{classModel_a1d884d04de2f005ce2abfa4c686241e0}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}})
+\item 
+int \mbox{\hyperlink{classModel_af46ac9eb938ebad900632377396e43cc}{get\+Start\+Time}} () const
+\item 
+int \mbox{\hyperlink{classModel_a74d96aef98d4358588c28e53cdecf7db}{get\+Endt\+Time}} () const
+\item 
+void \mbox{\hyperlink{classModel_aac7811a44c20f3db0397b0c8d888a868}{set\+Start\+Time}} (const int \&\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{start\+Time}})
+\item 
+void \mbox{\hyperlink{classModel_a8ebd80e84e6658e91cf1012dda1cf7a6}{set\+End\+Time}} (const int \&\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{end\+Time}})
+\item 
+void \mbox{\hyperlink{classModel_a57b4d38d25376030ff13cc7fa9d3d31a}{set\+Time}} (const int \&\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{start\+Time}}, const int \&\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{end\+Time}})
+\item 
+void \mbox{\hyperlink{classModel_a302d4ed93c6e6f9a0f728e021a91f821}{add}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system)
+\item 
+void \mbox{\hyperlink{classModel_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow)
+\item 
+bool \mbox{\hyperlink{classModel_a7e62256150dd1c50440f35fcced13c0d}{rmv}} (const \mbox{\hyperlink{Model_8h_a001d3cc68e213100cd5a4a47c566c4c1}{system\+Iterator}} \&system)
+\item 
+bool \mbox{\hyperlink{classModel_ae1486339f1d1230e1ab991cc47da1566}{rmv}} (const \mbox{\hyperlink{Model_8h_ae7db818daebc6dd8f913028e012962fb}{flow\+Iterator}} \&flow)
+\item 
+bool \mbox{\hyperlink{classModel_aeb77d4bd1d247721d0c521ae95ceb8e6}{run}} ()
+\item 
+bool \mbox{\hyperlink{classModel_a1aa43f81ad7dddca715deff3ae690193}{operator==}} (const \mbox{\hyperlink{classModel}{Model}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}
+\item 
+int \mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{start\+Time}}
+\item 
+int \mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{end\+Time}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classModel_ae1ba6c4b318b55b87c0f0588254de52b}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classModel}{Model}} \&obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classModel_ad83e9c834f29280b5a58f7cd17225278}\label{classModel_ad83e9c834f29280b5a58f7cd17225278} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{const int \&}]{start\+Time = {\ttfamily 0},  }\item[{const int \&}]{end\+Time = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ :\ \mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}(\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}),\ \mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}}(\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}}),\ \mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}}(\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}})\ \{\}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_ad6ebd2062a0b823db841a0b88baac4c0}\label{classModel_ad6ebd2062a0b823db841a0b88baac4c0} 
+\index{Model@{Model}!````~Model@{\texorpdfstring{$\sim$}{\string~}Model}}
+\index{````~Model@{\texorpdfstring{$\sim$}{\string~}Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Model()}{\string~Model()}}
+{\footnotesize\ttfamily Model\+::\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \{\mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}}.clear();\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.clear();\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classModel_ab69613bde0ace81c92bbf519660ccb2c}\label{classModel_ab69613bde0ace81c92bbf519660ccb2c} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \{\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.push\_back(flow);\ \}\ }
+
+\end{DoxyCode}
+\Hypertarget{classModel_a302d4ed93c6e6f9a0f728e021a91f821}\label{classModel_a302d4ed93c6e6f9a0f728e021a91f821} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \{\ \mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}}.push\_back(system);\ \}\ }
+
+\end{DoxyCode}
+\Hypertarget{classModel_a74d96aef98d4358588c28e53cdecf7db}\label{classModel_a74d96aef98d4358588c28e53cdecf7db} 
+\index{Model@{Model}!getEndtTime@{getEndtTime}}
+\index{getEndtTime@{getEndtTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getEndtTime()}{getEndtTime()}}
+{\footnotesize\ttfamily int Model\+::get\+Endt\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_ad98a14258e1e21e529b8df8ac930dc3e}\label{classModel_ad98a14258e1e21e529b8df8ac930dc3e} 
+\index{Model@{Model}!getName@{getName}}
+\index{getName@{getName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Model\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_af46ac9eb938ebad900632377396e43cc}\label{classModel_af46ac9eb938ebad900632377396e43cc} 
+\index{Model@{Model}!getStartTime@{getStartTime}}
+\index{getStartTime@{getStartTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getStartTime()}{getStartTime()}}
+{\footnotesize\ttfamily int Model\+::get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_a1aa43f81ad7dddca715deff3ae690193}\label{classModel_a1aa43f81ad7dddca715deff3ae690193} 
+\index{Model@{Model}!operator==@{operator==}}
+\index{operator==@{operator==}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Model\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModel}{Model}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}\ ==\ other.\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}\ \&\&\ \mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}}\ ==\ other.\mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}}\ \&\&\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}\ ==\ other.\mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}\ \&\&\ \mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}}\ ==\ other.\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}}\ \&\&\ \mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}}\ ==\ other.\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}});}
+\DoxyCodeLine{00089\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_ae1486339f1d1230e1ab991cc47da1566}\label{classModel_ae1486339f1d1230e1ab991cc47da1566} 
+\index{Model@{Model}!rmv@{rmv}}
+\index{rmv@{rmv}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{rmv()}{rmv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Model\+::rmv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Model_8h_ae7db818daebc6dd8f913028e012962fb}{flow\+Iterator}} \&}]{flow }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \{\ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.erase(flow)\ !=\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.end());\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_a7e62256150dd1c50440f35fcced13c0d}\label{classModel_a7e62256150dd1c50440f35fcced13c0d} 
+\index{Model@{Model}!rmv@{rmv}}
+\index{rmv@{rmv}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{rmv()}{rmv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Model\+::rmv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{Model_8h_a001d3cc68e213100cd5a4a47c566c4c1}{system\+Iterator}} \&}]{system }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \{\ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}}.erase(system)\ !=\ \mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}}.end());\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_aeb77d4bd1d247721d0c521ae95ceb8e6}\label{classModel_aeb77d4bd1d247721d0c521ae95ceb8e6} 
+\index{Model@{Model}!run@{run}}
+\index{run@{run}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool Model\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ std::vector<double>\ flowValue;}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{Model_8h_ae7db818daebc6dd8f913028e012962fb}{flowIterator}}\ f;}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<double>::iterator\ d;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{double}\ calcValue;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ this-\/>\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}};\ i\ <\ this-\/>\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}};\ i++)\{}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ f\ =\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.begin();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (f\ !=\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.end())\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ flowValue.push\_back((*f)-\/>execute());}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ f++;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ f\ =\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.begin();}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ d\ =\ flowValue.begin();}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(f\ !=\ \mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}}.end())\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ calcValue\ =\ (*f)-\/>getSource()-\/>getValue()\ -\/\ (*d);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ (*f)-\/>getSource()-\/>setValue(calcValue);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ calcValue\ =\ (*f)-\/>getTarget()-\/>getValue()\ +\ (*d);}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ (*f)-\/>getTarget()-\/>setValue(calcValue);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ f++;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ d++;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ flowValue.clear();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00068\ \}\ }
+
+\end{DoxyCode}
+\Hypertarget{classModel_a8ebd80e84e6658e91cf1012dda1cf7a6}\label{classModel_a8ebd80e84e6658e91cf1012dda1cf7a6} 
+\index{Model@{Model}!setEndTime@{setEndTime}}
+\index{setEndTime@{setEndTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setEndTime()}{setEndTime()}}
+{\footnotesize\ttfamily void Model\+::set\+End\+Time (\begin{DoxyParamCaption}\item[{const int \&}]{end\+Time }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \{\ this-\/>\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}}\ =\ \mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_a1d884d04de2f005ce2abfa4c686241e0}\label{classModel_a1d884d04de2f005ce2abfa4c686241e0} 
+\index{Model@{Model}!setName@{setName}}
+\index{setName@{setName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Model\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \{\ this-\/>\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}\ =\ \mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_aac7811a44c20f3db0397b0c8d888a868}\label{classModel_aac7811a44c20f3db0397b0c8d888a868} 
+\index{Model@{Model}!setStartTime@{setStartTime}}
+\index{setStartTime@{setStartTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setStartTime()}{setStartTime()}}
+{\footnotesize\ttfamily void Model\+::set\+Start\+Time (\begin{DoxyParamCaption}\item[{const int \&}]{start\+Time }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \{\ this-\/>\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}}\ =\ \mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classModel_a57b4d38d25376030ff13cc7fa9d3d31a}\label{classModel_a57b4d38d25376030ff13cc7fa9d3d31a} 
+\index{Model@{Model}!setTime@{setTime}}
+\index{setTime@{setTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Model\+::set\+Time (\begin{DoxyParamCaption}\item[{const int \&}]{start\+Time,  }\item[{const int \&}]{end\+Time }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \{\ this-\/>\mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}}\ =\ \mbox{\hyperlink{classModel_a10cdf547f8e965eabd52e82410acfdbc}{startTime}};\ this-\/>\mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}}\ =\ \mbox{\hyperlink{classModel_a24bbe5fa05409e29462edf934e169f33}{endTime}};\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classModel_ae1ba6c4b318b55b87c0f0588254de52b}\label{classModel_ae1ba6c4b318b55b87c0f0588254de52b} 
+\index{Model@{Model}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classModel}{Model}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00092\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}Name:\ "{}}\ <<\ obj.\mbox{\hyperlink{classModel_a90fe59cc0709dd732cf5f180064db6fe}{name}}\ <<\ \textcolor{stringliteral}{"{};\(\backslash\)n"{}}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}Systems:\(\backslash\)n"{}};}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ item\ :\ obj.\mbox{\hyperlink{classModel_a706374e5cb9ad9949996cfbd9538cead}{systems}})\ out\ <<\ item\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00095\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}Flows:\(\backslash\)n"{}};}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ item\ :\ obj.\mbox{\hyperlink{classModel_a508721af4b8ed362217dff0c6732d8dc}{flows}})\ out\ <<\ item\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
+\DoxyCodeLine{00098\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classModel_a24bbe5fa05409e29462edf934e169f33}\label{classModel_a24bbe5fa05409e29462edf934e169f33} 
+\index{Model@{Model}!endTime@{endTime}}
+\index{endTime@{endTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{endTime}{endTime}}
+{\footnotesize\ttfamily int Model\+::end\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classModel_a508721af4b8ed362217dff0c6732d8dc}\label{classModel_a508721af4b8ed362217dff0c6732d8dc} 
+\index{Model@{Model}!flows@{flows}}
+\index{flows@{flows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ Model\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classModel_a90fe59cc0709dd732cf5f180064db6fe}\label{classModel_a90fe59cc0709dd732cf5f180064db6fe} 
+\index{Model@{Model}!name@{name}}
+\index{name@{name}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Model\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classModel_a10cdf547f8e965eabd52e82410acfdbc}\label{classModel_a10cdf547f8e965eabd52e82410acfdbc} 
+\index{Model@{Model}!startTime@{startTime}}
+\index{startTime@{startTime}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{startTime}{startTime}}
+{\footnotesize\ttfamily int Model\+::start\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classModel_a706374e5cb9ad9949996cfbd9538cead}\label{classModel_a706374e5cb9ad9949996cfbd9538cead} 
+\index{Model@{Model}!systems@{systems}}
+\index{systems@{systems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*}$>$ Model\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+TP/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{Model_8h}{Model.\+h}}\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+TP/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{Model_8cpp}{Model.\+cpp}}\end{DoxyCompactItemize}

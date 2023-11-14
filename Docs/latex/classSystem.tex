@@ -1,0 +1,190 @@
+\doxysection{System Class Reference}
+\hypertarget{classSystem}{}\label{classSystem}\index{System@{System}}
+
+
+{\ttfamily \#include $<$System.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSystem_aefa178bc0ef47e11044522843bdd8d92}{System}} (const std\+::string \&\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}="{}NO\+\_\+\+NAME"{}, const double \&\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}=0.\+0)
+\item 
+\mbox{\hyperlink{classSystem_ae95d7374f80fdfaee096e95c1abc438c}{System}} (const \mbox{\hyperlink{classSystem}{System}} \&other)
+\item 
+virtual \mbox{\hyperlink{classSystem_a3be70bb338e3f062f821173fd15680d0}{\texorpdfstring{$\sim$}{\string~}\+System}} ()
+\item 
+std\+::string \mbox{\hyperlink{classSystem_a30116b105d876ff2b445c0c7d99816bb}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{classSystem_a6f4360b4a491316bc77e6c310cdf6512}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}})
+\item 
+double \mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{get\+Value}} () const
+\item 
+void \mbox{\hyperlink{classSystem_a08e97e86cf4a48883cd03a34c9bcebac}{set\+Value}} (const double \&\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}})
+\item 
+\mbox{\hyperlink{classSystem}{System}} \& \mbox{\hyperlink{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7}{operator=}} (const \mbox{\hyperlink{classSystem}{System}} \&other)
+\item 
+bool \mbox{\hyperlink{classSystem_a177f2644760307edaaa716f5f45f6938}{operator==}} (const \mbox{\hyperlink{classSystem}{System}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}
+\item 
+double \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classSystem}{System}} \&obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSystem_aefa178bc0ef47e11044522843bdd8d92}\label{classSystem_aefa178bc0ef47e11044522843bdd8d92} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{const double \&}]{value = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ :\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}(\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}),\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}(\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}})\ \{\}}
+
+\end{DoxyCode}
+\Hypertarget{classSystem_ae95d7374f80fdfaee096e95c1abc438c}\label{classSystem_ae95d7374f80fdfaee096e95c1abc438c} 
+\index{System@{System}!System@{System}}
+\index{System@{System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006\ :\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}(other.\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}),\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}(other.\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}})\ \{\}}
+
+\end{DoxyCode}
+\Hypertarget{classSystem_a3be70bb338e3f062f821173fd15680d0}\label{classSystem_a3be70bb338e3f062f821173fd15680d0} 
+\index{System@{System}!````~System@{\texorpdfstring{$\sim$}{\string~}System}}
+\index{````~System@{\texorpdfstring{$\sim$}{\string~}System}!System@{System}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}System()}{\string~System()}}
+{\footnotesize\ttfamily System\+::\texorpdfstring{$\sim$}{\string~}\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \{\};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSystem_a30116b105d876ff2b445c0c7d99816bb}\label{classSystem_a30116b105d876ff2b445c0c7d99816bb} 
+\index{System@{System}!getName@{getName}}
+\index{getName@{getName}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string System\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSystem_aa7d17369d1034e7d8643a63f69d1901d}\label{classSystem_aa7d17369d1034e7d8643a63f69d1901d} 
+\index{System@{System}!getValue@{getValue}}
+\index{getValue@{getValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double System\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7}\label{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7} 
+\index{System@{System}!operator=@{operator=}}
+\index{operator=@{operator=}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{if}(other\ ==\ *\textcolor{keyword}{this})\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}\ =\ other.\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}};}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}\ =\ other.\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00026\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSystem_a177f2644760307edaaa716f5f45f6938}\label{classSystem_a177f2644760307edaaa716f5f45f6938} 
+\index{System@{System}!operator==@{operator==}}
+\index{operator==@{operator==}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool System\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}\ ==\ other.\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}\ \&\&\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}\ ==\ other.\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}});}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Compare\ todos\ os\ membros\ para\ verificar\ igualdade}}
+\DoxyCodeLine{00031\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSystem_a6f4360b4a491316bc77e6c310cdf6512}\label{classSystem_a6f4360b4a491316bc77e6c310cdf6512} 
+\index{System@{System}!setName@{setName}}
+\index{setName@{setName}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void System\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \{\ this-\/>\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}\ =\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSystem_a08e97e86cf4a48883cd03a34c9bcebac}\label{classSystem_a08e97e86cf4a48883cd03a34c9bcebac} 
+\index{System@{System}!setValue@{setValue}}
+\index{setValue@{setValue}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void System\+::set\+Value (\begin{DoxyParamCaption}\item[{const double \&}]{value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \{\ this-\/>\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}\ =\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}};\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classSystem_ac7eee6ad7f5e94c300769375cbda7d65}\label{classSystem_ac7eee6ad7f5e94c300769375cbda7d65} 
+\index{System@{System}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!System@{System}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}(System)(Name:\ "{}}\ <<\ obj.\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}\ <<\ \textcolor{stringliteral}{"{},\ Value:\ "{}}\ <<\ obj.\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}\ <<\ \textcolor{stringliteral}{"{})"{}};\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
+\DoxyCodeLine{00036\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSystem_af3995745f52d4359f628ddd67de5121f}\label{classSystem_af3995745f52d4359f628ddd67de5121f} 
+\index{System@{System}!name@{name}}
+\index{name@{name}!System@{System}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string System\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classSystem_a879687b1125ef20757c2a61345fedd00}\label{classSystem_a879687b1125ef20757c2a61345fedd00} 
+\index{System@{System}!value@{value}}
+\index{value@{value}!System@{System}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double System\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+TP/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{System_8h}{System.\+h}}\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+TP/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{System_8cpp}{System.\+cpp}}\end{DoxyCompactItemize}

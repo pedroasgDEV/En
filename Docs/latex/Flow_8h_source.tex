@@ -1,0 +1,43 @@
+\doxysection{Flow.\+h}
+\hypertarget{Flow_8h_source}{}\label{Flow_8h_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/TP/Engenharia\_de\_Software1\_tp1/src/Flow.h@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/TP/Engenharia\_de\_Software1\_tp1/src/Flow.h}}
+\mbox{\hyperlink{Flow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{System_8h}{System.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFlow}{Flow}}\{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}};}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Name}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classFlow_aadd3a8ab712a2063461d917a867eedc4}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFlow_a02e9318ce2ef7cd1a97e47f7e08b6c80}{setName}}(std::string\&\ \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}});}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Source}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{getSource}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFlow_a250fc53158862fc0db77b323a33e48a3}{setSource}}(\mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}});}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Target}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{getTarget}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFlow_ab69903880174e5bcdc0d815b5de7b3e0}{setTarget}}(\mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{execute}}()\ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}\&\ \mbox{\hyperlink{classFlow_a5f7550e37445bb6ae955beffd1fa857a}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}\&\ other);\ \textcolor{comment}{//\ Operador\ de\ atribuição}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFlow_a40b6a9cda257aca27d48d7451faa88bb}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classFlow_a203a70abee0e0b97b987eebdd97077b7}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}\&\ obj);\ \textcolor{comment}{//Operador\ de\ saida}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

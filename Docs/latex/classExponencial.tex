@@ -1,0 +1,136 @@
+\doxysection{Exponencial Class Reference}
+\hypertarget{classExponencial}{}\label{classExponencial}\index{Exponencial@{Exponencial}}
+
+
+{\ttfamily \#include $<$Exponencial.\+h$>$}
+
+
+
+Inheritance diagram for Exponencial\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classExponencial__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Exponencial\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classExponencial__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial}} (const std\+::string \&\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}="{}NO\+\_\+\+NAME"{}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}=NULL, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}=NULL)
+\item 
+\mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial}} (const \mbox{\hyperlink{classExponencial}{Exponencial}} \&other)
+\item 
+virtual \mbox{\hyperlink{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7}{\texorpdfstring{$\sim$}{\string~}\+Exponencial}} ()
+\item 
+virtual double \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{execute}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classFlow_aadd3a8ab712a2063461d917a867eedc4}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{classFlow_a02e9318ce2ef7cd1a97e47f7e08b6c80}{set\+Name}} (std\+::string \&\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}})
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
+\item 
+void \mbox{\hyperlink{classFlow_a250fc53158862fc0db77b323a33e48a3}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}})
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
+\item 
+void \mbox{\hyperlink{classFlow_ab69903880174e5bcdc0d815b5de7b3e0}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}})
+\item 
+\mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_a5f7550e37445bb6ae955beffd1fa857a}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other)
+\item 
+bool \mbox{\hyperlink{classFlow_a40b6a9cda257aca27d48d7451faa88bb}{operator==}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}\label{classExponencial_a81682f3197dc4dc053575dc6f8e932e6} 
+\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
+\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
+\doxysubsubsection{\texorpdfstring{Exponencial()}{Exponencial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Exponencial\+::\+Exponencial (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00005\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}\ =\ \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}};}
+\DoxyCodeLine{00006\ \ \ \ \ this-\/>source\ =\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}};}
+\DoxyCodeLine{00007\ \ \ \ \ this-\/>target\ =\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}};}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classExponencial_a1b561e1b497fd0d42aabb76913830817}\label{classExponencial_a1b561e1b497fd0d42aabb76913830817} 
+\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
+\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
+\doxysubsubsection{\texorpdfstring{Exponencial()}{Exponencial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Exponencial\+::\+Exponencial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classExponencial}{Exponencial}} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}\ =\ other.\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}};}
+\DoxyCodeLine{00013\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}\ =\ other.\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}};}
+\DoxyCodeLine{00014\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}\ =\ other.\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}};}
+\DoxyCodeLine{00015\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7}\label{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7} 
+\index{Exponencial@{Exponencial}!````~Exponencial@{\texorpdfstring{$\sim$}{\string~}Exponencial}}
+\index{````~Exponencial@{\texorpdfstring{$\sim$}{\string~}Exponencial}!Exponencial@{Exponencial}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Exponencial()}{\string~Exponencial()}}
+{\footnotesize\ttfamily Exponencial\+::\texorpdfstring{$\sim$}{\string~}\+Exponencial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classExponencial_a35c08ff8bd300f778d559da818190ae6}\label{classExponencial_a35c08ff8bd300f778d559da818190ae6} 
+\index{Exponencial@{Exponencial}!execute@{execute}}
+\index{execute@{execute}!Exponencial@{Exponencial}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily double Exponencial\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{getSource}}()-\/>\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ *\ 0.01;}
+\DoxyCodeLine{00022\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+TP/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/tests/functional\+\_\+tests/src/\mbox{\hyperlink{Exponencial_8h}{Exponencial.\+h}}\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+TP/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/tests/functional\+\_\+tests/src/\mbox{\hyperlink{Exponencial_8cpp}{Exponencial.\+cpp}}\end{DoxyCompactItemize}
