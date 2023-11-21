@@ -128,10 +128,13 @@ Include dependency graph for Functional_tests.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a84ea8bb324c37c6b0d570e76d85f2db2" id="r_a84ea8bb324c37c6b0d570e76d85f2db2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84ea8bb324c37c6b0d570e76d85f2db2">exponencial_test_run</a> ()</td></tr>
+<tr class="memdesc:a84ea8bb324c37c6b0d570e76d85f2db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs the exponential functional test.  <br /></td></tr>
 <tr class="separator:a84ea8bb324c37c6b0d570e76d85f2db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5a362dfeb59aa1326005e0caee1b51e" id="r_ac5a362dfeb59aa1326005e0caee1b51e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5a362dfeb59aa1326005e0caee1b51e">logistical_test_run</a> ()</td></tr>
+<tr class="memdesc:ac5a362dfeb59aa1326005e0caee1b51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs the logistic test.  <br /></td></tr>
 <tr class="separator:ac5a362dfeb59aa1326005e0caee1b51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f284ae5215afa271c632ab3e02992c" id="r_ad1f284ae5215afa271c632ab3e02992c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1f284ae5215afa271c632ab3e02992c">Complex_test_run</a> ()</td></tr>
+<tr class="memdesc:ad1f284ae5215afa271c632ab3e02992c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function runs the "complex" test, which has multiple systems and flows.  <br /></td></tr>
 <tr class="separator:ad1f284ae5215afa271c632ab3e02992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -149,6 +152,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function runs the "complex" test, which has multiple systems and flows. </p>
 <div class="fragment"><div class="line"><span class="lineno">   55</span>                       {</div>
 <div class="line"><span class="lineno">   56</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Complex funcional test&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   57</span> </div>
@@ -200,13 +205,41 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  103</span> </div>
 <div class="line"><span class="lineno">  104</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed Complex funcional test&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  105</span>}</div>
-<div class="ttc" id="aclassExponencial_html"><div class="ttname"><a href="classExponencial.html">Exponencial</a></div><div class="ttdef"><b>Definition</b> Exponencial.h:6</div></div>
-<div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition</b> Model.h:13</div></div>
-<div class="ttc" id="aclassModel_html_a302d4ed93c6e6f9a0f728e021a91f821"><div class="ttname"><a href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">Model::add</a></div><div class="ttdeci">void add(System *system)</div><div class="ttdef"><b>Definition</b> Model.cpp:29</div></div>
-<div class="ttc" id="aclassModel_html_aeb77d4bd1d247721d0c521ae95ceb8e6"><div class="ttname"><a href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6">Model::run</a></div><div class="ttdeci">bool run()</div><div class="ttdef"><b>Definition</b> Model.cpp:36</div></div>
-<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdef"><b>Definition</b> System.h:8</div></div>
-<div class="ttc" id="aclassSystem_html_aa7d17369d1034e7d8643a63f69d1901d"><div class="ttname"><a href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">System::getValue</a></div><div class="ttdeci">double getValue() const</div><div class="ttdef"><b>Definition</b> System.cpp:16</div></div>
+<div class="ttc" id="aclassExponencial_html"><div class="ttname"><a href="classExponencial.html">Exponencial</a></div><div class="ttdef"><b>Definition</b> Exponencial.h:16</div></div>
+<div class="ttc" id="aclassModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition</b> Model.h:19</div></div>
+<div class="ttc" id="aclassModel_html_a302d4ed93c6e6f9a0f728e021a91f821"><div class="ttname"><a href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">Model::add</a></div><div class="ttdeci">void add(System *system)</div><div class="ttdoc">This method add a System pointer to the vector of a Model.</div><div class="ttdef"><b>Definition</b> Model.cpp:29</div></div>
+<div class="ttc" id="aclassModel_html_aeb77d4bd1d247721d0c521ae95ceb8e6"><div class="ttname"><a href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6">Model::run</a></div><div class="ttdeci">bool run()</div><div class="ttdoc">This method run all model.</div><div class="ttdef"><b>Definition</b> Model.cpp:36</div></div>
+<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdef"><b>Definition</b> System.h:18</div></div>
+<div class="ttc" id="aclassSystem_html_aa7d17369d1034e7d8643a63f69d1901d"><div class="ttname"><a href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">System::getValue</a></div><div class="ttdeci">double getValue() const</div><div class="ttdoc">This method returns the value of a system.</div><div class="ttdef"><b>Definition</b> System.cpp:16</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">Model::add()</a>, <a class="el" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">System::getValue()</a>, and <a class="el" href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6">Model::run()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Functional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_cgraph.png" border="0" usemap="#aFunctional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_cgraph" alt=""/></div>
+<map name="aFunctional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_cgraph" id="aFunctional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_cgraph">
+<area shape="rect" title="This function runs the &quot;complex&quot; test, which has multiple systems and flows." alt="" coords="5,55,145,80"/>
+<area shape="rect" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821" title="This method add a System pointer to the vector of a Model." alt="" coords="214,5,309,31"/>
+<area shape="poly" title=" " alt="" coords="123,52,200,31,201,37,125,57"/>
+<area shape="rect" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="This method returns the value of a system." alt="" coords="193,55,329,80"/>
+<area shape="poly" title=" " alt="" coords="145,65,180,65,180,70,145,70"/>
+<area shape="rect" href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6" title="This method run all model." alt="" coords="216,104,307,129"/>
+<area shape="poly" title=" " alt="" coords="125,77,203,99,202,104,123,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Functional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_icgraph.png" border="0" usemap="#aFunctional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_icgraph" alt=""/></div>
+<map name="aFunctional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_icgraph" id="aFunctional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c_icgraph">
+<area shape="rect" title="This function runs the &quot;complex&quot; test, which has multiple systems and flows." alt="" coords="108,5,248,31"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a84ea8bb324c37c6b0d570e76d85f2db2" name="a84ea8bb324c37c6b0d570e76d85f2db2"></a>
@@ -223,6 +256,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function performs the exponential functional test. </p>
 <div class="fragment"><div class="line"><span class="lineno">    3</span>                           {</div>
 <div class="line"><span class="lineno">    4</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Exponencial funcional test&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">    5</span> </div>
@@ -250,6 +285,34 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   27</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Passed exponencial funcional test&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   28</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">Model::add()</a>, <a class="el" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">System::getValue()</a>, and <a class="el" href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6">Model::run()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Functional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_cgraph.png" border="0" usemap="#aFunctional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_cgraph" alt=""/></div>
+<map name="aFunctional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_cgraph" id="aFunctional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_cgraph">
+<area shape="rect" title="This function performs the exponential functional test." alt="" coords="5,55,167,80"/>
+<area shape="rect" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821" title="This method add a System pointer to the vector of a Model." alt="" coords="235,5,330,31"/>
+<area shape="poly" title=" " alt="" coords="137,52,221,31,222,36,138,57"/>
+<area shape="rect" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="This method returns the value of a system." alt="" coords="215,55,351,80"/>
+<area shape="poly" title=" " alt="" coords="167,65,201,65,201,70,167,70"/>
+<area shape="rect" href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6" title="This method run all model." alt="" coords="237,104,328,129"/>
+<area shape="poly" title=" " alt="" coords="138,77,224,99,223,105,137,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Functional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_icgraph.png" border="0" usemap="#aFunctional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_icgraph" alt=""/></div>
+<map name="aFunctional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_icgraph" id="aFunctional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2_icgraph">
+<area shape="rect" title="This function performs the exponential functional test." alt="" coords="108,5,269,31"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac5a362dfeb59aa1326005e0caee1b51e" name="ac5a362dfeb59aa1326005e0caee1b51e"></a>
@@ -266,6 +329,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function performs the logistic test. </p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>                          {</div>
 <div class="line"><span class="lineno">   31</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Logistical funcional test&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   32</span> </div>
@@ -290,8 +355,36 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   51</span>    <span class="keyword">delete</span>(p1);</div>
 <div class="line"><span class="lineno">   52</span>    <span class="keyword">delete</span>(p2);</div>
 <div class="line"><span class="lineno">   53</span>}</div>
-<div class="ttc" id="aclassLogistical_html"><div class="ttname"><a href="classLogistical.html">Logistical</a></div><div class="ttdef"><b>Definition</b> Logistical.h:7</div></div>
+<div class="ttc" id="aclassLogistical_html"><div class="ttname"><a href="classLogistical.html">Logistical</a></div><div class="ttdef"><b>Definition</b> Logistical.h:13</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821">Model::add()</a>, <a class="el" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d">System::getValue()</a>, and <a class="el" href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6">Model::run()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Functional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_cgraph.png" border="0" usemap="#aFunctional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_cgraph" alt=""/></div>
+<map name="aFunctional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_cgraph" id="aFunctional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_cgraph">
+<area shape="rect" title="This function performs the logistic test." alt="" coords="5,55,147,80"/>
+<area shape="rect" href="classModel.html#a302d4ed93c6e6f9a0f728e021a91f821" title="This method add a System pointer to the vector of a Model." alt="" coords="215,5,310,31"/>
+<area shape="poly" title=" " alt="" coords="124,52,201,31,202,37,125,57"/>
+<area shape="rect" href="classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="This method returns the value of a system." alt="" coords="195,55,331,80"/>
+<area shape="poly" title=" " alt="" coords="147,65,181,65,181,70,147,70"/>
+<area shape="rect" href="classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6" title="This method run all model." alt="" coords="217,104,308,129"/>
+<area shape="poly" title=" " alt="" coords="125,77,205,99,204,104,124,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Functional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_icgraph.png" border="0" usemap="#aFunctional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_icgraph" alt=""/></div>
+<map name="aFunctional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_icgraph" id="aFunctional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e_icgraph">
+<area shape="rect" title="This function performs the logistic test." alt="" coords="108,5,249,31"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->

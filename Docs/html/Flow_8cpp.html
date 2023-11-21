@@ -130,15 +130,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>is a ostream obj </td></tr>
+    <tr><td class="paramname">obj</td><td>is a flow obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a ostream obj to print the obj info </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                                                        {</div>
 <div class="line"><span class="lineno">   30</span>    out &lt;&lt; <span class="stringliteral">&quot;(Flow) Name: &quot;</span> &lt;&lt; obj.<a class="code hl_variable" href="classFlow.html#a687d8bbbb87d6c1965e272768167dcac">name</a> &lt;&lt; <span class="stringliteral">&quot; - &quot;</span></div>
 <div class="line"><span class="lineno">   31</span>        &lt;&lt; obj.<a class="code hl_variable" href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">source</a>-&gt;<a class="code hl_function" href="classSystem.html#a30116b105d876ff2b445c0c7d99816bb">getName</a>() &lt;&lt; <span class="stringliteral">&quot; -----&gt; &quot;</span> &lt;&lt; obj.<a class="code hl_variable" href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">target</a>-&gt;<a class="code hl_function" href="classSystem.html#a30116b105d876ff2b445c0c7d99816bb">getName</a>(); </div>
 <div class="line"><span class="lineno">   32</span>    <span class="keywordflow">return</span> out;</div>
 <div class="line"><span class="lineno">   33</span>}</div>
-<div class="ttc" id="aclassFlow_html_a687d8bbbb87d6c1965e272768167dcac"><div class="ttname"><a href="classFlow.html#a687d8bbbb87d6c1965e272768167dcac">Flow::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Flow.h:11</div></div>
-<div class="ttc" id="aclassFlow_html_a87be88d9bae4e927b29205faabeaf387"><div class="ttname"><a href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">Flow::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition</b> Flow.h:13</div></div>
-<div class="ttc" id="aclassFlow_html_a963ca162995d112f0f30322e2bb9de63"><div class="ttname"><a href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">Flow::source</a></div><div class="ttdeci">System * source</div><div class="ttdef"><b>Definition</b> Flow.h:12</div></div>
-<div class="ttc" id="aclassSystem_html_a30116b105d876ff2b445c0c7d99816bb"><div class="ttname"><a href="classSystem.html#a30116b105d876ff2b445c0c7d99816bb">System::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdef"><b>Definition</b> System.cpp:13</div></div>
+<div class="ttc" id="aclassFlow_html_a687d8bbbb87d6c1965e272768167dcac"><div class="ttname"><a href="classFlow.html#a687d8bbbb87d6c1965e272768167dcac">Flow::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Flow.h:20</div></div>
+<div class="ttc" id="aclassFlow_html_a87be88d9bae4e927b29205faabeaf387"><div class="ttname"><a href="classFlow.html#a87be88d9bae4e927b29205faabeaf387">Flow::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition</b> Flow.h:22</div></div>
+<div class="ttc" id="aclassFlow_html_a963ca162995d112f0f30322e2bb9de63"><div class="ttname"><a href="classFlow.html#a963ca162995d112f0f30322e2bb9de63">Flow::source</a></div><div class="ttdeci">System * source</div><div class="ttdef"><b>Definition</b> Flow.h:21</div></div>
+<div class="ttc" id="aclassSystem_html_a30116b105d876ff2b445c0c7d99816bb"><div class="ttname"><a href="classSystem.html#a30116b105d876ff2b445c0c7d99816bb">System::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdoc">This method returns the name of a system.</div><div class="ttdef"><b>Definition</b> System.cpp:13</div></div>
 </div><!-- fragment -->
 </div>
 </div>
