@@ -71,8 +71,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classModel-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Model Class Reference</div></div>
@@ -80,38 +82,77 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="Model_8h_source.html">Model.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Model:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel__coll__graph.png" border="0" usemap="#aModel_coll__map" alt="Collaboration graph"/></div>
+<map name="aModel_coll__map" id="aModel_coll__map">
+<area shape="rect" title=" " alt="" coords="120,148,347,753"/>
+<area shape="rect" title=" " alt="" coords="5,5,56,71"/>
+<area shape="poly" title=" " alt="" coords="49,70,115,204,110,207,44,72"/>
+<area shape="rect" title=" " alt="" coords="81,5,226,71"/>
+<area shape="poly" title=" " alt="" coords="162,70,174,131,169,132,157,71"/>
+<area shape="rect" title=" " alt="" coords="250,5,377,71"/>
+<area shape="poly" title=" " alt="" coords="310,71,298,132,293,131,305,70"/>
+<area shape="rect" title=" " alt="" coords="401,5,431,71"/>
+<area shape="poly" title=" " alt="" coords="404,72,356,181,351,179,400,70"/>
+</map>
+</div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a32c08d1842bfaf3bc76b65df5c3e0a16" id="r_a32c08d1842bfaf3bc76b65df5c3e0a16"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classSystem.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a></td></tr>
+<tr class="memdesc:a32c08d1842bfaf3bc76b65df5c3e0a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef vetors iterators  <br /></td></tr>
+<tr class="separator:a32c08d1842bfaf3bc76b65df5c3e0a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af19b499569caa4d43b69914002e04271" id="r_af19b499569caa4d43b69914002e04271"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a></td></tr>
+<tr class="separator:af19b499569caa4d43b69914002e04271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad83e9c834f29280b5a58f7cd17225278" id="r_ad83e9c834f29280b5a58f7cd17225278"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad83e9c834f29280b5a58f7cd17225278">Model</a> (const std::string &amp;<a class="el" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>=&quot;NO_NAME&quot;, const int &amp;<a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>=0, const int &amp;<a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>=1)</td></tr>
+<tr class="memdesc:ad83e9c834f29280b5a58f7cd17225278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classModel.html">Model</a> by name and sart and end time.  <br /></td></tr>
 <tr class="separator:ad83e9c834f29280b5a58f7cd17225278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ebd2062a0b823db841a0b88baac4c0" id="r_ad6ebd2062a0b823db841a0b88baac4c0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6ebd2062a0b823db841a0b88baac4c0">~Model</a> ()</td></tr>
+<tr class="memdesc:ad6ebd2062a0b823db841a0b88baac4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destructor is a virtual destructor of the class.  <br /></td></tr>
 <tr class="separator:ad6ebd2062a0b823db841a0b88baac4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad98a14258e1e21e529b8df8ac930dc3e" id="r_ad98a14258e1e21e529b8df8ac930dc3e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad98a14258e1e21e529b8df8ac930dc3e">getName</a> () const</td></tr>
+<tr class="memdesc:ad98a14258e1e21e529b8df8ac930dc3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the name of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:ad98a14258e1e21e529b8df8ac930dc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d884d04de2f005ce2abfa4c686241e0" id="r_a1d884d04de2f005ce2abfa4c686241e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d884d04de2f005ce2abfa4c686241e0">setName</a> (const std::string &amp;<a class="el" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>)</td></tr>
+<tr class="memdesc:a1d884d04de2f005ce2abfa4c686241e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a string to the name of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:a1d884d04de2f005ce2abfa4c686241e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af46ac9eb938ebad900632377396e43cc" id="r_af46ac9eb938ebad900632377396e43cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af46ac9eb938ebad900632377396e43cc">getStartTime</a> () const</td></tr>
+<tr class="memdesc:af46ac9eb938ebad900632377396e43cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the startTime of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:af46ac9eb938ebad900632377396e43cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d96aef98d4358588c28e53cdecf7db" id="r_a74d96aef98d4358588c28e53cdecf7db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74d96aef98d4358588c28e53cdecf7db">getEndtTime</a> () const</td></tr>
+<tr class="memdesc:a74d96aef98d4358588c28e53cdecf7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the end of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:a74d96aef98d4358588c28e53cdecf7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7811a44c20f3db0397b0c8d888a868" id="r_aac7811a44c20f3db0397b0c8d888a868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac7811a44c20f3db0397b0c8d888a868">setStartTime</a> (const int &amp;<a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>)</td></tr>
+<tr class="memdesc:aac7811a44c20f3db0397b0c8d888a868"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a int to the startTime of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:aac7811a44c20f3db0397b0c8d888a868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebd80e84e6658e91cf1012dda1cf7a6" id="r_a8ebd80e84e6658e91cf1012dda1cf7a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ebd80e84e6658e91cf1012dda1cf7a6">setEndTime</a> (const int &amp;<a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>)</td></tr>
+<tr class="memdesc:a8ebd80e84e6658e91cf1012dda1cf7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a int to the endTime of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:a8ebd80e84e6658e91cf1012dda1cf7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57b4d38d25376030ff13cc7fa9d3d31a" id="r_a57b4d38d25376030ff13cc7fa9d3d31a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57b4d38d25376030ff13cc7fa9d3d31a">setTime</a> (const int &amp;<a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>, const int &amp;<a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>)</td></tr>
+<tr class="memdesc:a57b4d38d25376030ff13cc7fa9d3d31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a int to the startTime and endTime of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:a57b4d38d25376030ff13cc7fa9d3d31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302d4ed93c6e6f9a0f728e021a91f821" id="r_a302d4ed93c6e6f9a0f728e021a91f821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a302d4ed93c6e6f9a0f728e021a91f821">add</a> (<a class="el" href="classSystem.html">System</a> *system)</td></tr>
+<tr class="memdesc:a302d4ed93c6e6f9a0f728e021a91f821"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method add a <a class="el" href="classSystem.html">System</a> pointer to the vector of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:a302d4ed93c6e6f9a0f728e021a91f821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69613bde0ace81c92bbf519660ccb2c" id="r_ab69613bde0ace81c92bbf519660ccb2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab69613bde0ace81c92bbf519660ccb2c">add</a> (<a class="el" href="classFlow.html">Flow</a> *flow)</td></tr>
+<tr class="memdesc:ab69613bde0ace81c92bbf519660ccb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method add a <a class="el" href="classFlow.html">Flow</a> pointer to the vector of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:ab69613bde0ace81c92bbf519660ccb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e62256150dd1c50440f35fcced13c0d" id="r_a7e62256150dd1c50440f35fcced13c0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e62256150dd1c50440f35fcced13c0d">rmv</a> (const <a class="el" href="Model_8h.html#a001d3cc68e213100cd5a4a47c566c4c1">systemIterator</a> &amp;system)</td></tr>
+<tr class="memitem:a7e62256150dd1c50440f35fcced13c0d" id="r_a7e62256150dd1c50440f35fcced13c0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e62256150dd1c50440f35fcced13c0d">rmv</a> (const <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a> &amp;system)</td></tr>
+<tr class="memdesc:a7e62256150dd1c50440f35fcced13c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method remove a <a class="el" href="classSystem.html">System</a> pointer of the vector of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:a7e62256150dd1c50440f35fcced13c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1486339f1d1230e1ab991cc47da1566" id="r_ae1486339f1d1230e1ab991cc47da1566"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1486339f1d1230e1ab991cc47da1566">rmv</a> (const <a class="el" href="Model_8h.html#ae7db818daebc6dd8f913028e012962fb">flowIterator</a> &amp;flow)</td></tr>
+<tr class="memitem:ae1486339f1d1230e1ab991cc47da1566" id="r_ae1486339f1d1230e1ab991cc47da1566"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1486339f1d1230e1ab991cc47da1566">rmv</a> (const <a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a> &amp;flow)</td></tr>
+<tr class="memdesc:ae1486339f1d1230e1ab991cc47da1566"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method remove a <a class="el" href="classFlow.html">Flow</a> pointer of the vector of a <a class="el" href="classModel.html">Model</a>.  <br /></td></tr>
 <tr class="separator:ae1486339f1d1230e1ab991cc47da1566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb77d4bd1d247721d0c521ae95ceb8e6" id="r_aeb77d4bd1d247721d0c521ae95ceb8e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb77d4bd1d247721d0c521ae95ceb8e6">run</a> ()</td></tr>
+<tr class="memdesc:aeb77d4bd1d247721d0c521ae95ceb8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method run all model.  <br /></td></tr>
 <tr class="separator:aeb77d4bd1d247721d0c521ae95ceb8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa43f81ad7dddca715deff3ae690193" id="r_a1aa43f81ad7dddca715deff3ae690193"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aa43f81ad7dddca715deff3ae690193">operator==</a> (const <a class="el" href="classModel.html">Model</a> &amp;other) const</td></tr>
+<tr class="memdesc:a1aa43f81ad7dddca715deff3ae690193"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is overloading the '==' operator, compare two models objs.  <br /></td></tr>
 <tr class="separator:a1aa43f81ad7dddca715deff3ae690193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -127,14 +168,102 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a24bbe5fa05409e29462edf934e169f33" id="r_a24bbe5fa05409e29462edf934e169f33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a></td></tr>
 <tr class="separator:a24bbe5fa05409e29462edf934e169f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aaa76b9c72b66fa245f6b7b92d1ecc032" id="r_aaa76b9c72b66fa245f6b7b92d1ecc032"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModel.html">Model</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa76b9c72b66fa245f6b7b92d1ecc032">operator=</a> (const <a class="el" href="classModel.html">Model</a> &amp;other)</td></tr>
+<tr class="memdesc:aaa76b9c72b66fa245f6b7b92d1ecc032"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is overloading the '=' operator, "cloning" from one <a class="el" href="classModel.html">Model</a> to another.  <br /></td></tr>
+<tr class="separator:aaa76b9c72b66fa245f6b7b92d1ecc032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48858e5f328ba822b430d86a76a6ceeb" id="r_a48858e5f328ba822b430d86a76a6ceeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48858e5f328ba822b430d86a76a6ceeb">Model</a> (const <a class="el" href="classModel.html">Model</a> &amp;other)</td></tr>
+<tr class="memdesc:a48858e5f328ba822b430d86a76a6ceeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classModel.html">Model</a> by a obj.  <br /></td></tr>
+<tr class="separator:a48858e5f328ba822b430d86a76a6ceeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ae1ba6c4b318b55b87c0f0588254de52b" id="r_ae1ba6c4b318b55b87c0f0588254de52b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1ba6c4b318b55b87c0f0588254de52b">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classModel.html">Model</a> &amp;obj)</td></tr>
+<tr class="memdesc:ae1ba6c4b318b55b87c0f0588254de52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is overloading the '&lt;&lt;' operator, print the model obj info.  <br /></td></tr>
 <tr class="separator:ae1ba6c4b318b55b87c0f0588254de52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af19b499569caa4d43b69914002e04271" name="af19b499569caa4d43b69914002e04271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af19b499569caa4d43b69914002e04271">&#9670;&#160;</a></span>flowIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="classFlow.html">Flow</a>*&gt;::iterator <a class="el" href="#af19b499569caa4d43b69914002e04271">Model::flowIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32c08d1842bfaf3bc76b65df5c3e0a16" name="a32c08d1842bfaf3bc76b65df5c3e0a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c08d1842bfaf3bc76b65df5c3e0a16">&#9670;&#160;</a></span>systemIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="classSystem.html">System</a>*&gt;::iterator <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">Model::systemIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>typedef vetors iterators </p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a48858e5f328ba822b430d86a76a6ceeb" name="a48858e5f328ba822b430d86a76a6ceeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48858e5f328ba822b430d86a76a6ceeb">&#9670;&#160;</a></span>Model() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Model::Model </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModel.html">Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classModel.html">Model</a> by a obj. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="classModel.html">Model</a> obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">    6</span>                                : <a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>(other.<a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>), <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>(other.<a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>), <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>(other.<a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>) {</div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.clear();</div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.clear();</div>
+<div class="line"><span class="lineno">    9</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : other.<a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>) <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.push_back(i);</div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : other.<a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>) <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.push_back(i);</div>
+<div class="line"><span class="lineno">   11</span>}</div>
+<div class="ttc" id="aclassModel_html_a10cdf547f8e965eabd52e82410acfdbc"><div class="ttname"><a href="#a10cdf547f8e965eabd52e82410acfdbc">Model::startTime</a></div><div class="ttdeci">int startTime</div><div class="ttdef"><b>Definition</b> Model.h:37</div></div>
+<div class="ttc" id="aclassModel_html_a24bbe5fa05409e29462edf934e169f33"><div class="ttname"><a href="#a24bbe5fa05409e29462edf934e169f33">Model::endTime</a></div><div class="ttdeci">int endTime</div><div class="ttdef"><b>Definition</b> Model.h:38</div></div>
+<div class="ttc" id="aclassModel_html_a508721af4b8ed362217dff0c6732d8dc"><div class="ttname"><a href="#a508721af4b8ed362217dff0c6732d8dc">Model::flows</a></div><div class="ttdeci">std::vector&lt; Flow * &gt; flows</div><div class="ttdef"><b>Definition</b> Model.h:36</div></div>
+<div class="ttc" id="aclassModel_html_a706374e5cb9ad9949996cfbd9538cead"><div class="ttname"><a href="#a706374e5cb9ad9949996cfbd9538cead">Model::systems</a></div><div class="ttdeci">std::vector&lt; System * &gt; systems</div><div class="ttdef"><b>Definition</b> Model.h:35</div></div>
+<div class="ttc" id="aclassModel_html_a90fe59cc0709dd732cf5f180064db6fe"><div class="ttname"><a href="#a90fe59cc0709dd732cf5f180064db6fe">Model::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Model.h:34</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>, and <a class="el" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.</p>
+
+</div>
+</div>
 <a id="ad83e9c834f29280b5a58f7cd17225278" name="ad83e9c834f29280b5a58f7cd17225278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad83e9c834f29280b5a58f7cd17225278">&#9670;&#160;</a></span>Model()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83e9c834f29280b5a58f7cd17225278">&#9670;&#160;</a></span>Model() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,10 +293,17 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classModel.html">Model</a> by name and sart and end time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>string with default value "NO_NAME" </td></tr>
+    <tr><td class="paramname">startTime</td><td>int with default value 0 </td></tr>
+    <tr><td class="paramname">endTime</td><td>int with default value 1 </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">    4</span>: <a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>(<a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>), <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>(<a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>), <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>(<a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>) {}</div>
-<div class="ttc" id="aclassModel_html_a10cdf547f8e965eabd52e82410acfdbc"><div class="ttname"><a href="#a10cdf547f8e965eabd52e82410acfdbc">Model::startTime</a></div><div class="ttdeci">int startTime</div><div class="ttdef"><b>Definition</b> Model.h:18</div></div>
-<div class="ttc" id="aclassModel_html_a24bbe5fa05409e29462edf934e169f33"><div class="ttname"><a href="#a24bbe5fa05409e29462edf934e169f33">Model::endTime</a></div><div class="ttdeci">int endTime</div><div class="ttdef"><b>Definition</b> Model.h:19</div></div>
-<div class="ttc" id="aclassModel_html_a90fe59cc0709dd732cf5f180064db6fe"><div class="ttname"><a href="#a90fe59cc0709dd732cf5f180064db6fe">Model::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Model.h:15</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -193,10 +329,12 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This destructor is a virtual destructor of the class. </p>
 <div class="fragment"><div class="line"><span class="lineno">   14</span>{<a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.clear(); <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.clear();}</div>
-<div class="ttc" id="aclassModel_html_a508721af4b8ed362217dff0c6732d8dc"><div class="ttname"><a href="#a508721af4b8ed362217dff0c6732d8dc">Model::flows</a></div><div class="ttdeci">std::vector&lt; Flow * &gt; flows</div><div class="ttdef"><b>Definition</b> Model.h:17</div></div>
-<div class="ttc" id="aclassModel_html_a706374e5cb9ad9949996cfbd9538cead"><div class="ttname"><a href="#a706374e5cb9ad9949996cfbd9538cead">Model::systems</a></div><div class="ttdeci">std::vector&lt; System * &gt; systems</div><div class="ttdef"><b>Definition</b> Model.h:16</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>, and <a class="el" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -215,8 +353,18 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method add a <a class="el" href="classFlow.html">Flow</a> pointer to the vector of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flow</td><td><a class="el" href="classFlow.html">Flow</a> pointer must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>{ <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.push_back(flow); } </div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.</p>
+
 </div>
 </div>
 <a id="a302d4ed93c6e6f9a0f728e021a91f821" name="a302d4ed93c6e6f9a0f728e021a91f821"></a>
@@ -234,8 +382,38 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method add a <a class="el" href="classSystem.html">System</a> pointer to the vector of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">system</td><td><a class="el" href="classSystem.html">System</a> pointer must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>{ <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.push_back(system); } </div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Functional__tests_8cpp.html#ad1f284ae5215afa271c632ab3e02992c">Complex_test_run()</a>, <a class="el" href="Functional__tests_8cpp.html#a84ea8bb324c37c6b0d570e76d85f2db2">exponencial_test_run()</a>, and <a class="el" href="Functional__tests_8cpp.html#ac5a362dfeb59aa1326005e0caee1b51e">logistical_test_run()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph.png" border="0" usemap="#aclassModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph" alt=""/></div>
+<map name="aclassModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph" id="aclassModel_a302d4ed93c6e6f9a0f728e021a91f821_icgraph">
+<area shape="rect" title="This method add a System pointer to the vector of a Model." alt="" coords="317,55,412,80"/>
+<area shape="rect" href="Functional__tests_8cpp.html#ad1f284ae5215afa271c632ab3e02992c" title="This function runs the &quot;complex&quot; test, which has multiple systems and flows." alt="" coords="119,5,259,31"/>
+<area shape="poly" title=" " alt="" coords="305,53,234,33,236,28,306,48"/>
+<area shape="rect" href="Functional__tests_8cpp.html#a84ea8bb324c37c6b0d570e76d85f2db2" title="This function performs the exponential functional test." alt="" coords="108,55,269,80"/>
+<area shape="poly" title=" " alt="" coords="303,70,269,70,269,65,303,65"/>
+<area shape="rect" href="Functional__tests_8cpp.html#ac5a362dfeb59aa1326005e0caee1b51e" title="This function performs the logistic test." alt="" coords="118,104,259,129"/>
+<area shape="poly" title=" " alt="" coords="306,86,236,106,234,101,305,81"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" title=" " alt="" coords="132,37,109,45,61,61,59,56,107,39,131,32"/>
+<area shape="poly" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
+<area shape="poly" title=" " alt="" coords="134,102,107,94,59,78,61,73,109,89,135,97"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a74d96aef98d4358588c28e53cdecf7db" name="a74d96aef98d4358588c28e53cdecf7db"></a>
@@ -252,8 +430,13 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method returns the end of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a int containing the end is returned </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   22</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>; }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>.</p>
+
 </div>
 </div>
 <a id="ad98a14258e1e21e529b8df8ac930dc3e" name="ad98a14258e1e21e529b8df8ac930dc3e"></a>
@@ -270,8 +453,13 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method returns the name of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a string containing the name is returned </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   18</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>; }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>.</p>
+
 </div>
 </div>
 <a id="af46ac9eb938ebad900632377396e43cc" name="af46ac9eb938ebad900632377396e43cc"></a>
@@ -288,8 +476,62 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method returns the startTime of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a int containing the startTime is returned </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   21</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>; }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>.</p>
+
+</div>
+</div>
+<a id="aaa76b9c72b66fa245f6b7b92d1ecc032" name="aaa76b9c72b66fa245f6b7b92d1ecc032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa76b9c72b66fa245f6b7b92d1ecc032">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModel.html">Model</a> &amp; Model::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModel.html">Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is overloading the '=' operator, "cloning" from one <a class="el" href="classModel.html">Model</a> to another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="classModel.html">Model</a> obj to be cloned must be passed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classModel.html">Model</a> is returned that is a clone of what was passed to the method </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                         {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span>(other == *<span class="keyword">this</span>) <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a> = other.<a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>;</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a> = other.<a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>;</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.clear();</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.clear();</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : other.<a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>) <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.push_back(i);</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : other.<a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>) <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.push_back(i);</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a> = other.<a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>;</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a> = other.<a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>;</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>, <a class="el" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>, <a class="el" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>, <a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>, and <a class="el" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.</p>
+
 </div>
 </div>
 <a id="a1aa43f81ad7dddca715deff3ae690193" name="a1aa43f81ad7dddca715deff3ae690193"></a>
@@ -307,10 +549,21 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method is overloading the '==' operator, compare two models objs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>model obj to be compare must be passed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A bool is returned, true if they are equal and false if not </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   87</span>                                              {</div>
 <div class="line"><span class="lineno">   88</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a> == other.<a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a> &amp;&amp; <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a> == other.<a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a> &amp;&amp; <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a> == other.<a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a> &amp;&amp; <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a> == other.<a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a> &amp;&amp; <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a> == other.<a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>);</div>
 <div class="line"><span class="lineno">   89</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>, <a class="el" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>, <a class="el" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>, <a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>, and <a class="el" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.</p>
+
 </div>
 </div>
 <a id="ae1486339f1d1230e1ab991cc47da1566" name="ae1486339f1d1230e1ab991cc47da1566"></a>
@@ -322,14 +575,25 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool Model::rmv </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Model_8h.html#ae7db818daebc6dd8f913028e012962fb">flowIterator</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="#af19b499569caa4d43b69914002e04271">flowIterator</a> &amp;&#160;</td>
           <td class="paramname"><em>flow</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method remove a <a class="el" href="classFlow.html">Flow</a> pointer of the vector of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flow</td><td><a class="el" href="classFlow.html">Flow</a> pointer iterator must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a bool value, true if can remove, false if not </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.erase(flow) != <a class="code hl_variable" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.end()); }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>.</p>
+
 </div>
 </div>
 <a id="a7e62256150dd1c50440f35fcced13c0d" name="a7e62256150dd1c50440f35fcced13c0d"></a>
@@ -341,14 +605,25 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool Model::rmv </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Model_8h.html#a001d3cc68e213100cd5a4a47c566c4c1">systemIterator</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="#a32c08d1842bfaf3bc76b65df5c3e0a16">systemIterator</a> &amp;&#160;</td>
           <td class="paramname"><em>system</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method remove a <a class="el" href="classSystem.html">System</a> pointer of the vector of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">system</td><td><a class="el" href="classSystem.html">System</a> pointer iterator must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a bool value, true if can remove, false if not </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.erase(system) != <a class="code hl_variable" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.end()); }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a706374e5cb9ad9949996cfbd9538cead">systems</a>.</p>
+
 </div>
 </div>
 <a id="aeb77d4bd1d247721d0c521ae95ceb8e6" name="aeb77d4bd1d247721d0c521ae95ceb8e6"></a>
@@ -365,9 +640,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method run all model. </p>
+<dl class="section return"><dt>Returns</dt><dd>a bool value, true if can run, false if not </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   36</span>               {</div>
 <div class="line"><span class="lineno">   37</span>    std::vector&lt;double&gt; flowValue;</div>
-<div class="line"><span class="lineno">   38</span>    <a class="code hl_typedef" href="Model_8h.html#ae7db818daebc6dd8f913028e012962fb">flowIterator</a> f;</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_typedef" href="#af19b499569caa4d43b69914002e04271">flowIterator</a> f;</div>
 <div class="line"><span class="lineno">   39</span>    std::vector&lt;double&gt;::iterator d;</div>
 <div class="line"><span class="lineno">   40</span>    <span class="keywordtype">double</span> calcValue;</div>
 <div class="line"><span class="lineno">   41</span> </div>
@@ -398,8 +676,30 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">   66</span> </div>
 <div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   68</span>} </div>
-<div class="ttc" id="aModel_8h_html_ae7db818daebc6dd8f913028e012962fb"><div class="ttname"><a href="Model_8h.html#ae7db818daebc6dd8f913028e012962fb">flowIterator</a></div><div class="ttdeci">std::vector&lt; Flow * &gt;::iterator flowIterator</div><div class="ttdef"><b>Definition</b> Model.h:11</div></div>
+<div class="ttc" id="aclassModel_html_af19b499569caa4d43b69914002e04271"><div class="ttname"><a href="#af19b499569caa4d43b69914002e04271">Model::flowIterator</a></div><div class="ttdeci">std::vector&lt; Flow * &gt;::iterator flowIterator</div><div class="ttdef"><b>Definition</b> Model.h:46</div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>, <a class="el" href="#a508721af4b8ed362217dff0c6732d8dc">flows</a>, and <a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Functional__tests_8cpp.html#ad1f284ae5215afa271c632ab3e02992c">Complex_test_run()</a>, <a class="el" href="Functional__tests_8cpp.html#a84ea8bb324c37c6b0d570e76d85f2db2">exponencial_test_run()</a>, and <a class="el" href="Functional__tests_8cpp.html#ac5a362dfeb59aa1326005e0caee1b51e">logistical_test_run()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_aeb77d4bd1d247721d0c521ae95ceb8e6_icgraph.png" border="0" usemap="#aclassModel_aeb77d4bd1d247721d0c521ae95ceb8e6_icgraph" alt=""/></div>
+<map name="aclassModel_aeb77d4bd1d247721d0c521ae95ceb8e6_icgraph" id="aclassModel_aeb77d4bd1d247721d0c521ae95ceb8e6_icgraph">
+<area shape="rect" title="This method run all model." alt="" coords="317,55,408,80"/>
+<area shape="rect" href="Functional__tests_8cpp.html#ad1f284ae5215afa271c632ab3e02992c" title="This function runs the &quot;complex&quot; test, which has multiple systems and flows." alt="" coords="119,5,259,31"/>
+<area shape="poly" title=" " alt="" coords="304,53,234,33,235,28,305,48"/>
+<area shape="rect" href="Functional__tests_8cpp.html#a84ea8bb324c37c6b0d570e76d85f2db2" title="This function performs the exponential functional test." alt="" coords="108,55,269,80"/>
+<area shape="poly" title=" " alt="" coords="304,70,270,70,270,65,304,65"/>
+<area shape="rect" href="Functional__tests_8cpp.html#ac5a362dfeb59aa1326005e0caee1b51e" title="This function performs the logistic test." alt="" coords="118,104,259,129"/>
+<area shape="poly" title=" " alt="" coords="305,86,235,106,234,101,304,81"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" title=" " alt="" coords="132,37,109,45,61,61,59,56,107,39,131,32"/>
+<area shape="poly" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
+<area shape="poly" title=" " alt="" coords="134,102,107,94,59,78,61,73,109,89,135,97"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a8ebd80e84e6658e91cf1012dda1cf7a6" name="a8ebd80e84e6658e91cf1012dda1cf7a6"></a>
@@ -417,8 +717,18 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   24</span>{ this-&gt;<a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a> = <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>; }</div>
+
+<p>This method assigns a int to the endTime of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endTime</td><td>int must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{ this-&gt;endTime = <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>; }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>.</p>
+
 </div>
 </div>
 <a id="a1d884d04de2f005ce2abfa4c686241e0" name="a1d884d04de2f005ce2abfa4c686241e0"></a>
@@ -436,8 +746,18 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method assigns a string to the name of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>string must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="fragment"><div class="line"><span class="lineno">   19</span>{ this-&gt;<a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a> = <a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>; }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a>.</p>
+
 </div>
 </div>
 <a id="aac7811a44c20f3db0397b0c8d888a868" name="aac7811a44c20f3db0397b0c8d888a868"></a>
@@ -455,8 +775,18 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   23</span>{ this-&gt;<a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a> = <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>; }</div>
+
+<p>This method assigns a int to the startTime of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startTime</td><td>int must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{ this-&gt;startTime = <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>; }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>.</p>
+
 </div>
 </div>
 <a id="a57b4d38d25376030ff13cc7fa9d3d31a" name="a57b4d38d25376030ff13cc7fa9d3d31a"></a>
@@ -484,8 +814,19 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   25</span>{ this-&gt;<a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a> = <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>; this-&gt;<a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a> = <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>; }</div>
+
+<p>This method assigns a int to the startTime and endTime of a <a class="el" href="classModel.html">Model</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startTime</td><td>int must be passed to the method </td></tr>
+    <tr><td class="paramname">endTime</td><td>int must be passed to the method </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>{ this-&gt;startTime = <a class="code hl_variable" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>; this-&gt;endTime = <a class="code hl_variable" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>; }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="#a24bbe5fa05409e29462edf934e169f33">endTime</a>, and <a class="el" href="#a10cdf547f8e965eabd52e82410acfdbc">startTime</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -522,6 +863,16 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This method is overloading the '&lt;&lt;' operator, print the model obj info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>is a ostream obj </td></tr>
+    <tr><td class="paramname">obj</td><td>is a model obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a ostream obj to print the obj info </dd></dl>
 <div class="fragment"><div class="line"><span class="lineno">   91</span>                                                         {</div>
 <div class="line"><span class="lineno">   92</span>    out &lt;&lt; <span class="stringliteral">&quot;Name: &quot;</span> &lt;&lt; obj.<a class="code hl_variable" href="#a90fe59cc0709dd732cf5f180064db6fe">name</a> &lt;&lt; <span class="stringliteral">&quot;;\n&quot;</span></div>
 <div class="line"><span class="lineno">   93</span>        &lt;&lt; <span class="stringliteral">&quot;Systems:\n&quot;</span>;</div>
@@ -553,6 +904,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>End time simulation integer attribute. </p>
+
+<p class="reference">Referenced by <a class="el" href="#a74d96aef98d4358588c28e53cdecf7db">getEndtTime()</a>, <a class="el" href="#aaa76b9c72b66fa245f6b7b92d1ecc032">operator=()</a>, <a class="el" href="#a1aa43f81ad7dddca715deff3ae690193">operator==()</a>, <a class="el" href="#aeb77d4bd1d247721d0c521ae95ceb8e6">run()</a>, <a class="el" href="#a8ebd80e84e6658e91cf1012dda1cf7a6">setEndTime()</a>, and <a class="el" href="#a57b4d38d25376030ff13cc7fa9d3d31a">setTime()</a>.</p>
 
 </div>
 </div>
@@ -575,6 +929,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="classFlow.html">Flow</a> pointers vector. </p>
+
+<p class="reference">Referenced by <a class="el" href="#ab69613bde0ace81c92bbf519660ccb2c">add()</a>, <a class="el" href="#a48858e5f328ba822b430d86a76a6ceeb">Model()</a>, <a class="el" href="#aaa76b9c72b66fa245f6b7b92d1ecc032">operator=()</a>, <a class="el" href="#a1aa43f81ad7dddca715deff3ae690193">operator==()</a>, <a class="el" href="#ae1486339f1d1230e1ab991cc47da1566">rmv()</a>, <a class="el" href="#aeb77d4bd1d247721d0c521ae95ceb8e6">run()</a>, and <a class="el" href="#ad6ebd2062a0b823db841a0b88baac4c0">~Model()</a>.</p>
 
 </div>
 </div>
@@ -597,6 +954,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Name string attribute. </p>
+
+<p class="reference">Referenced by <a class="el" href="#ad98a14258e1e21e529b8df8ac930dc3e">getName()</a>, <a class="el" href="#aaa76b9c72b66fa245f6b7b92d1ecc032">operator=()</a>, <a class="el" href="#a1aa43f81ad7dddca715deff3ae690193">operator==()</a>, and <a class="el" href="#a1d884d04de2f005ce2abfa4c686241e0">setName()</a>.</p>
 
 </div>
 </div>
@@ -619,6 +979,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Start time simulation integer attribute. </p>
+
+<p class="reference">Referenced by <a class="el" href="#af46ac9eb938ebad900632377396e43cc">getStartTime()</a>, <a class="el" href="#aaa76b9c72b66fa245f6b7b92d1ecc032">operator=()</a>, <a class="el" href="#a1aa43f81ad7dddca715deff3ae690193">operator==()</a>, <a class="el" href="#aeb77d4bd1d247721d0c521ae95ceb8e6">run()</a>, <a class="el" href="#aac7811a44c20f3db0397b0c8d888a868">setStartTime()</a>, and <a class="el" href="#a57b4d38d25376030ff13cc7fa9d3d31a">setTime()</a>.</p>
 
 </div>
 </div>
@@ -641,6 +1004,9 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p><a class="el" href="classSystem.html">System</a> pointers vector. </p>
+
+<p class="reference">Referenced by <a class="el" href="#a302d4ed93c6e6f9a0f728e021a91f821">add()</a>, <a class="el" href="#a48858e5f328ba822b430d86a76a6ceeb">Model()</a>, <a class="el" href="#aaa76b9c72b66fa245f6b7b92d1ecc032">operator=()</a>, <a class="el" href="#a1aa43f81ad7dddca715deff3ae690193">operator==()</a>, <a class="el" href="#a7e62256150dd1c50440f35fcced13c0d">rmv()</a>, and <a class="el" href="#ad6ebd2062a0b823db841a0b88baac4c0">~Model()</a>.</p>
 
 </div>
 </div>

@@ -4,27 +4,36 @@
 
 {\ttfamily \#include $<$System.\+h$>$}
 
+
+
+Collaboration diagram for System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classSystem__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classSystem_aefa178bc0ef47e11044522843bdd8d92}{System}} (const std\+::string \&\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}="{}NO\+\_\+\+NAME"{}, const double \&\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}=0.\+0)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classSystem}{System} by name and value. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSystem_ae95d7374f80fdfaee096e95c1abc438c}{System}} (const \mbox{\hyperlink{classSystem}{System}} \&other)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classSystem}{System} by a obj. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classSystem_a3be70bb338e3f062f821173fd15680d0}{\texorpdfstring{$\sim$}{\string~}\+System}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the Class. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classSystem_a30116b105d876ff2b445c0c7d99816bb}{get\+Name}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em This method returns the name of a system. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystem_a6f4360b4a491316bc77e6c310cdf6512}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}})
-\item 
+\begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a system. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{get\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em This method returns the value of a system. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSystem_a08e97e86cf4a48883cd03a34c9bcebac}{set\+Value}} (const double \&\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}})
-\item 
+\begin{DoxyCompactList}\small\item\em This method assigns a double to the value of a system. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSystem}{System}} \& \mbox{\hyperlink{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7}{operator=}} (const \mbox{\hyperlink{classSystem}{System}} \&other)
-\item 
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one system to another. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSystem_a177f2644760307edaaa716f5f45f6938}{operator==}} (const \mbox{\hyperlink{classSystem}{System}} \&other) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two systems objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,7 +45,7 @@ double \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classSystem}{System}} \&obj)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the system obj info. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -46,6 +55,17 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 \doxysubsubsection{\texorpdfstring{System()}{System()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{const double \&}]{value = {\ttfamily 0.0} }\end{DoxyParamCaption})}
 
+
+
+Construct a new \doxylink{classSystem}{System} by name and value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string with default value "{}\+NO\+\_\+\+NAME"{} \\
+\hline
+{\em value} & double with default value 0.\+0 \\
+\hline
+\end{DoxyParams}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00004\ :\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}(\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}),\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}(\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}})\ \{\}}
@@ -58,6 +78,15 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 {\footnotesize\ttfamily System\+::\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption})}
 
 
+
+Construct a new \doxylink{classSystem}{System} by a obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{classSystem}{System} obj \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00006\ :\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}(other.\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}),\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}(other.\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}})\ \{\}}
 
@@ -67,6 +96,10 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 \index{````~System@{\texorpdfstring{$\sim$}{\string~}System}!System@{System}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}System()}{\string~System()}}
 {\footnotesize\ttfamily System\+::\texorpdfstring{$\sim$}{\string~}\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This destructor is a virtual destructor of the Class. 
 
 
 \begin{DoxyCode}{0}
@@ -83,10 +116,21 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 {\footnotesize\ttfamily std\+::string System\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
+
+This method returns the name of a system. 
+
+\begin{DoxyReturn}{Returns}
+a string containing the name is returned 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00013\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}};\ \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}.
+
 \Hypertarget{classSystem_aa7d17369d1034e7d8643a63f69d1901d}\label{classSystem_aa7d17369d1034e7d8643a63f69d1901d} 
 \index{System@{System}!getValue@{getValue}}
 \index{getValue@{getValue}!System@{System}}
@@ -94,16 +138,51 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 {\footnotesize\ttfamily double System\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
+
+This method returns the value of a system. 
+
+\begin{DoxyReturn}{Returns}
+a double containing the value is returned 
+\end{DoxyReturn}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00016\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}};\ \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}.
+
+
+
+Referenced by \mbox{\hyperlink{Functional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c}{Complex\+\_\+test\+\_\+run()}}, \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial\+::execute()}}, \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical\+::execute()}}, \mbox{\hyperlink{Functional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2}{exponencial\+\_\+test\+\_\+run()}}, and \mbox{\hyperlink{Functional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e}{logistical\+\_\+test\+\_\+run()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSystem_aa7d17369d1034e7d8643a63f69d1901d_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7}\label{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7} 
 \index{System@{System}!operator=@{operator=}}
 \index{operator=@{operator=}!System@{System}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} \& System\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption})}
 
+
+
+This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one system to another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & system obj to be cloned must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A system is returned that is a clone of what was passed to the method 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
@@ -114,12 +193,28 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 \DoxyCodeLine{00026\ \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}, and \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}.
+
 \Hypertarget{classSystem_a177f2644760307edaaa716f5f45f6938}\label{classSystem_a177f2644760307edaaa716f5f45f6938} 
 \index{System@{System}!operator==@{operator==}}
 \index{operator==@{operator==}!System@{System}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
 {\footnotesize\ttfamily bool System\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{other }\end{DoxyParamCaption}) const}
 
+
+
+This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two systems objs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & system obj to be compare must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool is returned, true if they are equal and false if not 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
@@ -128,6 +223,10 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 \DoxyCodeLine{00031\ \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}, and \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}.
+
 \Hypertarget{classSystem_a6f4360b4a491316bc77e6c310cdf6512}\label{classSystem_a6f4360b4a491316bc77e6c310cdf6512} 
 \index{System@{System}!setName@{setName}}
 \index{setName@{setName}!System@{System}}
@@ -135,10 +234,23 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 {\footnotesize\ttfamily void System\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
 
 
+
+This method assigns a string to the name of a system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string must be passed to the method \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00014\ \{\ this-\/>\mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}\ =\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}};\ \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}.
+
 \Hypertarget{classSystem_a08e97e86cf4a48883cd03a34c9bcebac}\label{classSystem_a08e97e86cf4a48883cd03a34c9bcebac} 
 \index{System@{System}!setValue@{setValue}}
 \index{setValue@{setValue}!System@{System}}
@@ -146,10 +258,23 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 {\footnotesize\ttfamily void System\+::set\+Value (\begin{DoxyParamCaption}\item[{const double \&}]{value }\end{DoxyParamCaption})}
 
 
+
+This method assigns a double to the value of a system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & double must be passed to the method \\
+\hline
+\end{DoxyParams}
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00017\ \{\ this-\/>\mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}\ =\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}};\ \}}
+\DoxyCodeLine{00017\ \{\ this-\/>value\ =\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}};\ \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}.
+
 
 
 \doxysubsection{Friends And Related Symbol Documentation}
@@ -159,6 +284,20 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 \doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
 {\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classSystem}{System}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
 
+
+
+This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the system obj info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & is a ostream obj \\
+\hline
+{\em obj} & is a system obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a ostream obj to print the obj info 
+\end{DoxyReturn}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
@@ -176,11 +315,19 @@ std\+::ostream \& \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65
 \doxysubsubsection{\texorpdfstring{name}{name}}
 {\footnotesize\ttfamily std\+::string System\+::name\hspace{0.3cm}{\ttfamily [protected]}}
 
+Name string attribute. 
+
+Referenced by \mbox{\hyperlink{classSystem_a30116b105d876ff2b445c0c7d99816bb}{get\+Name()}}, \mbox{\hyperlink{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7}{operator=()}}, \mbox{\hyperlink{classSystem_a177f2644760307edaaa716f5f45f6938}{operator==()}}, and \mbox{\hyperlink{classSystem_a6f4360b4a491316bc77e6c310cdf6512}{set\+Name()}}.
+
 \Hypertarget{classSystem_a879687b1125ef20757c2a61345fedd00}\label{classSystem_a879687b1125ef20757c2a61345fedd00} 
 \index{System@{System}!value@{value}}
 \index{value@{value}!System@{System}}
 \doxysubsubsection{\texorpdfstring{value}{value}}
 {\footnotesize\ttfamily double System\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+Value double attribute. 
+
+Referenced by \mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{get\+Value()}}, \mbox{\hyperlink{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7}{operator=()}}, \mbox{\hyperlink{classSystem_a177f2644760307edaaa716f5f45f6938}{operator==()}}, and \mbox{\hyperlink{classSystem_a08e97e86cf4a48883cd03a34c9bcebac}{set\+Value()}}.
 
 
 

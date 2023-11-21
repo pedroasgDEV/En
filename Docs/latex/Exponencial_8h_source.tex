@@ -2,23 +2,34 @@
 \hypertarget{Exponencial_8h_source}{}\label{Exponencial_8h_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/tests/functional\_tests/src/Exponencial.h@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/tests/functional\_tests/src/Exponencial.h}}
 \mbox{\hyperlink{Exponencial_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EXPONENCIAL\_DEF}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EXPONENCIAL\_DEF}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string.h>}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Flow_8h}{../../../src/Flow.h}}"{}}}
-\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponencial}{Exponencial}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\{}
-\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contructor}}
-\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}\ =\ NULL,\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}\ =\ NULL);}
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classExponencial}{Exponencial}}\&\ other);}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructor}}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7}{\string~Exponencial}}();}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{execute}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00016\ \};}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Exponencial.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ exponential\ simulation\ flow}}
+\DoxyCodeLine{00005\ \textcolor{comment}{*************************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ EXPONENCIAL\_DEF}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ EXPONENCIAL\_DEF}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Flow_8h}{../../../src/Flow.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/**************************************************************************************************************************}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ @brief\ This\ Flow\ class\ connects\ two\ systems\ and\ through\ the\ entered\ equation\ transfers\ values\ ​​from\ one\ system\ to\ another\ }}
+\DoxyCodeLine{00015\ \textcolor{comment}{**************************************************************************************************************************/}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExponencial}{Exponencial}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contructor}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}\ =\ NULL,\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}\ =\ NULL);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classExponencial}{Exponencial}}\&\ other);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7}{\string~Exponencial}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{execute}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}
