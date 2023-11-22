@@ -7,8 +7,9 @@
 #ifndef FUNCTIONAL_TESTS_H  
 #define FUNCTIONAL_TESTS_H  
 
-#include "../../../src/Model.h"
-#include "../../../src/System.h"
+#include "../../../src/ModelIMP.h"
+#include "../../../src/SystemIMP.h"
+#include "../../../src/FlowIMP.h"
 #include "Exponencial.h"
 #include "Logistical.h"
 #include <assert.h>

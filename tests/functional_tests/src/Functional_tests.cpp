@@ -3,10 +3,10 @@
 void exponencial_test_run(){
     std::cout << "Exponencial funcional test" << std::endl;
 
-    System* pop1 = new System("pop1", 100.0);
-    System* pop2 = new System("pop2", 0.0);
+    SystemIMP* pop1 = new SystemIMP("pop1", 100.0);
+    SystemIMP* pop2 = new SystemIMP("pop2", 0.0);
     Exponencial* exp = new Exponencial("exp", pop1, pop2);
-    Model* exponencial = new Model("Exponencial", 0, 100);
+    ModelIMP* exponencial = new ModelIMP("Exponencial", 0, 100);
 
     //Add os systems e flows ao modelo
     exponencial->add(pop1);
@@ -30,10 +30,10 @@ void exponencial_test_run(){
 void logistical_test_run(){
     std::cout << "Logistical funcional test" << std::endl;
 
-    System* p1 = new System("p1", 100.0);
-    System* p2 = new System("p2", 10.0);
+    SystemIMP* p1 = new SystemIMP("p1", 100.0);
+    SystemIMP* p2 = new SystemIMP("p2", 10.0);
     Logistical* log = new Logistical("log", p1, p2);
-    Model* logistical = new Model("Logistical", 0, 100);
+    ModelIMP* logistical = new ModelIMP("Logistical", 0, 100);
 
     //Add os systems e flows ao modelo
     logistical->add(p1);
@@ -55,12 +55,12 @@ void logistical_test_run(){
 void Complex_test_run(){
     std::cout << "Complex funcional test" << std::endl;
 
-    Model* model = new Model("Model", 0, 100);
-    System* q1 = new System("q1", 100.0);
-    System* q2 = new System("q2", 0.0);
-    System* q3 = new System("q3", 100.0);
-    System* q4 = new System("q4", 0.0);
-    System* q5 = new System("q5", 0.0);
+    ModelIMP* model = new ModelIMP("Model", 0, 100);
+    SystemIMP* q1 = new SystemIMP("q1", 100.0);
+    SystemIMP* q2 = new SystemIMP("q2", 0.0);
+    SystemIMP* q3 = new SystemIMP("q3", 100.0);
+    SystemIMP* q4 = new SystemIMP("q4", 0.0);
+    SystemIMP* q5 = new SystemIMP("q5", 0.0);
     Exponencial* f = new Exponencial("f", q1, q2);
     Exponencial* t = new Exponencial("t", q2, q3);
     Exponencial* u = new Exponencial("u", q3, q4);

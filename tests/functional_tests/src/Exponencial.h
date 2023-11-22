@@ -8,12 +8,19 @@
 #define EXPONENCIAL_DEF
 
 #include <string.h>
-#include "../../../src/Flow.h"
+#include "../../../src/FlowIMP.h"
 
 /**************************************************************************************************************************
  * @brief This Flow class connects two systems and through the entered equation transfers values ​​from one system to another 
 **************************************************************************************************************************/
-class Exponencial : public Flow{
+class Exponencial : public FlowIMP{
+    private:
+        /**
+         * @brief Construct a new Exponencial by a obj
+         * @param other Exponencial obj
+        */
+        Exponencial(const Exponencial& other);
+
     public:
         //Contructor
         /**
@@ -23,12 +30,7 @@ class Exponencial : public Flow{
          * @param target System pointer with default value NULL
         */
         Exponencial(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL);
-        /**
-         * @brief Construct a new Exponencial by a obj
-         * @param other Exponencial obj
-        */
-        Exponencial(const Exponencial& other);
-
+    
         //Destructor
         /**
          * @brief This destructor is a virtual destructor of the Class

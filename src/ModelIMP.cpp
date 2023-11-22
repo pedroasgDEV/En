@@ -1,9 +1,9 @@
-#include "Model.h"
+#include "ModelIMP.h"
 
 //Constructors
-Model::Model (const std::string& name, const int& startTime, const int& endTime) : name(name), startTime(startTime), endTime(endTime) {}
+ModelIMP::ModelIMP (const std::string& name, const int& startTime, const int& endTime) : name(name), startTime(startTime), endTime(endTime) {}
 //Copia outro model
-Model::Model (const Model& other) : name(other.name), startTime(other.startTime), endTime(other.endTime) {
+ModelIMP::ModelIMP (const ModelIMP& other) : name(other.name), startTime(other.startTime), endTime(other.endTime) {
     flows.clear();
     systems.clear();
     for (auto i : other.flows) flows.push_back(i);
@@ -11,29 +11,29 @@ Model::Model (const Model& other) : name(other.name), startTime(other.startTime)
 }
 
 //Destructor
-Model::~Model(){systems.clear(); flows.clear();}
+ModelIMP::~ModelIMP(){systems.clear(); flows.clear();}
 
 //Geters e seters
 //Name
-std::string Model::getName() const { return name; }
-void Model::setName(const std::string& name) { this->name = name; }
+std::string ModelIMP::getName() const { return name; }
+void ModelIMP::setName(const std::string& name) { this->name = name; }
 //Timer
-int Model::getStartTime() const { return startTime; }
-int Model::getEndtTime() const { return endTime; }
-void Model::setStartTime(const int& startTime) { this->startTime = startTime; }
-void Model::setEndTime(const int& endTime) { this->endTime = endTime; }
-void Model::setTime(const int& startTime, const int& endTime) { this->startTime = startTime; this->endTime = endTime; }
+int ModelIMP::getStartTime() const { return startTime; }
+int ModelIMP::getEndtTime() const { return endTime; }
+void ModelIMP::setStartTime(const int& startTime) { this->startTime = startTime; }
+void ModelIMP::setEndTime(const int& endTime) { this->endTime = endTime; }
+void ModelIMP::setTime(const int& startTime, const int& endTime) { this->startTime = startTime; this->endTime = endTime; }
 
 //Metodos
 //add
-void Model::add(System* system) { systems.push_back(system); } 
-void Model::add(Flow* flow) { flows.push_back(flow); } 
+void ModelIMP::add(System* system) { systems.push_back(system); } 
+void ModelIMP::add(Flow* flow) { flows.push_back(flow); } 
 //remove
-bool Model::rmv(const systemIterator& system) { return (systems.erase(system) != systems.end()); }
-bool Model::rmv(const flowIterator& flow) { return (flows.erase(flow) != flows.end()); }
+bool ModelIMP::rmv(const systemIterator& system) { return (systems.erase(system) != systems.end()); }
+bool ModelIMP::rmv(const flowIterator& flow) { return (flows.erase(flow) != flows.end()); }
 
 //Others
-bool Model::run(){
+bool ModelIMP::run(){
     std::vector<double> flowValue;
     flowIterator f;
     std::vector<double>::iterator d;
@@ -71,7 +71,7 @@ bool Model::run(){
 
 //Sobrecarga de operadores
 // Operador de atribuição
-Model& Model::operator=(const Model& other){
+ModelIMP& ModelIMP::operator=(const ModelIMP& other){
     if(other == *this) return *this;
     name = other.name;
     systems = other.systems;
@@ -84,11 +84,11 @@ Model& Model::operator=(const Model& other){
     return *this;
 }
 // Operador de igualdade
-bool Model::operator==(const Model& other) const{
+bool ModelIMP::operator==(const ModelIMP& other) const{
     return (name == other.name && systems == other.systems && flows == other.flows && startTime == other.startTime && endTime == other.endTime);
 }
 //Operador de saida
-std::ostream& operator<<(std::ostream& out, const Model& obj){
+std::ostream& operator<<(std::ostream& out, const ModelIMP& obj){
     out << "Name: " << obj.name << ";\n"
         << "Systems:\n";
     for (auto item : obj.systems) out << item << "\n";

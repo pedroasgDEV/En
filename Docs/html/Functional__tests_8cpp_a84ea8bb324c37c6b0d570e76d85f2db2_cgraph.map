@@ -1,9 +1,9 @@
 <map id="exponencial_test_run" name="exponencial_test_run">
 <area shape="rect" id="Node000001" title="This function performs the exponential functional test." alt="" coords="5,55,167,80"/>
-<area shape="rect" id="Node000002" href="$classModel.html#a302d4ed93c6e6f9a0f728e021a91f821" title="This method add a System pointer to the vector of a Model." alt="" coords="235,5,330,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,52,221,31,222,36,138,57"/>
-<area shape="rect" id="Node000003" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="This method returns the value of a system." alt="" coords="215,55,351,80"/>
+<area shape="rect" id="Node000002" href="$classModelIMP.html#adca396efe286751e1ef60a16493ffc00" title="This method add a System pointer to the vector of a Model." alt="" coords="235,5,354,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,52,227,31,228,36,141,57"/>
+<area shape="rect" id="Node000003" href="$classSystemIMP.html#a623e879e776efbaff2f52e1b73290179" title="This method returns the value of a system." alt="" coords="215,55,375,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,65,201,65,201,70,167,70"/>
-<area shape="rect" id="Node000004" href="$classModel.html#aeb77d4bd1d247721d0c521ae95ceb8e6" title="This method run all model." alt="" coords="237,104,328,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,77,224,99,223,105,137,83"/>
+<area shape="rect" id="Node000004" href="$classModelIMP.html#a57978a30a8bc32f3d144e78521f43dba" title="This method run all model." alt="" coords="237,104,352,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,77,228,98,227,103,140,83"/>
 </map>

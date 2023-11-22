@@ -1,0 +1,68 @@
+\doxysection{Model\+IMP.\+h}
+\hypertarget{ModelIMP_8h_source}{}\label{ModelIMP_8h_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/ModelIMP.h@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/ModelIMP.h}}
+\mbox{\hyperlink{ModelIMP_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/******************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ ModelIMP.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ model\ implementation}}
+\DoxyCodeLine{00005\ \textcolor{comment}{******************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ MODELIMP\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ MODELIMP\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Model_8h}{Model.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{/***********************************************************************************}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *@brief\ This\ class\ implementation\ defines\ the\ attributes\ and\ implements\ the\ methods}}
+\DoxyCodeLine{00017\ \textcolor{comment}{***********************************************************************************/}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classModelIMP}{ModelIMP}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classModel}{Model}}\{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ \mbox{\hyperlink{classModelIMP_a69797adaa0203b332c124d8c7343239c}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ other);\ \textcolor{comment}{//\ Operador\ de\ atribuição}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classModelIMP_ae6486dd79504af834705878ad130d981}{ModelIMP}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ other);\ \textcolor{comment}{//Copia\ outro\ flow\ }}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classModelIMP_a04a2f37160f346e9703988106bfb6f6a}{name}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::vector<System*>\ \mbox{\hyperlink{classModelIMP_ab8a441de9a450e112b8270336c2b3878}{systems}};\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::vector<Flow*>\ \mbox{\hyperlink{classModelIMP_ad3a46bc997800c5091daecfd24646227}{flows}};\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}};\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}};\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contructors}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classModelIMP_ae6486dd79504af834705878ad130d981}{ModelIMP}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classModelIMP_a04a2f37160f346e9703988106bfb6f6a}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}}\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}}\ =\ 1);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destrutor}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classModelIMP_a6ca1b8bc773249334a5099b43421ea1f}{\string~ModelIMP}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Name}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classModelIMP_a11afc532c1c57116505fe332a28b4fe1}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a92fcbb62f89e5792f9cc07d22dfefa2d}{setName}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classModelIMP_a04a2f37160f346e9703988106bfb6f6a}{name}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Time}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_a8c0d8baf745a99311caf654deda25483}{getStartTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_a65b8fb3596cfea2a19055ddbdb369e85}{getEndtTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a78633ec177f9b40173ef6e8b7a8877bf}{setStartTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}});}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_ada923e0714239e8016050cfe665a799e}{setEndTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}});}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a1c086a93fd7d3a7eed2678b1075139e6}{setTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}});}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{comment}{//add}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(\mbox{\hyperlink{classSystem}{System}}*\ system);}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*\ flow);}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{comment}{//remove}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_aab54b49cb2a03c0809d748263ac9f5d8}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{systemIterator}}\&\ system);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_aab54b49cb2a03c0809d748263ac9f5d8}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flowIterator}}\&\ flow);}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Others}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{run}}();}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a1062a74b828e4b125ffda1aca903f332}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classModelIMP_aacf8ed7ae49ba8ca3eb7d7f06c05f6cb}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ obj);\ \textcolor{comment}{//Operador\ de\ saida}}
+\DoxyCodeLine{00141\ \};}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

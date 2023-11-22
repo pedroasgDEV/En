@@ -3,7 +3,7 @@
 \mbox{\hyperlink{Logistical_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/************************************************************}}
-\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Exponencial.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Logistical.h}}
 \DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
 \DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ logistical\ simulation\ flow}}
 \DoxyCodeLine{00005\ \textcolor{comment}{************************************************************/}}
@@ -12,21 +12,23 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ LOGISTICAL\_DEF}}
 \DoxyCodeLine{00009\ }
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string.h>}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Flow_8h}{../../../src/Flow.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{FlowIMP_8h}{../../../src/FlowIMP.h}}"{}}}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogistical}{Logistical}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\{}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contructor}}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}\ =\ NULL,\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}\ =\ NULL);}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLogistical}{Logistical}}\&\ other);}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructor}}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLogistical_a55dff5c00b37b31f4c3e0625a3658303}{\string~Logistical}}();}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{execute}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00041\ \};}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogistical}{Logistical}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowIMP}{FlowIMP}}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classLogistical}{Logistical}}\&\ other);}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contructor}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ =\ NULL,\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}\ =\ NULL);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classLogistical_a55dff5c00b37b31f4c3e0625a3658303}{\string~Logistical}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{execute}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,5 +1,5 @@
 /************************************************************
- * @file Exponencial.h
+ * @file Logistical.h
  * @author Pedro Augusto Sousa Gonçalves
  * @brief This file represents the logistical simulation flow
 ************************************************************/
@@ -8,9 +8,16 @@
 #define LOGISTICAL_DEF
 
 #include <string.h>
-#include "../../../src/Flow.h"
+#include "../../../src/FlowIMP.h"
 
-class Logistical : public Flow{
+class Logistical : public FlowIMP{
+    private:
+        /**
+         * @brief Construct a new Logistical by a obj
+         * @param other Logistical obj
+        */
+        Logistical(const Logistical& other);
+      
     public:
         //Contructor
         /**
@@ -20,11 +27,6 @@ class Logistical : public Flow{
          * @param target System pointer with default value NULL
         */
         Logistical(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL);
-       /**
-         * @brief Construct a new Logistical by a obj
-         * @param other Logistical obj
-        */
-        Logistical(const Logistical& other);
 
         //Destructor
         /**

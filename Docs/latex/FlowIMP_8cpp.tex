@@ -1,0 +1,44 @@
+\doxysection{/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\+Flow\+IMP.cpp File Reference}
+\hypertarget{FlowIMP_8cpp}{}\label{FlowIMP_8cpp}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/FlowIMP.cpp@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/FlowIMP.cpp}}
+{\ttfamily \#include "{}Flow\+IMP.\+h"{}}\newline
+Include dependency graph for Flow\+IMP.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{FlowIMP_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{FlowIMP_8cpp_a6dcb2e8c8b3da4543750682cb478fa6d}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{FlowIMP_8cpp_a6dcb2e8c8b3da4543750682cb478fa6d}\label{FlowIMP_8cpp_a6dcb2e8c8b3da4543750682cb478fa6d} 
+\index{FlowIMP.cpp@{FlowIMP.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!FlowIMP.cpp@{FlowIMP.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{obj }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & is a ostream obj \\
+\hline
+{\em obj} & is a flow obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a ostream obj to print the obj info 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}(Flow)\ Name:\ "{}}\ <<\ obj.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ <<\ \textcolor{stringliteral}{"{}\ -\/\ "{}}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ <<\ obj.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}-\/>\mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ <<\ \textcolor{stringliteral}{"{}\ -\/-\/-\/-\/-\/>\ "{}}\ <<\ obj.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}-\/>\mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}();\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
+\DoxyCodeLine{00036\ \}}
+
+\end{DoxyCode}

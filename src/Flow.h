@@ -1,7 +1,7 @@
 /*************************************************
  * @file Flow.h
  * @author Pedro Augusto Sousa Gonçalves
- * @brief This file represents the simulation flow
+ * @brief This file represents the flow Interface
 *************************************************/
 
 #ifndef FLOW_H
@@ -16,46 +16,47 @@
 **************************************************************************************/
 
 class Flow{
-    protected:
-        std::string name; /**< Name string attribute. */
-        System* source; /**< Source system pointer attribute. */
-        System* target; /**< Target system pointer attribute. */
-        
-    public:        
+    public:
+        //Destructor
+        /**
+         * @brief This destructor is a virtual destructor of the class
+        */
+        virtual ~Flow() {};
+
         //Geters e seters
         //Name
         /**
          * @brief This method returns the name of a flow
          * @return a string containing the name is returned
         */
-        std::string getName() const;
+        virtual std::string getName() const = 0;
         /**
          * @brief This method assigns a string to the name of a flow obj
          * @param name string must be passed to the method
         */
-        void setName(std::string& name);
+        virtual void setName(std::string& name) = 0;
         //Source
         /**
          * @brief This method returns the source system poiter
          * @return a system poiter containing the source memory address is returned
         */
-        System* getSource() const;
+        virtual System* getSource() const = 0;
         /**
          * @brief This method assigns a system poiter to the source of a flow obj
          * @param source system poiter must be passed to the method
         */
-        void setSource(System* source);
+        virtual void setSource(System* source) = 0;
         //Target
         /**
          * @brief This method returns the target system poiter
          * @return a system poiter containing the target memory address is returned
         */
-        System* getTarget() const;
+        virtual System* getTarget() const = 0;
         /**
          * @brief This method assigns a system poiter to the target of a flow obj
          * @param target system poiter must be passed to the method
         */
-        void setTarget(System* target);
+        virtual void setTarget(System* target) = 0;
 
         //Metodos
         /**
@@ -63,27 +64,6 @@ class Flow{
          * @return double 
         */
         virtual double execute() = 0;
-    
-        //Sobrecarga de operadores
-        /**
-         * @brief This method is overloading the '=' operator, "cloning" from one flow to another
-         * @param other flow obj to be cloned must be passed 
-         * @return A flow is returned that is a clone of what was passed to the method
-        */
-        Flow& operator=(const Flow& other); // Operador de atribuição
-        /**
-         * @brief This method is overloading the '==' operator, compare two flows objs
-         * @param other flow obj to be compare must be passed 
-         * @return A bool is returned, true if they are equal and false if not
-        */
-        bool operator==(const Flow& other) const; // Operador de igualdade
-        /**
-         * @brief This method is overloading the '<<' operator, print the flow obj info
-         * @param out is a ostream obj
-         * @param obj is a flow obj
-         * @return a ostream obj to print the obj info
-        */
-        friend std::ostream& operator<<(std::ostream& out, const Flow& obj); //Operador de saida
 };
 
 

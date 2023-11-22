@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for Exponencial\+:\nopagebreak
+Inheritance diagram for Exponencial\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,7 +16,8 @@ Inheritance diagram for Exponencial\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Exponencial\+:\nopagebreak
+Collaboration diagram for Exponencial\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,50 +27,86 @@ Collaboration diagram for Exponencial\+:\nopagebreak
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial}} (const std\+::string \&\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}="{}NO\+\_\+\+NAME"{}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}=NULL, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}=NULL)
+\mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial}} (const std\+::string \&\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}="{}NO\+\_\+\+NAME"{}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}=NULL, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}=NULL)
 \begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classExponencial}{Exponencial} by name, source and target. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial}} (const \mbox{\hyperlink{classExponencial}{Exponencial}} \&other)
-\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classExponencial}{Exponencial} by a obj. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7}{\texorpdfstring{$\sim$}{\string~}\+Exponencial}} ()
 \begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the Class. \end{DoxyCompactList}\item 
 virtual double \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{execute}} () override
 \begin{DoxyCompactList}\small\item\em Pure virtual method that will contain an equation that will be executed in the flow by the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classFlowIMP_ad35ed7773166d61c4f41949f3bf6255d}{\texorpdfstring{$\sim$}{\string~}\+Flow\+IMP}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the name of a flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}{set\+Name}} (std\+::string \&\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}})
+\begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a flow obj. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the source system poiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}})
+\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the source of a flow obj. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the target system poiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}})
+\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the target of a flow obj. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{classFlow_aadd3a8ab712a2063461d917a867eedc4}{get\+Name}} () const
-\begin{DoxyCompactList}\small\item\em This method returns the name of a flow. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_a02e9318ce2ef7cd1a97e47f7e08b6c80}{set\+Name}} (std\+::string \&\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}})
-\begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a flow obj. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
-\begin{DoxyCompactList}\small\item\em This method returns the source system poiter. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_a250fc53158862fc0db77b323a33e48a3}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}})
-\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the source of a flow obj. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
-\begin{DoxyCompactList}\small\item\em This method returns the target system poiter. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlow_ab69903880174e5bcdc0d815b5de7b3e0}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}})
-\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the target of a flow obj. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFlow}{Flow}} \& \mbox{\hyperlink{classFlow_a5f7550e37445bb6ae955beffd1fa857a}{operator=}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other)
-\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one flow to another. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classFlow_a40b6a9cda257aca27d48d7451faa88bb}{operator==}} (const \mbox{\hyperlink{classFlow}{Flow}} \&other) const
-\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Additional Inherited Members}
-\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}
+\mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial}} (const \mbox{\hyperlink{classExponencial}{Exponencial}} \&other)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classExponencial}{Exponencial} by a obj. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}}}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}
+std\+::string \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}
 \item 
-\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}\label{classExponencial_a81682f3197dc4dc053575dc6f8e932e6} 
+\Hypertarget{classExponencial_a1b561e1b497fd0d42aabb76913830817}\label{classExponencial_a1b561e1b497fd0d42aabb76913830817} 
 \index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
 \index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
 \doxysubsubsection{\texorpdfstring{Exponencial()}{Exponencial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Exponencial\+::\+Exponencial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classExponencial}{Exponencial}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Construct a new \doxylink{classExponencial}{Exponencial} by a obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{classExponencial}{Exponencial} obj \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00012\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ other.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};}
+\DoxyCodeLine{00013\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ =\ other.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};}
+\DoxyCodeLine{00014\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}\ =\ other.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};}
+\DoxyCodeLine{00015\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{Flow\+IMP\+::name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{Flow\+IMP\+::source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{Flow\+IMP\+::target}}.
+
+\Hypertarget{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}\label{classExponencial_a81682f3197dc4dc053575dc6f8e932e6} 
+\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
+\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
+\doxysubsubsection{\texorpdfstring{Exponencial()}{Exponencial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Exponencial\+::\+Exponencial (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target = {\ttfamily NULL} }\end{DoxyParamCaption})}
 
 
@@ -87,43 +125,15 @@ Construct a new \doxylink{classExponencial}{Exponencial} by name, source and tar
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00005\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}\ =\ \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}};}
-\DoxyCodeLine{00006\ \ \ \ \ this-\/>source\ =\ \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}};}
-\DoxyCodeLine{00007\ \ \ \ \ this-\/>target\ =\ \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}};}
+\DoxyCodeLine{00005\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};}
+\DoxyCodeLine{00006\ \ \ \ \ this-\/>source\ =\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};}
+\DoxyCodeLine{00007\ \ \ \ \ this-\/>target\ =\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};}
 \DoxyCodeLine{00008\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{Flow\+::name}}, \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{Flow\+::source}}, and \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{Flow\+::target}}.
-
-\Hypertarget{classExponencial_a1b561e1b497fd0d42aabb76913830817}\label{classExponencial_a1b561e1b497fd0d42aabb76913830817} 
-\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
-\index{Exponencial@{Exponencial}!Exponencial@{Exponencial}}
-\doxysubsubsection{\texorpdfstring{Exponencial()}{Exponencial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Exponencial\+::\+Exponencial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classExponencial}{Exponencial}} \&}]{other }\end{DoxyParamCaption})}
-
-
-
-Construct a new \doxylink{classExponencial}{Exponencial} by a obj. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em other} & \doxylink{classExponencial}{Exponencial} obj \\
-\hline
-\end{DoxyParams}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00012\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}}\ =\ other.\mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{name}};}
-\DoxyCodeLine{00013\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}}\ =\ other.\mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{source}};}
-\DoxyCodeLine{00014\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}}\ =\ other.\mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{target}};}
-\DoxyCodeLine{00015\ \}}
-
-\end{DoxyCode}
-
-
-References \mbox{\hyperlink{classFlow_a687d8bbbb87d6c1965e272768167dcac}{Flow\+::name}}, \mbox{\hyperlink{classFlow_a963ca162995d112f0f30322e2bb9de63}{Flow\+::source}}, and \mbox{\hyperlink{classFlow_a87be88d9bae4e927b29205faabeaf387}{Flow\+::target}}.
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{Flow\+IMP\+::name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{Flow\+IMP\+::source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{Flow\+IMP\+::target}}.
 
 \Hypertarget{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7}\label{classExponencial_ac3d387e567b8d7c0d656e15ab731fbd7} 
 \index{Exponencial@{Exponencial}!````~Exponencial@{\texorpdfstring{$\sim$}{\string~}Exponencial}}
@@ -158,25 +168,25 @@ double
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+Implements \mbox{\hyperlink{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}{Flow\+IMP}}.
 
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{getSource}}()-\/>\mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ *\ 0.01;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{getSource}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 0.01;}
 \DoxyCodeLine{00022\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{classFlow_a1f3858f90d141807377c2640fb5dd0fc}{Flow\+::get\+Source()}}, and \mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{System\+::get\+Value()}}.
+References \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{Flow\+IMP\+::get\+Source()}}, and \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{System\+::get\+Value()}}.
 
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=338pt]{classExponencial_a35c08ff8bd300f778d559da818190ae6_cgraph}
+\includegraphics[width=349pt]{classExponencial_a35c08ff8bd300f778d559da818190ae6_cgraph}
 \end{center}
 \end{figure}
 

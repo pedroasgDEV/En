@@ -1,7 +1,7 @@
 all:
-	g++ src/System.cpp -c 
-	g++ src/Flow.cpp -c
-	g++ src/Model.cpp -c
+	g++ src/SystemIMP.cpp -c 
+	g++ src/FlowIMP.cpp -c
+	g++ src/ModelIMP.cpp -c
 	mv -f *.o obj/
 
 funct_tests:

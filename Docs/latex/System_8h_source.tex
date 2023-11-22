@@ -5,7 +5,7 @@
 \DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************}}
 \DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ System.h}}
 \DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
-\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ simulation\ system}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ System\ interface}}
 \DoxyCodeLine{00005\ \textcolor{comment}{****************************************************/}}
 \DoxyCodeLine{00006\ }
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ SYSTEM\_H}}
@@ -20,31 +20,19 @@
 \DoxyCodeLine{00016\ \textcolor{comment}{****************************************************************************************/}}
 \DoxyCodeLine{00017\ }
 \DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSystem}{System}}\{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}};\ }
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}};\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contructors}}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem_aefa178bc0ef47e11044522843bdd8d92}{System}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}}\ =\ 0.0);}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem_aefa178bc0ef47e11044522843bdd8d92}{System}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSystem}{System}}\&\ other);\ \textcolor{comment}{//Copia\ outro\ system}}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructors}}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSystem_a3be70bb338e3f062f821173fd15680d0}{\string~System}}();}
-\DoxyCodeLine{00042\ \ }
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Nome}}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classSystem_a30116b105d876ff2b445c0c7d99816bb}{getName}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystem_a6f4360b4a491316bc77e6c310cdf6512}{setName}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classSystem_af3995745f52d4359f628ddd67de5121f}{name}});}
-\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Value}}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSystem_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystem_a08e97e86cf4a48883cd03a34c9bcebac}{setValue}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classSystem_a879687b1125ef20757c2a61345fedd00}{value}});}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}\&\ \mbox{\hyperlink{classSystem_ac6422081d08c3ac145a6d7c6d9f5bae7}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSystem}{System}}\&\ other);\ \ \textcolor{comment}{//\ Operador\ de\ atribuição}}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSystem_a177f2644760307edaaa716f5f45f6938}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSystem}{System}}\&\ other)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ Operador\ de\ igualdade}}
-\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classSystem_ac7eee6ad7f5e94c300769375cbda7d65}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classSystem}{System}}\&\ obj);\ \textcolor{comment}{//Operador\ de\ saida}}
-\DoxyCodeLine{00087\ \};}
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructors}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSystem_a2fc0f34023977cab9b628aa9f734d88c}{\string~System}}()\ \{\};}
+\DoxyCodeLine{00025\ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Nome}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystem_a2c84980e017370987a25548b13ea9578}{setName}}(\textcolor{keyword}{const}\ std::string\&\ name)\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Value}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystem_a4ade48b75793a48021cdb634a86ff988}{setValue}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ value)\ =\ 0;}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

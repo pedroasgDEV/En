@@ -1,7 +1,7 @@
 <map id="Logistical::execute" name="Logistical::execute">
 <area shape="rect" id="Node000001" title="Pure virtual method that will contain an equation that will be executed in the flow by the model." alt="" coords="5,31,148,56"/>
-<area shape="rect" id="Node000002" href="$classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5" title="This method returns the target system poiter." alt="" coords="203,5,325,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,31,189,25,190,31,149,36"/>
-<area shape="rect" id="Node000003" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="This method returns the value of a system." alt="" coords="196,55,332,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,50,182,54,182,59,148,55"/>
+<area shape="rect" id="Node000002" href="$classFlowIMP.html#a9d80f991fb1b26baef56f0d1195d6b23" title="This method returns the target system poiter." alt="" coords="196,5,343,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,31,182,27,183,32,149,37"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="This method returns the value of a system." alt="" coords="201,55,337,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,50,188,55,187,60,148,55"/>
 </map>

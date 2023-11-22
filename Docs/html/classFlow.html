@@ -72,8 +72,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classFlow-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Flow Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -85,11 +83,13 @@ Inheritance diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlow__inherit__graph.png" border="0" usemap="#aFlow_inherit__map" alt="Inheritance graph"/></div>
 <map name="aFlow_inherit__map" id="aFlow_inherit__map">
-<area shape="rect" title=" " alt="" coords="149,5,351,388"/>
-<area shape="rect" href="classExponencial.html" title=" " alt="" coords="5,436,236,635"/>
-<area shape="poly" title=" " alt="" coords="174,402,161,437,156,435,170,400"/>
-<area shape="rect" href="classLogistical.html" title=" " alt="" coords="261,436,498,635"/>
-<area shape="poly" title=" " alt="" coords="330,400,344,435,339,437,326,402"/>
+<area shape="rect" title=" " alt="" coords="148,5,352,299"/>
+<area shape="rect" href="classFlowIMP.html" title=" " alt="" coords="149,347,351,749"/>
+<area shape="poly" title=" " alt="" coords="253,312,253,347,247,347,247,312"/>
+<area shape="rect" href="classExponencial.html" title=" " alt="" coords="5,797,236,996"/>
+<area shape="poly" title=" " alt="" coords="173,763,160,798,155,796,168,761"/>
+<area shape="rect" href="classLogistical.html" title=" " alt="" coords="261,797,498,996"/>
+<area shape="poly" title=" " alt="" coords="332,761,345,796,340,798,327,763"/>
 </map>
 </div>
 <div class="dynheader">
@@ -97,62 +97,66 @@ Collaboration diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFlow__coll__graph.png" border="0" usemap="#aFlow_coll__map" alt="Collaboration graph"/></div>
 <map name="aFlow_coll__map" id="aFlow_coll__map">
-<area shape="rect" title=" " alt="" coords="5,553,208,896"/>
-<area shape="rect" title=" " alt="" coords="85,5,136,71"/>
-<area shape="poly" title=" " alt="" coords="108,71,100,134,95,237,94,342,98,537,93,537,88,342,90,237,95,133,102,71"/>
-<area shape="rect" href="classSystem.html" title=" " alt="" coords="163,133,373,476"/>
-<area shape="poly" title=" " alt="" coords="132,70,160,118,156,120,127,73"/>
-<area shape="poly" title=" " alt="" coords="205,477,181,539,176,537,200,475"/>
-<area shape="rect" title=" " alt="" coords="239,5,297,71"/>
-<area shape="poly" title=" " alt="" coords="271,71,271,117,265,117,265,71"/>
+<area shape="rect" title=" " alt="" coords="5,5,209,299"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aadd3a8ab712a2063461d917a867eedc4" id="r_aadd3a8ab712a2063461d917a867eedc4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadd3a8ab712a2063461d917a867eedc4">getName</a> () const</td></tr>
-<tr class="memdesc:aadd3a8ab712a2063461d917a867eedc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the name of a flow.  <br /></td></tr>
-<tr class="separator:aadd3a8ab712a2063461d917a867eedc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02e9318ce2ef7cd1a97e47f7e08b6c80" id="r_a02e9318ce2ef7cd1a97e47f7e08b6c80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02e9318ce2ef7cd1a97e47f7e08b6c80">setName</a> (std::string &amp;<a class="el" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>)</td></tr>
-<tr class="memdesc:a02e9318ce2ef7cd1a97e47f7e08b6c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a string to the name of a flow obj.  <br /></td></tr>
-<tr class="separator:a02e9318ce2ef7cd1a97e47f7e08b6c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3858f90d141807377c2640fb5dd0fc" id="r_a1f3858f90d141807377c2640fb5dd0fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f3858f90d141807377c2640fb5dd0fc">getSource</a> () const</td></tr>
-<tr class="memdesc:a1f3858f90d141807377c2640fb5dd0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the source system poiter.  <br /></td></tr>
-<tr class="separator:a1f3858f90d141807377c2640fb5dd0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250fc53158862fc0db77b323a33e48a3" id="r_a250fc53158862fc0db77b323a33e48a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a250fc53158862fc0db77b323a33e48a3">setSource</a> (<a class="el" href="classSystem.html">System</a> *<a class="el" href="#a963ca162995d112f0f30322e2bb9de63">source</a>)</td></tr>
-<tr class="memdesc:a250fc53158862fc0db77b323a33e48a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a system poiter to the source of a flow obj.  <br /></td></tr>
-<tr class="separator:a250fc53158862fc0db77b323a33e48a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8a0f8ca8dc50d37c92ab7556e172b5" id="r_aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget</a> () const</td></tr>
-<tr class="memdesc:aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the target system poiter.  <br /></td></tr>
-<tr class="separator:aff8a0f8ca8dc50d37c92ab7556e172b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab69903880174e5bcdc0d815b5de7b3e0" id="r_ab69903880174e5bcdc0d815b5de7b3e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab69903880174e5bcdc0d815b5de7b3e0">setTarget</a> (<a class="el" href="classSystem.html">System</a> *<a class="el" href="#a87be88d9bae4e927b29205faabeaf387">target</a>)</td></tr>
-<tr class="memdesc:ab69903880174e5bcdc0d815b5de7b3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a system poiter to the target of a flow obj.  <br /></td></tr>
-<tr class="separator:ab69903880174e5bcdc0d815b5de7b3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325d284a50ca3274b126b21f5c39b9af" id="r_a325d284a50ca3274b126b21f5c39b9af"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a325d284a50ca3274b126b21f5c39b9af">~Flow</a> ()</td></tr>
+<tr class="memdesc:a325d284a50ca3274b126b21f5c39b9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destructor is a virtual destructor of the class.  <br /></td></tr>
+<tr class="separator:a325d284a50ca3274b126b21f5c39b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0340d844ab2d275222938234e44169" id="r_a2d0340d844ab2d275222938234e44169"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d0340d844ab2d275222938234e44169">getName</a> () const =0</td></tr>
+<tr class="memdesc:a2d0340d844ab2d275222938234e44169"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the name of a flow.  <br /></td></tr>
+<tr class="separator:a2d0340d844ab2d275222938234e44169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fd3a3ea531c525d7dc40f09d85fe8a" id="r_a20fd3a3ea531c525d7dc40f09d85fe8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20fd3a3ea531c525d7dc40f09d85fe8a">setName</a> (std::string &amp;name)=0</td></tr>
+<tr class="memdesc:a20fd3a3ea531c525d7dc40f09d85fe8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a string to the name of a flow obj.  <br /></td></tr>
+<tr class="separator:a20fd3a3ea531c525d7dc40f09d85fe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0f3dbb285fe82e5ba6449de06b97c8" id="r_abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf0f3dbb285fe82e5ba6449de06b97c8">getSource</a> () const =0</td></tr>
+<tr class="memdesc:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the source system poiter.  <br /></td></tr>
+<tr class="separator:abf0f3dbb285fe82e5ba6449de06b97c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ce99a961622788ae59bb73abad3bb3" id="r_a42ce99a961622788ae59bb73abad3bb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ce99a961622788ae59bb73abad3bb3">setSource</a> (<a class="el" href="classSystem.html">System</a> *source)=0</td></tr>
+<tr class="memdesc:a42ce99a961622788ae59bb73abad3bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a system poiter to the source of a flow obj.  <br /></td></tr>
+<tr class="separator:a42ce99a961622788ae59bb73abad3bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9b8d93ea0fc81868b8e02dd382a787" id="r_afb9b8d93ea0fc81868b8e02dd382a787"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb9b8d93ea0fc81868b8e02dd382a787">getTarget</a> () const =0</td></tr>
+<tr class="memdesc:afb9b8d93ea0fc81868b8e02dd382a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the target system poiter.  <br /></td></tr>
+<tr class="separator:afb9b8d93ea0fc81868b8e02dd382a787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6121cf6e400af1aa8b4c9f9f2dc8e68b" id="r_a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6121cf6e400af1aa8b4c9f9f2dc8e68b">setTarget</a> (<a class="el" href="classSystem.html">System</a> *target)=0</td></tr>
+<tr class="memdesc:a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns a system poiter to the target of a flow obj.  <br /></td></tr>
+<tr class="separator:a6121cf6e400af1aa8b4c9f9f2dc8e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619be0b590c78202127bc6ac7fb04029" id="r_a619be0b590c78202127bc6ac7fb04029"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a619be0b590c78202127bc6ac7fb04029">execute</a> ()=0</td></tr>
 <tr class="memdesc:a619be0b590c78202127bc6ac7fb04029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method that will be inherited by subclasses created by the user, this one will contain an equation that will be executed in the flow by the model.  <br /></td></tr>
 <tr class="separator:a619be0b590c78202127bc6ac7fb04029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7550e37445bb6ae955beffd1fa857a" id="r_a5f7550e37445bb6ae955beffd1fa857a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFlow.html">Flow</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f7550e37445bb6ae955beffd1fa857a">operator=</a> (const <a class="el" href="classFlow.html">Flow</a> &amp;other)</td></tr>
-<tr class="memdesc:a5f7550e37445bb6ae955beffd1fa857a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is overloading the '=' operator, "cloning" from one flow to another.  <br /></td></tr>
-<tr class="separator:a5f7550e37445bb6ae955beffd1fa857a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40b6a9cda257aca27d48d7451faa88bb" id="r_a40b6a9cda257aca27d48d7451faa88bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40b6a9cda257aca27d48d7451faa88bb">operator==</a> (const <a class="el" href="classFlow.html">Flow</a> &amp;other) const</td></tr>
-<tr class="memdesc:a40b6a9cda257aca27d48d7451faa88bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is overloading the '==' operator, compare two flows objs.  <br /></td></tr>
-<tr class="separator:a40b6a9cda257aca27d48d7451faa88bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a687d8bbbb87d6c1965e272768167dcac" id="r_a687d8bbbb87d6c1965e272768167dcac"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a687d8bbbb87d6c1965e272768167dcac">name</a></td></tr>
-<tr class="separator:a687d8bbbb87d6c1965e272768167dcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a963ca162995d112f0f30322e2bb9de63" id="r_a963ca162995d112f0f30322e2bb9de63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a963ca162995d112f0f30322e2bb9de63">source</a></td></tr>
-<tr class="separator:a963ca162995d112f0f30322e2bb9de63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87be88d9bae4e927b29205faabeaf387" id="r_a87be88d9bae4e927b29205faabeaf387"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87be88d9bae4e927b29205faabeaf387">target</a></td></tr>
-<tr class="separator:a87be88d9bae4e927b29205faabeaf387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a203a70abee0e0b97b987eebdd97077b7" id="r_a203a70abee0e0b97b987eebdd97077b7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a203a70abee0e0b97b987eebdd97077b7">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classFlow.html">Flow</a> &amp;obj)</td></tr>
-<tr class="memdesc:a203a70abee0e0b97b987eebdd97077b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is overloading the '&lt;&lt;' operator, print the flow obj info.  <br /></td></tr>
-<tr class="separator:a203a70abee0e0b97b987eebdd97077b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a325d284a50ca3274b126b21f5c39b9af" name="a325d284a50ca3274b126b21f5c39b9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325d284a50ca3274b126b21f5c39b9af">&#9670;&#160;</a></span>~Flow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Flow::~Flow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This destructor is a virtual destructor of the class. </p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{};</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a619be0b590c78202127bc6ac7fb04029" name="a619be0b590c78202127bc6ac7fb04029"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a619be0b590c78202127bc6ac7fb04029">&#9670;&#160;</a></span>execute()</h2>
@@ -180,188 +184,122 @@ Friends</h2></td></tr>
 <p>Pure virtual method that will be inherited by subclasses created by the user, this one will contain an equation that will be executed in the flow by the model. </p>
 <dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
-<p>Implemented in <a class="el" href="classExponencial.html#a35c08ff8bd300f778d559da818190ae6">Exponencial</a>, and <a class="el" href="classLogistical.html#af7262017be238ab749989cd5728aaaa7">Logistical</a>.</p>
+<p>Implemented in <a class="el" href="classExponencial.html#a35c08ff8bd300f778d559da818190ae6">Exponencial</a>, <a class="el" href="classLogistical.html#af7262017be238ab749989cd5728aaaa7">Logistical</a>, and <a class="el" href="classFlowIMP.html#a79a838c1710499a8868fb8d394fcd041">FlowIMP</a>.</p>
 
 </div>
 </div>
-<a id="aadd3a8ab712a2063461d917a867eedc4" name="aadd3a8ab712a2063461d917a867eedc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadd3a8ab712a2063461d917a867eedc4">&#9670;&#160;</a></span>getName()</h2>
+<a id="a2d0340d844ab2d275222938234e44169" name="a2d0340d844ab2d275222938234e44169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0340d844ab2d275222938234e44169">&#9670;&#160;</a></span>getName()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string Flow::getName </td>
+          <td class="memname">virtual std::string Flow::getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method returns the name of a flow. </p>
 <dl class="section return"><dt>Returns</dt><dd>a string containing the name is returned </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">    5</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>; }</div>
-<div class="ttc" id="aclassFlow_html_a687d8bbbb87d6c1965e272768167dcac"><div class="ttname"><a href="#a687d8bbbb87d6c1965e272768167dcac">Flow::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> Flow.h:20</div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>.</p>
+
+<p>Implemented in <a class="el" href="classFlowIMP.html#afa974f1f71ff718d8c4a655fd4413c7b">FlowIMP</a>.</p>
 
 </div>
 </div>
-<a id="a1f3858f90d141807377c2640fb5dd0fc" name="a1f3858f90d141807377c2640fb5dd0fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3858f90d141807377c2640fb5dd0fc">&#9670;&#160;</a></span>getSource()</h2>
+<a id="abf0f3dbb285fe82e5ba6449de06b97c8" name="abf0f3dbb285fe82e5ba6449de06b97c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0f3dbb285fe82e5ba6449de06b97c8">&#9670;&#160;</a></span>getSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSystem.html">System</a> * Flow::getSource </td>
+          <td class="memname">virtual <a class="el" href="classSystem.html">System</a> * Flow::getSource </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method returns the source system poiter. </p>
 <dl class="section return"><dt>Returns</dt><dd>a system poiter containing the source memory address is returned </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a963ca162995d112f0f30322e2bb9de63">source</a>; }</div>
-<div class="ttc" id="aclassFlow_html_a963ca162995d112f0f30322e2bb9de63"><div class="ttname"><a href="#a963ca162995d112f0f30322e2bb9de63">Flow::source</a></div><div class="ttdeci">System * source</div><div class="ttdef"><b>Definition</b> Flow.h:21</div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a963ca162995d112f0f30322e2bb9de63">source</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classExponencial.html#a35c08ff8bd300f778d559da818190ae6">Exponencial::execute()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph.png" border="0" usemap="#aclassFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph" alt=""/></div>
-<map name="aclassFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph" id="aclassFlow_a1f3858f90d141807377c2640fb5dd0fc_icgraph">
-<area shape="rect" title="This method returns the source system poiter." alt="" coords="213,5,339,31"/>
-<area shape="rect" href="classExponencial.html#a35c08ff8bd300f778d559da818190ae6" title="Pure virtual method that will contain an equation that will be executed in the flow by the model." alt="" coords="5,5,165,31"/>
-<area shape="poly" title=" " alt="" coords="200,21,166,21,166,15,200,15"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classFlowIMP.html#a503ef582e613bb99ac6ad1637ea134e9">FlowIMP</a>.</p>
 
 </div>
 </div>
-<a id="aff8a0f8ca8dc50d37c92ab7556e172b5" name="aff8a0f8ca8dc50d37c92ab7556e172b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff8a0f8ca8dc50d37c92ab7556e172b5">&#9670;&#160;</a></span>getTarget()</h2>
+<a id="afb9b8d93ea0fc81868b8e02dd382a787" name="afb9b8d93ea0fc81868b8e02dd382a787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9b8d93ea0fc81868b8e02dd382a787">&#9670;&#160;</a></span>getTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSystem.html">System</a> * Flow::getTarget </td>
+          <td class="memname">virtual <a class="el" href="classSystem.html">System</a> * Flow::getTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method returns the target system poiter. </p>
 <dl class="section return"><dt>Returns</dt><dd>a system poiter containing the target memory address is returned </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a87be88d9bae4e927b29205faabeaf387">target</a>; }</div>
-<div class="ttc" id="aclassFlow_html_a87be88d9bae4e927b29205faabeaf387"><div class="ttname"><a href="#a87be88d9bae4e927b29205faabeaf387">Flow::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition</b> Flow.h:22</div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a87be88d9bae4e927b29205faabeaf387">target</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classLogistical.html#af7262017be238ab749989cd5728aaaa7">Logistical::execute()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph.png" border="0" usemap="#aclassFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph" alt=""/></div>
-<map name="aclassFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph" id="aclassFlow_aff8a0f8ca8dc50d37c92ab7556e172b5_icgraph">
-<area shape="rect" title="This method returns the target system poiter." alt="" coords="196,5,317,31"/>
-<area shape="rect" href="classLogistical.html#af7262017be238ab749989cd5728aaaa7" title="Pure virtual method that will contain an equation that will be executed in the flow by the model." alt="" coords="5,5,148,31"/>
-<area shape="poly" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classFlowIMP.html#a9d80f991fb1b26baef56f0d1195d6b23">FlowIMP</a>.</p>
 
 </div>
 </div>
-<a id="a5f7550e37445bb6ae955beffd1fa857a" name="a5f7550e37445bb6ae955beffd1fa857a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f7550e37445bb6ae955beffd1fa857a">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a20fd3a3ea531c525d7dc40f09d85fe8a" name="a20fd3a3ea531c525d7dc40f09d85fe8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20fd3a3ea531c525d7dc40f09d85fe8a">&#9670;&#160;</a></span>setName()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classFlow.html">Flow</a> &amp; Flow::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classFlow.html">Flow</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method is overloading the '=' operator, "cloning" from one flow to another. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>flow obj to be cloned must be passed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A flow is returned that is a clone of what was passed to the method </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                                       {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">if</span>(other == *<span class="keyword">this</span>) <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a> = other.<a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>;</div>
-<div class="line"><span class="lineno">   19</span>    <a class="code hl_variable" href="#a963ca162995d112f0f30322e2bb9de63">source</a> = other.<a class="code hl_variable" href="#a963ca162995d112f0f30322e2bb9de63">source</a>;</div>
-<div class="line"><span class="lineno">   20</span>    <a class="code hl_variable" href="#a87be88d9bae4e927b29205faabeaf387">target</a> = other.<a class="code hl_variable" href="#a87be88d9bae4e927b29205faabeaf387">target</a>;</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   22</span>}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>, <a class="el" href="#a963ca162995d112f0f30322e2bb9de63">source</a>, and <a class="el" href="#a87be88d9bae4e927b29205faabeaf387">target</a>.</p>
-
-</div>
-</div>
-<a id="a40b6a9cda257aca27d48d7451faa88bb" name="a40b6a9cda257aca27d48d7451faa88bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40b6a9cda257aca27d48d7451faa88bb">&#9670;&#160;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Flow::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classFlow.html">Flow</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This method is overloading the '==' operator, compare two flows objs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>flow obj to be compare must be passed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A bool is returned, true if they are equal and false if not </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                                             {</div>
-<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a> == other.<a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a> &amp;&amp; <a class="code hl_variable" href="#a963ca162995d112f0f30322e2bb9de63">source</a> == other.<a class="code hl_variable" href="#a963ca162995d112f0f30322e2bb9de63">source</a> &amp;&amp; <a class="code hl_variable" href="#a87be88d9bae4e927b29205faabeaf387">target</a> == other.<a class="code hl_variable" href="#a87be88d9bae4e927b29205faabeaf387">target</a>);</div>
-<div class="line"><span class="lineno">   27</span>}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>, <a class="el" href="#a963ca162995d112f0f30322e2bb9de63">source</a>, and <a class="el" href="#a87be88d9bae4e927b29205faabeaf387">target</a>.</p>
-
-</div>
-</div>
-<a id="a02e9318ce2ef7cd1a97e47f7e08b6c80" name="a02e9318ce2ef7cd1a97e47f7e08b6c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02e9318ce2ef7cd1a97e47f7e08b6c80">&#9670;&#160;</a></span>setName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Flow::setName </td>
+          <td class="memname">virtual void Flow::setName </td>
           <td>(</td>
           <td class="paramtype">std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method assigns a string to the name of a flow obj. </p>
@@ -371,26 +309,33 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">    6</span>{ this-&gt;<a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a> = <a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>; }</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a687d8bbbb87d6c1965e272768167dcac">name</a>.</p>
+
+<p>Implemented in <a class="el" href="classFlowIMP.html#ac9fe88199a708f54eb7cbd46092d7cac">FlowIMP</a>.</p>
 
 </div>
 </div>
-<a id="a250fc53158862fc0db77b323a33e48a3" name="a250fc53158862fc0db77b323a33e48a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250fc53158862fc0db77b323a33e48a3">&#9670;&#160;</a></span>setSource()</h2>
+<a id="a42ce99a961622788ae59bb73abad3bb3" name="a42ce99a961622788ae59bb73abad3bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ce99a961622788ae59bb73abad3bb3">&#9670;&#160;</a></span>setSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::setSource </td>
+          <td class="memname">virtual void Flow::setSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
           <td class="paramname"><em>source</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method assigns a system poiter to the source of a flow obj. </p>
@@ -400,26 +345,33 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>{ this-&gt;source = <a class="code hl_variable" href="#a963ca162995d112f0f30322e2bb9de63">source</a>; }</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a963ca162995d112f0f30322e2bb9de63">source</a>.</p>
+
+<p>Implemented in <a class="el" href="classFlowIMP.html#ae2ece1dece256fdca54c686a4d57cf42">FlowIMP</a>.</p>
 
 </div>
 </div>
-<a id="ab69903880174e5bcdc0d815b5de7b3e0" name="ab69903880174e5bcdc0d815b5de7b3e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab69903880174e5bcdc0d815b5de7b3e0">&#9670;&#160;</a></span>setTarget()</h2>
+<a id="a6121cf6e400af1aa8b4c9f9f2dc8e68b" name="a6121cf6e400af1aa8b4c9f9f2dc8e68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6121cf6e400af1aa8b4c9f9f2dc8e68b">&#9670;&#160;</a></span>setTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Flow::setTarget </td>
+          <td class="memname">virtual void Flow::setTarget </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
           <td class="paramname"><em>target</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method assigns a system poiter to the target of a flow obj. </p>
@@ -429,144 +381,13 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>{ this-&gt;target = <a class="code hl_variable" href="#a87be88d9bae4e927b29205faabeaf387">target</a>; }</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="#a87be88d9bae4e927b29205faabeaf387">target</a>.</p>
+
+<p>Implemented in <a class="el" href="classFlowIMP.html#a90d9506286d56e07eed8ee8d9be86734">FlowIMP</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="a203a70abee0e0b97b987eebdd97077b7" name="a203a70abee0e0b97b987eebdd97077b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a203a70abee0e0b97b987eebdd97077b7">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classFlow.html">Flow</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This method is overloading the '&lt;&lt;' operator, print the flow obj info. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>is a ostream obj </td></tr>
-    <tr><td class="paramname">obj</td><td>is a flow obj </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a ostream obj to print the obj info </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                        {</div>
-<div class="line"><span class="lineno">   30</span>    out &lt;&lt; <span class="stringliteral">&quot;(Flow) Name: &quot;</span> &lt;&lt; obj.<a class="code hl_variable" href="#a687d8bbbb87d6c1965e272768167dcac">name</a> &lt;&lt; <span class="stringliteral">&quot; - &quot;</span></div>
-<div class="line"><span class="lineno">   31</span>        &lt;&lt; obj.<a class="code hl_variable" href="#a963ca162995d112f0f30322e2bb9de63">source</a>-&gt;<a class="code hl_function" href="classSystem.html#a30116b105d876ff2b445c0c7d99816bb">getName</a>() &lt;&lt; <span class="stringliteral">&quot; -----&gt; &quot;</span> &lt;&lt; obj.<a class="code hl_variable" href="#a87be88d9bae4e927b29205faabeaf387">target</a>-&gt;<a class="code hl_function" href="classSystem.html#a30116b105d876ff2b445c0c7d99816bb">getName</a>(); </div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">   33</span>}</div>
-<div class="ttc" id="aclassSystem_html_a30116b105d876ff2b445c0c7d99816bb"><div class="ttname"><a href="classSystem.html#a30116b105d876ff2b445c0c7d99816bb">System::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdoc">This method returns the name of a system.</div><div class="ttdef"><b>Definition</b> System.cpp:13</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a687d8bbbb87d6c1965e272768167dcac" name="a687d8bbbb87d6c1965e272768167dcac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a687d8bbbb87d6c1965e272768167dcac">&#9670;&#160;</a></span>name</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Flow::name</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Name string attribute. </p>
-
-<p class="reference">Referenced by <a class="el" href="classExponencial.html#a1b561e1b497fd0d42aabb76913830817">Exponencial::Exponencial()</a>, <a class="el" href="classExponencial.html#a81682f3197dc4dc053575dc6f8e932e6">Exponencial::Exponencial()</a>, <a class="el" href="#aadd3a8ab712a2063461d917a867eedc4">getName()</a>, <a class="el" href="classLogistical.html#a0d5edd9e2acac43bdbe3032336974df6">Logistical::Logistical()</a>, <a class="el" href="classLogistical.html#acb58ccd7a98eb60c01b744a1bc62463c">Logistical::Logistical()</a>, <a class="el" href="#a5f7550e37445bb6ae955beffd1fa857a">operator=()</a>, <a class="el" href="#a40b6a9cda257aca27d48d7451faa88bb">operator==()</a>, and <a class="el" href="#a02e9318ce2ef7cd1a97e47f7e08b6c80">setName()</a>.</p>
-
-</div>
-</div>
-<a id="a963ca162995d112f0f30322e2bb9de63" name="a963ca162995d112f0f30322e2bb9de63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a963ca162995d112f0f30322e2bb9de63">&#9670;&#160;</a></span>source</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classSystem.html">System</a>* Flow::source</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Source system pointer attribute. </p>
-
-<p class="reference">Referenced by <a class="el" href="classExponencial.html#a1b561e1b497fd0d42aabb76913830817">Exponencial::Exponencial()</a>, <a class="el" href="classExponencial.html#a81682f3197dc4dc053575dc6f8e932e6">Exponencial::Exponencial()</a>, <a class="el" href="#a1f3858f90d141807377c2640fb5dd0fc">getSource()</a>, <a class="el" href="classLogistical.html#a0d5edd9e2acac43bdbe3032336974df6">Logistical::Logistical()</a>, <a class="el" href="classLogistical.html#acb58ccd7a98eb60c01b744a1bc62463c">Logistical::Logistical()</a>, <a class="el" href="#a5f7550e37445bb6ae955beffd1fa857a">operator=()</a>, <a class="el" href="#a40b6a9cda257aca27d48d7451faa88bb">operator==()</a>, and <a class="el" href="#a250fc53158862fc0db77b323a33e48a3">setSource()</a>.</p>
-
-</div>
-</div>
-<a id="a87be88d9bae4e927b29205faabeaf387" name="a87be88d9bae4e927b29205faabeaf387"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87be88d9bae4e927b29205faabeaf387">&#9670;&#160;</a></span>target</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classSystem.html">System</a>* Flow::target</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Target system pointer attribute. </p>
-
-<p class="reference">Referenced by <a class="el" href="classExponencial.html#a1b561e1b497fd0d42aabb76913830817">Exponencial::Exponencial()</a>, <a class="el" href="classExponencial.html#a81682f3197dc4dc053575dc6f8e932e6">Exponencial::Exponencial()</a>, <a class="el" href="#aff8a0f8ca8dc50d37c92ab7556e172b5">getTarget()</a>, <a class="el" href="classLogistical.html#a0d5edd9e2acac43bdbe3032336974df6">Logistical::Logistical()</a>, <a class="el" href="classLogistical.html#acb58ccd7a98eb60c01b744a1bc62463c">Logistical::Logistical()</a>, <a class="el" href="#a5f7550e37445bb6ae955beffd1fa857a">operator=()</a>, <a class="el" href="#a40b6a9cda257aca27d48d7451faa88bb">operator==()</a>, and <a class="el" href="#ab69903880174e5bcdc0d815b5de7b3e0">setTarget()</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia_de_Software1_tp1/src/<a class="el" href="Flow_8h_source.html">Flow.h</a></li>
-<li>/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia_de_Software1_tp1/src/<a class="el" href="Flow_8cpp.html">Flow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,0 +1,56 @@
+\doxysection{Flow\+IMP.\+h}
+\hypertarget{FlowIMP_8h_source}{}\label{FlowIMP_8h_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/FlowIMP.h@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/FlowIMP.h}}
+\mbox{\hyperlink{FlowIMP_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ FlowIMP.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ flow\ implementation}}
+\DoxyCodeLine{00005\ \textcolor{comment}{*************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ FLOWIMP\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ FLOWIMP\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Flow_8h}{Flow.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{/*********************************************************************************}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *@brief\ The\ Flow\ implementation\ defines\ the\ attributes\ and\ implements\ the\ methods}}
+\DoxyCodeLine{00016\ \textcolor{comment}{*********************************************************************************/}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFlowIMP}{FlowIMP}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlow}{Flow}}\{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlowIMP}{FlowIMP}}\&\ \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlowIMP}{FlowIMP}}\&\ other);\ \textcolor{comment}{//\ Operador\ de\ atribuição}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classFlowIMP_ad35ed7773166d61c4f41949f3bf6255d}{\string~FlowIMP}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Name}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}{setName}}(std::string\&\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}});}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Source}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{getSource}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{setSource}}(\mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}});}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Target}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{getTarget}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{setTarget}}(\mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}{execute}}()\ =\ 0;}
+\DoxyCodeLine{00080\ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlowIMP}{FlowIMP}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classFlowIMP_a6dcb2e8c8b3da4543750682cb478fa6d}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classFlowIMP}{FlowIMP}}\&\ obj);\ \textcolor{comment}{//Operador\ de\ saida}}
+\DoxyCodeLine{00095\ \};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

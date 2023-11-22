@@ -1,0 +1,432 @@
+\doxysection{Flow\+IMP Class Reference}
+\hypertarget{classFlowIMP}{}\label{classFlowIMP}\index{FlowIMP@{FlowIMP}}
+
+
+{\ttfamily \#include $<$Flow\+IMP.\+h$>$}
+
+
+
+Inheritance diagram for Flow\+IMP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlowIMP__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+IMP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlowIMP__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classFlowIMP_ad35ed7773166d61c4f41949f3bf6255d}{\texorpdfstring{$\sim$}{\string~}\+Flow\+IMP}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the name of a flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}{set\+Name}} (std\+::string \&\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}})
+\begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a flow obj. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the source system poiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}})
+\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the source of a flow obj. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the target system poiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}})
+\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the target of a flow obj. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method that will be inherited by subclasses created by the user, this one will contain an equation that will be executed in the flow by the model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \& \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other)
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one flow to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classFlowIMP_a6dcb2e8c8b3da4543750682cb478fa6d}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&obj)
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the flow obj info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFlowIMP_ad35ed7773166d61c4f41949f3bf6255d}\label{classFlowIMP_ad35ed7773166d61c4f41949f3bf6255d} 
+\index{FlowIMP@{FlowIMP}!````~FlowIMP@{\texorpdfstring{$\sim$}{\string~}FlowIMP}}
+\index{````~FlowIMP@{\texorpdfstring{$\sim$}{\string~}FlowIMP}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FlowIMP()}{\string~FlowIMP()}}
+{\footnotesize\ttfamily Flow\+IMP\+::\texorpdfstring{$\sim$}{\string~}\+Flow\+IMP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This destructor is a virtual destructor of the class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}\label{classFlowIMP_a79a838c1710499a8868fb8d394fcd041} 
+\index{FlowIMP@{FlowIMP}!execute@{execute}}
+\index{execute@{execute}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual double Flow\+IMP\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method that will be inherited by subclasses created by the user, this one will contain an equation that will be executed in the flow by the model. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+
+
+
+Implemented in \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial}}, and \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical}}.
+
+\Hypertarget{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}\label{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b} 
+\index{FlowIMP@{FlowIMP}!getName@{getName}}
+\index{getName@{getName}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Flow\+IMP\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method returns the name of a flow. 
+
+\begin{DoxyReturn}{Returns}
+a string containing the name is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlow_a2d0340d844ab2d275222938234e44169}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}.
+
+\Hypertarget{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}\label{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9} 
+\index{FlowIMP@{FlowIMP}!getSource@{getSource}}
+\index{getSource@{getSource}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+IMP\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method returns the source system poiter. 
+
+\begin{DoxyReturn}{Returns}
+a system poiter containing the source memory address is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}.
+
+
+
+Referenced by \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial\+::execute()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}\label{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23} 
+\index{FlowIMP@{FlowIMP}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} Flow\+IMP\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method returns the target system poiter. 
+
+\begin{DoxyReturn}{Returns}
+a system poiter containing the target memory address is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}.
+
+
+
+Referenced by \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical\+::execute()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}\label{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b} 
+\index{FlowIMP@{FlowIMP}!operator=@{operator=}}
+\index{operator=@{operator=}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \& Flow\+IMP\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one flow to another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & flow obj to be cloned must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A flow is returned that is a clone of what was passed to the method 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordflow}{if}(other\ ==\ *\textcolor{keyword}{this})\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ other.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ =\ other.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}\ =\ other.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}.
+
+\Hypertarget{classFlowIMP_af761660954310f6a43997240abe6f93c}\label{classFlowIMP_af761660954310f6a43997240abe6f93c} 
+\index{FlowIMP@{FlowIMP}!operator==@{operator==}}
+\index{operator==@{operator==}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Flow\+IMP\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two flows objs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & flow obj to be compare must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool is returned, true if they are equal and false if not 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ ==\ other.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ \&\&\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ ==\ other.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ \&\&\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}\ ==\ other.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}});}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}.
+
+\Hypertarget{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}\label{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac} 
+\index{FlowIMP@{FlowIMP}!setName@{setName}}
+\index{setName@{setName}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Flow\+IMP\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method assigns a string to the name of a flow obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFlow_a20fd3a3ea531c525d7dc40f09d85fe8a}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \{\ this-\/>\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}.
+
+\Hypertarget{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}\label{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42} 
+\index{FlowIMP@{FlowIMP}!setSource@{setSource}}
+\index{setSource@{setSource}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Flow\+IMP\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method assigns a system poiter to the source of a flow obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & system poiter must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFlow_a42ce99a961622788ae59bb73abad3bb3}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012\ \{\ this-\/>source\ =\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}.
+
+\Hypertarget{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}\label{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734} 
+\index{FlowIMP@{FlowIMP}!setTarget@{setTarget}}
+\index{setTarget@{setTarget}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{setTarget()}{setTarget()}}
+{\footnotesize\ttfamily void Flow\+IMP\+::set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method assigns a system poiter to the target of a flow obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & system poiter must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015\ \{\ this-\/>target\ =\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}.
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classFlowIMP_a6dcb2e8c8b3da4543750682cb478fa6d}\label{classFlowIMP_a6dcb2e8c8b3da4543750682cb478fa6d} 
+\index{FlowIMP@{FlowIMP}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the flow obj info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & is a ostream obj \\
+\hline
+{\em obj} & is a flow obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a ostream obj to print the obj info 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}(Flow)\ Name:\ "{}}\ <<\ obj.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ <<\ \textcolor{stringliteral}{"{}\ -\/\ "{}}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ <<\ obj.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}-\/>\mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ <<\ \textcolor{stringliteral}{"{}\ -\/-\/-\/-\/-\/>\ "{}}\ <<\ obj.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}-\/>\mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}();\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
+\DoxyCodeLine{00036\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}\label{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803} 
+\index{FlowIMP@{FlowIMP}!name@{name}}
+\index{name@{name}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Flow\+IMP\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Name string attribute. 
+
+Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{get\+Name()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}{set\+Name()}}.
+
+\Hypertarget{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}\label{classFlowIMP_afa8e614474ac3d01f8021778381bc93b} 
+\index{FlowIMP@{FlowIMP}!source@{source}}
+\index{source@{source}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Flow\+IMP\+::source\hspace{0.3cm}{\ttfamily [protected]}}
+
+Source system pointer attribute. 
+
+Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{get\+Source()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{set\+Source()}}.
+
+\Hypertarget{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}\label{classFlowIMP_af7c6b2879c828e6271c9e571360f666c} 
+\index{FlowIMP@{FlowIMP}!target@{target}}
+\index{target@{target}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*} Flow\+IMP\+::target\hspace{0.3cm}{\ttfamily [protected]}}
+
+Target system pointer attribute. 
+
+Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{get\+Target()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{set\+Target()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{FlowIMP_8h}{Flow\+IMP.\+h}}\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{FlowIMP_8cpp}{Flow\+IMP.\+cpp}}\end{DoxyCompactItemize}

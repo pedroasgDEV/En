@@ -1,0 +1,7 @@
+<map id="System::getValue" name="System::getValue">
+<area shape="rect" id="Node000001" title="This method returns the value of a system." alt="" coords="213,31,349,56"/>
+<area shape="rect" id="Node000002" href="$classExponencial.html#a35c08ff8bd300f778d559da818190ae6" title="Pure virtual method that will contain an equation that will be executed in the flow by the model." alt="" coords="5,5,165,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,35,165,31,166,26,200,30"/>
+<area shape="rect" id="Node000003" href="$classLogistical.html#af7262017be238ab749989cd5728aaaa7" title="Pure virtual method that will contain an equation that will be executed in the flow by the model." alt="" coords="14,55,157,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,56,157,61,157,56,199,51"/>
+</map>

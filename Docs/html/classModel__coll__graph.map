@@ -1,11 +1,3 @@
 <map id="Model" name="Model">
-<area shape="rect" id="Node000001" title=" " alt="" coords="120,148,347,753"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,56,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,70,115,204,110,207,44,72"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="81,5,226,71"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,70,174,131,169,132,157,71"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="250,5,377,71"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,71,298,132,293,131,305,70"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="401,5,431,71"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="404,72,356,181,351,179,400,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,487"/>
 </map>
