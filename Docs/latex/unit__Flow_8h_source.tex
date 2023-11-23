@@ -1,0 +1,53 @@
+\doxysection{unit\+\_\+\+Flow.\+h}
+\hypertarget{unit__Flow_8h_source}{}\label{unit__Flow_8h_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/tests/unit\_tests/src/unit\_Flow.h@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/tests/unit\_tests/src/unit\_Flow.h}}
+\mbox{\hyperlink{unit__Flow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ unit\_Flow.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ flow\ units\ tests}}
+\DoxyCodeLine{00005\ \textcolor{comment}{************************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ UNIT\_FLOW\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ UNIT\_FLOW\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{FlowIMP_8h}{../../../src/FlowIMP.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SystemIMP_8h}{../../../src/SystemIMP.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <assert.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{/**************************************************************************************************************************}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ @brief\ This\ Flow\ class\ connects\ two\ systems\ and\ through\ the\ entered\ equation\ transfers\ values\ ​​from\ one\ system\ to\ another\ }}
+\DoxyCodeLine{00019\ \textcolor{comment}{**************************************************************************************************************************/}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFlow__unit__test}{Flow\_unit\_test}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classFlowIMP}{FlowIMP}}\{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlow__unit__test_adfd75383d922c2d53391b59757934720}{Flow\_unit\_test}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow__unit__test}{Flow\_unit\_test}}\&\ other);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contructor}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classFlow__unit__test_adfd75383d922c2d53391b59757934720}{Flow\_unit\_test}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ =\ NULL,\ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}\ =\ NULL);}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classFlow__unit__test_a68ef786d42ec12eaff2f374f1d85392c}{\string~Flow\_unit\_test}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1}{execute}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a9eb9649d4a0114bf08e0ca0b054dbe04}{test\_Flow\_constructor}}();}
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_ac4a6a1e4c7990b349a571d2e42005b0e}{test\_Flow\_destructor}}();}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a730cb76b594e05378ff5accbbd20c62e}{test\_Flow\_getName}}();}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a87d890b6a2084bd6e47acf0ac2b06f4a}{test\_Flow\_getSource}}();}
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a11e83bb4795bd8be189467b92cc81fe3}{test\_Flow\_getTarget}}();}
+\DoxyCodeLine{00075\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a41263d8dd60e6251e733eb46e28ad5ed}{test\_Flow\_setName}}();}
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a5041325b211f3f664e4ebaef52d722ae}{test\_Flow\_setSource}}();}
+\DoxyCodeLine{00083\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_ae0d8b4031e44a200d9fa80b45437d8e3}{test\_Flow\_setTarget}}();}
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a3d4075b90aec926ffa7096fd3c7a978e}{test\_Flow\_execute}}();}
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a486cc4a73802325ea49eb68b2e3c8a01}{test\_Flow\_equal}}();}
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{unit__Flow_8h_a00bab540080ef7262a412ef5919d6dac}{run\_Flow\_unit\_test}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

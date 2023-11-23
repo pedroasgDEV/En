@@ -1,0 +1,196 @@
+\doxysection{Flow\+\_\+unit\+\_\+test Class Reference}
+\hypertarget{classFlow__unit__test}{}\label{classFlow__unit__test}\index{Flow\_unit\_test@{Flow\_unit\_test}}
+
+
+{\ttfamily \#include $<$unit\+\_\+\+Flow.\+h$>$}
+
+
+
+Inheritance diagram for Flow\+\_\+unit\+\_\+test\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlow__unit__test__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+\_\+unit\+\_\+test\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFlow__unit__test__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlow__unit__test_ad91f97a34091e7e58455d59a727ba659}{Flow\+\_\+unit\+\_\+test}} (const std\+::string \&\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}="{}NO\+\_\+\+NAME"{}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}=NULL, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}=NULL)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classFlow__unit__test}{Flow\+\_\+unit\+\_\+test} by name, source and target. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFlow__unit__test_a68ef786d42ec12eaff2f374f1d85392c}{\texorpdfstring{$\sim$}{\string~}\+Flow\+\_\+unit\+\_\+test}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the Class. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Pure virtual method that will contain an equation that will be executed in the flow by the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classFlowIMP_ad35ed7773166d61c4f41949f3bf6255d}{\texorpdfstring{$\sim$}{\string~}\+Flow\+IMP}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the name of a flow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_a1202522653f350d3aa7f79180bcf6bd8}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}})
+\begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a flow obj. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the source system poiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{set\+Source}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}})
+\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the source of a flow obj. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{get\+Target}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the target system poiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{set\+Target}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}})
+\begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the target of a flow obj. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFlowIMP_a1d8554794af5319f9e2da9a3bc743f7c}{operator!=}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}!=\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfstring{$\sim$}{\string~}\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlow__unit__test_adfd75383d922c2d53391b59757934720}{Flow\+\_\+unit\+\_\+test}} (const \mbox{\hyperlink{classFlow__unit__test}{Flow\+\_\+unit\+\_\+test}} \&other)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classExponencial}{Exponencial} by a obj. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}
+\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFlow__unit__test_adfd75383d922c2d53391b59757934720}\label{classFlow__unit__test_adfd75383d922c2d53391b59757934720} 
+\index{Flow\_unit\_test@{Flow\_unit\_test}!Flow\_unit\_test@{Flow\_unit\_test}}
+\index{Flow\_unit\_test@{Flow\_unit\_test}!Flow\_unit\_test@{Flow\_unit\_test}}
+\doxysubsubsection{\texorpdfstring{Flow\_unit\_test()}{Flow\_unit\_test()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow__unit__test}{Flow\+\_\+unit\+\_\+test}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Construct a new \doxylink{classExponencial}{Exponencial} by a obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{classExponencial}{Exponencial} obj \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ other.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};}
+\DoxyCodeLine{00012\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ =\ other.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};}
+\DoxyCodeLine{00013\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}\ =\ other.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};}
+\DoxyCodeLine{00014\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{Flow\+IMP\+::name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{Flow\+IMP\+::source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{Flow\+IMP\+::target}}.
+
+\Hypertarget{classFlow__unit__test_ad91f97a34091e7e58455d59a727ba659}\label{classFlow__unit__test_ad91f97a34091e7e58455d59a727ba659} 
+\index{Flow\_unit\_test@{Flow\_unit\_test}!Flow\_unit\_test@{Flow\_unit\_test}}
+\index{Flow\_unit\_test@{Flow\_unit\_test}!Flow\_unit\_test@{Flow\_unit\_test}}
+\doxysubsubsection{\texorpdfstring{Flow\_unit\_test()}{Flow\_unit\_test()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{source = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{target = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classFlow__unit__test}{Flow\+\_\+unit\+\_\+test} by name, source and target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string with default value "{}\+NO\+\_\+\+NAME"{} \\
+\hline
+{\em source} & \doxylink{classSystem}{System} pointer with default value NULL \\
+\hline
+{\em target} & \doxylink{classSystem}{System} pointer with default value NULL \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ this-\/>\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ =\ \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}};}
+\DoxyCodeLine{00005\ \ \ \ \ this-\/>source\ =\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}};}
+\DoxyCodeLine{00006\ \ \ \ \ this-\/>target\ =\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}};}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{Flow\+IMP\+::name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{Flow\+IMP\+::source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{Flow\+IMP\+::target}}.
+
+\Hypertarget{classFlow__unit__test_a68ef786d42ec12eaff2f374f1d85392c}\label{classFlow__unit__test_a68ef786d42ec12eaff2f374f1d85392c} 
+\index{Flow\_unit\_test@{Flow\_unit\_test}!````~Flow\_unit\_test@{\texorpdfstring{$\sim$}{\string~}Flow\_unit\_test}}
+\index{````~Flow\_unit\_test@{\texorpdfstring{$\sim$}{\string~}Flow\_unit\_test}!Flow\_unit\_test@{Flow\_unit\_test}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Flow\_unit\_test()}{\string~Flow\_unit\_test()}}
+{\footnotesize\ttfamily Flow\+\_\+unit\+\_\+test\+::\texorpdfstring{$\sim$}{\string~}\+Flow\+\_\+unit\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This destructor is a virtual destructor of the Class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1}\label{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1} 
+\index{Flow\_unit\_test@{Flow\_unit\_test}!execute@{execute}}
+\index{execute@{execute}!Flow\_unit\_test@{Flow\_unit\_test}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily double Flow\+\_\+unit\+\_\+test\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pure virtual method that will contain an equation that will be executed in the flow by the model. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}{Flow\+IMP}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{getSource}}()-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{00021\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{Flow\+IMP\+::get\+Source()}}, and \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{System\+::get\+Value()}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/tests/unit\+\_\+tests/src/\mbox{\hyperlink{unit__Flow_8h}{unit\+\_\+\+Flow.\+h}}\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/tests/unit\+\_\+tests/src/\mbox{\hyperlink{unit__Flow_8cpp}{unit\+\_\+\+Flow.\+cpp}}\end{DoxyCompactItemize}

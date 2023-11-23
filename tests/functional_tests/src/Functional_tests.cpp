@@ -1,7 +1,7 @@
 #include "Functional_tests.h"
 
 void exponencial_test_run(){
-    std::cout << "Exponencial funcional test" << std::endl;
+    std::cout << "  Exponencial functional test" << std::endl;
 
     SystemIMP* pop1 = new SystemIMP("pop1", 100.0);
     SystemIMP* pop2 = new SystemIMP("pop2", 0.0);
@@ -24,11 +24,11 @@ void exponencial_test_run(){
     delete(pop1);
     delete(pop2);
 
-    std::cout << "Passed exponencial funcional test" << std::endl;
+    std::cout << "  Exponencial functional test passed\n" << std::endl;
 }
 
 void logistical_test_run(){
-    std::cout << "Logistical funcional test" << std::endl;
+    std::cout << "  Logistical functional test" << std::endl;
 
     SystemIMP* p1 = new SystemIMP("p1", 100.0);
     SystemIMP* p2 = new SystemIMP("p2", 10.0);
@@ -50,10 +50,12 @@ void logistical_test_run(){
     delete(log);
     delete(p1);
     delete(p2);
+
+    std::cout << "  Logistical functional test passed\n" << std::endl;
 }
 
 void Complex_test_run(){
-    std::cout << "Complex funcional test" << std::endl;
+    std::cout << "  Complex functional test" << std::endl;
 
     ModelIMP* model = new ModelIMP("Model", 0, 100);
     SystemIMP* q1 = new SystemIMP("q1", 100.0);
@@ -101,5 +103,5 @@ void Complex_test_run(){
     delete g;
     delete r;
 
-    std::cout << "Passed Complex funcional test" << std::endl;
+    std::cout << "  Complex functional test passed" << std::endl;
 }

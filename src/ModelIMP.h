@@ -64,6 +64,27 @@ class ModelIMP : public Model{
          * @param name string must be passed to the method
         */
         void setName(const std::string& name);
+        //Vector
+        /**
+         * @brief This method returns the vector of Systems
+         * @return a vector containing Systems is returned
+        */
+        std::vector<System*> getSystems() const;
+        /**
+         * @brief This method returns the vector of flows
+         * @return a vector containing Flows is returned
+        */
+        std::vector<Flow*> getFlows() const;
+        /**
+         * @brief This method assigns a vector to the systems of a Model
+         * @param systems int must be passed to the method
+        */
+        void setSystems(const std::vector<System*> systems);
+        /**
+         * @brief This method assigns a vector to the flows of a Model
+         * @param flows int must be passed to the method
+        */
+        void setFlows(const std::vector<Flow*> flows);
         //Time
         /**
          * @brief This method returns the startTime of a Model
@@ -74,7 +95,7 @@ class ModelIMP : public Model{
          * @brief This method returns the end of a Model
          * @return a int containing the end is returned
         */
-        int getEndtTime() const;
+        int getEndTime() const;
         /**
          * @brief This method assigns a int to the startTime of a Model
          * @param startTime int must be passed to the method
@@ -110,13 +131,13 @@ class ModelIMP : public Model{
          * @param system System pointer iterator must be passed to the method
          * @return a bool value, true if can remove, false if not
         */
-        bool rmv(const systemIterator& system);
+        bool rmv(const System* system);
         /**
          * @brief This method remove a Flow pointer of the vector of a Model
          * @param flow Flow pointer iterator must be passed to the method
          * @return a bool value, true if can remove, false if not
         */
-        bool rmv(const flowIterator& flow);
+        bool rmv(const Flow* flow);
         //Others
         /**
          * @brief This method run all model
@@ -132,12 +153,11 @@ class ModelIMP : public Model{
         */
         bool operator==(const ModelIMP& other) const; // Operador de igualdade
         /**
-         * @brief This method is overloading the '<<' operator, print the model obj info
-         * @param out is a ostream obj
-         * @param obj is a model obj
-         * @return a ostream obj to print the obj info
+         * @brief This method is overloading the '!=' operator, compare two models objs
+         * @param other model obj to be compare must be passed 
+         * @return A bool is returned, false if they are equal and true if not
         */
-        friend std::ostream& operator<<(std::ostream& out, const ModelIMP& obj); //Operador de saida
+        bool operator!=(const ModelIMP& other) const; // Operador de igualdade
 };
 
 #endif

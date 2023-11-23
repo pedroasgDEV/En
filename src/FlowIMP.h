@@ -47,7 +47,7 @@ class FlowIMP : public Flow{
          * @brief This method assigns a string to the name of a flow obj
          * @param name string must be passed to the method
         */
-        void setName(std::string& name);
+        void setName(const std::string& name);
         //Source
         /**
          * @brief This method returns the source system poiter
@@ -84,14 +84,13 @@ class FlowIMP : public Flow{
          * @param other flow obj to be compare must be passed 
          * @return A bool is returned, true if they are equal and false if not
         */
-        bool operator==(const FlowIMP& other) const; // Operador de igualdade
+        virtual bool operator==(const FlowIMP& other) const; // Operador de igualdade
         /**
-         * @brief This method is overloading the '<<' operator, print the flow obj info
-         * @param out is a ostream obj
-         * @param obj is a flow obj
-         * @return a ostream obj to print the obj info
+         * @brief This method is overloading the '!=' operator, compare two flows objs
+         * @param other flow obj to be compare must be passed 
+         * @return A bool is returned, false if they are equal and true if not
         */
-        friend std::ostream& operator<<(std::ostream& out, const FlowIMP& obj); //Operador de saida
+        virtual bool operator!=(const FlowIMP& other) const; // Operador de diferença
 };
 
 

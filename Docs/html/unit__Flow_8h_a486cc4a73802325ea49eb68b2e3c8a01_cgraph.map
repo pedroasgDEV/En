@@ -1,0 +1,5 @@
+<map id="test_Flow_equal" name="test_Flow_equal">
+<area shape="rect" id="Node000001" title="This function run the unit test of the flow equal comparation." alt="" coords="5,5,133,31"/>
+<area shape="rect" id="Node000002" href="$classFlowIMP.html#a1202522653f350d3aa7f79180bcf6bd8" title="This method assigns a string to the name of a flow obj." alt="" coords="181,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,15,168,15,168,21,134,21"/>
+</map>

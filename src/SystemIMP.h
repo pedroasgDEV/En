@@ -81,12 +81,11 @@ class SystemIMP : public System{
         */
         bool operator==(const SystemIMP& other) const;  // Operador de igualdade
         /**
-         * @brief This method is overloading the '<<' operator, print the system obj info
-         * @param out is a ostream obj
-         * @param obj is a system obj
-         * @return a ostream obj to print the obj info
+         * @brief This method is overloading the '!=' operator, compare two systems objs
+         * @param other system obj to be compare must be passed 
+         * @return A bool is returned, false if they are equal and true if not
         */
-        friend std::ostream& operator<<(std::ostream& out, const SystemIMP& obj); //Operador de saida
+        bool operator!=(const SystemIMP& other) const;  // Operador de diferença
 };
 
 #endif

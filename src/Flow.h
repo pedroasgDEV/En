@@ -34,7 +34,7 @@ class Flow{
          * @brief This method assigns a string to the name of a flow obj
          * @param name string must be passed to the method
         */
-        virtual void setName(std::string& name) = 0;
+        virtual void setName(const std::string& name) = 0;
         //Source
         /**
          * @brief This method returns the source system poiter

@@ -1,0 +1,9 @@
+<map id="Model::setFlows" name="Model::setFlows">
+<area shape="rect" id="Node000001" title="This method assigns a vector to the flows of a Model." alt="" coords="517,5,645,31"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a5aba41d3ef8a55cb87a0659f6b25a8fa" title="This function run the unit test of the model setFlows." alt="" coords="311,5,469,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="504,21,470,21,470,15,504,15"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,5,263,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,21,263,21,263,15,297,15"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

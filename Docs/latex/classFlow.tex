@@ -6,22 +6,20 @@
 
 
 
-Inheritance diagram for Flow\+:
-\nopagebreak
+Inheritance diagram for Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classFlow__inherit__graph}
+\includegraphics[width=350pt]{classFlow__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Flow\+:
-\nopagebreak
+Collaboration diagram for Flow\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=233pt]{classFlow__coll__graph}
+\includegraphics[width=240pt]{classFlow__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -31,7 +29,7 @@ virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\texorpdfs
 \begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classFlow_a2d0340d844ab2d275222938234e44169}{get\+Name}} () const =0
 \begin{DoxyCompactList}\small\item\em This method returns the name of a flow. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classFlow_a20fd3a3ea531c525d7dc40f09d85fe8a}{set\+Name}} (std\+::string \&name)=0
+virtual void \mbox{\hyperlink{classFlow_aa53921a4d8506221adb157c1b0a54ed1}{set\+Name}} (const std\+::string \&name)=0
 \begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a flow obj. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}{get\+Source}} () const =0
 \begin{DoxyCompactList}\small\item\em This method returns the source system poiter. \end{DoxyCompactList}\item 
@@ -63,6 +61,17 @@ This destructor is a virtual destructor of the class.
 \end{DoxyCode}
 
 
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_ac4a6a1e4c7990b349a571d2e42005b0e}{test\+\_\+\+Flow\+\_\+destructor()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a325d284a50ca3274b126b21f5c39b9af_icgraph}
+\end{center}
+\end{figure}
+
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classFlow_a619be0b590c78202127bc6ac7fb04029}\label{classFlow_a619be0b590c78202127bc6ac7fb04029} 
 \index{Flow@{Flow}!execute@{execute}}
@@ -79,8 +88,19 @@ double
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial}}, \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical}}, and \mbox{\hyperlink{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}{Flow\+IMP}}.
+Implemented in \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial}}, \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical}}, \mbox{\hyperlink{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1}{Flow\+\_\+unit\+\_\+test}}, and \mbox{\hyperlink{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}{Flow\+IMP}}.
 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_a3d4075b90aec926ffa7096fd3c7a978e}{test\+\_\+\+Flow\+\_\+execute()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a619be0b590c78202127bc6ac7fb04029_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_a2d0340d844ab2d275222938234e44169}\label{classFlow_a2d0340d844ab2d275222938234e44169} 
 \index{Flow@{Flow}!getName@{getName}}
 \index{getName@{getName}!Flow@{Flow}}
@@ -98,6 +118,17 @@ a string containing the name is returned
 
 Implemented in \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{Flow\+IMP}}.
 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_a9eb9649d4a0114bf08e0ca0b054dbe04}{test\+\_\+\+Flow\+\_\+constructor()}}, \mbox{\hyperlink{unit__Flow_8cpp_a730cb76b594e05378ff5accbbd20c62e}{test\+\_\+\+Flow\+\_\+get\+Name()}}, and \mbox{\hyperlink{unit__Flow_8cpp_a41263d8dd60e6251e733eb46e28ad5ed}{test\+\_\+\+Flow\+\_\+set\+Name()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a2d0340d844ab2d275222938234e44169_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8}\label{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8} 
 \index{Flow@{Flow}!getSource@{getSource}}
 \index{getSource@{getSource}!Flow@{Flow}}
@@ -115,6 +146,17 @@ a system poiter containing the source memory address is returned
 
 Implemented in \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{Flow\+IMP}}.
 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_a9eb9649d4a0114bf08e0ca0b054dbe04}{test\+\_\+\+Flow\+\_\+constructor()}}, \mbox{\hyperlink{unit__Flow_8cpp_a3d4075b90aec926ffa7096fd3c7a978e}{test\+\_\+\+Flow\+\_\+execute()}}, \mbox{\hyperlink{unit__Flow_8cpp_a87d890b6a2084bd6e47acf0ac2b06f4a}{test\+\_\+\+Flow\+\_\+get\+Source()}}, and \mbox{\hyperlink{unit__Flow_8cpp_a5041325b211f3f664e4ebaef52d722ae}{test\+\_\+\+Flow\+\_\+set\+Source()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_abf0f3dbb285fe82e5ba6449de06b97c8_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_afb9b8d93ea0fc81868b8e02dd382a787}\label{classFlow_afb9b8d93ea0fc81868b8e02dd382a787} 
 \index{Flow@{Flow}!getTarget@{getTarget}}
 \index{getTarget@{getTarget}!Flow@{Flow}}
@@ -132,11 +174,22 @@ a system poiter containing the target memory address is returned
 
 Implemented in \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{Flow\+IMP}}.
 
-\Hypertarget{classFlow_a20fd3a3ea531c525d7dc40f09d85fe8a}\label{classFlow_a20fd3a3ea531c525d7dc40f09d85fe8a} 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_a9eb9649d4a0114bf08e0ca0b054dbe04}{test\+\_\+\+Flow\+\_\+constructor()}}, \mbox{\hyperlink{unit__Flow_8cpp_a3d4075b90aec926ffa7096fd3c7a978e}{test\+\_\+\+Flow\+\_\+execute()}}, \mbox{\hyperlink{unit__Flow_8cpp_a11e83bb4795bd8be189467b92cc81fe3}{test\+\_\+\+Flow\+\_\+get\+Target()}}, and \mbox{\hyperlink{unit__Flow_8cpp_ae0d8b4031e44a200d9fa80b45437d8e3}{test\+\_\+\+Flow\+\_\+set\+Target()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_afb9b8d93ea0fc81868b8e02dd382a787_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classFlow_aa53921a4d8506221adb157c1b0a54ed1}\label{classFlow_aa53921a4d8506221adb157c1b0a54ed1} 
 \index{Flow@{Flow}!setName@{setName}}
 \index{setName@{setName}!Flow@{Flow}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
-{\footnotesize\ttfamily virtual void Flow\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -149,8 +202,19 @@ This method assigns a string to the name of a flow obj.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}{Flow\+IMP}}.
+Implemented in \mbox{\hyperlink{classFlowIMP_a1202522653f350d3aa7f79180bcf6bd8}{Flow\+IMP}}.
 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_a41263d8dd60e6251e733eb46e28ad5ed}{test\+\_\+\+Flow\+\_\+set\+Name()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_aa53921a4d8506221adb157c1b0a54ed1_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_a42ce99a961622788ae59bb73abad3bb3}\label{classFlow_a42ce99a961622788ae59bb73abad3bb3} 
 \index{Flow@{Flow}!setSource@{setSource}}
 \index{setSource@{setSource}!Flow@{Flow}}
@@ -170,6 +234,17 @@ This method assigns a system poiter to the source of a flow obj.
 
 Implemented in \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{Flow\+IMP}}.
 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_a5041325b211f3f664e4ebaef52d722ae}{test\+\_\+\+Flow\+\_\+set\+Source()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a42ce99a961622788ae59bb73abad3bb3_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b}\label{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b} 
 \index{Flow@{Flow}!setTarget@{setTarget}}
 \index{setTarget@{setTarget}!Flow@{Flow}}
@@ -189,6 +264,17 @@ This method assigns a system poiter to the target of a flow obj.
 
 Implemented in \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{Flow\+IMP}}.
 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_ae0d8b4031e44a200d9fa80b45437d8e3}{test\+\_\+\+Flow\+\_\+set\+Target()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlow_a6121cf6e400af1aa8b4c9f9f2dc8e68b_icgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

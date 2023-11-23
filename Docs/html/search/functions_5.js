@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['modelimp_1',['modelimp',['../classModelIMP.html#ae6486dd79504af834705878ad130d981',1,'ModelIMP::ModelIMP(const ModelIMP &amp;other)'],['../classModelIMP.html#ac5ddeac3f715e621284ed7b13f3a720d',1,'ModelIMP::ModelIMP(const std::string &amp;name=&quot;NO_NAME&quot;, const int &amp;startTime=0, const int &amp;endTime=1)']]]
+  ['logistical_0',['logistical',['../classLogistical.html#a0d5edd9e2acac43bdbe3032336974df6',1,'Logistical::Logistical(const Logistical &amp;other)'],['../classLogistical.html#acb58ccd7a98eb60c01b744a1bc62463c',1,'Logistical::Logistical(const std::string &amp;name=&quot;NO_NAME&quot;, System *source=NULL, System *target=NULL)']]],
+  ['logistical_5ftest_5frun_1',['logistical_test_run',['../Functional__tests_8cpp.html#ac5a362dfeb59aa1326005e0caee1b51e',1,'logistical_test_run():&#160;Functional_tests.cpp'],['../Functional__tests_8h.html#ac5a362dfeb59aa1326005e0caee1b51e',1,'logistical_test_run():&#160;Functional_tests.cpp']]]
 ];

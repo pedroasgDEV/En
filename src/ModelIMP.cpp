@@ -17,9 +17,14 @@ ModelIMP::~ModelIMP(){systems.clear(); flows.clear();}
 //Name
 std::string ModelIMP::getName() const { return name; }
 void ModelIMP::setName(const std::string& name) { this->name = name; }
+//Vectors
+std::vector<System*> ModelIMP::getSystems() const { return systems;}
+std::vector<Flow*>  ModelIMP::getFlows() const { return flows;};
+void ModelIMP::setSystems(const std::vector<System*> systems){ for(auto i : systems) this->systems.push_back(i);}
+void ModelIMP::setFlows(const std::vector<Flow*> flows){ for(auto i : flows) this->flows.push_back(i);}
 //Timer
 int ModelIMP::getStartTime() const { return startTime; }
-int ModelIMP::getEndtTime() const { return endTime; }
+int ModelIMP::getEndTime() const { return endTime; }
 void ModelIMP::setStartTime(const int& startTime) { this->startTime = startTime; }
 void ModelIMP::setEndTime(const int& endTime) { this->endTime = endTime; }
 void ModelIMP::setTime(const int& startTime, const int& endTime) { this->startTime = startTime; this->endTime = endTime; }
@@ -29,8 +34,23 @@ void ModelIMP::setTime(const int& startTime, const int& endTime) { this->startTi
 void ModelIMP::add(System* system) { systems.push_back(system); } 
 void ModelIMP::add(Flow* flow) { flows.push_back(flow); } 
 //remove
-bool ModelIMP::rmv(const systemIterator& system) { return (systems.erase(system) != systems.end()); }
-bool ModelIMP::rmv(const flowIterator& flow) { return (flows.erase(flow) != flows.end()); }
+bool ModelIMP::rmv(const System* system) { 
+    for(systemIterator i = systems.begin(); i < systems.end(); i++)
+        if(*i == system){
+            systems.erase(i);
+            return true;
+        }
+    return false; 
+}
+bool ModelIMP::rmv(const Flow* flow) { 
+    for(flowIterator i = flows.begin(); i < flows.end(); i++)
+        if(*i == flow){
+            flows.erase(i);
+            return true;
+        }
+    return false; 
+}
+
 
 //Others
 bool ModelIMP::run(){
@@ -67,8 +87,6 @@ bool ModelIMP::run(){
     return true;
 } 
 
-//* Proibir a copia para resolver os problemas a dos vetores
-
 //Sobrecarga de operadores
 // Operador de atribuição
 ModelIMP& ModelIMP::operator=(const ModelIMP& other){
@@ -87,13 +105,7 @@ ModelIMP& ModelIMP::operator=(const ModelIMP& other){
 bool ModelIMP::operator==(const ModelIMP& other) const{
     return (name == other.name && systems == other.systems && flows == other.flows && startTime == other.startTime && endTime == other.endTime);
 }
-//Operador de saida
-std::ostream& operator<<(std::ostream& out, const ModelIMP& obj){
-    out << "Name: " << obj.name << ";\n"
-        << "Systems:\n";
-    for (auto item : obj.systems) out << item << "\n";
-    out << "Flows:\n";
-    for (auto item : obj.flows) out << item << "\n";
-    return out;
+// Operador de diferença
+bool ModelIMP::operator!=(const ModelIMP& other) const{
+    return (name != other.name || systems != other.systems || flows != other.flows || startTime != other.startTime || endTime != other.endTime);
 }
-

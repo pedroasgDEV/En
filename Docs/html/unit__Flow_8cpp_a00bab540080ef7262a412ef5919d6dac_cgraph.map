@@ -1,0 +1,53 @@
+<map id="run_Flow_unit_test" name="run_Flow_unit_test">
+<area shape="rect" id="Node000001" title="This function run the unit tests of the flow." alt="" coords="5,228,151,253"/>
+<area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a9eb9649d4a0114bf08e0ca0b054dbe04" title="This function run the unit test of the flow constructor." alt="" coords="199,104,364,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,226,134,183,164,159,197,138,211,132,214,137,200,143,167,164,137,187,93,230"/>
+<area shape="rect" id="Node000006" href="$unit__Flow_8cpp.html#ac4a6a1e4c7990b349a571d2e42005b0e" title="This function run the unit test of the flow destructor." alt="" coords="202,412,361,437"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="89,252,132,314,164,352,200,385,232,404,229,409,197,389,160,355,128,318,85,255"/>
+<area shape="rect" id="Node000008" href="$unit__Flow_8cpp.html#a486cc4a73802325ea49eb68b2e3c8a01" title="This function run the unit test of the flow equal comparation." alt="" coords="217,485,345,511"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="87,253,126,340,159,396,201,447,220,463,241,477,238,481,217,467,197,451,155,399,122,343,82,255"/>
+<area shape="rect" id="Node000010" href="$unit__Flow_8cpp.html#a3d4075b90aec926ffa7096fd3c7a978e" title="This function run the unit test of the flow execute." alt="" coords="210,252,353,277"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="152,247,197,252,196,257,151,252"/>
+<area shape="rect" id="Node000014" href="$unit__Flow_8cpp.html#a730cb76b594e05378ff5accbbd20c62e" title="This function run the unit test of the flow getName." alt="" coords="205,55,357,80"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="84,226,125,161,158,122,197,89,207,83,210,88,200,94,162,126,130,164,88,229"/>
+<area shape="rect" id="Node000015" href="$unit__Flow_8cpp.html#a87d890b6a2084bd6e47acf0ac2b06f4a" title="This function run the unit test of the flow getSource." alt="" coords="203,153,360,179"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="106,225,198,188,220,180,221,185,200,192,108,230"/>
+<area shape="rect" id="Node000016" href="$unit__Flow_8cpp.html#a11e83bb4795bd8be189467b92cc81fe3" title="This function run the unit test of the flow getTarge." alt="" coords="205,301,358,327"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="110,251,200,286,225,295,223,300,198,291,108,256"/>
+<area shape="rect" id="Node000017" href="$unit__Flow_8cpp.html#a41263d8dd60e6251e733eb46e28ad5ed" title="This function run the unit test of the flow setName." alt="" coords="206,5,357,31"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="81,227,95,190,118,140,152,86,173,61,197,40,205,35,208,39,200,44,177,65,157,89,123,142,99,192,86,229"/>
+<area shape="rect" id="Node000019" href="$unit__Flow_8cpp.html#a5041325b211f3f664e4ebaef52d722ae" title="This function run the unit test of the flow setSource." alt="" coords="203,203,359,228"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="151,229,189,224,190,229,152,234"/>
+<area shape="rect" id="Node000021" href="$unit__Flow_8cpp.html#ae0d8b4031e44a200d9fa80b45437d8e3" title="This function run the unit test of the flow setTarge." alt="" coords="205,351,357,376"/>
+<area shape="poly" id="edge27_Node000001_Node000021" title=" " alt="" coords="94,252,139,293,168,316,200,336,217,343,214,348,197,340,165,320,135,297,90,256"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#a2d0340d844ab2d275222938234e44169" title="This method returns the name of a flow." alt="" coords="424,55,544,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,101,417,81,419,86,335,107"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="This method returns the source system poiter." alt="" coords="421,104,547,129"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="364,114,408,114,408,119,364,119"/>
+<area shape="rect" id="Node000005" href="$classFlow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="This method returns the target system poiter." alt="" coords="423,351,545,376"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="350,127,366,139,384,164,392,189,393,214,391,239,389,263,390,288,398,312,414,336,419,341,415,345,410,340,393,314,385,288,384,263,386,238,388,214,387,190,379,166,362,143,347,131"/>
+<area shape="rect" id="Node000007" href="$classFlow.html#a325d284a50ca3274b126b21f5c39b9af" title="This destructor is a virtual destructor of the class." alt="" coords="433,449,535,475"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="351,435,420,448,419,453,350,440"/>
+<area shape="rect" id="Node000009" href="$classFlowIMP.html#a1202522653f350d3aa7f79180bcf6bd8" title="This method assigns a string to the name of a flow obj." alt="" coords="412,499,556,524"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="346,500,399,503,398,508,345,505"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="342,250,362,237,373,226,379,214,386,190,392,164,399,151,410,139,416,134,419,138,414,143,403,154,397,166,391,191,384,216,377,229,366,241,345,254"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="341,275,365,286,381,299,390,311,399,324,414,336,426,343,424,348,410,340,395,327,386,315,377,303,363,291,339,280"/>
+<area shape="rect" id="Node000011" href="$classFlow.html#a619be0b590c78202127bc6ac7fb04029" title="Pure virtual method that will be inherited by subclasses created by the user, this one will contain a..." alt="" coords="429,203,539,228"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="334,249,417,229,419,234,335,255"/>
+<area shape="rect" id="Node000012" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="This method returns the value of a system." alt="" coords="416,252,552,277"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="353,262,402,262,402,267,353,267"/>
+<area shape="rect" id="Node000013" href="$classSystem.html#a4ade48b75793a48021cdb634a86ff988" title="This method assigns a double to the value of a system." alt="" coords="417,301,551,327"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="335,275,419,295,417,301,334,280"/>
+<area shape="poly" id="edge16_Node000014_Node000003" title=" " alt="" coords="358,65,410,65,410,70,358,70"/>
+<area shape="poly" id="edge18_Node000015_Node000004" title=" " alt="" coords="334,151,417,130,419,135,335,156"/>
+<area shape="poly" id="edge20_Node000016_Node000005" title=" " alt="" coords="335,324,419,345,417,350,334,329"/>
+<area shape="poly" id="edge22_Node000017_Node000003" title=" " alt="" coords="335,28,419,49,417,54,334,33"/>
+<area shape="rect" id="Node000018" href="$classFlow.html#aa53921a4d8506221adb157c1b0a54ed1" title="This method assigns a string to the name of a flow obj." alt="" coords="425,5,543,31"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="357,15,411,15,411,21,357,21"/>
+<area shape="poly" id="edge25_Node000019_Node000004" title=" " alt="" coords="336,200,363,188,377,176,386,164,395,151,410,138,421,133,424,137,414,143,399,155,390,167,381,180,365,192,338,205"/>
+<area shape="rect" id="Node000020" href="$classFlow.html#a42ce99a961622788ae59bb73abad3bb3" title="This method assigns a system poiter to the source of a flow obj." alt="" coords="422,153,546,179"/>
+<area shape="poly" id="edge26_Node000019_Node000020" title=" " alt="" coords="334,200,417,179,419,185,335,205"/>
+<area shape="poly" id="edge28_Node000021_Node000005" title=" " alt="" coords="358,361,409,361,409,366,358,366"/>
+<area shape="rect" id="Node000022" href="$classFlow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b" title="This method assigns a system poiter to the target of a flow obj." alt="" coords="424,400,544,425"/>
+<area shape="poly" id="edge29_Node000021_Node000022" title=" " alt="" coords="335,373,419,394,417,399,334,379"/>
+</map>

@@ -6,18 +6,16 @@
 
 
 
-Inheritance diagram for System\+IMP\+:
-\nopagebreak
+Inheritance diagram for System\+IMP\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=244pt]{classSystemIMP__inherit__graph}
+\includegraphics[height=550pt]{classSystemIMP__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for System\+IMP\+:
-\nopagebreak
+Collaboration diagram for System\+IMP\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -40,7 +38,9 @@ double \mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{get\+V
 void \mbox{\hyperlink{classSystemIMP_a0fc4553a15408eb803e37b48988040dd}{set\+Value}} (const double \&\mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}})
 \begin{DoxyCompactList}\small\item\em This method assigns a double to the value of a system. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSystemIMP_a76dcccc6a469fb449dbeee35d6925b0e}{operator==}} (const \mbox{\hyperlink{classSystemIMP}{System\+IMP}} \&other) const
-\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two systems objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two systems objs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSystemIMP_a66d3f577cbb342750c8ecf442b7882ca}{operator!=}} (const \mbox{\hyperlink{classSystemIMP}{System\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}!=\textquotesingle{} operator, compare two systems objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classSystem}{System}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,11 +60,6 @@ double \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}
 \begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classSystem}{System} by a obj. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSystemIMP}{System\+IMP}} \& \mbox{\hyperlink{classSystemIMP_a5be17ccf3b0c35ef2048aa276f2c7d19}{operator=}} (const \mbox{\hyperlink{classSystemIMP}{System\+IMP}} \&other)
 \begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one system to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-std\+::ostream \& \mbox{\hyperlink{classSystemIMP_a27d5ae54b438973358d5632220cc19df}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classSystemIMP}{System\+IMP}} \&obj)
-\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the system obj info. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -184,14 +179,43 @@ References \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{va
 
 Referenced by \mbox{\hyperlink{Functional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c}{Complex\+\_\+test\+\_\+run()}}, \mbox{\hyperlink{Functional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2}{exponencial\+\_\+test\+\_\+run()}}, and \mbox{\hyperlink{Functional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e}{logistical\+\_\+test\+\_\+run()}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classSystemIMP_a623e879e776efbaff2f52e1b73290179_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classSystemIMP_a66d3f577cbb342750c8ecf442b7882ca}\label{classSystemIMP_a66d3f577cbb342750c8ecf442b7882ca} 
+\index{SystemIMP@{SystemIMP}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!SystemIMP@{SystemIMP}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool System\+IMP\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystemIMP}{System\+IMP}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+This method is overloading the \textquotesingle{}!=\textquotesingle{} operator, compare two systems objs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & system obj to be compare must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool is returned, false if they are equal and true if not 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}{name}}\ !=\ other.\mbox{\hyperlink{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}{name}}\ ||\ \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}}\ !=\ other.\mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}});}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Compare\ todos\ os\ membros\ para\ verificar\ igualdade}}
+\DoxyCodeLine{00037\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}{name}}, and \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}}.
+
 \Hypertarget{classSystemIMP_a5be17ccf3b0c35ef2048aa276f2c7d19}\label{classSystemIMP_a5be17ccf3b0c35ef2048aa276f2c7d19} 
 \index{SystemIMP@{SystemIMP}!operator=@{operator=}}
 \index{operator=@{operator=}!SystemIMP@{SystemIMP}}
@@ -312,37 +336,6 @@ References \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{va
 
 
 
-\doxysubsection{Friends And Related Symbol Documentation}
-\Hypertarget{classSystemIMP_a27d5ae54b438973358d5632220cc19df}\label{classSystemIMP_a27d5ae54b438973358d5632220cc19df} 
-\index{SystemIMP@{SystemIMP}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!SystemIMP@{SystemIMP}}
-\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classSystemIMP}{System\+IMP}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the system obj info. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em out} & is a ostream obj \\
-\hline
-{\em obj} & is a system obj \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-a ostream obj to print the obj info 
-\end{DoxyReturn}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00034\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}(System)(Name:\ "{}}\ <<\ obj.\mbox{\hyperlink{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}{name}}\ <<\ \textcolor{stringliteral}{"{},\ Value:\ "{}}\ <<\ obj.\mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}}\ <<\ \textcolor{stringliteral}{"{})"{}};\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
-\DoxyCodeLine{00036\ \}}
-
-\end{DoxyCode}
-
-
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}\label{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2} 
 \index{SystemIMP@{SystemIMP}!name@{name}}
@@ -352,7 +345,7 @@ a ostream obj to print the obj info
 
 Name string attribute. 
 
-Referenced by \mbox{\hyperlink{classSystemIMP_a58a36632e149edf2739f2b088ad10e8a}{get\+Name()}}, \mbox{\hyperlink{classSystemIMP_a5be17ccf3b0c35ef2048aa276f2c7d19}{operator=()}}, \mbox{\hyperlink{classSystemIMP_a76dcccc6a469fb449dbeee35d6925b0e}{operator==()}}, and \mbox{\hyperlink{classSystemIMP_a45d65645657f33eb85e0bcd09a650502}{set\+Name()}}.
+Referenced by \mbox{\hyperlink{classSystemIMP_a58a36632e149edf2739f2b088ad10e8a}{get\+Name()}}, \mbox{\hyperlink{classSystemIMP_a66d3f577cbb342750c8ecf442b7882ca}{operator!=()}}, \mbox{\hyperlink{classSystemIMP_a5be17ccf3b0c35ef2048aa276f2c7d19}{operator=()}}, \mbox{\hyperlink{classSystemIMP_a76dcccc6a469fb449dbeee35d6925b0e}{operator==()}}, and \mbox{\hyperlink{classSystemIMP_a45d65645657f33eb85e0bcd09a650502}{set\+Name()}}.
 
 \Hypertarget{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}\label{classSystemIMP_a63328df317c0d07b045ccf048f17db8d} 
 \index{SystemIMP@{SystemIMP}!value@{value}}
@@ -362,7 +355,7 @@ Referenced by \mbox{\hyperlink{classSystemIMP_a58a36632e149edf2739f2b088ad10e8a}
 
 Value double attribute. 
 
-Referenced by \mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{get\+Value()}}, \mbox{\hyperlink{classSystemIMP_a5be17ccf3b0c35ef2048aa276f2c7d19}{operator=()}}, \mbox{\hyperlink{classSystemIMP_a76dcccc6a469fb449dbeee35d6925b0e}{operator==()}}, and \mbox{\hyperlink{classSystemIMP_a0fc4553a15408eb803e37b48988040dd}{set\+Value()}}.
+Referenced by \mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{get\+Value()}}, \mbox{\hyperlink{classSystemIMP_a66d3f577cbb342750c8ecf442b7882ca}{operator!=()}}, \mbox{\hyperlink{classSystemIMP_a5be17ccf3b0c35ef2048aa276f2c7d19}{operator=()}}, \mbox{\hyperlink{classSystemIMP_a76dcccc6a469fb449dbeee35d6925b0e}{operator==()}}, and \mbox{\hyperlink{classSystemIMP_a0fc4553a15408eb803e37b48988040dd}{set\+Value()}}.
 
 
 

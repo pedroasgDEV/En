@@ -41,28 +41,33 @@
 \DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Name}}
 \DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classModelIMP_a11afc532c1c57116505fe332a28b4fe1}{getName}}()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a92fcbb62f89e5792f9cc07d22dfefa2d}{setName}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classModelIMP_a04a2f37160f346e9703988106bfb6f6a}{name}});}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Time}}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_a8c0d8baf745a99311caf654deda25483}{getStartTime}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_a65b8fb3596cfea2a19055ddbdb369e85}{getEndtTime}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a78633ec177f9b40173ef6e8b7a8877bf}{setStartTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}});}
-\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_ada923e0714239e8016050cfe665a799e}{setEndTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}});}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a1c086a93fd7d3a7eed2678b1075139e6}{setTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}});}
-\DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{comment}{//add}}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(\mbox{\hyperlink{classSystem}{System}}*\ system);}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*\ flow);}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{comment}{//remove}}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_aab54b49cb2a03c0809d748263ac9f5d8}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{systemIterator}}\&\ system);}
-\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_aab54b49cb2a03c0809d748263ac9f5d8}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flowIterator}}\&\ flow);}
-\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Others}}
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{run}}();}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
-\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a1062a74b828e4b125ffda1aca903f332}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
-\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classModelIMP_aacf8ed7ae49ba8ca3eb7d7f06c05f6cb}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ obj);\ \textcolor{comment}{//Operador\ de\ saida}}
-\DoxyCodeLine{00141\ \};}
-\DoxyCodeLine{00142\ }
-\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Vector}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ std::vector<System*>\ \mbox{\hyperlink{classModelIMP_aea3824cf802120831e027e5a87f06b21}{getSystems}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ std::vector<Flow*>\ \mbox{\hyperlink{classModelIMP_a1639b3e6da710022501c0ab552ece45a}{getFlows}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_af92a62af4a67471ab8d5495bea2c2ae2}{setSystems}}(\textcolor{keyword}{const}\ std::vector<System*>\ \mbox{\hyperlink{classModelIMP_ab8a441de9a450e112b8270336c2b3878}{systems}});}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a6179a1fb67eb6f07ef277e72be574686}{setFlows}}(\textcolor{keyword}{const}\ std::vector<Flow*>\ \mbox{\hyperlink{classModelIMP_ad3a46bc997800c5091daecfd24646227}{flows}});}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Time}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_a8c0d8baf745a99311caf654deda25483}{getStartTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModelIMP_aafd440b433cdb37cdd3c587f9942e065}{getEndTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a78633ec177f9b40173ef6e8b7a8877bf}{setStartTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}});}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_ada923e0714239e8016050cfe665a799e}{setEndTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}});}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_a1c086a93fd7d3a7eed2678b1075139e6}{setTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_aa5e3aa222032b617a456f5e7886395b2}{startTime}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ \mbox{\hyperlink{classModelIMP_a359399ee875c27c8edf940c77828e5c2}{endTime}});}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{comment}{//add}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(\mbox{\hyperlink{classSystem}{System}}*\ system);}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*\ flow);}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{comment}{//remove}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a6537bac02944926c884b4f0bfeb45688}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSystem}{System}}*\ system);}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a6537bac02944926c884b4f0bfeb45688}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}*\ flow);}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Others}}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{run}}();}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a1062a74b828e4b125ffda1aca903f332}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModelIMP_a616d15f748cfb2f033bc788ff98153ce}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
+\DoxyCodeLine{00161\ \};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="test_Model_setFlows" name="test_Model_setFlows">
+<area shape="rect" id="Node000001" title="This function run the unit test of the model setFlows." alt="" coords="5,31,164,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#aeb0585f67fd77227609aaf0564560338" title="This method returns the vector of flows." alt="" coords="212,5,341,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,30,198,26,199,31,164,36"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a22146c79936aaf97ff85bc8a2cc07f82" title="This method assigns a vector to the flows of a Model." alt="" coords="213,55,341,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,51,199,55,199,60,164,56"/>
+</map>

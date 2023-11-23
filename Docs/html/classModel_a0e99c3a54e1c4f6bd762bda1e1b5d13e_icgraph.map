@@ -1,0 +1,18 @@
+<map id="Model::getStartTime" name="Model::getStartTime">
+<area shape="rect" id="Node000001" title="This method returns the startTime of a Model." alt="" coords="545,80,700,105"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#aef1204c58975e69557b130c433035c2f" title="This function run the unit test of the model constructor." alt="" coords="317,5,491,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="580,77,496,45,458,33,460,28,498,39,582,72"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#a3a7114e2256a49ceb0cf5d551ebcbe32" title="This function run the unit test of the model getStartTime." alt="" coords="311,55,497,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="531,85,497,81,498,75,532,79"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#afc8be995a0f26402419487a2e7aa38ac" title="This function run the unit test of the model setStartTime." alt="" coords="311,104,497,129"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="532,105,497,109,496,104,531,100"/>
+<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#ab2373af3670d07b04964ef9f97e30c44" title="This function run the unit test of the model setTime." alt="" coords="327,153,481,179"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="580,113,498,143,456,156,455,151,496,138,578,108"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,80,263,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,37,312,45,216,82,214,77,310,39,335,32"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,80,60,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,95,60,95,60,90,94,90"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="297,82,263,86,263,81,297,77"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="297,108,262,104,263,98,298,102"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="339,152,310,143,216,108,218,103,312,138,340,147"/>
+</map>

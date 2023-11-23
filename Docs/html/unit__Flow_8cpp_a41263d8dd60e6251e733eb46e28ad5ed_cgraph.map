@@ -1,0 +1,7 @@
+<map id="test_Flow_setName" name="test_Flow_setName">
+<area shape="rect" id="Node000001" title="This function run the unit test of the flow setName." alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000002" href="$classFlow.html#a2d0340d844ab2d275222938234e44169" title="This method returns the name of a flow." alt="" coords="204,5,324,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,30,190,25,191,31,156,36"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#aa53921a4d8506221adb157c1b0a54ed1" title="This method assigns a string to the name of a flow obj." alt="" coords="205,55,323,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,51,192,55,191,60,156,56"/>
+</map>

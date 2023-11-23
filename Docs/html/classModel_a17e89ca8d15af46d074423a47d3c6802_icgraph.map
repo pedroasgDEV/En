@@ -1,0 +1,15 @@
+<map id="Model::getName" name="Model::getName">
+<area shape="rect" id="Node000001" title="This method returns the name of a Model." alt="" coords="533,55,664,80"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#aef1204c58975e69557b130c433035c2f" title="This function run the unit test of the model constructor." alt="" coords="311,5,485,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="533,54,450,33,451,28,534,49"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#af22a39c0b4c847dfc93426ff60efcb47" title="This function run the unit test of the model getName." alt="" coords="317,55,479,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="519,70,479,70,479,65,519,65"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a29b04d2bec249d4c750caa7ec1e02d38" title="This function run the unit test of the model setName." alt="" coords="318,104,478,129"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="534,86,451,107,450,101,533,81"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,55,263,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,36,242,57,240,52,329,31"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,70,60,70,60,65,94,65"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="304,70,263,70,263,65,304,65"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="329,103,240,83,242,77,330,98"/>
+</map>

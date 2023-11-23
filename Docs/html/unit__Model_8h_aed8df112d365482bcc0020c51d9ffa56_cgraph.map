@@ -1,0 +1,7 @@
+<map id="test_Model_getSystems_and_add" name="test_Model_getSystems_and_add">
+<area shape="rect" id="Node000001" title="This function run the unit test of the model getSystems and add System." alt="" coords="5,23,184,63"/>
+<area shape="rect" id="Node000002" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="258,5,353,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,30,244,23,244,28,185,35"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a58d90565fefee1893ccddd18aaba152e" title="This method returns the vector of Systems." alt="" coords="232,55,379,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,51,218,55,218,60,184,56"/>
+</map>

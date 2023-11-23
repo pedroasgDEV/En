@@ -1,0 +1,9 @@
+<map id="Model::setEndTime" name="Model::setEndTime">
+<area shape="rect" id="Node000001" title="This method assigns a int to the endTime of a Model." alt="" coords="537,5,684,31"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#a128f612c3678d25d3094186c714ce92c" title="This function run the unit test of the model setEndTime." alt="" coords="311,5,489,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="524,21,490,21,490,15,524,15"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,5,263,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,21,263,21,263,15,297,15"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

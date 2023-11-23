@@ -1,0 +1,9 @@
+<map id="FlowIMP::setName" name="FlowIMP::setName">
+<area shape="rect" id="Node000001" title="This method assigns a string to the name of a flow obj." alt="" coords="477,5,621,31"/>
+<area shape="rect" id="Node000002" href="$unit__Flow_8cpp.html#a486cc4a73802325ea49eb68b2e3c8a01" title="This function run the unit test of the flow equal comparation." alt="" coords="301,5,429,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,21,429,21,429,15,463,15"/>
+<area shape="rect" id="Node000003" href="$unit__Flow_8cpp.html#a00bab540080ef7262a412ef5919d6dac" title="This function run the unit tests of the flow." alt="" coords="108,5,253,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,21,254,21,254,15,287,15"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

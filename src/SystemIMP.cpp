@@ -29,8 +29,9 @@ bool SystemIMP::operator==(const SystemIMP& other) const{
     return (name == other.name && value == other.value);
     // Compare todos os membros para verificar igualdade
 }
-//Operador de saida
-std::ostream& operator<<(std::ostream& out, const SystemIMP& obj){
-    out << "(System)(Name: " << obj.name << ", Value: " << obj.value << ")"; 
-    return out;
+
+// Operador de diferença
+bool SystemIMP::operator!=(const SystemIMP& other) const{
+    return (name != other.name || value != other.value);
+    // Compare todos os membros para verificar igualdade
 }

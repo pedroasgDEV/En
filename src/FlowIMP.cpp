@@ -6,7 +6,7 @@ FlowIMP::~FlowIMP() {}
 //Geters e seters
 //Name
 std::string FlowIMP::getName() const { return name; }
-void FlowIMP::setName(std::string& name) { this->name = name; }
+void FlowIMP::setName(const std::string& name) { this->name = name; }
 //Source
 System* FlowIMP::getSource() const { return source; }
 void FlowIMP::setSource(System* source) { this->source = source; }
@@ -28,10 +28,9 @@ FlowIMP& FlowIMP::operator=(const FlowIMP& other) {
 bool FlowIMP::operator==(const FlowIMP& other) const {
     return (name == other.name && source == other.source && target == other.target);
 }
-//Operador de saida
-std::ostream& operator<<(std::ostream& out, const FlowIMP& obj){
-    out << "(Flow) Name: " << obj.name << " - "
-        << obj.source->getName() << " -----> " << obj.target->getName(); 
-    return out;
+
+ // Operador de diferença
+bool FlowIMP::operator!=(const FlowIMP& other) const{
+    return (name != other.name || source != other.source || target != other.target);
 }
 

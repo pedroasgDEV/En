@@ -43,6 +43,27 @@ class Model{
          * @param name string must be passed to the method
         */
         virtual void setName(const std::string& name) = 0;
+        //Vector
+        /**
+         * @brief This method returns the vector of Systems
+         * @return a vector containing Systems is returned
+        */
+        virtual std::vector<System*> getSystems() const = 0;
+        /**
+         * @brief This method returns the vector of flows
+         * @return a vector containing Flows is returned
+        */
+        virtual std::vector<Flow*> getFlows() const = 0;
+        /**
+         * @brief This method assigns a vector to the systems of a Model
+         * @param systems int must be passed to the method
+        */
+        virtual void setSystems(const std::vector<System*> systems) = 0;
+        /**
+         * @brief This method assigns a vector to the flows of a Model
+         * @param flows int must be passed to the method
+        */
+        virtual void setFlows(const std::vector<Flow*> flows) = 0;
         //Time
         /**
          * @brief This method returns the startTime of a Model
@@ -53,7 +74,7 @@ class Model{
          * @brief This method returns the end of a Model
          * @return a int containing the end is returned
         */
-        virtual int getEndtTime() const = 0;
+        virtual int getEndTime() const = 0;
         /**
          * @brief This method assigns a int to the startTime of a Model
          * @param startTime int must be passed to the method
@@ -89,19 +110,20 @@ class Model{
          * @param system System pointer iterator must be passed to the method
          * @return a bool value, true if can remove, false if not
         */
-        virtual bool rmv(const systemIterator& system) = 0;
+        virtual bool rmv(const System* system) = 0;
         /**
          * @brief This method remove a Flow pointer of the vector of a Model
          * @param flow Flow pointer iterator must be passed to the method
          * @return a bool value, true if can remove, false if not
         */
-        virtual bool rmv(const flowIterator& flow) = 0;
+        virtual bool rmv(const Flow* flow) = 0;
         //Others
         /**
          * @brief This method run all model
          * @return a bool value, true if can run, false if not
         */
         virtual bool run() = 0;
+
 };
 
 #endif

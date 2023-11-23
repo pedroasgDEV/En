@@ -1,0 +1,18 @@
+<map id="Model::getEndTime" name="Model::getEndTime">
+<area shape="rect" id="Node000001" title="This method returns the end of a Model." alt="" coords="537,80,685,105"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#aef1204c58975e69557b130c433035c2f" title="This function run the unit test of the model constructor." alt="" coords="313,5,487,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,77,488,45,452,33,453,28,490,39,571,72"/>
+<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#abaec6e98c3e479d0d8306a5699bb452e" title="This function run the unit test of the model getEndTime." alt="" coords="311,55,489,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="523,85,489,81,490,75,524,80"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a128f612c3678d25d3094186c714ce92c" title="This function run the unit test of the model setEndTime." alt="" coords="311,104,489,129"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="524,105,490,109,489,104,523,100"/>
+<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#ab2373af3670d07b04964ef9f97e30c44" title="This function run the unit test of the model setTime." alt="" coords="323,153,477,179"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="568,113,490,143,449,156,448,151,488,138,566,108"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,80,263,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,37,312,45,216,82,214,78,310,39,333,32"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,80,60,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,95,60,95,60,90,94,90"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="297,82,263,86,263,81,297,77"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="297,108,263,104,263,99,297,103"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="337,152,310,143,217,108,218,103,312,138,339,147"/>
+</map>

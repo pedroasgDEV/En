@@ -74,8 +74,6 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">FlowIMP.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -102,59 +100,7 @@ Include dependency graph for FlowIMP.cpp:</div>
 <area shape="poly" title=" " alt="" coords="128,293,171,332,167,335,124,297"/>
 </map>
 </div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a6dcb2e8c8b3da4543750682cb478fa6d" id="r_a6dcb2e8c8b3da4543750682cb478fa6d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dcb2e8c8b3da4543750682cb478fa6d">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classFlowIMP.html">FlowIMP</a> &amp;obj)</td></tr>
-<tr class="separator:a6dcb2e8c8b3da4543750682cb478fa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6dcb2e8c8b3da4543750682cb478fa6d" name="a6dcb2e8c8b3da4543750682cb478fa6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dcb2e8c8b3da4543750682cb478fa6d">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classFlowIMP.html">FlowIMP</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">out</td><td>is a ostream obj </td></tr>
-    <tr><td class="paramname">obj</td><td>is a flow obj </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a ostream obj to print the obj info </dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>                                                           {</div>
-<div class="line"><span class="lineno">   33</span>    out &lt;&lt; <span class="stringliteral">&quot;(Flow) Name: &quot;</span> &lt;&lt; obj.<a class="code hl_variable" href="classFlowIMP.html#a52ed33d77dd5d91a77fbe2419e340803">name</a> &lt;&lt; <span class="stringliteral">&quot; - &quot;</span></div>
-<div class="line"><span class="lineno">   34</span>        &lt;&lt; obj.<a class="code hl_variable" href="classFlowIMP.html#afa8e614474ac3d01f8021778381bc93b">source</a>-&gt;<a class="code hl_function" href="classSystem.html#a3bc2509274e6c346e07b0bf1151378c5">getName</a>() &lt;&lt; <span class="stringliteral">&quot; -----&gt; &quot;</span> &lt;&lt; obj.<a class="code hl_variable" href="classFlowIMP.html#af7c6b2879c828e6271c9e571360f666c">target</a>-&gt;<a class="code hl_function" href="classSystem.html#a3bc2509274e6c346e07b0bf1151378c5">getName</a>(); </div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">   36</span>}</div>
-<div class="ttc" id="aclassFlowIMP_html_a52ed33d77dd5d91a77fbe2419e340803"><div class="ttname"><a href="classFlowIMP.html#a52ed33d77dd5d91a77fbe2419e340803">FlowIMP::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> FlowIMP.h:28</div></div>
-<div class="ttc" id="aclassFlowIMP_html_af7c6b2879c828e6271c9e571360f666c"><div class="ttname"><a href="classFlowIMP.html#af7c6b2879c828e6271c9e571360f666c">FlowIMP::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition</b> FlowIMP.h:30</div></div>
-<div class="ttc" id="aclassFlowIMP_html_afa8e614474ac3d01f8021778381bc93b"><div class="ttname"><a href="classFlowIMP.html#afa8e614474ac3d01f8021778381bc93b">FlowIMP::source</a></div><div class="ttdeci">System * source</div><div class="ttdef"><b>Definition</b> FlowIMP.h:29</div></div>
-<div class="ttc" id="aclassSystem_html_a3bc2509274e6c346e07b0bf1151378c5"><div class="ttname"><a href="classSystem.html#a3bc2509274e6c346e07b0bf1151378c5">System::getName</a></div><div class="ttdeci">virtual std::string getName() const =0</div><div class="ttdoc">This method returns the name of a system.</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0

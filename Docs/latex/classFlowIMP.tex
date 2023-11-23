@@ -6,18 +6,16 @@
 
 
 
-Inheritance diagram for Flow\+IMP\+:
-\nopagebreak
+Inheritance diagram for Flow\+IMP\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classFlowIMP__inherit__graph}
+\includegraphics[width=350pt]{classFlowIMP__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Flow\+IMP\+:
-\nopagebreak
+Collaboration diagram for Flow\+IMP\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -31,7 +29,7 @@ virtual \mbox{\hyperlink{classFlowIMP_ad35ed7773166d61c4f41949f3bf6255d}{\texorp
 \begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{get\+Name}} () const
 \begin{DoxyCompactList}\small\item\em This method returns the name of a flow. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}{set\+Name}} (std\+::string \&\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}})
+void \mbox{\hyperlink{classFlowIMP_a1202522653f350d3aa7f79180bcf6bd8}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}})
 \begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a flow obj. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{get\+Source}} () const
 \begin{DoxyCompactList}\small\item\em This method returns the source system poiter. \end{DoxyCompactList}\item 
@@ -43,8 +41,10 @@ void \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{set\+Targe
 \begin{DoxyCompactList}\small\item\em This method assigns a system poiter to the target of a flow obj. \end{DoxyCompactList}\item 
 virtual double \mbox{\hyperlink{classFlowIMP_a79a838c1710499a8868fb8d394fcd041}{execute}} ()=0
 \begin{DoxyCompactList}\small\item\em Pure virtual method that will be inherited by subclasses created by the user, this one will contain an equation that will be executed in the flow by the model. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other) const
-\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+virtual bool \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFlowIMP_a1d8554794af5319f9e2da9a3bc743f7c}{operator!=}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}!=\textquotesingle{} operator, compare two flows objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classFlow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,11 +64,6 @@ std\+::string \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{n
 \item 
 \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \& \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=}} (const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&other)
 \begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one flow to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-std\+::ostream \& \mbox{\hyperlink{classFlowIMP_a6dcb2e8c8b3da4543750682cb478fa6d}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&obj)
-\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the flow obj info. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -109,7 +104,7 @@ Implements \mbox{\hyperlink{classFlow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
 
 
 
-Implemented in \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial}}, and \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical}}.
+Implemented in \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial}}, \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical}}, and \mbox{\hyperlink{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1}{Flow\+\_\+unit\+\_\+test}}.
 
 \Hypertarget{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}\label{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b} 
 \index{FlowIMP@{FlowIMP}!getName@{getName}}
@@ -165,14 +160,13 @@ References \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{sour
 
 
 
-Referenced by \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial\+::execute()}}.
+Referenced by \mbox{\hyperlink{classExponencial_a35c08ff8bd300f778d559da818190ae6}{Exponencial\+::execute()}}, and \mbox{\hyperlink{classFlow__unit__test_a7dd466b455c64b73f7ff6d427a9ef5b1}{Flow\+\_\+unit\+\_\+test\+::execute()}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=349pt]{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9_icgraph}
+\includegraphics[width=350pt]{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}\label{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23} 
@@ -205,14 +199,42 @@ References \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{targ
 
 Referenced by \mbox{\hyperlink{classLogistical_af7262017be238ab749989cd5728aaaa7}{Logistical\+::execute()}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=333pt]{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23_icgraph}
 \end{center}
 \end{figure}
+\Hypertarget{classFlowIMP_a1d8554794af5319f9e2da9a3bc743f7c}\label{classFlowIMP_a1d8554794af5319f9e2da9a3bc743f7c} 
+\index{FlowIMP@{FlowIMP}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!FlowIMP@{FlowIMP}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Flow\+IMP\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method is overloading the \textquotesingle{}!=\textquotesingle{} operator, compare two flows objs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & flow obj to be compare must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool is returned, false if they are equal and true if not 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ !=\ other.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ ||\ \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ !=\ other.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}\ ||\ \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}\ !=\ other.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}});}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}.
+
 \Hypertarget{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}\label{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b} 
 \index{FlowIMP@{FlowIMP}!operator=@{operator=}}
 \index{operator=@{operator=}!FlowIMP@{FlowIMP}}
@@ -250,7 +272,7 @@ References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name
 \index{FlowIMP@{FlowIMP}!operator==@{operator==}}
 \index{operator==@{operator==}!FlowIMP@{FlowIMP}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
-{\footnotesize\ttfamily bool Flow\+IMP\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{other }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool Flow\+IMP\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -275,11 +297,11 @@ A bool is returned, true if they are equal and false if not
 
 References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}, \mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}, and \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}.
 
-\Hypertarget{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}\label{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac} 
+\Hypertarget{classFlowIMP_a1202522653f350d3aa7f79180bcf6bd8}\label{classFlowIMP_a1202522653f350d3aa7f79180bcf6bd8} 
 \index{FlowIMP@{FlowIMP}!setName@{setName}}
 \index{setName@{setName}!FlowIMP@{FlowIMP}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
-{\footnotesize\ttfamily void Flow\+IMP\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Flow\+IMP\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -292,7 +314,7 @@ This method assigns a string to the name of a flow obj.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classFlow_a20fd3a3ea531c525d7dc40f09d85fe8a}{Flow}}.
+Implements \mbox{\hyperlink{classFlow_aa53921a4d8506221adb157c1b0a54ed1}{Flow}}.
 
 
 \begin{DoxyCode}{0}
@@ -303,6 +325,17 @@ Implements \mbox{\hyperlink{classFlow_a20fd3a3ea531c525d7dc40f09d85fe8a}{Flow}}.
 
 References \mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}.
 
+
+
+Referenced by \mbox{\hyperlink{unit__Flow_8cpp_a486cc4a73802325ea49eb68b2e3c8a01}{test\+\_\+\+Flow\+\_\+equal()}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFlowIMP_a1202522653f350d3aa7f79180bcf6bd8_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}\label{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42} 
 \index{FlowIMP@{FlowIMP}!setSource@{setSource}}
 \index{setSource@{setSource}!FlowIMP@{FlowIMP}}
@@ -361,38 +394,6 @@ References \mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{targ
 
 
 
-\doxysubsection{Friends And Related Symbol Documentation}
-\Hypertarget{classFlowIMP_a6dcb2e8c8b3da4543750682cb478fa6d}\label{classFlowIMP_a6dcb2e8c8b3da4543750682cb478fa6d} 
-\index{FlowIMP@{FlowIMP}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!FlowIMP@{FlowIMP}}
-\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
-{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classFlowIMP}{Flow\+IMP}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
-
-
-
-This method is overloading the \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} operator, print the flow obj info. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em out} & is a ostream obj \\
-\hline
-{\em obj} & is a flow obj \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-a ostream obj to print the obj info 
-\end{DoxyReturn}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00033\ \ \ \ \ out\ <<\ \textcolor{stringliteral}{"{}(Flow)\ Name:\ "{}}\ <<\ obj.\mbox{\hyperlink{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}{name}}\ <<\ \textcolor{stringliteral}{"{}\ -\/\ "{}}}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ <<\ obj.\mbox{\hyperlink{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}{source}}-\/>\mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ <<\ \textcolor{stringliteral}{"{}\ -\/-\/-\/-\/-\/>\ "{}}\ <<\ obj.\mbox{\hyperlink{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}{target}}-\/>\mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}();\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{return}\ out;}
-\DoxyCodeLine{00036\ \}}
-
-\end{DoxyCode}
-
-
 \doxysubsection{Member Data Documentation}
 \Hypertarget{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803}\label{classFlowIMP_a52ed33d77dd5d91a77fbe2419e340803} 
 \index{FlowIMP@{FlowIMP}!name@{name}}
@@ -402,7 +403,7 @@ a ostream obj to print the obj info
 
 Name string attribute. 
 
-Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{get\+Name()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_ac9fe88199a708f54eb7cbd46092d7cac}{set\+Name()}}.
+Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlow__unit__test_adfd75383d922c2d53391b59757934720}{Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test()}}, \mbox{\hyperlink{classFlow__unit__test_ad91f97a34091e7e58455d59a727ba659}{Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test()}}, \mbox{\hyperlink{classFlowIMP_afa974f1f71ff718d8c4a655fd4413c7b}{get\+Name()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1d8554794af5319f9e2da9a3bc743f7c}{operator!=()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_a1202522653f350d3aa7f79180bcf6bd8}{set\+Name()}}.
 
 \Hypertarget{classFlowIMP_afa8e614474ac3d01f8021778381bc93b}\label{classFlowIMP_afa8e614474ac3d01f8021778381bc93b} 
 \index{FlowIMP@{FlowIMP}!source@{source}}
@@ -412,7 +413,7 @@ Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb7691383081
 
 Source system pointer attribute. 
 
-Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{get\+Source()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{set\+Source()}}.
+Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlow__unit__test_adfd75383d922c2d53391b59757934720}{Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test()}}, \mbox{\hyperlink{classFlow__unit__test_ad91f97a34091e7e58455d59a727ba659}{Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test()}}, \mbox{\hyperlink{classFlowIMP_a503ef582e613bb99ac6ad1637ea134e9}{get\+Source()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1d8554794af5319f9e2da9a3bc743f7c}{operator!=()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_ae2ece1dece256fdca54c686a4d57cf42}{set\+Source()}}.
 
 \Hypertarget{classFlowIMP_af7c6b2879c828e6271c9e571360f666c}\label{classFlowIMP_af7c6b2879c828e6271c9e571360f666c} 
 \index{FlowIMP@{FlowIMP}!target@{target}}
@@ -422,7 +423,7 @@ Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb7691383081
 
 Target system pointer attribute. 
 
-Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{get\+Target()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{set\+Target()}}.
+Referenced by \mbox{\hyperlink{classExponencial_a1b561e1b497fd0d42aabb76913830817}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classExponencial_a81682f3197dc4dc053575dc6f8e932e6}{Exponencial\+::\+Exponencial()}}, \mbox{\hyperlink{classFlow__unit__test_adfd75383d922c2d53391b59757934720}{Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test()}}, \mbox{\hyperlink{classFlow__unit__test_ad91f97a34091e7e58455d59a727ba659}{Flow\+\_\+unit\+\_\+test\+::\+Flow\+\_\+unit\+\_\+test()}}, \mbox{\hyperlink{classFlowIMP_a9d80f991fb1b26baef56f0d1195d6b23}{get\+Target()}}, \mbox{\hyperlink{classLogistical_a0d5edd9e2acac43bdbe3032336974df6}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classLogistical_acb58ccd7a98eb60c01b744a1bc62463c}{Logistical\+::\+Logistical()}}, \mbox{\hyperlink{classFlowIMP_a1d8554794af5319f9e2da9a3bc743f7c}{operator!=()}}, \mbox{\hyperlink{classFlowIMP_a1b994411a7fe03d355f4314e695f7c9b}{operator=()}}, \mbox{\hyperlink{classFlowIMP_af761660954310f6a43997240abe6f93c}{operator==()}}, and \mbox{\hyperlink{classFlowIMP_a90d9506286d56e07eed8ee8d9be86734}{set\+Target()}}.
 
 
 
