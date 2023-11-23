@@ -8,8 +8,6 @@
 #define FLOW_H
 
 #include "System.h"
-#include <string>
-#include <iostream>
 
 /**************************************************************************************
  *@brief The Flow Interface is the Interface that defines the methods to be implemented

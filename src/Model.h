@@ -9,9 +9,6 @@
 
 #include "System.h"
 #include "Flow.h"
-#include <string>
-#include <iostream>
-#include <vector>
 
 /*****************************************************************************************************************
  *@brief This class represents the general simulation model, it contains figures for simulation and its execution.

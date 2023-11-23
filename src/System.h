@@ -7,10 +7,6 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
-//Bibliotecas
-#include <string>
-#include <iostream>
-
 /****************************************************************************************
  *@brief The System Interface is the Interface that defines the methods to be implemented
 ****************************************************************************************/
