@@ -1,3 +1,9 @@
+/************************************************************
+ * @file unit_Flow.h
+ * @author Pedro Augusto Sousa Gonçalves
+ * @brief This file represents the model units tests
+************************************************************/
+
 #ifndef UNIT_MODEL_H
 #define UNIT_MODEL_H
 
@@ -5,12 +11,6 @@
 #include "../../../src/SystemIMP.h"
 #include "../../../src/ModelIMP.h"
 #include "unit_Flow.h"
-
-/************************************************************
- * @file unit_Flow.h
- * @author Pedro Augusto Sousa Gonçalves
- * @brief This file represents the model units tests
-************************************************************/
 
 #include <iostream>
 #include <string>
