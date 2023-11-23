@@ -43,6 +43,8 @@ void \mbox{\hyperlink{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0}{test\+
 \begin{DoxyCompactList}\small\item\em This function run the unit test of the model rmv \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Flow}} ()
 \begin{DoxyCompactList}\small\item\em This function run the unit test of the model rmv \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7}{test\+\_\+\+Model\+\_\+run}} ()
+\begin{DoxyCompactList}\small\item\em This function run the unit test of the model run. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{unit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc}{run\+\_\+\+Model\+\_\+unit\+\_\+test}} ()
 \begin{DoxyCompactList}\small\item\em This function run the unit tests of the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -60,31 +62,32 @@ This function run the unit tests of the model.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00224\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ Start\ Model\ unit\ tests\(\backslash\)n"{}};}
-\DoxyCodeLine{00225\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_aef1204c58975e69557b130c433035c2f}{test\_Model\_constructor}}();}
-\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a97d43965f1e327f778a770081cbc5ef0}{test\_Model\_destructor}}();}
-\DoxyCodeLine{00227\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_af22a39c0b4c847dfc93426ff60efcb47}{test\_Model\_getName}}();}
-\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_aed8df112d365482bcc0020c51d9ffa56}{test\_Model\_getSystems\_and\_add}}();}
-\DoxyCodeLine{00229\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_acce5f12f0ab4271785b1cea7fce39f44}{test\_Model\_getFlows\_and\_add}}();}
-\DoxyCodeLine{00230\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a3a7114e2256a49ceb0cf5d551ebcbe32}{test\_Model\_getStartTime}}();}
-\DoxyCodeLine{00231\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_abaec6e98c3e479d0d8306a5699bb452e}{test\_Model\_getEndTime}}();}
-\DoxyCodeLine{00232\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a29b04d2bec249d4c750caa7ec1e02d38}{test\_Model\_setName}}();}
-\DoxyCodeLine{00233\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a2539546032c137d3813642d44f5d70d6}{test\_Model\_setSystems}}();}
-\DoxyCodeLine{00234\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a5aba41d3ef8a55cb87a0659f6b25a8fa}{test\_Model\_setFlows}}();}
-\DoxyCodeLine{00235\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_afc8be995a0f26402419487a2e7aa38ac}{test\_Model\_setStartTime}}();}
-\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a128f612c3678d25d3094186c714ce92c}{test\_Model\_setEndTime}}();}
-\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_ab2373af3670d07b04964ef9f97e30c44}{test\_Model\_setTime}}();}
-\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0}{test\_Model\_rmv\_Sytem}}();}
-\DoxyCodeLine{00239\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72}{test\_Model\_rmv\_Flow}}();}
-\DoxyCodeLine{00240\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_aa2ddbb11b877eedcdbfd2fb330cccfdf}{test\_Model\_equal}}();}
-\DoxyCodeLine{00241\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ End\ Model\ unit\ tests\(\backslash\)n"{}};}
-\DoxyCodeLine{00242\ \}}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00246\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ Start\ Model\ unit\ tests\(\backslash\)n"{}};}
+\DoxyCodeLine{00247\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_aef1204c58975e69557b130c433035c2f}{test\_Model\_constructor}}();}
+\DoxyCodeLine{00248\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a97d43965f1e327f778a770081cbc5ef0}{test\_Model\_destructor}}();}
+\DoxyCodeLine{00249\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_af22a39c0b4c847dfc93426ff60efcb47}{test\_Model\_getName}}();}
+\DoxyCodeLine{00250\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_aed8df112d365482bcc0020c51d9ffa56}{test\_Model\_getSystems\_and\_add}}();}
+\DoxyCodeLine{00251\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_acce5f12f0ab4271785b1cea7fce39f44}{test\_Model\_getFlows\_and\_add}}();}
+\DoxyCodeLine{00252\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a3a7114e2256a49ceb0cf5d551ebcbe32}{test\_Model\_getStartTime}}();}
+\DoxyCodeLine{00253\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_abaec6e98c3e479d0d8306a5699bb452e}{test\_Model\_getEndTime}}();}
+\DoxyCodeLine{00254\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a29b04d2bec249d4c750caa7ec1e02d38}{test\_Model\_setName}}();}
+\DoxyCodeLine{00255\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a2539546032c137d3813642d44f5d70d6}{test\_Model\_setSystems}}();}
+\DoxyCodeLine{00256\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a5aba41d3ef8a55cb87a0659f6b25a8fa}{test\_Model\_setFlows}}();}
+\DoxyCodeLine{00257\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_afc8be995a0f26402419487a2e7aa38ac}{test\_Model\_setStartTime}}();}
+\DoxyCodeLine{00258\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a128f612c3678d25d3094186c714ce92c}{test\_Model\_setEndTime}}();}
+\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_ab2373af3670d07b04964ef9f97e30c44}{test\_Model\_setTime}}();}
+\DoxyCodeLine{00260\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0}{test\_Model\_rmv\_Sytem}}();}
+\DoxyCodeLine{00261\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72}{test\_Model\_rmv\_Flow}}();}
+\DoxyCodeLine{00262\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7}{test\_Model\_run}}();}
+\DoxyCodeLine{00263\ \ \ \ \ \mbox{\hyperlink{unit__Model_8cpp_aa2ddbb11b877eedcdbfd2fb330cccfdf}{test\_Model\_equal}}();}
+\DoxyCodeLine{00264\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ End\ Model\ unit\ tests\(\backslash\)n"{}};}
+\DoxyCodeLine{00265\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{unit__Model_8cpp_aef1204c58975e69557b130c433035c2f}{test\+\_\+\+Model\+\_\+constructor()}}, \mbox{\hyperlink{unit__Model_8cpp_a97d43965f1e327f778a770081cbc5ef0}{test\+\_\+\+Model\+\_\+destructor()}}, \mbox{\hyperlink{unit__Model_8cpp_aa2ddbb11b877eedcdbfd2fb330cccfdf}{test\+\_\+\+Model\+\_\+equal()}}, \mbox{\hyperlink{unit__Model_8cpp_abaec6e98c3e479d0d8306a5699bb452e}{test\+\_\+\+Model\+\_\+get\+End\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_acce5f12f0ab4271785b1cea7fce39f44}{test\+\_\+\+Model\+\_\+get\+Flows\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_af22a39c0b4c847dfc93426ff60efcb47}{test\+\_\+\+Model\+\_\+get\+Name()}}, \mbox{\hyperlink{unit__Model_8cpp_a3a7114e2256a49ceb0cf5d551ebcbe32}{test\+\_\+\+Model\+\_\+get\+Start\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_aed8df112d365482bcc0020c51d9ffa56}{test\+\_\+\+Model\+\_\+get\+Systems\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Flow()}}, \mbox{\hyperlink{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Sytem()}}, \mbox{\hyperlink{unit__Model_8cpp_a128f612c3678d25d3094186c714ce92c}{test\+\_\+\+Model\+\_\+set\+End\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_a5aba41d3ef8a55cb87a0659f6b25a8fa}{test\+\_\+\+Model\+\_\+set\+Flows()}}, \mbox{\hyperlink{unit__Model_8cpp_a29b04d2bec249d4c750caa7ec1e02d38}{test\+\_\+\+Model\+\_\+set\+Name()}}, \mbox{\hyperlink{unit__Model_8cpp_afc8be995a0f26402419487a2e7aa38ac}{test\+\_\+\+Model\+\_\+set\+Start\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_a2539546032c137d3813642d44f5d70d6}{test\+\_\+\+Model\+\_\+set\+Systems()}}, and \mbox{\hyperlink{unit__Model_8cpp_ab2373af3670d07b04964ef9f97e30c44}{test\+\_\+\+Model\+\_\+set\+Time()}}.
+References \mbox{\hyperlink{unit__Model_8cpp_aef1204c58975e69557b130c433035c2f}{test\+\_\+\+Model\+\_\+constructor()}}, \mbox{\hyperlink{unit__Model_8cpp_a97d43965f1e327f778a770081cbc5ef0}{test\+\_\+\+Model\+\_\+destructor()}}, \mbox{\hyperlink{unit__Model_8cpp_aa2ddbb11b877eedcdbfd2fb330cccfdf}{test\+\_\+\+Model\+\_\+equal()}}, \mbox{\hyperlink{unit__Model_8cpp_abaec6e98c3e479d0d8306a5699bb452e}{test\+\_\+\+Model\+\_\+get\+End\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_acce5f12f0ab4271785b1cea7fce39f44}{test\+\_\+\+Model\+\_\+get\+Flows\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_af22a39c0b4c847dfc93426ff60efcb47}{test\+\_\+\+Model\+\_\+get\+Name()}}, \mbox{\hyperlink{unit__Model_8cpp_a3a7114e2256a49ceb0cf5d551ebcbe32}{test\+\_\+\+Model\+\_\+get\+Start\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_aed8df112d365482bcc0020c51d9ffa56}{test\+\_\+\+Model\+\_\+get\+Systems\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Flow()}}, \mbox{\hyperlink{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Sytem()}}, \mbox{\hyperlink{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7}{test\+\_\+\+Model\+\_\+run()}}, \mbox{\hyperlink{unit__Model_8cpp_a128f612c3678d25d3094186c714ce92c}{test\+\_\+\+Model\+\_\+set\+End\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_a5aba41d3ef8a55cb87a0659f6b25a8fa}{test\+\_\+\+Model\+\_\+set\+Flows()}}, \mbox{\hyperlink{unit__Model_8cpp_a29b04d2bec249d4c750caa7ec1e02d38}{test\+\_\+\+Model\+\_\+set\+Name()}}, \mbox{\hyperlink{unit__Model_8cpp_afc8be995a0f26402419487a2e7aa38ac}{test\+\_\+\+Model\+\_\+set\+Start\+Time()}}, \mbox{\hyperlink{unit__Model_8cpp_a2539546032c137d3813642d44f5d70d6}{test\+\_\+\+Model\+\_\+set\+Systems()}}, and \mbox{\hyperlink{unit__Model_8cpp_ab2373af3670d07b04964ef9f97e30c44}{test\+\_\+\+Model\+\_\+set\+Time()}}.
 
 
 
@@ -529,16 +532,14 @@ References \mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{Model\
 
 Referenced by \mbox{\hyperlink{unit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc}{run\+\_\+\+Model\+\_\+unit\+\_\+test()}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=312pt]{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -579,12 +580,69 @@ References \mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{Model\
 
 Referenced by \mbox{\hyperlink{unit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc}{run\+\_\+\+Model\+\_\+unit\+\_\+test()}}.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7}\label{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7} 
+\index{unit\_Model.cpp@{unit\_Model.cpp}!test\_Model\_run@{test\_Model\_run}}
+\index{test\_Model\_run@{test\_Model\_run}!unit\_Model.cpp@{unit\_Model.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_Model\_run()}{test\_Model\_run()}}
+{\footnotesize\ttfamily void test\+\_\+\+Model\+\_\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function run the unit test of the model run. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00224\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ *\ Run\ tests\(\backslash\)n"{}};}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ s1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}s1"{}},\ 100);}
+\DoxyCodeLine{00227\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ s2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}s2"{}},\ 0.0);}
+\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ f1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classFlow__unit__test}{Flow\_unit\_test}}(\textcolor{stringliteral}{"{}f1"{}},\ s1,\ s2);}
+\DoxyCodeLine{00229\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}*\ m1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}(\textcolor{stringliteral}{"{}m1"{}},\ 0,\ 1);}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ m1-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(s1);}
+\DoxyCodeLine{00232\ \ \ \ \ m1-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(s2);}
+\DoxyCodeLine{00233\ \ \ \ \ m1-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(f1);}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \ \ \ \ m1-\/>\mbox{\hyperlink{classModel_a459b1a5044aa3ed60dd8d56b3f0596f6}{run}}();}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \ \ \ \ assert(s1-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ ==\ 0);}
+\DoxyCodeLine{00238\ \ \ \ \ assert(s2-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ ==\ 100);}
+\DoxyCodeLine{00239\ \ \ \ \ }
+\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keyword}{delete}\ s1;}
+\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keyword}{delete}\ s2;}
+\DoxyCodeLine{00242\ \ \ \ \ \textcolor{keyword}{delete}\ f1;}
+\DoxyCodeLine{00243\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{Model\+::add()}}, \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{System\+::get\+Value()}}, and \mbox{\hyperlink{classModel_a459b1a5044aa3ed60dd8d56b3f0596f6}{Model\+::run()}}.
+
+
+
+Referenced by \mbox{\hyperlink{unit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc}{run\+\_\+\+Model\+\_\+unit\+\_\+test()}}.
+
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=320pt]{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_cgraph}
+\includegraphics[width=310pt]{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:
@@ -592,7 +650,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_icgraph}
+\includegraphics[width=350pt]{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{unit__Model_8cpp_a128f612c3678d25d3094186c714ce92c}\label{unit__Model_8cpp_a128f612c3678d25d3094186c714ce92c} 

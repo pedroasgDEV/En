@@ -220,6 +220,28 @@ void test_Model_rmv_Flow(){
     delete flow1;
 }
 
+void test_Model_run(){
+    std::cout << "        * Run tests\n";
+
+    System* s1 = new SystemIMP("s1", 100);
+    System* s2 = new SystemIMP("s2", 0.0);
+    Flow* f1 = new Flow_unit_test("f1", s1, s2);
+    Model* m1 = new ModelIMP("m1", 0, 1);
+
+    m1->add(s1);
+    m1->add(s2);
+    m1->add(f1);
+
+    m1->run();
+
+    assert(s1->getValue() == 0);
+    assert(s2->getValue() == 100);
+    
+    delete s1;
+    delete s2;
+    delete f1;
+}
+
 void run_Model_unit_test(){
     std::cout << "    Start Model unit tests\n";
     test_Model_constructor();
@@ -237,6 +259,7 @@ void run_Model_unit_test(){
     test_Model_setTime();
     test_Model_rmv_Sytem();
     test_Model_rmv_Flow();
+    test_Model_run();
     test_Model_equal();
     std::cout << "    End Model unit tests\n";
 }

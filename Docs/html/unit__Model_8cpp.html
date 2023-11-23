@@ -185,6 +185,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a65442995018d389354cf7f7f21c49f72" id="r_a65442995018d389354cf7f7f21c49f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65442995018d389354cf7f7f21c49f72">test_Model_rmv_Flow</a> ()</td></tr>
 <tr class="memdesc:a65442995018d389354cf7f7f21c49f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function run the unit test of the model rmv <a class="el" href="classFlow.html">Flow</a>.  <br /></td></tr>
 <tr class="separator:a65442995018d389354cf7f7f21c49f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5813490c052f3b21c0fc0293bf71cae7" id="r_a5813490c052f3b21c0fc0293bf71cae7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5813490c052f3b21c0fc0293bf71cae7">test_Model_run</a> ()</td></tr>
+<tr class="memdesc:a5813490c052f3b21c0fc0293bf71cae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function run the unit test of the model run.  <br /></td></tr>
+<tr class="separator:a5813490c052f3b21c0fc0293bf71cae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a397714426fcb0ba9a26d6024108b61cc" id="r_a397714426fcb0ba9a26d6024108b61cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a397714426fcb0ba9a26d6024108b61cc">run_Model_unit_test</a> ()</td></tr>
 <tr class="memdesc:a397714426fcb0ba9a26d6024108b61cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function run the unit tests of the model.  <br /></td></tr>
 <tr class="separator:a397714426fcb0ba9a26d6024108b61cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,30 +209,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function run the unit tests of the model. </p>
-<div class="fragment"><div class="line"><span class="lineno">  223</span>                          {</div>
-<div class="line"><span class="lineno">  224</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;    Start Model unit tests\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  225</span>    <a class="code hl_function" href="#aef1204c58975e69557b130c433035c2f">test_Model_constructor</a>();</div>
-<div class="line"><span class="lineno">  226</span>    <a class="code hl_function" href="#a97d43965f1e327f778a770081cbc5ef0">test_Model_destructor</a>();</div>
-<div class="line"><span class="lineno">  227</span>    <a class="code hl_function" href="#af22a39c0b4c847dfc93426ff60efcb47">test_Model_getName</a>();</div>
-<div class="line"><span class="lineno">  228</span>    <a class="code hl_function" href="#aed8df112d365482bcc0020c51d9ffa56">test_Model_getSystems_and_add</a>();</div>
-<div class="line"><span class="lineno">  229</span>    <a class="code hl_function" href="#acce5f12f0ab4271785b1cea7fce39f44">test_Model_getFlows_and_add</a>();</div>
-<div class="line"><span class="lineno">  230</span>    <a class="code hl_function" href="#a3a7114e2256a49ceb0cf5d551ebcbe32">test_Model_getStartTime</a>();</div>
-<div class="line"><span class="lineno">  231</span>    <a class="code hl_function" href="#abaec6e98c3e479d0d8306a5699bb452e">test_Model_getEndTime</a>();</div>
-<div class="line"><span class="lineno">  232</span>    <a class="code hl_function" href="#a29b04d2bec249d4c750caa7ec1e02d38">test_Model_setName</a>();</div>
-<div class="line"><span class="lineno">  233</span>    <a class="code hl_function" href="#a2539546032c137d3813642d44f5d70d6">test_Model_setSystems</a>();</div>
-<div class="line"><span class="lineno">  234</span>    <a class="code hl_function" href="#a5aba41d3ef8a55cb87a0659f6b25a8fa">test_Model_setFlows</a>();</div>
-<div class="line"><span class="lineno">  235</span>    <a class="code hl_function" href="#afc8be995a0f26402419487a2e7aa38ac">test_Model_setStartTime</a>();</div>
-<div class="line"><span class="lineno">  236</span>    <a class="code hl_function" href="#a128f612c3678d25d3094186c714ce92c">test_Model_setEndTime</a>();</div>
-<div class="line"><span class="lineno">  237</span>    <a class="code hl_function" href="#ab2373af3670d07b04964ef9f97e30c44">test_Model_setTime</a>();</div>
-<div class="line"><span class="lineno">  238</span>    <a class="code hl_function" href="#a8402e36a13024e0f3f69918641bf6ef0">test_Model_rmv_Sytem</a>();</div>
-<div class="line"><span class="lineno">  239</span>    <a class="code hl_function" href="#a65442995018d389354cf7f7f21c49f72">test_Model_rmv_Flow</a>();</div>
-<div class="line"><span class="lineno">  240</span>    <a class="code hl_function" href="#aa2ddbb11b877eedcdbfd2fb330cccfdf">test_Model_equal</a>();</div>
-<div class="line"><span class="lineno">  241</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;    End Model unit tests\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  242</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  245</span>                          {</div>
+<div class="line"><span class="lineno">  246</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;    Start Model unit tests\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  247</span>    <a class="code hl_function" href="#aef1204c58975e69557b130c433035c2f">test_Model_constructor</a>();</div>
+<div class="line"><span class="lineno">  248</span>    <a class="code hl_function" href="#a97d43965f1e327f778a770081cbc5ef0">test_Model_destructor</a>();</div>
+<div class="line"><span class="lineno">  249</span>    <a class="code hl_function" href="#af22a39c0b4c847dfc93426ff60efcb47">test_Model_getName</a>();</div>
+<div class="line"><span class="lineno">  250</span>    <a class="code hl_function" href="#aed8df112d365482bcc0020c51d9ffa56">test_Model_getSystems_and_add</a>();</div>
+<div class="line"><span class="lineno">  251</span>    <a class="code hl_function" href="#acce5f12f0ab4271785b1cea7fce39f44">test_Model_getFlows_and_add</a>();</div>
+<div class="line"><span class="lineno">  252</span>    <a class="code hl_function" href="#a3a7114e2256a49ceb0cf5d551ebcbe32">test_Model_getStartTime</a>();</div>
+<div class="line"><span class="lineno">  253</span>    <a class="code hl_function" href="#abaec6e98c3e479d0d8306a5699bb452e">test_Model_getEndTime</a>();</div>
+<div class="line"><span class="lineno">  254</span>    <a class="code hl_function" href="#a29b04d2bec249d4c750caa7ec1e02d38">test_Model_setName</a>();</div>
+<div class="line"><span class="lineno">  255</span>    <a class="code hl_function" href="#a2539546032c137d3813642d44f5d70d6">test_Model_setSystems</a>();</div>
+<div class="line"><span class="lineno">  256</span>    <a class="code hl_function" href="#a5aba41d3ef8a55cb87a0659f6b25a8fa">test_Model_setFlows</a>();</div>
+<div class="line"><span class="lineno">  257</span>    <a class="code hl_function" href="#afc8be995a0f26402419487a2e7aa38ac">test_Model_setStartTime</a>();</div>
+<div class="line"><span class="lineno">  258</span>    <a class="code hl_function" href="#a128f612c3678d25d3094186c714ce92c">test_Model_setEndTime</a>();</div>
+<div class="line"><span class="lineno">  259</span>    <a class="code hl_function" href="#ab2373af3670d07b04964ef9f97e30c44">test_Model_setTime</a>();</div>
+<div class="line"><span class="lineno">  260</span>    <a class="code hl_function" href="#a8402e36a13024e0f3f69918641bf6ef0">test_Model_rmv_Sytem</a>();</div>
+<div class="line"><span class="lineno">  261</span>    <a class="code hl_function" href="#a65442995018d389354cf7f7f21c49f72">test_Model_rmv_Flow</a>();</div>
+<div class="line"><span class="lineno">  262</span>    <a class="code hl_function" href="#a5813490c052f3b21c0fc0293bf71cae7">test_Model_run</a>();</div>
+<div class="line"><span class="lineno">  263</span>    <a class="code hl_function" href="#aa2ddbb11b877eedcdbfd2fb330cccfdf">test_Model_equal</a>();</div>
+<div class="line"><span class="lineno">  264</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;    End Model unit tests\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  265</span>}</div>
 <div class="ttc" id="aunit__Model_8cpp_html_a128f612c3678d25d3094186c714ce92c"><div class="ttname"><a href="#a128f612c3678d25d3094186c714ce92c">test_Model_setEndTime</a></div><div class="ttdeci">void test_Model_setEndTime()</div><div class="ttdoc">This function run the unit test of the model setEndTime.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:153</div></div>
 <div class="ttc" id="aunit__Model_8cpp_html_a2539546032c137d3813642d44f5d70d6"><div class="ttname"><a href="#a2539546032c137d3813642d44f5d70d6">test_Model_setSystems</a></div><div class="ttdeci">void test_Model_setSystems()</div><div class="ttdoc">This function run the unit test of the model setSystems.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:113</div></div>
 <div class="ttc" id="aunit__Model_8cpp_html_a29b04d2bec249d4c750caa7ec1e02d38"><div class="ttname"><a href="#a29b04d2bec249d4c750caa7ec1e02d38">test_Model_setName</a></div><div class="ttdeci">void test_Model_setName()</div><div class="ttdoc">This function run the unit test of the model setName.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:99</div></div>
 <div class="ttc" id="aunit__Model_8cpp_html_a3a7114e2256a49ceb0cf5d551ebcbe32"><div class="ttname"><a href="#a3a7114e2256a49ceb0cf5d551ebcbe32">test_Model_getStartTime</a></div><div class="ttdeci">void test_Model_getStartTime()</div><div class="ttdoc">This function run the unit test of the model getStartTime.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:75</div></div>
+<div class="ttc" id="aunit__Model_8cpp_html_a5813490c052f3b21c0fc0293bf71cae7"><div class="ttname"><a href="#a5813490c052f3b21c0fc0293bf71cae7">test_Model_run</a></div><div class="ttdeci">void test_Model_run()</div><div class="ttdoc">This function run the unit test of the model run.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:223</div></div>
 <div class="ttc" id="aunit__Model_8cpp_html_a5aba41d3ef8a55cb87a0659f6b25a8fa"><div class="ttname"><a href="#a5aba41d3ef8a55cb87a0659f6b25a8fa">test_Model_setFlows</a></div><div class="ttdeci">void test_Model_setFlows()</div><div class="ttdoc">This function run the unit test of the model setFlows.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:126</div></div>
 <div class="ttc" id="aunit__Model_8cpp_html_a65442995018d389354cf7f7f21c49f72"><div class="ttname"><a href="#a65442995018d389354cf7f7f21c49f72">test_Model_rmv_Flow</a></div><div class="ttdeci">void test_Model_rmv_Flow()</div><div class="ttdoc">This function run the unit test of the model rmv Flow.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:210</div></div>
 <div class="ttc" id="aunit__Model_8cpp_html_a8402e36a13024e0f3f69918641bf6ef0"><div class="ttname"><a href="#a8402e36a13024e0f3f69918641bf6ef0">test_Model_rmv_Sytem</a></div><div class="ttdeci">void test_Model_rmv_Sytem()</div><div class="ttdoc">This function run the unit test of the model rmv System.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:197</div></div>
@@ -243,7 +248,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aunit__Model_8cpp_html_af22a39c0b4c847dfc93426ff60efcb47"><div class="ttname"><a href="#af22a39c0b4c847dfc93426ff60efcb47">test_Model_getName</a></div><div class="ttdeci">void test_Model_getName()</div><div class="ttdoc">This function run the unit test of the model getName.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:37</div></div>
 <div class="ttc" id="aunit__Model_8cpp_html_afc8be995a0f26402419487a2e7aa38ac"><div class="ttname"><a href="#afc8be995a0f26402419487a2e7aa38ac">test_Model_setStartTime</a></div><div class="ttdeci">void test_Model_setStartTime()</div><div class="ttdoc">This function run the unit test of the model setStartTime.</div><div class="ttdef"><b>Definition</b> unit_Model.cpp:139</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="#aef1204c58975e69557b130c433035c2f">test_Model_constructor()</a>, <a class="el" href="#a97d43965f1e327f778a770081cbc5ef0">test_Model_destructor()</a>, <a class="el" href="#aa2ddbb11b877eedcdbfd2fb330cccfdf">test_Model_equal()</a>, <a class="el" href="#abaec6e98c3e479d0d8306a5699bb452e">test_Model_getEndTime()</a>, <a class="el" href="#acce5f12f0ab4271785b1cea7fce39f44">test_Model_getFlows_and_add()</a>, <a class="el" href="#af22a39c0b4c847dfc93426ff60efcb47">test_Model_getName()</a>, <a class="el" href="#a3a7114e2256a49ceb0cf5d551ebcbe32">test_Model_getStartTime()</a>, <a class="el" href="#aed8df112d365482bcc0020c51d9ffa56">test_Model_getSystems_and_add()</a>, <a class="el" href="#a65442995018d389354cf7f7f21c49f72">test_Model_rmv_Flow()</a>, <a class="el" href="#a8402e36a13024e0f3f69918641bf6ef0">test_Model_rmv_Sytem()</a>, <a class="el" href="#a128f612c3678d25d3094186c714ce92c">test_Model_setEndTime()</a>, <a class="el" href="#a5aba41d3ef8a55cb87a0659f6b25a8fa">test_Model_setFlows()</a>, <a class="el" href="#a29b04d2bec249d4c750caa7ec1e02d38">test_Model_setName()</a>, <a class="el" href="#afc8be995a0f26402419487a2e7aa38ac">test_Model_setStartTime()</a>, <a class="el" href="#a2539546032c137d3813642d44f5d70d6">test_Model_setSystems()</a>, and <a class="el" href="#ab2373af3670d07b04964ef9f97e30c44">test_Model_setTime()</a>.</p>
+<p class="reference">References <a class="el" href="#aef1204c58975e69557b130c433035c2f">test_Model_constructor()</a>, <a class="el" href="#a97d43965f1e327f778a770081cbc5ef0">test_Model_destructor()</a>, <a class="el" href="#aa2ddbb11b877eedcdbfd2fb330cccfdf">test_Model_equal()</a>, <a class="el" href="#abaec6e98c3e479d0d8306a5699bb452e">test_Model_getEndTime()</a>, <a class="el" href="#acce5f12f0ab4271785b1cea7fce39f44">test_Model_getFlows_and_add()</a>, <a class="el" href="#af22a39c0b4c847dfc93426ff60efcb47">test_Model_getName()</a>, <a class="el" href="#a3a7114e2256a49ceb0cf5d551ebcbe32">test_Model_getStartTime()</a>, <a class="el" href="#aed8df112d365482bcc0020c51d9ffa56">test_Model_getSystems_and_add()</a>, <a class="el" href="#a65442995018d389354cf7f7f21c49f72">test_Model_rmv_Flow()</a>, <a class="el" href="#a8402e36a13024e0f3f69918641bf6ef0">test_Model_rmv_Sytem()</a>, <a class="el" href="#a5813490c052f3b21c0fc0293bf71cae7">test_Model_run()</a>, <a class="el" href="#a128f612c3678d25d3094186c714ce92c">test_Model_setEndTime()</a>, <a class="el" href="#a5aba41d3ef8a55cb87a0659f6b25a8fa">test_Model_setFlows()</a>, <a class="el" href="#a29b04d2bec249d4c750caa7ec1e02d38">test_Model_setName()</a>, <a class="el" href="#afc8be995a0f26402419487a2e7aa38ac">test_Model_setStartTime()</a>, <a class="el" href="#a2539546032c137d3813642d44f5d70d6">test_Model_setSystems()</a>, and <a class="el" href="#ab2373af3670d07b04964ef9f97e30c44">test_Model_setTime()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
 <div class="dynheader">
@@ -251,39 +256,41 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="unit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc_cgraph.png" border="0" usemap="#aunit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc_cgraph" alt=""/></div>
 <map name="aunit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc_cgraph" id="aunit__Model_8cpp_a397714426fcb0ba9a26d6024108b61cc_cgraph">
-<area shape="rect" title="This function run the unit tests of the model." alt="" coords="5,376,160,401"/>
+<area shape="rect" title="This function run the unit tests of the model." alt="" coords="5,400,160,425"/>
 <area shape="rect" href="unit__Model_8cpp.html#aef1204c58975e69557b130c433035c2f" title="This function run the unit test of the model constructor." alt="" coords="214,153,389,179"/>
-<area shape="poly" title=" " alt="" coords="86,375,100,338,125,287,160,233,182,209,206,188,215,182,218,187,210,192,186,213,164,237,130,290,105,340,91,377"/>
+<area shape="poly" title=" " alt="" coords="85,399,98,358,122,301,157,240,180,212,206,188,214,183,217,187,210,192,184,216,162,243,126,303,103,360,90,401"/>
 <area shape="rect" href="unit__Model_8cpp.html#a97d43965f1e327f778a770081cbc5ef0" title="This function run the unit test of the model destructor." alt="" coords="218,400,385,425"/>
-<area shape="poly" title=" " alt="" coords="160,394,205,399,204,405,160,400"/>
+<area shape="poly" title=" " alt="" coords="160,410,204,410,204,415,160,415"/>
 <area shape="rect" href="unit__Model_8cpp.html#aa2ddbb11b877eedcdbfd2fb330cccfdf" title="This function run the unit test of the model equal." alt="" coords="233,449,370,475"/>
-<area shape="poly" title=" " alt="" coords="115,399,209,434,238,443,236,448,207,439,113,404"/>
+<area shape="poly" title=" " alt="" coords="140,423,232,444,230,449,139,428"/>
 <area shape="rect" href="unit__Model_8cpp.html#abaec6e98c3e479d0d8306a5699bb452e" title="This function run the unit test of the model getEndTime." alt="" coords="212,55,391,80"/>
-<area shape="poly" title=" " alt="" coords="83,375,91,322,112,245,128,203,149,161,175,123,206,89,212,85,215,89,210,93,179,126,153,164,133,205,117,247,97,323,88,376"/>
-<area shape="rect" href="unit__Model_8cpp.html#acce5f12f0ab4271785b1cea7fce39f44" title="This function run the unit test of the model getFlows and add Flow." alt="" coords="221,713,381,753"/>
-<area shape="poly" title=" " alt="" coords="88,401,97,455,117,535,133,579,153,622,179,663,210,699,214,703,211,707,206,703,174,666,149,625,128,581,112,536,91,456,83,402"/>
+<area shape="poly" title=" " alt="" coords="82,400,90,343,109,260,125,214,146,168,173,126,206,89,212,85,215,89,210,93,177,129,150,171,130,216,114,261,95,344,88,400"/>
+<area shape="rect" href="unit__Model_8cpp.html#acce5f12f0ab4271785b1cea7fce39f44" title="This function run the unit test of the model getFlows and add Flow." alt="" coords="221,762,381,802"/>
+<area shape="poly" title=" " alt="" coords="88,425,95,482,114,569,130,616,151,663,177,708,210,747,216,752,212,756,206,751,173,711,146,666,125,618,109,570,90,483,82,426"/>
 <area shape="rect" href="unit__Model_8cpp.html#af22a39c0b4c847dfc93426ff60efcb47" title="This function run the unit test of the model getName." alt="" coords="221,301,382,327"/>
-<area shape="poly" title=" " alt="" coords="111,373,207,335,232,328,234,333,209,341,113,378"/>
+<area shape="poly" title=" " alt="" coords="100,398,147,367,207,336,227,328,229,333,209,340,150,371,103,402"/>
 <area shape="rect" href="unit__Model_8cpp.html#a3a7114e2256a49ceb0cf5d551ebcbe32" title="This function run the unit test of the model getStartTime." alt="" coords="208,203,395,228"/>
-<area shape="poly" title=" " alt="" coords="89,375,132,309,166,270,207,237,218,231,220,236,209,242,170,274,136,312,93,377"/>
+<area shape="poly" title=" " alt="" coords="87,399,103,366,128,322,163,276,206,237,216,231,219,236,210,241,167,280,133,325,107,368,92,401"/>
 <area shape="rect" href="unit__Model_8cpp.html#aed8df112d365482bcc0020c51d9ffa56" title="This function run the unit test of the model getSystems and add System." alt="" coords="212,598,391,638"/>
-<area shape="poly" title=" " alt="" coords="91,400,106,436,131,486,165,538,186,563,210,584,216,589,213,593,206,588,183,566,161,542,126,488,101,439,86,402"/>
+<area shape="poly" title=" " alt="" coords="92,424,134,498,168,543,210,583,220,589,217,594,206,587,164,547,130,501,88,427"/>
 <area shape="rect" href="unit__Model_8cpp.html#a65442995018d389354cf7f7f21c49f72" title="This function run the unit test of the model rmv Flow." alt="" coords="219,499,384,524"/>
-<area shape="poly" title=" " alt="" coords="98,399,145,441,176,464,209,484,228,492,226,497,207,488,173,468,141,445,95,403"/>
+<area shape="poly" title=" " alt="" coords="104,423,150,453,209,484,232,492,230,497,207,488,148,458,101,428"/>
 <area shape="rect" href="unit__Model_8cpp.html#a8402e36a13024e0f3f69918641bf6ef0" title="This function run the unit test of the model rmv System." alt="" coords="213,548,389,573"/>
-<area shape="poly" title=" " alt="" coords="93,400,137,464,170,501,209,533,223,541,221,545,207,538,167,505,133,467,89,403"/>
+<area shape="poly" title=" " alt="" coords="95,424,141,477,173,507,209,533,225,541,223,546,207,538,170,511,137,481,91,427"/>
+<area shape="rect" href="unit__Model_8cpp.html#a5813490c052f3b21c0fc0293bf71cae7" title="This function run the unit test of the model run." alt="" coords="240,712,363,737"/>
+<area shape="poly" title=" " alt="" coords="88,425,98,476,119,550,135,590,155,629,180,666,210,697,228,709,226,714,206,701,176,669,150,632,130,592,114,552,92,478,83,426"/>
 <area shape="rect" href="unit__Model_8cpp.html#a128f612c3678d25d3094186c714ce92c" title="This function run the unit test of the model setEndTime." alt="" coords="212,5,391,31"/>
-<area shape="poly" title=" " alt="" coords="82,375,88,315,106,225,122,175,143,126,171,80,206,40,212,36,215,40,210,44,175,83,148,128,127,177,111,226,93,316,87,376"/>
-<area shape="rect" href="unit__Model_8cpp.html#a5aba41d3ef8a55cb87a0659f6b25a8fa" title="This function run the unit test of the model setFlows." alt="" coords="222,777,381,803"/>
-<area shape="poly" title=" " alt="" coords="87,401,91,466,108,563,123,617,145,670,173,720,210,763,217,768,213,772,206,767,169,723,140,672,118,619,103,564,86,466,81,402"/>
+<area shape="poly" title=" " alt="" coords="82,400,86,336,103,239,118,186,140,133,169,83,206,40,211,36,214,40,210,44,173,86,145,135,123,187,108,240,91,336,87,400"/>
+<area shape="rect" href="unit__Model_8cpp.html#a5aba41d3ef8a55cb87a0659f6b25a8fa" title="This function run the unit test of the model setFlows." alt="" coords="222,827,381,852"/>
+<area shape="poly" title=" " alt="" coords="86,426,90,494,105,598,120,655,142,712,171,766,210,812,217,818,213,822,206,816,167,769,137,715,115,657,100,599,84,494,81,426"/>
 <area shape="rect" href="unit__Model_8cpp.html#a29b04d2bec249d4c750caa7ec1e02d38" title="This function run the unit test of the model setName." alt="" coords="221,351,381,376"/>
-<area shape="poly" title=" " alt="" coords="160,377,208,371,208,377,160,382"/>
+<area shape="poly" title=" " alt="" coords="139,397,230,376,232,382,140,403"/>
 <area shape="rect" href="unit__Model_8cpp.html#afc8be995a0f26402419487a2e7aa38ac" title="This function run the unit test of the model setStartTime." alt="" coords="209,252,394,277"/>
-<area shape="poly" title=" " alt="" coords="94,374,141,331,172,307,207,286,223,279,225,284,209,291,175,311,144,335,98,378"/>
+<area shape="poly" title=" " alt="" coords="91,398,136,344,169,313,207,286,220,280,222,285,209,291,173,317,140,348,95,402"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2539546032c137d3813642d44f5d70d6" title="This function run the unit test of the model setSystems." alt="" coords="213,663,390,688"/>
-<area shape="poly" title=" " alt="" coords="89,401,100,448,122,515,138,551,158,587,181,620,210,648,218,654,215,658,206,652,177,623,153,590,133,554,117,517,95,450,84,402"/>
+<area shape="poly" title=" " alt="" coords="89,425,102,468,125,529,160,593,183,622,210,648,219,654,216,659,206,652,179,626,156,596,120,531,97,470,84,427"/>
 <area shape="rect" href="unit__Model_8cpp.html#ab2373af3670d07b04964ef9f97e30c44" title="This function run the unit test of the model setTime." alt="" coords="224,104,379,129"/>
-<area shape="poly" title=" " alt="" coords="84,375,96,330,118,266,154,197,178,166,206,139,213,134,216,138,210,143,182,169,159,200,123,268,101,331,89,376"/>
+<area shape="poly" title=" " alt="" coords="83,399,93,350,115,280,131,241,152,204,176,169,206,139,213,134,216,138,210,143,181,172,156,207,136,244,120,281,99,351,89,400"/>
 <area shape="rect" href="classModel.html#ae27e9a1fc978faf33e2168d9f0252173" title="This method returns the end of a Model." alt="" coords="446,55,594,80"/>
 <area shape="poly" title=" " alt="" coords="365,151,393,138,408,127,417,115,426,102,441,89,453,83,455,88,444,94,430,105,421,118,412,130,396,143,367,156"/>
 <area shape="rect" href="classModel.html#a17e89ca8d15af46d074423a47d3c6802" title="This method returns the name of a Model." alt="" coords="455,301,585,327"/>
@@ -295,33 +302,38 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModelIMP.html#a92fcbb62f89e5792f9cc07d22dfefa2d" title="This method assigns a string to the name of a Model." alt="" coords="443,449,597,475"/>
 <area shape="poly" title=" " alt="" coords="370,459,430,459,430,465,370,465"/>
 <area shape="poly" title=" " alt="" coords="391,65,432,65,432,70,391,70"/>
-<area shape="rect" href="classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="473,553,567,579"/>
-<area shape="poly" title=" " alt="" coords="376,710,393,699,404,686,410,674,416,649,423,623,441,596,459,583,463,587,445,600,428,625,422,650,415,676,408,690,396,703,379,715"/>
-<area shape="rect" href="classModel.html#aeb0585f67fd77227609aaf0564560338" title="This method returns the vector of flows." alt="" coords="455,724,585,749"/>
-<area shape="poly" title=" " alt="" coords="382,731,441,733,441,738,382,737"/>
+<area shape="rect" href="classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="473,564,567,589"/>
+<area shape="poly" title=" " alt="" coords="376,760,393,747,406,729,413,711,416,674,419,637,426,618,441,599,458,587,462,591,444,603,431,620,424,638,421,674,418,712,411,731,397,751,379,764"/>
+<area shape="rect" href="classModel.html#aeb0585f67fd77227609aaf0564560338" title="This method returns the vector of flows." alt="" coords="455,811,585,836"/>
+<area shape="poly" title=" " alt="" coords="382,795,442,806,441,811,381,800"/>
 <area shape="poly" title=" " alt="" coords="382,311,441,311,441,317,382,317"/>
 <area shape="poly" title=" " alt="" coords="395,202,429,198,429,203,395,207"/>
-<area shape="poly" title=" " alt="" coords="386,595,458,578,459,583,387,600"/>
-<area shape="rect" href="classModel.html#a58d90565fefee1893ccddd18aaba152e" title="This method returns the vector of Systems." alt="" coords="447,609,593,635"/>
-<area shape="poly" title=" " alt="" coords="391,617,433,618,433,623,391,622"/>
-<area shape="poly" title=" " alt="" coords="353,521,460,548,459,554,352,527"/>
-<area shape="rect" href="classModel.html#a912a3ca99158a02b402e2cef8c96bbfe" title="This method remove a System pointer of the vector of a Model." alt="" coords="472,501,568,527"/>
-<area shape="poly" title=" " alt="" coords="384,510,458,511,458,516,384,515"/>
-<area shape="poly" title=" " alt="" coords="390,560,459,562,459,567,390,565"/>
-<area shape="poly" title=" " alt="" coords="361,545,458,524,459,530,362,551"/>
+<area shape="poly" title=" " alt="" coords="391,598,459,585,460,591,392,604"/>
+<area shape="rect" href="classModel.html#a58d90565fefee1893ccddd18aaba152e" title="This method returns the vector of Systems." alt="" coords="447,613,593,639"/>
+<area shape="poly" title=" " alt="" coords="391,619,433,620,433,625,391,624"/>
+<area shape="poly" title=" " alt="" coords="355,521,395,533,471,557,469,562,394,538,353,527"/>
+<area shape="rect" href="classModel.html#a912a3ca99158a02b402e2cef8c96bbfe" title="This method remove a System pointer of the vector of a Model." alt="" coords="472,507,568,532"/>
+<area shape="poly" title=" " alt="" coords="384,512,458,514,458,520,384,517"/>
+<area shape="poly" title=" " alt="" coords="390,564,459,570,459,575,390,570"/>
+<area shape="poly" title=" " alt="" coords="369,545,458,528,459,533,370,551"/>
+<area shape="poly" title=" " alt="" coords="361,714,393,697,404,686,410,674,416,650,422,624,429,611,441,599,459,587,462,592,444,603,434,614,427,626,421,651,415,676,408,689,396,701,364,718"/>
+<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="This method returns the value of a system." alt="" coords="452,761,588,787"/>
+<area shape="poly" title=" " alt="" coords="359,735,450,756,449,761,358,740"/>
+<area shape="rect" href="classModel.html#a459b1a5044aa3ed60dd8d56b3f0596f6" title="This method run all model." alt="" coords="475,712,565,737"/>
+<area shape="poly" title=" " alt="" coords="363,722,461,722,461,727,363,727"/>
 <area shape="poly" title=" " alt="" coords="359,28,450,49,449,54,358,33"/>
 <area shape="rect" href="classModel.html#a15e2400ef3cff7b7461cbea2d1c1af20" title="This method assigns a int to the endTime of a Model." alt="" coords="447,5,593,31"/>
 <area shape="poly" title=" " alt="" coords="391,15,433,15,433,21,391,21"/>
-<area shape="poly" title=" " alt="" coords="354,775,453,750,455,755,355,780"/>
-<area shape="rect" href="classModel.html#a22146c79936aaf97ff85bc8a2cc07f82" title="This method assigns a vector to the flows of a Model." alt="" coords="456,777,584,803"/>
-<area shape="poly" title=" " alt="" coords="381,787,442,787,442,793,381,793"/>
+<area shape="poly" title=" " alt="" coords="381,831,441,826,442,832,381,836"/>
+<area shape="rect" href="classModel.html#a22146c79936aaf97ff85bc8a2cc07f82" title="This method assigns a vector to the flows of a Model." alt="" coords="456,860,584,885"/>
+<area shape="poly" title=" " alt="" coords="382,849,443,858,442,864,381,854"/>
 <area shape="poly" title=" " alt="" coords="358,348,449,327,450,332,359,353"/>
 <area shape="rect" href="classModel.html#ad9e8e4d0a942396c74932a8c57b03b57" title="This method assigns a string to the name of a Model." alt="" coords="455,351,585,376"/>
 <area shape="poly" title=" " alt="" coords="382,361,441,361,441,366,382,366"/>
 <area shape="poly" title=" " alt="" coords="352,249,394,237,476,205,478,210,396,242,353,255"/>
 <area shape="rect" href="classModel.html#adf1520aa64544bf1fcc971e1b6d64990" title="This method assigns a int to the startTime of a Model." alt="" coords="443,252,597,277"/>
 <area shape="poly" title=" " alt="" coords="394,262,429,262,429,267,394,267"/>
-<area shape="poly" title=" " alt="" coords="354,660,453,635,455,641,355,665"/>
+<area shape="poly" title=" " alt="" coords="358,660,449,639,450,644,359,665"/>
 <area shape="rect" href="classModel.html#a428ba70963933cfe731f5a6723ad6733" title="This method assigns a vector to the systems of a Model." alt="" coords="447,663,593,688"/>
 <area shape="poly" title=" " alt="" coords="391,673,433,673,433,678,391,678"/>
 <area shape="poly" title=" " alt="" coords="358,101,449,80,450,86,359,107"/>
@@ -938,6 +950,78 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_icgraph.png" border="0" usemap="#aunit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_icgraph" alt=""/></div>
 <map name="aunit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_icgraph" id="aunit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0_icgraph">
 <area shape="rect" title="This function run the unit test of the model rmv System." alt="" coords="311,5,487,31"/>
+<area shape="rect" href="unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,5,263,31"/>
+<area shape="poly" title=" " alt="" coords="297,21,263,21,263,15,297,15"/>
+<area shape="rect" href="unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5813490c052f3b21c0fc0293bf71cae7" name="a5813490c052f3b21c0fc0293bf71cae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5813490c052f3b21c0fc0293bf71cae7">&#9670;&#160;</a></span>test_Model_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_Model_run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function run the unit test of the model run. </p>
+<div class="fragment"><div class="line"><span class="lineno">  223</span>                     {</div>
+<div class="line"><span class="lineno">  224</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;        * Run tests\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>    <a class="code hl_class" href="classSystem.html">System</a>* s1 = <span class="keyword">new</span> <a class="code hl_class" href="classSystemIMP.html">SystemIMP</a>(<span class="stringliteral">&quot;s1&quot;</span>, 100);</div>
+<div class="line"><span class="lineno">  227</span>    <a class="code hl_class" href="classSystem.html">System</a>* s2 = <span class="keyword">new</span> <a class="code hl_class" href="classSystemIMP.html">SystemIMP</a>(<span class="stringliteral">&quot;s2&quot;</span>, 0.0);</div>
+<div class="line"><span class="lineno">  228</span>    <a class="code hl_class" href="classFlow.html">Flow</a>* f1 = <span class="keyword">new</span> <a class="code hl_class" href="classFlow__unit__test.html">Flow_unit_test</a>(<span class="stringliteral">&quot;f1&quot;</span>, s1, s2);</div>
+<div class="line"><span class="lineno">  229</span>    <a class="code hl_class" href="classModel.html">Model</a>* m1 = <span class="keyword">new</span> <a class="code hl_class" href="classModelIMP.html">ModelIMP</a>(<span class="stringliteral">&quot;m1&quot;</span>, 0, 1);</div>
+<div class="line"><span class="lineno">  230</span> </div>
+<div class="line"><span class="lineno">  231</span>    m1-&gt;<a class="code hl_function" href="classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd">add</a>(s1);</div>
+<div class="line"><span class="lineno">  232</span>    m1-&gt;<a class="code hl_function" href="classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd">add</a>(s2);</div>
+<div class="line"><span class="lineno">  233</span>    m1-&gt;<a class="code hl_function" href="classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd">add</a>(f1);</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>    m1-&gt;<a class="code hl_function" href="classModel.html#a459b1a5044aa3ed60dd8d56b3f0596f6">run</a>();</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>    assert(s1-&gt;<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() == 0);</div>
+<div class="line"><span class="lineno">  238</span>    assert(s2-&gt;<a class="code hl_function" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">getValue</a>() == 100);</div>
+<div class="line"><span class="lineno">  239</span>    </div>
+<div class="line"><span class="lineno">  240</span>    <span class="keyword">delete</span> s1;</div>
+<div class="line"><span class="lineno">  241</span>    <span class="keyword">delete</span> s2;</div>
+<div class="line"><span class="lineno">  242</span>    <span class="keyword">delete</span> f1;</div>
+<div class="line"><span class="lineno">  243</span>}</div>
+<div class="ttc" id="aclassModel_html_a459b1a5044aa3ed60dd8d56b3f0596f6"><div class="ttname"><a href="classModel.html#a459b1a5044aa3ed60dd8d56b3f0596f6">Model::run</a></div><div class="ttdeci">virtual bool run()=0</div><div class="ttdoc">This method run all model.</div></div>
+<div class="ttc" id="aclassSystem_html_a41b673faa6c199eb8e4f204639fab4f2"><div class="ttname"><a href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue</a></div><div class="ttdeci">virtual double getValue() const =0</div><div class="ttdoc">This method returns the value of a system.</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd">Model::add()</a>, <a class="el" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2">System::getValue()</a>, and <a class="el" href="classModel.html#a459b1a5044aa3ed60dd8d56b3f0596f6">Model::run()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#a397714426fcb0ba9a26d6024108b61cc">run_Model_unit_test()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_cgraph.png" border="0" usemap="#aunit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_cgraph" alt=""/></div>
+<map name="aunit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_cgraph" id="aunit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_cgraph">
+<area shape="rect" title="This function run the unit test of the model run." alt="" coords="5,55,128,80"/>
+<area shape="rect" href="classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="197,5,291,31"/>
+<area shape="poly" title=" " alt="" coords="112,52,183,32,185,37,114,57"/>
+<area shape="rect" href="classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="This method returns the value of a system." alt="" coords="176,55,312,80"/>
+<area shape="poly" title=" " alt="" coords="128,65,162,65,162,70,128,70"/>
+<area shape="rect" href="classModel.html#a459b1a5044aa3ed60dd8d56b3f0596f6" title="This method run all model." alt="" coords="199,104,289,129"/>
+<area shape="poly" title=" " alt="" coords="114,77,186,98,184,103,112,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_icgraph.png" border="0" usemap="#aunit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_icgraph" alt=""/></div>
+<map name="aunit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_icgraph" id="aunit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7_icgraph">
+<area shape="rect" title="This function run the unit test of the model run." alt="" coords="311,5,433,31"/>
 <area shape="rect" href="unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,5,263,31"/>
 <area shape="poly" title=" " alt="" coords="297,21,263,21,263,15,297,15"/>
 <area shape="rect" href="unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>

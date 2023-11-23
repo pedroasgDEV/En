@@ -82,8 +82,13 @@ void test_Model_rmv_Flow();
 */
 void test_Model_equal();
 /**
+*@brief This function run the unit test of the model run
+*/
+void test_Model_run();
+/**
 *@brief This function run the unit tests of the model
 */
 void run_Model_unit_test();
+
 
 #endif

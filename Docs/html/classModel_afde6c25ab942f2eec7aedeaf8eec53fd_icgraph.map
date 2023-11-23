@@ -1,18 +1,21 @@
 <map id="Model::add" name="Model::add">
-<area shape="rect" id="Node000001" title="This method add a System pointer to the vector of a Model." alt="" coords="537,106,632,131"/>
+<area shape="rect" id="Node000001" title="This method add a System pointer to the vector of a Model." alt="" coords="537,134,632,159"/>
 <area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#acce5f12f0ab4271785b1cea7fce39f44" title="This function run the unit test of the model getFlows and add Flow." alt="" coords="320,5,480,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="554,100,488,60,461,48,463,43,491,55,557,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="562,125,529,92,488,60,465,48,467,43,491,55,533,88,566,122"/>
 <area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#aed8df112d365482bcc0020c51d9ffa56" title="This function run the unit test of the model getSystems and add System." alt="" coords="311,69,489,109"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="523,112,489,106,490,101,524,106"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="529,132,464,112,466,107,531,127"/>
 <area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a65442995018d389354cf7f7f21c49f72" title="This function run the unit test of the model rmv Flow." alt="" coords="317,134,483,159"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="524,131,483,137,483,131,523,125"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="523,149,483,149,483,144,523,144"/>
 <area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#a8402e36a13024e0f3f69918641bf6ef0" title="This function run the unit test of the model rmv System." alt="" coords="312,183,488,209"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="553,141,490,173,454,186,452,181,488,168,551,136"/>
-<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,106,263,131"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,53,312,60,212,108,209,103,310,55,327,48"/>
-<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,106,60,131"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,121,60,121,60,116,94,116"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="298,106,263,111,263,105,297,101"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="303,137,263,131,263,126,304,131"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="337,182,310,173,213,134,215,129,312,168,339,177"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="524,165,449,186,448,181,523,160"/>
+<area shape="rect" id="Node000008" href="$unit__Model_8cpp.html#a5813490c052f3b21c0fc0293bf71cae7" title="This function run the unit test of the model run." alt="" coords="339,233,461,258"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="562,171,530,198,491,222,458,235,457,230,488,218,526,193,559,167"/>
+<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,134,263,159"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,53,312,60,250,99,203,136,200,132,247,95,309,55,323,48"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,134,60,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,149,60,149,60,144,94,144"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="312,115,235,136,233,131,311,110"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="304,149,263,149,263,144,304,144"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="330,183,241,162,242,157,331,178"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="332,231,310,222,250,192,203,162,206,157,253,187,312,218,334,226"/>
 </map>
