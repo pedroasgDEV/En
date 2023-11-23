@@ -1,5 +1,5 @@
 /************************************************************
- * @file unit_Flow.h
+ * @file unit_Model.h
  * @author Pedro Augusto Sousa Gonçalves
  * @brief This file represents the model units tests
 ************************************************************/

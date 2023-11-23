@@ -1,5 +1,5 @@
 /************************************************************
- * @file unit_Syste,.h
+ * @file unit_System.h
  * @author Pedro Augusto Sousa Gonçalves
  * @brief This file represents the system units tests
 ************************************************************/
