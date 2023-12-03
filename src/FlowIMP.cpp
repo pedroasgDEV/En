@@ -1,4 +1,4 @@
-#include "FlowIMP.h"
+#include "FlowIMP.hpp"
 
 //Destructor
 FlowIMP::~FlowIMP() {}

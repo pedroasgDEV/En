@@ -1,4 +1,4 @@
-#include "Functional_tests.h"
+#include "Functional_tests.hpp"
 
 int main(){
     std::cout << "\nStart functional tests\n"

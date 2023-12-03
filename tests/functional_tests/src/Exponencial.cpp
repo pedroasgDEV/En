@@ -1,4 +1,4 @@
-#include "Exponencial.h"
+#include "Exponencial.hpp"
 
 //Constructors
 Exponencial::Exponencial(const std::string& name, System* source, System* target){

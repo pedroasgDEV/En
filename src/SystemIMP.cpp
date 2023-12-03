@@ -1,4 +1,4 @@
-#include "SystemIMP.h"//Nome e valor
+#include "SystemIMP.hpp"//Nome e valor
 
 //Contructors
 SystemIMP::SystemIMP(const std::string& name, const double& value) : name(name), value(value) {}

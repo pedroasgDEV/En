@@ -1,4 +1,4 @@
-#include "unit_Model.h"
+#include "unit_Model.hpp"
 
 void test_Model_constructor(){
     std::cout << "        * Constructor tests\n";

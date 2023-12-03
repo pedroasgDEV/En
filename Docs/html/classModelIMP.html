@@ -79,7 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="ModelIMP_8h_source.html">ModelIMP.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ModelIMP_8hpp_source.html">ModelIMP.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ModelIMP:</div>
 <div class="dyncontent">
@@ -245,11 +245,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">    9</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : other.<a class="code hl_variable" href="#ad3a46bc997800c5091daecfd24646227">flows</a>) <a class="code hl_variable" href="#ad3a46bc997800c5091daecfd24646227">flows</a>.push_back(i);</div>
 <div class="line"><span class="lineno">   10</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : other.<a class="code hl_variable" href="#ab8a441de9a450e112b8270336c2b3878">systems</a>) <a class="code hl_variable" href="#ab8a441de9a450e112b8270336c2b3878">systems</a>.push_back(i);</div>
 <div class="line"><span class="lineno">   11</span>}</div>
-<div class="ttc" id="aclassModelIMP_html_a04a2f37160f346e9703988106bfb6f6a"><div class="ttname"><a href="#a04a2f37160f346e9703988106bfb6f6a">ModelIMP::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> ModelIMP.h:33</div></div>
-<div class="ttc" id="aclassModelIMP_html_a359399ee875c27c8edf940c77828e5c2"><div class="ttname"><a href="#a359399ee875c27c8edf940c77828e5c2">ModelIMP::endTime</a></div><div class="ttdeci">int endTime</div><div class="ttdef"><b>Definition</b> ModelIMP.h:37</div></div>
-<div class="ttc" id="aclassModelIMP_html_aa5e3aa222032b617a456f5e7886395b2"><div class="ttname"><a href="#aa5e3aa222032b617a456f5e7886395b2">ModelIMP::startTime</a></div><div class="ttdeci">int startTime</div><div class="ttdef"><b>Definition</b> ModelIMP.h:36</div></div>
-<div class="ttc" id="aclassModelIMP_html_ab8a441de9a450e112b8270336c2b3878"><div class="ttname"><a href="#ab8a441de9a450e112b8270336c2b3878">ModelIMP::systems</a></div><div class="ttdeci">std::vector&lt; System * &gt; systems</div><div class="ttdef"><b>Definition</b> ModelIMP.h:34</div></div>
-<div class="ttc" id="aclassModelIMP_html_ad3a46bc997800c5091daecfd24646227"><div class="ttname"><a href="#ad3a46bc997800c5091daecfd24646227">ModelIMP::flows</a></div><div class="ttdeci">std::vector&lt; Flow * &gt; flows</div><div class="ttdef"><b>Definition</b> ModelIMP.h:35</div></div>
+<div class="ttc" id="aclassModelIMP_html_a04a2f37160f346e9703988106bfb6f6a"><div class="ttname"><a href="#a04a2f37160f346e9703988106bfb6f6a">ModelIMP::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> ModelIMP.hpp:30</div></div>
+<div class="ttc" id="aclassModelIMP_html_a359399ee875c27c8edf940c77828e5c2"><div class="ttname"><a href="#a359399ee875c27c8edf940c77828e5c2">ModelIMP::endTime</a></div><div class="ttdeci">int endTime</div><div class="ttdef"><b>Definition</b> ModelIMP.hpp:34</div></div>
+<div class="ttc" id="aclassModelIMP_html_aa5e3aa222032b617a456f5e7886395b2"><div class="ttname"><a href="#aa5e3aa222032b617a456f5e7886395b2">ModelIMP::startTime</a></div><div class="ttdeci">int startTime</div><div class="ttdef"><b>Definition</b> ModelIMP.hpp:33</div></div>
+<div class="ttc" id="aclassModelIMP_html_ab8a441de9a450e112b8270336c2b3878"><div class="ttname"><a href="#ab8a441de9a450e112b8270336c2b3878">ModelIMP::systems</a></div><div class="ttdeci">std::vector&lt; System * &gt; systems</div><div class="ttdef"><b>Definition</b> ModelIMP.hpp:31</div></div>
+<div class="ttc" id="aclassModelIMP_html_ad3a46bc997800c5091daecfd24646227"><div class="ttname"><a href="#ad3a46bc997800c5091daecfd24646227">ModelIMP::flows</a></div><div class="ttdeci">std::vector&lt; Flow * &gt; flows</div><div class="ttdef"><b>Definition</b> ModelIMP.hpp:32</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ad3a46bc997800c5091daecfd24646227">flows</a>, and <a class="el" href="#ab8a441de9a450e112b8270336c2b3878">systems</a>.</p>
 
@@ -749,7 +749,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   50</span>        }</div>
 <div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>; </div>
 <div class="line"><span class="lineno">   52</span>}</div>
-<div class="ttc" id="aclassModel_html_af19b499569caa4d43b69914002e04271"><div class="ttname"><a href="classModel.html#af19b499569caa4d43b69914002e04271">Model::flowIterator</a></div><div class="ttdeci">std::vector&lt; Flow * &gt;::iterator flowIterator</div><div class="ttdef"><b>Definition</b> Model.h:23</div></div>
+<div class="ttc" id="aclassModel_html_af19b499569caa4d43b69914002e04271"><div class="ttname"><a href="classModel.html#af19b499569caa4d43b69914002e04271">Model::flowIterator</a></div><div class="ttdeci">std::vector&lt; Flow * &gt;::iterator flowIterator</div><div class="ttdef"><b>Definition</b> Model.hpp:28</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ad3a46bc997800c5091daecfd24646227">flows</a>.</p>
 
@@ -797,7 +797,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   42</span>        }</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>; </div>
 <div class="line"><span class="lineno">   44</span>}</div>
-<div class="ttc" id="aclassModel_html_a32c08d1842bfaf3bc76b65df5c3e0a16"><div class="ttname"><a href="classModel.html#a32c08d1842bfaf3bc76b65df5c3e0a16">Model::systemIterator</a></div><div class="ttdeci">std::vector&lt; System * &gt;::iterator systemIterator</div><div class="ttdoc">typedef vetors iterators</div><div class="ttdef"><b>Definition</b> Model.h:22</div></div>
+<div class="ttc" id="aclassModel_html_a32c08d1842bfaf3bc76b65df5c3e0a16"><div class="ttname"><a href="classModel.html#a32c08d1842bfaf3bc76b65df5c3e0a16">Model::systemIterator</a></div><div class="ttdeci">std::vector&lt; System * &gt;::iterator systemIterator</div><div class="ttdoc">typedef vetors iterators</div><div class="ttdef"><b>Definition</b> Model.hpp:27</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="#ab8a441de9a450e112b8270336c2b3878">systems</a>.</p>
 
@@ -1276,7 +1276,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia_de_Software1_tp1/src/<a class="el" href="ModelIMP_8h_source.html">ModelIMP.h</a></li>
+<li>/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia_de_Software1_tp1/src/<a class="el" href="ModelIMP_8hpp_source.html">ModelIMP.hpp</a></li>
 <li>/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia_de_Software1_tp1/src/<a class="el" href="ModelIMP_8cpp.html">ModelIMP.cpp</a></li>
 </ul>
 </div><!-- contents -->

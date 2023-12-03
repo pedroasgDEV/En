@@ -1,6 +1,6 @@
-#include "unit_System.h"
-#include "unit_Flow.h"
-#include "unit_Model.h"
+#include "unit_System.hpp"
+#include "unit_Flow.hpp"
+#include "unit_Model.hpp"
 
 int main(){
     std::cout << "\nStart unit tests\n"

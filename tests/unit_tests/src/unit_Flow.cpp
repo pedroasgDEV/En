@@ -1,4 +1,4 @@
-#include "unit_Flow.h"
+#include "unit_Flow.hpp"
 //Constructors
 Flow_unit_test::Flow_unit_test(const std::string& name, System* source, System* target){
     this->name = name;

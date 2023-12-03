@@ -1,4 +1,4 @@
-#include "Functional_tests.h"
+#include "Functional_tests.hpp"
 
 void exponencial_test_run(){
     std::cout << "  Exponencial functional test" << std::endl;

@@ -1,4 +1,4 @@
-#include "ModelIMP.h"
+#include "ModelIMP.hpp"
 
 //Constructors
 ModelIMP::ModelIMP (const std::string& name, const int& startTime, const int& endTime) : name(name), startTime(startTime), endTime(endTime) {}
