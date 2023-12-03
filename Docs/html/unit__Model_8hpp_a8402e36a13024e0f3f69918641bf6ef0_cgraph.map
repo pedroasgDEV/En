@@ -1,0 +1,7 @@
+<map id="test_Model_rmv_Sytem" name="test_Model_rmv_Sytem">
+<area shape="rect" id="Node000001" title="This function run the unit test of the model rmv System." alt="" coords="5,31,181,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="230,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,29,216,24,216,29,182,34"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a912a3ca99158a02b402e2cef8c96bbfe" title="This method remove a System pointer of the vector of a Model." alt="" coords="229,55,325,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,52,216,57,215,62,181,57"/>
+</map>

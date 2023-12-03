@@ -1,0 +1,37 @@
+\doxysection{System.\+hpp}
+\hypertarget{System_8hpp_source}{}\label{System_8hpp_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/System.hpp@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/System.hpp}}
+\mbox{\hyperlink{System_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ System.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ System\ interface}}
+\DoxyCodeLine{00005\ \textcolor{comment}{****************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ SYSTEM\_HPP}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ SYSTEM\_HPP}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{/****************************************************************************************}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *@brief\ The\ System\ Interface\ is\ the\ Interface\ that\ defines\ the\ methods\ to\ be\ implemented}}
+\DoxyCodeLine{00012\ \textcolor{comment}{****************************************************************************************/}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSystem}{System}}\{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructors}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSystem_a2fc0f34023977cab9b628aa9f734d88c}{\string~System}}()\ \{\};}
+\DoxyCodeLine{00024\ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Nome}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classSystem_a3bc2509274e6c346e07b0bf1151378c5}{getName}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystem_a2c84980e017370987a25548b13ea9578}{setName}}(\textcolor{keyword}{const}\ std::string\&\ name)\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Value}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystem_a4ade48b75793a48021cdb634a86ff988}{setValue}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ value)\ =\ 0;}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

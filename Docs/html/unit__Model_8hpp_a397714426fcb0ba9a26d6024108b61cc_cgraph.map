@@ -1,0 +1,86 @@
+<map id="run_Model_unit_test" name="run_Model_unit_test">
+<area shape="rect" id="Node000001" title="This function run the unit tests of the model." alt="" coords="5,400,160,425"/>
+<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#aef1204c58975e69557b130c433035c2f" title="This function run the unit test of the model constructor." alt="" coords="214,153,389,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,399,98,358,122,301,157,240,180,212,206,188,214,183,217,187,210,192,184,216,162,243,126,303,103,360,90,401"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a97d43965f1e327f778a770081cbc5ef0" title="This function run the unit test of the model destructor." alt="" coords="218,400,385,425"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="160,410,204,410,204,415,160,415"/>
+<area shape="rect" id="Node000008" href="$unit__Model_8cpp.html#aa2ddbb11b877eedcdbfd2fb330cccfdf" title="This function run the unit test of the model equal." alt="" coords="233,449,370,475"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="140,423,232,444,230,449,139,428"/>
+<area shape="rect" id="Node000010" href="$unit__Model_8cpp.html#abaec6e98c3e479d0d8306a5699bb452e" title="This function run the unit test of the model getEndTime." alt="" coords="212,55,391,80"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="82,400,90,343,109,260,125,214,146,168,173,126,206,89,212,85,215,89,210,93,177,129,150,171,130,216,114,261,95,344,88,400"/>
+<area shape="rect" id="Node000011" href="$unit__Model_8cpp.html#acce5f12f0ab4271785b1cea7fce39f44" title="This function run the unit test of the model getFlows and add Flow." alt="" coords="221,762,381,802"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="88,425,95,482,114,569,130,616,151,663,177,708,210,747,216,752,212,756,206,751,173,711,146,666,125,618,109,570,90,483,82,426"/>
+<area shape="rect" id="Node000014" href="$unit__Model_8cpp.html#af22a39c0b4c847dfc93426ff60efcb47" title="This function run the unit test of the model getName." alt="" coords="221,301,382,327"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="100,398,147,367,207,336,227,328,229,333,209,340,150,371,103,402"/>
+<area shape="rect" id="Node000015" href="$unit__Model_8cpp.html#a3a7114e2256a49ceb0cf5d551ebcbe32" title="This function run the unit test of the model getStartTime." alt="" coords="208,203,395,228"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="87,399,103,366,128,322,163,276,206,237,216,231,219,236,210,241,167,280,133,325,107,368,92,401"/>
+<area shape="rect" id="Node000016" href="$unit__Model_8cpp.html#aed8df112d365482bcc0020c51d9ffa56" title="This function run the unit test of the model getSystems and add System." alt="" coords="212,598,391,638"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="92,424,134,498,168,543,210,583,220,589,217,594,206,587,164,547,130,501,88,427"/>
+<area shape="rect" id="Node000018" href="$unit__Model_8cpp.html#a65442995018d389354cf7f7f21c49f72" title="This function run the unit test of the model rmv Flow." alt="" coords="219,499,384,524"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="104,423,150,453,209,484,232,492,230,497,207,488,148,458,101,428"/>
+<area shape="rect" id="Node000020" href="$unit__Model_8cpp.html#a8402e36a13024e0f3f69918641bf6ef0" title="This function run the unit test of the model rmv System." alt="" coords="213,548,389,573"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="95,424,141,477,173,507,209,533,225,541,223,546,207,538,170,511,137,481,91,427"/>
+<area shape="rect" id="Node000021" href="$unit__Model_8cpp.html#a5813490c052f3b21c0fc0293bf71cae7" title="This function run the unit test of the model run." alt="" coords="240,712,363,737"/>
+<area shape="poly" id="edge27_Node000001_Node000021" title=" " alt="" coords="88,425,98,476,119,550,135,590,155,629,180,666,210,697,228,709,226,714,206,701,176,669,150,632,130,592,114,552,92,478,83,426"/>
+<area shape="rect" id="Node000024" href="$unit__Model_8cpp.html#a128f612c3678d25d3094186c714ce92c" title="This function run the unit test of the model setEndTime." alt="" coords="212,5,391,31"/>
+<area shape="poly" id="edge31_Node000001_Node000024" title=" " alt="" coords="82,400,86,336,103,239,118,186,140,133,169,83,206,40,211,36,214,40,210,44,173,86,145,135,123,187,108,240,91,336,87,400"/>
+<area shape="rect" id="Node000026" href="$unit__Model_8cpp.html#a5aba41d3ef8a55cb87a0659f6b25a8fa" title="This function run the unit test of the model setFlows." alt="" coords="222,827,381,852"/>
+<area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="86,426,90,494,105,598,120,655,142,712,171,766,210,812,217,818,213,822,206,816,167,769,137,715,115,657,100,599,84,494,81,426"/>
+<area shape="rect" id="Node000028" href="$unit__Model_8cpp.html#a29b04d2bec249d4c750caa7ec1e02d38" title="This function run the unit test of the model setName." alt="" coords="221,351,381,376"/>
+<area shape="poly" id="edge37_Node000001_Node000028" title=" " alt="" coords="139,397,230,376,232,382,140,403"/>
+<area shape="rect" id="Node000030" href="$unit__Model_8cpp.html#afc8be995a0f26402419487a2e7aa38ac" title="This function run the unit test of the model setStartTime." alt="" coords="209,252,394,277"/>
+<area shape="poly" id="edge40_Node000001_Node000030" title=" " alt="" coords="91,398,136,344,169,313,207,286,220,280,222,285,209,291,173,317,140,348,95,402"/>
+<area shape="rect" id="Node000032" href="$unit__Model_8cpp.html#a2539546032c137d3813642d44f5d70d6" title="This function run the unit test of the model setSystems." alt="" coords="213,663,390,688"/>
+<area shape="poly" id="edge43_Node000001_Node000032" title=" " alt="" coords="89,425,102,468,125,529,160,593,183,622,210,648,219,654,216,659,206,652,179,626,156,596,120,531,97,470,84,427"/>
+<area shape="rect" id="Node000034" href="$unit__Model_8cpp.html#ab2373af3670d07b04964ef9f97e30c44" title="This function run the unit test of the model setTime." alt="" coords="224,104,379,129"/>
+<area shape="poly" id="edge46_Node000001_Node000034" title=" " alt="" coords="83,399,93,350,115,280,131,241,152,204,176,169,206,139,213,134,216,138,210,143,181,172,156,207,136,244,120,281,99,351,89,400"/>
+<area shape="rect" id="Node000003" href="$classModel.html#ae27e9a1fc978faf33e2168d9f0252173" title="This method returns the end of a Model." alt="" coords="446,55,594,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,151,393,138,408,127,417,115,426,102,441,89,453,83,455,88,444,94,430,105,421,118,412,130,396,143,367,156"/>
+<area shape="rect" id="Node000004" href="$classModel.html#a17e89ca8d15af46d074423a47d3c6802" title="This method returns the name of a Model." alt="" coords="455,301,585,327"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="378,177,396,188,408,200,415,213,422,238,427,263,434,275,444,287,453,293,449,297,441,291,429,278,423,265,416,239,410,215,404,203,393,192,375,181"/>
+<area shape="rect" id="Node000005" href="$classModel.html#a0e99c3a54e1c4f6bd762bda1e1b5d13e" title="This method returns the startTime of a Model." alt="" coords="443,177,597,203"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="390,173,429,177,429,183,389,178"/>
+<area shape="rect" id="Node000007" href="$classModel.html#af032d8433c87a0a3a431faf6563a1f03" title="This destructor is a virtual destructor of the class." alt="" coords="459,400,581,425"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="385,410,445,410,445,415,385,415"/>
+<area shape="rect" id="Node000009" href="$classModelIMP.html#a92fcbb62f89e5792f9cc07d22dfefa2d" title="This method assigns a string to the name of a Model." alt="" coords="443,449,597,475"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="370,459,430,459,430,465,370,465"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="391,65,432,65,432,70,391,70"/>
+<area shape="rect" id="Node000012" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="473,564,567,589"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="376,760,393,747,406,729,413,711,416,674,419,637,426,618,441,599,458,587,462,591,444,603,431,620,424,638,421,674,418,712,411,731,397,751,379,764"/>
+<area shape="rect" id="Node000013" href="$classModel.html#aeb0585f67fd77227609aaf0564560338" title="This method returns the vector of flows." alt="" coords="455,811,585,836"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="382,795,442,806,441,811,381,800"/>
+<area shape="poly" id="edge15_Node000014_Node000004" title=" " alt="" coords="382,311,441,311,441,317,382,317"/>
+<area shape="poly" id="edge17_Node000015_Node000005" title=" " alt="" coords="395,202,429,198,429,203,395,207"/>
+<area shape="poly" id="edge19_Node000016_Node000012" title=" " alt="" coords="391,598,459,585,460,591,392,604"/>
+<area shape="rect" id="Node000017" href="$classModel.html#a58d90565fefee1893ccddd18aaba152e" title="This method returns the vector of Systems." alt="" coords="447,613,593,639"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="391,619,433,620,433,625,391,624"/>
+<area shape="poly" id="edge22_Node000018_Node000012" title=" " alt="" coords="355,521,395,533,471,557,469,562,394,538,353,527"/>
+<area shape="rect" id="Node000019" href="$classModel.html#a912a3ca99158a02b402e2cef8c96bbfe" title="This method remove a System pointer of the vector of a Model." alt="" coords="472,507,568,532"/>
+<area shape="poly" id="edge23_Node000018_Node000019" title=" " alt="" coords="384,512,458,514,458,520,384,517"/>
+<area shape="poly" id="edge25_Node000020_Node000012" title=" " alt="" coords="390,564,459,570,459,575,390,570"/>
+<area shape="poly" id="edge26_Node000020_Node000019" title=" " alt="" coords="369,545,458,528,459,533,370,551"/>
+<area shape="poly" id="edge28_Node000021_Node000012" title=" " alt="" coords="361,714,393,697,404,686,410,674,416,650,422,624,429,611,441,599,459,587,462,592,444,603,434,614,427,626,421,651,415,676,408,689,396,701,364,718"/>
+<area shape="rect" id="Node000022" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="This method returns the value of a system." alt="" coords="452,761,588,787"/>
+<area shape="poly" id="edge29_Node000021_Node000022" title=" " alt="" coords="359,735,450,756,449,761,358,740"/>
+<area shape="rect" id="Node000023" href="$classModel.html#a459b1a5044aa3ed60dd8d56b3f0596f6" title="This method run all model." alt="" coords="475,712,565,737"/>
+<area shape="poly" id="edge30_Node000021_Node000023" title=" " alt="" coords="363,722,461,722,461,727,363,727"/>
+<area shape="poly" id="edge32_Node000024_Node000003" title=" " alt="" coords="359,28,450,49,449,54,358,33"/>
+<area shape="rect" id="Node000025" href="$classModel.html#a15e2400ef3cff7b7461cbea2d1c1af20" title="This method assigns a int to the endTime of a Model." alt="" coords="447,5,593,31"/>
+<area shape="poly" id="edge33_Node000024_Node000025" title=" " alt="" coords="391,15,433,15,433,21,391,21"/>
+<area shape="poly" id="edge35_Node000026_Node000013" title=" " alt="" coords="381,831,441,826,442,832,381,836"/>
+<area shape="rect" id="Node000027" href="$classModel.html#a22146c79936aaf97ff85bc8a2cc07f82" title="This method assigns a vector to the flows of a Model." alt="" coords="456,860,584,885"/>
+<area shape="poly" id="edge36_Node000026_Node000027" title=" " alt="" coords="382,849,443,858,442,864,381,854"/>
+<area shape="poly" id="edge38_Node000028_Node000004" title=" " alt="" coords="358,348,449,327,450,332,359,353"/>
+<area shape="rect" id="Node000029" href="$classModel.html#ad9e8e4d0a942396c74932a8c57b03b57" title="This method assigns a string to the name of a Model." alt="" coords="455,351,585,376"/>
+<area shape="poly" id="edge39_Node000028_Node000029" title=" " alt="" coords="382,361,441,361,441,366,382,366"/>
+<area shape="poly" id="edge41_Node000030_Node000005" title=" " alt="" coords="352,249,394,237,476,205,478,210,396,242,353,255"/>
+<area shape="rect" id="Node000031" href="$classModel.html#adf1520aa64544bf1fcc971e1b6d64990" title="This method assigns a int to the startTime of a Model." alt="" coords="443,252,597,277"/>
+<area shape="poly" id="edge42_Node000030_Node000031" title=" " alt="" coords="394,262,429,262,429,267,394,267"/>
+<area shape="poly" id="edge44_Node000032_Node000017" title=" " alt="" coords="358,660,449,639,450,644,359,665"/>
+<area shape="rect" id="Node000033" href="$classModel.html#a428ba70963933cfe731f5a6723ad6733" title="This method assigns a vector to the systems of a Model." alt="" coords="447,663,593,688"/>
+<area shape="poly" id="edge45_Node000032_Node000033" title=" " alt="" coords="391,673,433,673,433,678,391,678"/>
+<area shape="poly" id="edge47_Node000034_Node000003" title=" " alt="" coords="358,101,449,80,450,86,359,107"/>
+<area shape="poly" id="edge48_Node000034_Node000005" title=" " alt="" coords="357,127,396,138,478,169,476,174,394,143,355,132"/>
+<area shape="rect" id="Node000035" href="$classModel.html#aeaae7d2ec7f5ff88df10c91f7c005b1a" title="This method assigns a int to the startTime and endTime of a Model." alt="" coords="459,104,581,129"/>
+<area shape="poly" id="edge49_Node000034_Node000035" title=" " alt="" coords="379,114,445,114,445,119,379,119"/>
+</map>

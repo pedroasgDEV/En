@@ -1,0 +1,64 @@
+\doxysection{Model.\+hpp}
+\hypertarget{Model_8hpp_source}{}\label{Model_8hpp_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/Model.hpp@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/Model.hpp}}
+\mbox{\hyperlink{Model_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/****************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ Model.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ simulation\ model}}
+\DoxyCodeLine{00005\ \textcolor{comment}{****************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ MODEL\_HPP}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ MODEL\_HPP}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{System_8hpp}{System.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Flow_8hpp}{Flow.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/*****************************************************************************************************************}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *@brief\ This\ class\ represents\ the\ general\ simulation\ model,\ it\ contains\ figures\ for\ simulation\ and\ its\ execution.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{*****************************************************************************************************************/}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classModel}{Model}}\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Iteradores}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ std::vector<System*>::iterator\ \mbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{systemIterator}};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ std::vector<Flow*>::iterator\ \mbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flowIterator}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destrutor}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classModel_af032d8433c87a0a3a431faf6563a1f03}{\string~Model}}()\ \{\};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Name}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classModel_a17e89ca8d15af46d074423a47d3c6802}{getName}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_ad9e8e4d0a942396c74932a8c57b03b57}{setName}}(\textcolor{keyword}{const}\ std::string\&\ name)\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Vector}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<System*>\ \mbox{\hyperlink{classModel_a58d90565fefee1893ccddd18aaba152e}{getSystems}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<Flow*>\ \mbox{\hyperlink{classModel_aeb0585f67fd77227609aaf0564560338}{getFlows}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_a428ba70963933cfe731f5a6723ad6733}{setSystems}}(\textcolor{keyword}{const}\ std::vector<System*>\ systems)\ =\ 0;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_a22146c79936aaf97ff85bc8a2cc07f82}{setFlows}}(\textcolor{keyword}{const}\ std::vector<Flow*>\ flows)\ =\ 0;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Time}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModel_a0e99c3a54e1c4f6bd762bda1e1b5d13e}{getStartTime}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classModel_ae27e9a1fc978faf33e2168d9f0252173}{getEndTime}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_adf1520aa64544bf1fcc971e1b6d64990}{setStartTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ startTime)\ =\ 0;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_a15e2400ef3cff7b7461cbea2d1c1af20}{setEndTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ endTime)\ =\ 0;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_aeaae7d2ec7f5ff88df10c91f7c005b1a}{setTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ startTime,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ endTime)\ =\ 0;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Metodos}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{comment}{//add}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(\mbox{\hyperlink{classSystem}{System}}*\ system)\ =\ 0;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classModel_ab7df81041f62f049cfc6e4d50dcaf721}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*\ flow)\ =\ 0;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{comment}{//remove}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModel_a912a3ca99158a02b402e2cef8c96bbfe}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSystem}{System}}*\ system)\ =\ 0;}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModel_abf6170ffc25786b1bdee2d35983ee198}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}*\ flow)\ =\ 0;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Others}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classModel_a459b1a5044aa3ed60dd8d56b3f0596f6}{run}}()\ =\ 0;}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

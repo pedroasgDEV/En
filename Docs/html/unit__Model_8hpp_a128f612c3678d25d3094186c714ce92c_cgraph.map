@@ -1,0 +1,7 @@
+<map id="test_Model_setEndTime" name="test_Model_setEndTime">
+<area shape="rect" id="Node000001" title="This function run the unit test of the model setEndTime." alt="" coords="5,31,184,56"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ae27e9a1fc978faf33e2168d9f0252173" title="This method returns the end of a Model." alt="" coords="232,5,380,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,30,218,26,219,31,185,35"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a15e2400ef3cff7b7461cbea2d1c1af20" title="This method assigns a int to the endTime of a Model." alt="" coords="233,55,379,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,51,220,55,219,60,184,56"/>
+</map>
