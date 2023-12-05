@@ -32,7 +32,7 @@ class FlowIMP : public Flow{
         /**
          * @brief This destructor is a virtual destructor of the class
         */
-        virtual ~FlowIMP();
+        virtual ~FlowIMP() override;
 
         //Geters e seters
         //Name
@@ -40,34 +40,34 @@ class FlowIMP : public Flow{
          * @brief This method returns the name of a flow
          * @return a string containing the name is returned
         */
-        std::string getName() const;
+        std::string getName() const override;
         /**
          * @brief This method assigns a string to the name of a flow obj
          * @param name string must be passed to the method
         */
-        void setName(const std::string& name);
+        void setName(const std::string& name) override;
         //Source
         /**
          * @brief This method returns the source system poiter
          * @return a system poiter containing the source memory address is returned
         */
-        System* getSource() const;
+        System* getSource() const override;
         /**
          * @brief This method assigns a system poiter to the source of a flow obj
          * @param source system poiter must be passed to the method
         */
-        void setSource(System* source);
+        void setSource(System* source) override;
         //Target
         /**
          * @brief This method returns the target system poiter
          * @return a system poiter containing the target memory address is returned
         */
-        System* getTarget() const;
+        System* getTarget() const override;
         /**
          * @brief This method assigns a system poiter to the target of a flow obj
          * @param target system poiter must be passed to the method
         */
-        void setTarget(System* target);
+        void setTarget(System* target) override;
 
         //Metodos
         /**

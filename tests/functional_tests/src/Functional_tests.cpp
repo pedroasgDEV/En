@@ -3,10 +3,11 @@
 void exponencial_test_run(){
     std::cout << "  Exponencial functional test" << std::endl;
 
-    SystemIMP* pop1 = new SystemIMP("pop1", 100.0);
-    SystemIMP* pop2 = new SystemIMP("pop2", 0.0);
-    Exponencial* exp = new Exponencial("exp", pop1, pop2);
-    ModelIMP* exponencial = new ModelIMP("Exponencial", 0, 100);
+    MyVensim* mV = new MyVensimIMP("mV");
+    System* pop1 = mV->createSystem("pop1", 100.0);
+    System* pop2 = mV->createSystem("pop2", 0.0);
+    Flow* exp = mV->createFlow<Exponencial>("exp", pop1, pop2);
+    Model* exponencial = mV->createModel("Exponencial", 0, 100);
 
     //Add os systems e flows ao modelo
     exponencial->add(pop1);
@@ -14,15 +15,17 @@ void exponencial_test_run(){
     exponencial->add(exp);
 
     //Roda o modelo
-    exponencial->run();
+    mV->run();
 
     assert(fabs((round(pop1->getValue() * 10000) - 10000 * 36.6032)) < 0.0001);
     assert(fabs((round(pop2->getValue() * 10000) - 10000 * 63.3968)) < 0.0001);
 
-    delete(exponencial);
-    delete(exp);
-    delete(pop1);
-    delete(pop2);
+    delete pop1;
+    delete pop2;
+    delete exp;
+    delete exponencial;
+    delete mV;
+
 
     std::cout << "  Exponencial functional test passed\n" << std::endl;
 }
@@ -30,10 +33,11 @@ void exponencial_test_run(){
 void logistical_test_run(){
     std::cout << "  Logistical functional test" << std::endl;
 
-    SystemIMP* p1 = new SystemIMP("p1", 100.0);
-    SystemIMP* p2 = new SystemIMP("p2", 10.0);
-    Logistical* log = new Logistical("log", p1, p2);
-    ModelIMP* logistical = new ModelIMP("Logistical", 0, 100);
+    MyVensim* mV = new MyVensimIMP("mV");
+    System* p1 = mV->createSystem("p1", 100.0);
+    System* p2 = mV->createSystem("p2", 10.0);
+    Flow* log = mV->createFlow<Logistical>("log", p1, p2);
+    Model* logistical = mV->createModel("Logistical", 0, 100);
 
     //Add os systems e flows ao modelo
     logistical->add(p1);
@@ -41,15 +45,16 @@ void logistical_test_run(){
     logistical->add(log);
 
     //Roda o modelo
-    logistical->run();
+    mV->run();
 
     assert(fabs(round(p1->getValue() * 10000) - 10000 * 88.2167) < 0.0001);
     assert(fabs(round(p2->getValue() * 10000) - 10000 * 21.7833) < 0.0001);
 
-    delete(logistical);
-    delete(log);
-    delete(p1);
-    delete(p2);
+    delete logistical;
+    delete log;
+    delete p1;
+    delete p2;
+    delete mV;
 
     std::cout << "  Logistical functional test passed\n" << std::endl;
 }
@@ -57,18 +62,19 @@ void logistical_test_run(){
 void Complex_test_run(){
     std::cout << "  Complex functional test" << std::endl;
 
-    ModelIMP* model = new ModelIMP("Model", 0, 100);
-    SystemIMP* q1 = new SystemIMP("q1", 100.0);
-    SystemIMP* q2 = new SystemIMP("q2", 0.0);
-    SystemIMP* q3 = new SystemIMP("q3", 100.0);
-    SystemIMP* q4 = new SystemIMP("q4", 0.0);
-    SystemIMP* q5 = new SystemIMP("q5", 0.0);
-    Exponencial* f = new Exponencial("f", q1, q2);
-    Exponencial* t = new Exponencial("t", q2, q3);
-    Exponencial* u = new Exponencial("u", q3, q4);
-    Exponencial* v = new Exponencial("v", q4, q1);
-    Exponencial* g = new Exponencial("g", q1, q3);
-    Exponencial* r = new Exponencial("r", q2, q5);
+    MyVensim* mV = new MyVensimIMP("mV");
+    Model* model = mV->createModel("Model", 0, 100);
+    System* q1 = mV->createSystem("q1", 100.0);
+    System* q2 = mV->createSystem("q2", 0.0);
+    System* q3 = mV->createSystem("q3", 100.0);
+    System* q4 = mV->createSystem("q4", 0.0);
+    System* q5 = mV->createSystem("q5", 0.0);
+    Flow* f = mV->createFlow<Exponencial>("f", q1, q2);
+    Flow* t = mV->createFlow<Exponencial>("t", q2, q3);
+    Flow* u = mV->createFlow<Exponencial>("u", q3, q4);
+    Flow* v = mV->createFlow<Exponencial>("v", q4, q1);
+    Flow* g = mV->createFlow<Exponencial>("g", q1, q3);
+    Flow* r = mV->createFlow<Exponencial>("r", q2, q5);
     
     model->add(q1);
     model->add(q2);
@@ -82,7 +88,7 @@ void Complex_test_run(){
     model->add(g);
     model->add(r);
 
-    model->run();
+    mV->run();
 
     assert(fabs((round((q1->getValue() * 10000)) - 10000 * 31.8513)) < 0.0001);
     assert(fabs((round((q2->getValue() * 10000)) - 10000 * 18.4003)) < 0.0001);
@@ -102,6 +108,7 @@ void Complex_test_run(){
     delete v;
     delete g;
     delete r;
+    delete mV;
 
     std::cout << "  Complex functional test passed" << std::endl;
 }

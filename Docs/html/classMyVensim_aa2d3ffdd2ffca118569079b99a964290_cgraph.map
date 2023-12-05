@@ -1,0 +1,5 @@
+<map id="MyVensim::createFlow" name="MyVensim::createFlow">
+<area shape="rect" id="Node000001" title="Create a instance of Flow." alt="" coords="5,5,176,31"/>
+<area shape="rect" id="Node000002" href="$classMyVensim.html#adaf2b6fdbe0bf2d613dd888d888fc495" title="This method add a System pointer to the vector." alt="" coords="224,5,347,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,15,210,15,210,21,176,21"/>
+</map>

@@ -1,5 +1,5 @@
 <map id="test_Model_equal" name="test_Model_equal">
 <area shape="rect" id="Node000001" title="This function run the unit test of the model equal." alt="" coords="5,5,143,31"/>
-<area shape="rect" id="Node000002" href="$classModelIMP.html#a92fcbb62f89e5792f9cc07d22dfefa2d" title="This method assigns a string to the name of a Model." alt="" coords="191,5,344,31"/>
+<area shape="rect" id="Node000002" href="$classModelIMP.html#adb42011efc4881ed2aec4d5f44bdaaa8" title="This method assigns a string to the name of a Model." alt="" coords="191,5,344,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,15,176,15,176,21,143,21"/>
 </map>

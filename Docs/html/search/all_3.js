@@ -6,8 +6,8 @@ var searchData=
   ['flowimp_3',['FlowIMP',['../classFlowIMP.html',1,'']]],
   ['flowimp_2ecpp_4',['FlowIMP.cpp',['../FlowIMP_8cpp.html',1,'']]],
   ['flowimp_2ehpp_5',['FlowIMP.hpp',['../FlowIMP_8hpp.html',1,'']]],
-  ['flowiterator_6',['flowIterator',['../classModel.html#af19b499569caa4d43b69914002e04271',1,'Model']]],
-  ['flows_7',['flows',['../classModelIMP.html#ad3a46bc997800c5091daecfd24646227',1,'ModelIMP']]],
+  ['flowiterator_6',['flowiterator',['../classModel.html#af19b499569caa4d43b69914002e04271',1,'Model::flowIterator'],['../classMyVensim.html#aa2dea417dc1d85d75d78fcc6d58ba4e2',1,'MyVensim::flowIterator']]],
+  ['flows_7',['flows',['../classModelIMP.html#ad3a46bc997800c5091daecfd24646227',1,'ModelIMP::flows'],['../classMyVensimIMP.html#a76fc3f9b4f98da5de8f58710048fb59a',1,'MyVensimIMP::flows']]],
   ['functional_5ftests_2ecpp_8',['Functional_tests.cpp',['../Functional__tests_8cpp.html',1,'']]],
   ['functional_5ftests_2ehpp_9',['Functional_tests.hpp',['../Functional__tests_8hpp.html',1,'']]]
 ];

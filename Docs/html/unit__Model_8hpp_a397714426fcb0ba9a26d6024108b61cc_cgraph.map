@@ -42,7 +42,7 @@
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="390,173,429,177,429,183,389,178"/>
 <area shape="rect" id="Node000007" href="$classModel.html#af032d8433c87a0a3a431faf6563a1f03" title="This destructor is a virtual destructor of the class." alt="" coords="459,400,581,425"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="385,410,445,410,445,415,385,415"/>
-<area shape="rect" id="Node000009" href="$classModelIMP.html#a92fcbb62f89e5792f9cc07d22dfefa2d" title="This method assigns a string to the name of a Model." alt="" coords="443,449,597,475"/>
+<area shape="rect" id="Node000009" href="$classModelIMP.html#adb42011efc4881ed2aec4d5f44bdaaa8" title="This method assigns a string to the name of a Model." alt="" coords="443,449,597,475"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="370,459,430,459,430,465,370,465"/>
 <area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="391,65,432,65,432,70,391,70"/>
 <area shape="rect" id="Node000012" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="473,564,567,589"/>

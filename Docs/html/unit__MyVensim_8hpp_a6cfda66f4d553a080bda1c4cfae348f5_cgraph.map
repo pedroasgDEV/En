@@ -1,0 +1,9 @@
+<map id="test_MyVensim_getFlows_and_add" name="test_MyVensim_getFlows_and_add">
+<area shape="rect" id="Node000001" title="This function run the unit test of the MyVensim getFlows and add Flow." alt="" coords="5,23,193,63"/>
+<area shape="rect" id="Node000002" href="$classMyVensim.html#aa2d3ffdd2ffca118569079b99a964290" title="Create a instance of Flow." alt="" coords="241,5,412,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,30,228,26,228,32,194,36"/>
+<area shape="rect" id="Node000004" href="$classMyVensim.html#a29af84ec2ca6c5e3b6ed1977afcd434d" title="This method returns the vector of flows." alt="" coords="248,55,405,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,51,235,55,234,60,193,56"/>
+<area shape="rect" id="Node000003" href="$classMyVensim.html#adaf2b6fdbe0bf2d613dd888d888fc495" title="This method add a System pointer to the vector." alt="" coords="460,5,583,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,15,446,15,446,21,412,21"/>
+</map>

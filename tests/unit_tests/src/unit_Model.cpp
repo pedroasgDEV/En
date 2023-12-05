@@ -261,5 +261,5 @@ void run_Model_unit_test(){
     test_Model_rmv_Flow();
     test_Model_run();
     test_Model_equal();
-    std::cout << "    End Model unit tests\n";
+    std::cout << "    End Model unit tests\n\n";
 }

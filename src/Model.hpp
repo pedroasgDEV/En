@@ -1,7 +1,7 @@
 /****************************************************
  * @file Model.hpp
  * @author Pedro Augusto Sousa Gonçalves
- * @brief This file represents the simulation model
+ * @brief This file represents the model interface
 ****************************************************/
 
 #ifndef MODEL_HPP
@@ -10,24 +10,27 @@
 #include "System.hpp"
 #include "Flow.hpp"
 
-/*****************************************************************************************************************
- *@brief This class represents the general simulation model, it contains figures for simulation and its execution.
-*****************************************************************************************************************/
-
 #include <string>
 #include <iostream>
 #include <vector>
+
+/**************************************************************************************
+ *@brief he Model Interface is the Interface that defines the methods to be implemented
+**************************************************************************************/
 
 class Model{
     public:
         //Iteradores
         /**
-        * @brief typedef vetors iterators
+         *@brief typedef System vetor iterator
         */
         typedef std::vector<System*>::iterator systemIterator;
+        /**
+         *@brief typedef Flow vetor iterator
+        */
         typedef std::vector<Flow*>::iterator flowIterator;
 
-        //Destrutor
+        //Destructor
         /**
          * @brief This destructor is a virtual destructor of the class
         */

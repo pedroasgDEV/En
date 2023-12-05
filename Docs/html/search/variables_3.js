@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['source_0',['source',['../classFlowIMP.html#afa8e614474ac3d01f8021778381bc93b',1,'FlowIMP']]],
-  ['starttime_1',['startTime',['../classModelIMP.html#aa5e3aa222032b617a456f5e7886395b2',1,'ModelIMP']]],
-  ['systems_2',['systems',['../classModelIMP.html#ab8a441de9a450e112b8270336c2b3878',1,'ModelIMP']]]
+  ['name_0',['name',['../classFlowIMP.html#a52ed33d77dd5d91a77fbe2419e340803',1,'FlowIMP::name'],['../classModelIMP.html#a04a2f37160f346e9703988106bfb6f6a',1,'ModelIMP::name'],['../classMyVensimIMP.html#a33c8fa9a28d4ef4535b398a85f36f224',1,'MyVensimIMP::name'],['../classSystemIMP.html#a73a8482bda1b56f0491b0c8e1cd6b2f2',1,'SystemIMP::name']]]
 ];

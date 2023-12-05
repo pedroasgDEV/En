@@ -1,0 +1,890 @@
+\doxysection{My\+Vensim\+IMP Class Reference}
+\hypertarget{classMyVensimIMP}{}\label{classMyVensimIMP}\index{MyVensimIMP@{MyVensimIMP}}
+
+
+{\ttfamily \#include $<$My\+Vensim\+IMP.\+hpp$>$}
+
+
+
+Inheritance diagram for My\+Vensim\+IMP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMyVensimIMP__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for My\+Vensim\+IMP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMyVensimIMP__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyVensimIMP_adeafa693faf5aa4a339ba16d635e2f50}{My\+Vensim\+IMP}} (const std\+::string \&\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}="{}NO\+\_\+\+NAME"{})
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classModel}{Model} by name and sart and end time. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classMyVensimIMP_a1e08b84bc23882e2bf3c11338eff7c16}{\texorpdfstring{$\sim$}{\string~}\+My\+Vensim\+IMP}} () override
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMyVensimIMP_a49b99729dfc47bf21bed812b69309372}{create\+System}} (const std\+::string \&\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}="{}NO\+\_\+\+NAME"{}, const double \&value=0.\+0) override
+\begin{DoxyCompactList}\small\item\em Create a instance of \doxylink{classSystem}{System}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMyVensimIMP_a6fc05aad2832dbf468fcfaa528f2c2c2}{create\+Model}} (const std\+::string \&\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}="{}NO\+\_\+\+NAME"{}, const int \&start\+Time=0, const int \&end\+Time=1) override
+\begin{DoxyCompactList}\small\item\em Create a instance of \doxylink{classModel}{Model}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add}} (\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system) override
+\begin{DoxyCompactList}\small\item\em This method add a \doxylink{classSystem}{System} pointer to the vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyVensimIMP_a3cfa35c6ebd7c1b367c1bb5116245eab}{add}} (\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow) override
+\begin{DoxyCompactList}\small\item\em This method add a \doxylink{classFlow}{Flow} pointer to the vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyVensimIMP_a031b995c5c4d48026d3c8e17bb686067}{add}} (\mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*}model) override
+\begin{DoxyCompactList}\small\item\em This method add a \doxylink{classModel}{Model} pointer to the vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyVensimIMP_a31c42f86522ca69806c3f101b7b8d640}{rmv}} (const \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}system) override
+\begin{DoxyCompactList}\small\item\em This method remove a \doxylink{classSystem}{System} pointer of the vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyVensimIMP_a702f4054f181a8984dfe09bb532ece4c}{rmv}} (const \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}flow) override
+\begin{DoxyCompactList}\small\item\em This method remove a \doxylink{classFlow}{Flow} pointer of the vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyVensimIMP_a2f69636c7db0e2f6f366f6586d6d2fd9}{rmv}} (const \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*}model) override
+\begin{DoxyCompactList}\small\item\em This method remove a \doxylink{classModel}{Model} pointer of the vector. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMyVensimIMP_ab3e6219267712c8f282b6315856627bb}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the name of a \doxylink{classMyVensim}{My\+Vensim}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyVensimIMP_acfbffb90e5ed988a8e2d51e55b3880f2}{set\+Name}} (const std\+::string \&\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}})
+\begin{DoxyCompactList}\small\item\em This method assigns a string to the name of a \doxylink{classMyVensim}{My\+Vensim}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_a9425ab4d678abb2f782a7d0db1ee706e}{get\+Systems}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the vector of Systems. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_a12c13e98149c389a615d390594f89768}{get\+Flows}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the vector of flows. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_a72252314cd360036dafbc1f414f2dc22}{get\+Models}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the vector of Models. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyVensimIMP_ad035bf7cd0902f45c6d90adc5123d346}{set\+Systems}} (const std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}})
+\begin{DoxyCompactList}\small\item\em This method assigns a vector to the systems of a \doxylink{classMyVensim}{My\+Vensim}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyVensimIMP_ae90f07ae79143b673fec51fef76b752d}{set\+Flows}} (const std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}})
+\begin{DoxyCompactList}\small\item\em This method assigns a vector to the flows of a \doxylink{classMyVensim}{My\+Vensim}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyVensimIMP_a7913e303d0a5fb61d42b15209f883e71}{set\+Models}} (const std\+::vector$<$ \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}})
+\begin{DoxyCompactList}\small\item\em This method assigns a vector to the models of a \doxylink{classMyVensim}{My\+Vensim}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyVensimIMP_a7e0bb2adf41cd7dbc8d22b8364d35e54}{run}} () override
+\begin{DoxyCompactList}\small\item\em This method run all model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad}{operator==}} (const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two models objs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc}{operator!=}} (const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&other) const
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}!=\textquotesingle{} operator, compare two models objs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classMyVensim}{My\+Vensim}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classMyVensim_afa4f2ff96eb2238fffcc375986308e83}{\texorpdfstring{$\sim$}{\string~}\+My\+Vensim}} ()
+\begin{DoxyCompactList}\small\item\em This destructor is a virtual destructor of the class. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Flow\+Type $>$ }\\\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{create\+Flow}} (const std\+::string name="{}NONAME"{}, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}source=nullptr, \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}destiny=nullptr)
+\begin{DoxyCompactList}\small\item\em Create a instance of \doxylink{classFlow}{Flow}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \& \mbox{\hyperlink{classMyVensimIMP_a969e169d064faf40876efb44da005a03}{operator=}} (const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&other)
+\begin{DoxyCompactList}\small\item\em This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one \doxylink{classMyVensim}{My\+Vensim} to another. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140}{My\+Vensim\+IMP}} (const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&other)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classMyVensim}{My\+Vensim} by a obj. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{classMyVensim}{My\+Vensim}}}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classMyVensim_a2a733b1837e8492df28320d938e92e56}{system\+Iterator}}
+\begin{DoxyCompactList}\small\item\em typedef \doxylink{classSystem}{System} vetor iterator \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classMyVensim_aa2dea417dc1d85d75d78fcc6d58ba4e2}{flow\+Iterator}}
+\begin{DoxyCompactList}\small\item\em typedef \doxylink{classFlow}{Flow} vetor iterator \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classMyVensim_a2f7a6fcc75127f9b1cc7e99c7009d801}{model\+Iterator}}
+\begin{DoxyCompactList}\small\item\em typedef \doxylink{classModel}{Model} vetor iterator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140}\label{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140} 
+\index{MyVensimIMP@{MyVensimIMP}!MyVensimIMP@{MyVensimIMP}}
+\index{MyVensimIMP@{MyVensimIMP}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{MyVensimIMP()}{MyVensimIMP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily My\+Vensim\+IMP\+::\+My\+Vensim\+IMP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Construct a new \doxylink{classMyVensim}{My\+Vensim} by a obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{classMyVensim}{My\+Vensim} obj \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.clear();}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.clear();}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.clear();}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ other.\mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}})\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.push\_back(i);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ other.\mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}})\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.push\_back(i);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ other.\mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}})\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.push\_back(i);}
+\DoxyCodeLine{00012\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}, \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}, and \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+\Hypertarget{classMyVensimIMP_adeafa693faf5aa4a339ba16d635e2f50}\label{classMyVensimIMP_adeafa693faf5aa4a339ba16d635e2f50} 
+\index{MyVensimIMP@{MyVensimIMP}!MyVensimIMP@{MyVensimIMP}}
+\index{MyVensimIMP@{MyVensimIMP}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{MyVensimIMP()}{MyVensimIMP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily My\+Vensim\+IMP\+::\+My\+Vensim\+IMP (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classModel}{Model} by name and sart and end time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string with default value "{}\+NO\+\_\+\+NAME"{} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ :\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}(\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}})\ \{\}}
+
+\end{DoxyCode}
+\Hypertarget{classMyVensimIMP_a1e08b84bc23882e2bf3c11338eff7c16}\label{classMyVensimIMP_a1e08b84bc23882e2bf3c11338eff7c16} 
+\index{MyVensimIMP@{MyVensimIMP}!````~MyVensimIMP@{\texorpdfstring{$\sim$}{\string~}MyVensimIMP}}
+\index{````~MyVensimIMP@{\texorpdfstring{$\sim$}{\string~}MyVensimIMP}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MyVensimIMP()}{\string~MyVensimIMP()}}
+{\footnotesize\ttfamily My\+Vensim\+IMP\+::\texorpdfstring{$\sim$}{\string~}\+My\+Vensim\+IMP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This destructor is a virtual destructor of the class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.clear();}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.clear();}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.clear();}
+\DoxyCodeLine{00018\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}, \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}, and \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMyVensimIMP_a3cfa35c6ebd7c1b367c1bb5116245eab}\label{classMyVensimIMP_a3cfa35c6ebd7c1b367c1bb5116245eab} 
+\index{MyVensimIMP@{MyVensimIMP}!add@{add}}
+\index{add@{add}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void My\+Vensim\+IMP\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method add a \doxylink{classFlow}{Flow} pointer to the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow} & \doxylink{classFlow}{Flow} pointer must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a9b44b5b24c9499436c5d7ff82cb9d72d}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00046\ \{\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.push\_back(flow);\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.
+
+\Hypertarget{classMyVensimIMP_a031b995c5c4d48026d3c8e17bb686067}\label{classMyVensimIMP_a031b995c5c4d48026d3c8e17bb686067} 
+\index{MyVensimIMP@{MyVensimIMP}!add@{add}}
+\index{add@{add}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void My\+Vensim\+IMP\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method add a \doxylink{classModel}{Model} pointer to the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \doxylink{classModel}{Model} pointer must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a26825f1f66f46083e9e321d78e16730d}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047\ \{\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.push\_back(model);\ \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.
+
+\Hypertarget{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}\label{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94} 
+\index{MyVensimIMP@{MyVensimIMP}!add@{add}}
+\index{add@{add}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void My\+Vensim\+IMP\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method add a \doxylink{classSystem}{System} pointer to the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & \doxylink{classSystem}{System} pointer must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMyVensim_adaf2b6fdbe0bf2d613dd888d888fc495}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \{\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.push\_back(system);\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+
+
+Referenced by \mbox{\hyperlink{classMyVensimIMP_a6fc05aad2832dbf468fcfaa528f2c2c2}{create\+Model()}}, and \mbox{\hyperlink{classMyVensimIMP_a49b99729dfc47bf21bed812b69309372}{create\+System()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMyVensimIMP_a6fc05aad2832dbf468fcfaa528f2c2c2}\label{classMyVensimIMP_a6fc05aad2832dbf468fcfaa528f2c2c2} 
+\index{MyVensimIMP@{MyVensimIMP}!createModel@{createModel}}
+\index{createModel@{createModel}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} My\+Vensim\+IMP\+::create\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{const int \&}]{start\+Time = {\ttfamily 0},  }\item[{const int \&}]{end\+Time = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a instance of \doxylink{classModel}{Model}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string with default value "{}\+NO\+\_\+\+NAME"{} \\
+\hline
+{\em start\+Time} & int with default value 0 \\
+\hline
+{\em end\+Time} & int with default value 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{classModel}{Model} pointer to the new instance of \doxylink{classModel}{Model} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a89287dbe08da1cf23d7a0fc40681bd00}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}*\ m\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}(\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}},\ startTime,\ endTime);}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add}}(m);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{return}\ m;}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add()}}, and \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMyVensimIMP_a6fc05aad2832dbf468fcfaa528f2c2c2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMyVensimIMP_a49b99729dfc47bf21bed812b69309372}\label{classMyVensimIMP_a49b99729dfc47bf21bed812b69309372} 
+\index{MyVensimIMP@{MyVensimIMP}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} My\+Vensim\+IMP\+::create\+System (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily "{}NO\+\_\+NAME"{}},  }\item[{const double \&}]{value = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a instance of \doxylink{classSystem}{System}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string with default value "{}\+NO\+\_\+\+NAME"{} \\
+\hline
+{\em value} & double with default value 0.\+0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{classSystem}{System} pointer to the new instance of \doxylink{classSystem}{System} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ s\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}},\ value);}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add}}(s);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{return}\ s;}
+\DoxyCodeLine{00024\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add()}}, and \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMyVensimIMP_a49b99729dfc47bf21bed812b69309372_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMyVensimIMP_a12c13e98149c389a615d390594f89768}\label{classMyVensimIMP_a12c13e98149c389a615d390594f89768} 
+\index{MyVensimIMP@{MyVensimIMP}!getFlows@{getFlows}}
+\index{getFlows@{getFlows}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{getFlows()}{getFlows()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$ My\+Vensim\+IMP\+::get\+Flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method returns the vector of flows. 
+
+\begin{DoxyReturn}{Returns}
+a vector containing Flows is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a29af84ec2ca6c5e3b6ed1977afcd434d}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.
+
+\Hypertarget{classMyVensimIMP_a72252314cd360036dafbc1f414f2dc22}\label{classMyVensimIMP_a72252314cd360036dafbc1f414f2dc22} 
+\index{MyVensimIMP@{MyVensimIMP}!getModels@{getModels}}
+\index{getModels@{getModels}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{getModels()}{getModels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} $>$ My\+Vensim\+IMP\+::get\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method returns the vector of Models. 
+
+\begin{DoxyReturn}{Returns}
+a vector containing Models is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a866e6887e5af954df43e99adc9a7a53b}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00039\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.
+
+\Hypertarget{classMyVensimIMP_ab3e6219267712c8f282b6315856627bb}\label{classMyVensimIMP_ab3e6219267712c8f282b6315856627bb} 
+\index{MyVensimIMP@{MyVensimIMP}!getName@{getName}}
+\index{getName@{getName}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string My\+Vensim\+IMP\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method returns the name of a \doxylink{classMyVensim}{My\+Vensim}. 
+
+\begin{DoxyReturn}{Returns}
+a string containing the name is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a3b404af8470b6c818736dc35107b67ac}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}.
+
+\Hypertarget{classMyVensimIMP_a9425ab4d678abb2f782a7d0db1ee706e}\label{classMyVensimIMP_a9425ab4d678abb2f782a7d0db1ee706e} 
+\index{MyVensimIMP@{MyVensimIMP}!getSystems@{getSystems}}
+\index{getSystems@{getSystems}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{getSystems()}{getSystems()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$ My\+Vensim\+IMP\+::get\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method returns the vector of Systems. 
+
+\begin{DoxyReturn}{Returns}
+a vector containing Systems is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_aeaab9c99eca7f529a9e45c34028da234}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+\Hypertarget{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc}\label{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc} 
+\index{MyVensimIMP@{MyVensimIMP}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool My\+Vensim\+IMP\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+This method is overloading the \textquotesingle{}!=\textquotesingle{} operator, compare two models objs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & model obj to be compare must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool is returned, false if they are equal and true if not 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ !=\ other.\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ ||\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}\ !=\ other.\mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}\ ||\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}\ !=\ other.\mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}\ ||\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}\ !=\ other.\mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}\ );}
+\DoxyCodeLine{00101\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}, \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}, \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}, and \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+\Hypertarget{classMyVensimIMP_a969e169d064faf40876efb44da005a03}\label{classMyVensimIMP_a969e169d064faf40876efb44da005a03} 
+\index{MyVensimIMP@{MyVensimIMP}!operator=@{operator=}}
+\index{operator=@{operator=}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \& My\+Vensim\+IMP\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method is overloading the \textquotesingle{}=\textquotesingle{} operator, "{}cloning"{} from one \doxylink{classMyVensim}{My\+Vensim} to another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{classMyVensim}{My\+Vensim} obj to be cloned must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{classMyVensim}{My\+Vensim} is returned that is a clone of what was passed to the method 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{if}(other\ ==\ *\textcolor{keyword}{this})\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ =\ other.\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}};}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.clear();}
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.clear();}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.clear();}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ other.\mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}})\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.push\_back(i);}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ other.\mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}})\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.push\_back(i);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ other.\mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}})\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.push\_back(i);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00093\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}, \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}, \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}, and \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+\Hypertarget{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad}\label{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad} 
+\index{MyVensimIMP@{MyVensimIMP}!operator==@{operator==}}
+\index{operator==@{operator==}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool My\+Vensim\+IMP\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyVensimIMP}{My\+Vensim\+IMP}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+This method is overloading the \textquotesingle{}==\textquotesingle{} operator, compare two models objs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & model obj to be compare must be passed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool is returned, true if they are equal and false if not 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ ==\ other.\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ \&\&\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}\ ==\ other.\mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}\ \&\&\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}\ ==\ other.\mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}\ \&\&\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}\ ==\ other.\mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}\ );}
+\DoxyCodeLine{00097\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}, \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}, \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}, and \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+\Hypertarget{classMyVensimIMP_a702f4054f181a8984dfe09bb532ece4c}\label{classMyVensimIMP_a702f4054f181a8984dfe09bb532ece4c} 
+\index{MyVensimIMP@{MyVensimIMP}!rmv@{rmv}}
+\index{rmv@{rmv}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{rmv()}{rmv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool My\+Vensim\+IMP\+::rmv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*}}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method remove a \doxylink{classFlow}{Flow} pointer of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow} & \doxylink{classFlow}{Flow} pointer iterator must be passed to the method \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool value, true if can remove, false if not 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_ace6295754546a64c53d7a3b0fd247b31}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{classMyVensim_aa2dea417dc1d85d75d78fcc6d58ba4e2}{flowIterator}}\ i\ =\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.begin();\ i\ <\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.end();\ i++)}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(*i\ ==\ flow)\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.erase(i);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00065\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.
+
+\Hypertarget{classMyVensimIMP_a2f69636c7db0e2f6f366f6586d6d2fd9}\label{classMyVensimIMP_a2f69636c7db0e2f6f366f6586d6d2fd9} 
+\index{MyVensimIMP@{MyVensimIMP}!rmv@{rmv}}
+\index{rmv@{rmv}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{rmv()}{rmv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool My\+Vensim\+IMP\+::rmv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method remove a \doxylink{classModel}{Model} pointer of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \doxylink{classModel}{Model} pointer iterator must be passed to the method \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool value, true if can remove, false if not 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a8fac6eefd0799d6a21a57ee356464391}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{classMyVensim_a2f7a6fcc75127f9b1cc7e99c7009d801}{modelIterator}}\ i\ =\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.begin();\ i\ <\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.end();\ i++)}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(*i\ ==\ model)\{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.erase(i);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00073\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.
+
+\Hypertarget{classMyVensimIMP_a31c42f86522ca69806c3f101b7b8d640}\label{classMyVensimIMP_a31c42f86522ca69806c3f101b7b8d640} 
+\index{MyVensimIMP@{MyVensimIMP}!rmv@{rmv}}
+\index{rmv@{rmv}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{rmv()}{rmv()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool My\+Vensim\+IMP\+::rmv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*}}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method remove a \doxylink{classSystem}{System} pointer of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & \doxylink{classSystem}{System} pointer iterator must be passed to the method \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool value, true if can remove, false if not 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a1648e1be6c4aa6882aa5c2b77b39bf4e}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{classMyVensim_a2a733b1837e8492df28320d938e92e56}{systemIterator}}\ i\ =\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.begin();\ i\ <\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.end();\ i++)}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(*i\ ==\ system)\{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.erase(i);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00057\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+\Hypertarget{classMyVensimIMP_a7e0bb2adf41cd7dbc8d22b8364d35e54}\label{classMyVensimIMP_a7e0bb2adf41cd7dbc8d22b8364d35e54} 
+\index{MyVensimIMP@{MyVensimIMP}!run@{run}}
+\index{run@{run}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool My\+Vensim\+IMP\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method run all model. 
+
+\begin{DoxyReturn}{Returns}
+a bool value, true if can run, false if not 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a917f68ea1b3df46199437ee899cd787b}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.empty())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i\ :\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}})\ if(!(i-\/>\mbox{\hyperlink{classMyVensimIMP_a7e0bb2adf41cd7dbc8d22b8364d35e54}{run}}()))\ return\ false;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00079\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.
+
+\Hypertarget{classMyVensimIMP_ae90f07ae79143b673fec51fef76b752d}\label{classMyVensimIMP_ae90f07ae79143b673fec51fef76b752d} 
+\index{MyVensimIMP@{MyVensimIMP}!setFlows@{setFlows}}
+\index{setFlows@{setFlows}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{setFlows()}{setFlows()}}
+{\footnotesize\ttfamily void My\+Vensim\+IMP\+::set\+Flows (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$}]{flows }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method assigns a vector to the flows of a \doxylink{classMyVensim}{My\+Vensim}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flows} & int must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a85c8db6a6ebb0511dbca38755f6e1052}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \{\ this-\/>\mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.clear();\ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i\ :\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}})\ this-\/>\mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.push\_back(i);\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}}.
+
+\Hypertarget{classMyVensimIMP_a7913e303d0a5fb61d42b15209f883e71}\label{classMyVensimIMP_a7913e303d0a5fb61d42b15209f883e71} 
+\index{MyVensimIMP@{MyVensimIMP}!setModels@{setModels}}
+\index{setModels@{setModels}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{setModels()}{setModels()}}
+{\footnotesize\ttfamily void My\+Vensim\+IMP\+::set\+Models (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classModel}{Model}} \texorpdfstring{$\ast$}{*} $>$}]{models }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method assigns a vector to the models of a \doxylink{classMyVensim}{My\+Vensim}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em models} & int must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMyVensim_afb44c94a795b9d0f3863bac5ffc2e967}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00042\ \{\ \{\ this-\/>\mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.clear();\ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i\ :\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}})\ this-\/>\mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.push\_back(i);\ \}\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}}.
+
+\Hypertarget{classMyVensimIMP_acfbffb90e5ed988a8e2d51e55b3880f2}\label{classMyVensimIMP_acfbffb90e5ed988a8e2d51e55b3880f2} 
+\index{MyVensimIMP@{MyVensimIMP}!setName@{setName}}
+\index{setName@{setName}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void My\+Vensim\+IMP\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method assigns a string to the name of a \doxylink{classMyVensim}{My\+Vensim}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMyVensim_a438279a953af1f285dcd81c5f0210587}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035\ \{\ this-\/>\mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ =\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}};\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}.
+
+
+
+Referenced by \mbox{\hyperlink{unit__MyVensim_8cpp_a383b0a22c654e7ac8fa3657eb83f7634}{test\+\_\+\+My\+Vensim\+\_\+equal()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMyVensimIMP_acfbffb90e5ed988a8e2d51e55b3880f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMyVensimIMP_ad035bf7cd0902f45c6d90adc5123d346}\label{classMyVensimIMP_ad035bf7cd0902f45c6d90adc5123d346} 
+\index{MyVensimIMP@{MyVensimIMP}!setSystems@{setSystems}}
+\index{setSystems@{setSystems}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{setSystems()}{setSystems()}}
+{\footnotesize\ttfamily void My\+Vensim\+IMP\+::set\+Systems (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$}]{systems }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method assigns a vector to the systems of a \doxylink{classMyVensim}{My\+Vensim}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em systems} & int must be passed to the method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMyVensim_ac2a57174288e63c1ee1afe4b488f0bcd}{My\+Vensim}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040\ \{\ this-\/>\mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.clear();\ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i\ :\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}})\ this-\/>\mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.push\_back(i);\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}\label{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a} 
+\index{MyVensimIMP@{MyVensimIMP}!flows@{flows}}
+\index{flows@{flows}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\ast$}{*}$>$ My\+Vensim\+IMP\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{classFlow}{Flow} pointers vector. 
+
+Referenced by \mbox{\hyperlink{classMyVensimIMP_a3cfa35c6ebd7c1b367c1bb5116245eab}{add()}}, \mbox{\hyperlink{classMyVensimIMP_a12c13e98149c389a615d390594f89768}{get\+Flows()}}, \mbox{\hyperlink{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140}{My\+Vensim\+IMP()}}, \mbox{\hyperlink{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc}{operator!=()}}, \mbox{\hyperlink{classMyVensimIMP_a969e169d064faf40876efb44da005a03}{operator=()}}, \mbox{\hyperlink{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad}{operator==()}}, \mbox{\hyperlink{classMyVensimIMP_a702f4054f181a8984dfe09bb532ece4c}{rmv()}}, \mbox{\hyperlink{classMyVensimIMP_ae90f07ae79143b673fec51fef76b752d}{set\+Flows()}}, and \mbox{\hyperlink{classMyVensimIMP_a1e08b84bc23882e2bf3c11338eff7c16}{\texorpdfstring{$\sim$}{\string~}\+My\+Vensim\+IMP()}}.
+
+\Hypertarget{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}\label{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329} 
+\index{MyVensimIMP@{MyVensimIMP}!models@{models}}
+\index{models@{models}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classModel}{Model}}\texorpdfstring{$\ast$}{*}$>$ My\+Vensim\+IMP\+::models\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{classModel}{Model} pointers vector. 
+
+Referenced by \mbox{\hyperlink{classMyVensimIMP_a031b995c5c4d48026d3c8e17bb686067}{add()}}, \mbox{\hyperlink{classMyVensimIMP_a72252314cd360036dafbc1f414f2dc22}{get\+Models()}}, \mbox{\hyperlink{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140}{My\+Vensim\+IMP()}}, \mbox{\hyperlink{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc}{operator!=()}}, \mbox{\hyperlink{classMyVensimIMP_a969e169d064faf40876efb44da005a03}{operator=()}}, \mbox{\hyperlink{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad}{operator==()}}, \mbox{\hyperlink{classMyVensimIMP_a2f69636c7db0e2f6f366f6586d6d2fd9}{rmv()}}, \mbox{\hyperlink{classMyVensimIMP_a7e0bb2adf41cd7dbc8d22b8364d35e54}{run()}}, \mbox{\hyperlink{classMyVensimIMP_a7913e303d0a5fb61d42b15209f883e71}{set\+Models()}}, and \mbox{\hyperlink{classMyVensimIMP_a1e08b84bc23882e2bf3c11338eff7c16}{\texorpdfstring{$\sim$}{\string~}\+My\+Vensim\+IMP()}}.
+
+\Hypertarget{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}\label{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224} 
+\index{MyVensimIMP@{MyVensimIMP}!name@{name}}
+\index{name@{name}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string My\+Vensim\+IMP\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Name string attribute. 
+
+Referenced by \mbox{\hyperlink{classMyVensimIMP_a6fc05aad2832dbf468fcfaa528f2c2c2}{create\+Model()}}, \mbox{\hyperlink{classMyVensimIMP_a49b99729dfc47bf21bed812b69309372}{create\+System()}}, \mbox{\hyperlink{classMyVensimIMP_ab3e6219267712c8f282b6315856627bb}{get\+Name()}}, \mbox{\hyperlink{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc}{operator!=()}}, \mbox{\hyperlink{classMyVensimIMP_a969e169d064faf40876efb44da005a03}{operator=()}}, \mbox{\hyperlink{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad}{operator==()}}, and \mbox{\hyperlink{classMyVensimIMP_acfbffb90e5ed988a8e2d51e55b3880f2}{set\+Name()}}.
+
+\Hypertarget{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}\label{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db} 
+\index{MyVensimIMP@{MyVensimIMP}!systems@{systems}}
+\index{systems@{systems}!MyVensimIMP@{MyVensimIMP}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classSystem}{System}}\texorpdfstring{$\ast$}{*}$>$ My\+Vensim\+IMP\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{classSystem}{System} pointers vector. 
+
+Referenced by \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add()}}, \mbox{\hyperlink{classMyVensimIMP_a9425ab4d678abb2f782a7d0db1ee706e}{get\+Systems()}}, \mbox{\hyperlink{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140}{My\+Vensim\+IMP()}}, \mbox{\hyperlink{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc}{operator!=()}}, \mbox{\hyperlink{classMyVensimIMP_a969e169d064faf40876efb44da005a03}{operator=()}}, \mbox{\hyperlink{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad}{operator==()}}, \mbox{\hyperlink{classMyVensimIMP_a31c42f86522ca69806c3f101b7b8d640}{rmv()}}, \mbox{\hyperlink{classMyVensimIMP_ad035bf7cd0902f45c6d90adc5123d346}{set\+Systems()}}, and \mbox{\hyperlink{classMyVensimIMP_a1e08b84bc23882e2bf3c11338eff7c16}{\texorpdfstring{$\sim$}{\string~}\+My\+Vensim\+IMP()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{MyVensimIMP_8hpp}{My\+Vensim\+IMP.\+hpp}}\item 
+/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/src/\mbox{\hyperlink{MyVensimIMP_8cpp}{My\+Vensim\+IMP.\+cpp}}\end{DoxyCompactItemize}

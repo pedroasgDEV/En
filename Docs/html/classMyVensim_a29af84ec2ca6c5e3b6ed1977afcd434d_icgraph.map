@@ -1,0 +1,12 @@
+<map id="MyVensim::getFlows" name="MyVensim::getFlows">
+<area shape="rect" id="Node000001" title="This method returns the vector of flows." alt="" coords="575,42,732,67"/>
+<area shape="rect" id="Node000002" href="$unit__MyVensim_8cpp.html#a6cfda66f4d553a080bda1c4cfae348f5" title="This function run the unit test of the MyVensim getFlows and add Flow." alt="" coords="339,5,527,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="561,45,527,40,527,35,561,40"/>
+<area shape="rect" id="Node000005" href="$unit__MyVensim_8cpp.html#a7a113a3308902b6b1c4a39c98bd12dff" title="This function run the unit test of the MyVensim setFlows." alt="" coords="339,70,526,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="561,69,526,73,526,68,561,64"/>
+<area shape="rect" id="Node000003" href="$unit__MyVensim_8cpp.html#a4128542ba2fee52bfdea1baea28d2b29" title="This function run the unit tests of the MyVensim." alt="" coords="108,42,291,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,42,291,46,290,41,325,36"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,42,60,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,57,60,57,60,52,94,52"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="325,72,291,68,291,63,326,67"/>
+</map>

@@ -10,9 +10,9 @@
 //Bibliotecas
 #include "System.hpp"
 
-/****************************************************************************************
+/***********************************************************************************
  *@brief The System implementation defines the attributes and implements the methods
-****************************************************************************************/
+***********************************************************************************/
 
 class SystemIMP : public System{
     private:
@@ -45,7 +45,7 @@ class SystemIMP : public System{
          * @brief This destructor is a virtual destructor of the Class
         */
         //Destructors
-        virtual ~SystemIMP();
+        virtual ~SystemIMP() override;
  
         //Geters e seters
         //Nome
@@ -53,23 +53,23 @@ class SystemIMP : public System{
          * @brief This method returns the name of a system
          * @return a string containing the name is returned
         */
-        std::string getName() const;
+        std::string getName() const override;
         /**
          * @brief This method assigns a string to the name of a system
          * @param name string must be passed to the method
         */
-        void setName(const std::string& name);
+        void setName(const std::string& name) override;
         //Value
         /**
          * @brief This method returns the value of a system
          * @return a double containing the value is returned
         */
-        double getValue() const;
+        double getValue() const override;
         /**
          * @brief This method assigns a double to the value of a system
          * @param value double must be passed to the method
         */
-        void setValue(const double& value);
+        void setValue(const double& value) override;
 
         //Sobrecarga de operadores
         /**

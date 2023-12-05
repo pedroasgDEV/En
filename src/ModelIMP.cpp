@@ -20,8 +20,8 @@ void ModelIMP::setName(const std::string& name) { this->name = name; }
 //Vectors
 std::vector<System*> ModelIMP::getSystems() const { return systems;}
 std::vector<Flow*>  ModelIMP::getFlows() const { return flows;};
-void ModelIMP::setSystems(const std::vector<System*> systems){ for(auto i : systems) this->systems.push_back(i);}
-void ModelIMP::setFlows(const std::vector<Flow*> flows){ for(auto i : flows) this->flows.push_back(i);}
+void ModelIMP::setSystems(const std::vector<System*> systems){ this->systems.clear(); for(auto i : systems) this->systems.push_back(i);}
+void ModelIMP::setFlows(const std::vector<Flow*> flows){ this->flows.clear(); for(auto i : flows) this->flows.push_back(i);}
 //Timer
 int ModelIMP::getStartTime() const { return startTime; }
 int ModelIMP::getEndTime() const { return endTime; }
@@ -92,7 +92,6 @@ bool ModelIMP::run(){
 ModelIMP& ModelIMP::operator=(const ModelIMP& other){
     if(other == *this) return *this;
     name = other.name;
-    systems = other.systems;
     flows.clear();
     systems.clear();
     for (auto i : other.flows) flows.push_back(i);

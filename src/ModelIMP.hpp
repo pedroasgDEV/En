@@ -9,9 +9,10 @@
 
 #include "Model.hpp"
 
-/***********************************************************************************
- *@brief This class implementation defines the attributes and implements the methods
-***********************************************************************************/
+/**********************************************************************************
+ *@brief The Model implementation defines the attributes and implements the methods
+**********************************************************************************/
+
 class ModelIMP : public Model{
     private:
         /**
@@ -43,11 +44,11 @@ class ModelIMP : public Model{
         */
         ModelIMP(const std::string& name = "NO_NAME", const int& startTime = 0, const int& endTime = 1);
 
-        //Destrutor
+        //Destructor
         /**
          * @brief This destructor is a virtual destructor of the class
         */
-        virtual ~ModelIMP();
+        virtual ~ModelIMP() override;
 
         //Geters e seters
         //Name
@@ -55,60 +56,60 @@ class ModelIMP : public Model{
          * @brief This method returns the name of a Model
          * @return a string containing the name is returned
         */
-        std::string getName() const;
+        std::string getName() const override;
         /**
          * @brief This method assigns a string to the name of a Model
          * @param name string must be passed to the method
         */
-        void setName(const std::string& name);
+        void setName(const std::string& name) override;
         //Vector
         /**
          * @brief This method returns the vector of Systems
          * @return a vector containing Systems is returned
         */
-        std::vector<System*> getSystems() const;
+        std::vector<System*> getSystems() const override;
         /**
          * @brief This method returns the vector of flows
          * @return a vector containing Flows is returned
         */
-        std::vector<Flow*> getFlows() const;
+        std::vector<Flow*> getFlows() const override;
         /**
          * @brief This method assigns a vector to the systems of a Model
          * @param systems int must be passed to the method
         */
-        void setSystems(const std::vector<System*> systems);
+        void setSystems(const std::vector<System*> systems) override;
         /**
          * @brief This method assigns a vector to the flows of a Model
          * @param flows int must be passed to the method
         */
-        void setFlows(const std::vector<Flow*> flows);
+        void setFlows(const std::vector<Flow*> flows) override;
         //Time
         /**
          * @brief This method returns the startTime of a Model
          * @return a int containing the startTime is returned
         */
-        int getStartTime() const;
+        int getStartTime() const override;
         /**
          * @brief This method returns the end of a Model
          * @return a int containing the end is returned
         */
-        int getEndTime() const;
+        int getEndTime() const override;
         /**
          * @brief This method assigns a int to the startTime of a Model
          * @param startTime int must be passed to the method
         */
-        void setStartTime(const int& startTime);
+        void setStartTime(const int& startTime) override;
         /**
          * @brief This method assigns a int to the endTime of a Model
          * @param endTime int must be passed to the method
         */
-        void setEndTime(const int& endTime);
+        void setEndTime(const int& endTime) override;
         /**
          * @brief This method assigns a int to the startTime and endTime of a Model
          * @param startTime int must be passed to the method
          * @param endTime int must be passed to the method
         */
-        void setTime(const int& startTime, const int& endTime);
+        void setTime(const int& startTime, const int& endTime) override;
 
         //Metodos
         //add
@@ -116,31 +117,31 @@ class ModelIMP : public Model{
          * @brief This method add a System pointer to the vector of a Model
          * @param system System pointer must be passed to the method
         */
-        void add(System* system);
+        void add(System* system) override;
         /**
          * @brief This method add a Flow pointer to the vector of a Model
          * @param flow Flow pointer must be passed to the method
         */
-        void add(Flow* flow);
+        void add(Flow* flow) override;
         //remove
         /**
          * @brief This method remove a System pointer of the vector of a Model
          * @param system System pointer iterator must be passed to the method
          * @return a bool value, true if can remove, false if not
         */
-        bool rmv(const System* system);
+        bool rmv(const System* system) override;
         /**
          * @brief This method remove a Flow pointer of the vector of a Model
          * @param flow Flow pointer iterator must be passed to the method
          * @return a bool value, true if can remove, false if not
         */
-        bool rmv(const Flow* flow);
+        bool rmv(const Flow* flow) override;
         //Others
         /**
          * @brief This method run all model
          * @return a bool value, true if can run, false if not
         */
-        bool run();
+        bool run() override;
 
         //Sobrecarga de operadores
         /**

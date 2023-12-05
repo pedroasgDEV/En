@@ -30,13 +30,13 @@ class Exponencial : public FlowIMP{
          * @param source System pointer with default value NULL
          * @param target System pointer with default value NULL
         */
-        Exponencial(const std::string& name = "NO_NAME", System* source = NULL, System* target = NULL);
+        Exponencial(const std::string& name = "NO_NAME", System* source = nullptr, System* target = nullptr);
     
         //Destructor
         /**
          * @brief This destructor is a virtual destructor of the Class
         */
-        virtual ~Exponencial();
+        virtual ~Exponencial() override;
 
         //Metodos
         /**

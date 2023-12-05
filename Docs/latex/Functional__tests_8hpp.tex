@@ -1,8 +1,6 @@
 \doxysection{/home/pedro/\+Downloads/\+UFOP/\+Periodo6/\+Eng\+Software1/\+Engenharia\+\_\+de\+\_\+\+Software1\+\_\+tp1/tests/functional\+\_\+tests/src/\+Functional\+\_\+tests.hpp File Reference}
 \hypertarget{Functional__tests_8hpp}{}\label{Functional__tests_8hpp}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/tests/functional\_tests/src/Functional\_tests.hpp@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/tests/functional\_tests/src/Functional\_tests.hpp}}
-{\ttfamily \#include "{}../../../src/\+Model\+IMP.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../../src/\+System\+IMP.\+hpp"{}}\newline
-{\ttfamily \#include "{}../../../src/\+Flow\+IMP.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../../src/\+My\+Vensim\+IMP.\+hpp"{}}\newline
 {\ttfamily \#include "{}Exponencial.\+hpp"{}}\newline
 {\ttfamily \#include "{}Logistical.\+hpp"{}}\newline
 {\ttfamily \#include $<$assert.\+h$>$}\newline
@@ -17,8 +15,7 @@ Include dependency graph for Functional\+\_\+tests.\+hpp\+:
 \includegraphics[width=350pt]{Functional__tests_8hpp__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -49,62 +46,64 @@ This function runs the "{}complex"{} test, which has multiple systems and flows.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00058\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Complex\ functional\ test"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{classModelIMP}{ModelIMP}}*\ model\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}(\textcolor{stringliteral}{"{}Model"{}},\ 0,\ 100);}
-\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ q1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}q1"{}},\ 100.0);}
-\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ q2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}q2"{}},\ 0.0);}
-\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ q3\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}q3"{}},\ 100.0);}
-\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ q4\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}q4"{}},\ 0.0);}
-\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ q5\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}q5"{}},\ 0.0);}
-\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{classExponencial}{Exponencial}}*\ f\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classExponencial}{Exponencial}}(\textcolor{stringliteral}{"{}f"{}},\ q1,\ q2);}
-\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{classExponencial}{Exponencial}}*\ t\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classExponencial}{Exponencial}}(\textcolor{stringliteral}{"{}t"{}},\ q2,\ q3);}
-\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{classExponencial}{Exponencial}}*\ u\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classExponencial}{Exponencial}}(\textcolor{stringliteral}{"{}u"{}},\ q3,\ q4);}
-\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{classExponencial}{Exponencial}}*\ v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classExponencial}{Exponencial}}(\textcolor{stringliteral}{"{}v"{}},\ q4,\ q1);}
-\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{classExponencial}{Exponencial}}*\ g\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classExponencial}{Exponencial}}(\textcolor{stringliteral}{"{}g"{}},\ q1,\ q3);}
-\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{classExponencial}{Exponencial}}*\ r\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classExponencial}{Exponencial}}(\textcolor{stringliteral}{"{}r"{}},\ q2,\ q5);}
-\DoxyCodeLine{00072\ \ \ \ \ }
-\DoxyCodeLine{00073\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(q1);}
-\DoxyCodeLine{00074\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(q2);}
-\DoxyCodeLine{00075\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(q3);}
-\DoxyCodeLine{00076\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(q4);}
-\DoxyCodeLine{00077\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(q5);}
-\DoxyCodeLine{00078\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(f);}
-\DoxyCodeLine{00079\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(t);}
-\DoxyCodeLine{00080\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(u);}
-\DoxyCodeLine{00081\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(v);}
-\DoxyCodeLine{00082\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(g);}
-\DoxyCodeLine{00083\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(r);}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00085\ \ \ \ \ model-\/>\mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{run}}();}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00087\ \ \ \ \ assert(fabs((round((q1-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000))\ -\/\ 10000\ *\ 31.8513))\ <\ 0.0001);}
-\DoxyCodeLine{00088\ \ \ \ \ assert(fabs((round((q2-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000))\ -\/\ 10000\ *\ 18.4003))\ <\ 0.0001);}
-\DoxyCodeLine{00089\ \ \ \ \ assert(fabs((round((q3-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000))\ -\/\ 10000\ *\ 77.1143))\ <\ 0.0001);}
-\DoxyCodeLine{00090\ \ \ \ \ assert(fabs((round((q4-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000))\ -\/\ 10000\ *\ 56.1728))\ <\ 0.0001);}
-\DoxyCodeLine{00091\ \ \ \ \ assert(fabs((round((q5-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000))\ -\/\ 10000\ *\ 16.4612))\ <\ 0.0001);}
-\DoxyCodeLine{00092\ \ \ \ \ }
-\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{delete}\ model;}
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{delete}\ q1;}
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{delete}\ q2;}
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{delete}\ q3;}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{delete}\ q4;}
-\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{delete}\ q5;}
-\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{delete}\ f;}
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{delete}\ t;}
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{delete}\ u;}
-\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{delete}\ v;}
-\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{delete}\ g;}
-\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{delete}\ r;}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Complex\ functional\ test\ passed"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00107\ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Complex\ functional\ test"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{classMyVensim}{MyVensim}}*\ mV\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}(\textcolor{stringliteral}{"{}mV"{}});}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}*\ model\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a89287dbe08da1cf23d7a0fc40681bd00}{createModel}}(\textcolor{stringliteral}{"{}Model"{}},\ 0,\ 100);}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ q1\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}q1"{}},\ 100.0);}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ q2\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}q2"{}},\ 0.0);}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ q3\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}q3"{}},\ 100.0);}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ q4\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}q4"{}},\ 0.0);}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ q5\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}q5"{}},\ 0.0);}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ f\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classExponencial}{Exponencial}}>(\textcolor{stringliteral}{"{}f"{}},\ q1,\ q2);}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ t\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classExponencial}{Exponencial}}>(\textcolor{stringliteral}{"{}t"{}},\ q2,\ q3);}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ u\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classExponencial}{Exponencial}}>(\textcolor{stringliteral}{"{}u"{}},\ q3,\ q4);}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ v\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classExponencial}{Exponencial}}>(\textcolor{stringliteral}{"{}v"{}},\ q4,\ q1);}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ g\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classExponencial}{Exponencial}}>(\textcolor{stringliteral}{"{}g"{}},\ q1,\ q3);}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ r\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classExponencial}{Exponencial}}>(\textcolor{stringliteral}{"{}r"{}},\ q2,\ q5);}
+\DoxyCodeLine{00078\ \ \ \ \ }
+\DoxyCodeLine{00079\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q1);}
+\DoxyCodeLine{00080\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q2);}
+\DoxyCodeLine{00081\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q3);}
+\DoxyCodeLine{00082\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q4);}
+\DoxyCodeLine{00083\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(q5);}
+\DoxyCodeLine{00084\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(f);}
+\DoxyCodeLine{00085\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(t);}
+\DoxyCodeLine{00086\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(u);}
+\DoxyCodeLine{00087\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(v);}
+\DoxyCodeLine{00088\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(g);}
+\DoxyCodeLine{00089\ \ \ \ \ model-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(r);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ mV-\/>\mbox{\hyperlink{classMyVensim_a917f68ea1b3df46199437ee899cd787b}{run}}();}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ assert(fabs((round((q1-\/>getValue()\ *\ 10000))\ -\/\ 10000\ *\ 31.8513))\ <\ 0.0001);}
+\DoxyCodeLine{00094\ \ \ \ \ assert(fabs((round((q2-\/>getValue()\ *\ 10000))\ -\/\ 10000\ *\ 18.4003))\ <\ 0.0001);}
+\DoxyCodeLine{00095\ \ \ \ \ assert(fabs((round((q3-\/>getValue()\ *\ 10000))\ -\/\ 10000\ *\ 77.1143))\ <\ 0.0001);}
+\DoxyCodeLine{00096\ \ \ \ \ assert(fabs((round((q4-\/>getValue()\ *\ 10000))\ -\/\ 10000\ *\ 56.1728))\ <\ 0.0001);}
+\DoxyCodeLine{00097\ \ \ \ \ assert(fabs((round((q5-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000))\ -\/\ 10000\ *\ 16.4612))\ <\ 0.0001);}
+\DoxyCodeLine{00098\ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{delete}\ model;}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{delete}\ q1;}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{delete}\ q2;}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{delete}\ q3;}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{delete}\ q4;}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{delete}\ q5;}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{delete}\ f;}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{delete}\ t;}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{delete}\ u;}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{delete}\ v;}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{delete}\ g;}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{delete}\ r;}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keyword}{delete}\ mV;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Complex\ functional\ test\ passed"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00114\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{Model\+IMP\+::add()}}, \mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{System\+IMP\+::get\+Value()}}, and \mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{Model\+IMP\+::run()}}.
+References \mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{Model\+::add()}}, \mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{My\+Vensim\+::create\+Flow()}}, \mbox{\hyperlink{classMyVensim_a89287dbe08da1cf23d7a0fc40681bd00}{My\+Vensim\+::create\+Model()}}, \mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{My\+Vensim\+::create\+System()}}, \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{System\+::get\+Value()}}, and \mbox{\hyperlink{classMyVensim_a917f68ea1b3df46199437ee899cd787b}{My\+Vensim\+::run()}}.
 
 
 
@@ -115,11 +114,10 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=341pt]{Functional__tests_8hpp_ad1f284ae5215afa271c632ab3e02992c_cgraph}
+\includegraphics[width=350pt]{Functional__tests_8hpp_ad1f284ae5215afa271c632ab3e02992c_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -141,34 +139,37 @@ This function performs the exponential functional test.
 \DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00004\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Exponencial\ functional\ test"{}}\ <<\ std::endl;}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ pop1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}pop1"{}},\ 100.0);}
-\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ pop2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}pop2"{}},\ 0.0);}
-\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{classExponencial}{Exponencial}}*\ exp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classExponencial}{Exponencial}}(\textcolor{stringliteral}{"{}exp"{}},\ pop1,\ pop2);}
-\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{classModelIMP}{ModelIMP}}*\ exponencial\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}(\textcolor{stringliteral}{"{}Exponencial"{}},\ 0,\ 100);}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//Add\ os\ systems\ e\ flows\ ao\ modelo}}
-\DoxyCodeLine{00012\ \ \ \ \ exponencial-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(pop1);}
-\DoxyCodeLine{00013\ \ \ \ \ exponencial-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(pop2);}
-\DoxyCodeLine{00014\ \ \ \ \ exponencial-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(exp);}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//Roda\ o\ modelo}}
-\DoxyCodeLine{00017\ \ \ \ \ exponencial-\/>\mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{run}}();}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \ \ assert(fabs((round(pop1-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000)\ -\/\ 10000\ *\ 36.6032))\ <\ 0.0001);}
-\DoxyCodeLine{00020\ \ \ \ \ assert(fabs((round(pop2-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000)\ -\/\ 10000\ *\ 63.3968))\ <\ 0.0001);}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{delete}(exponencial);}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{delete}(exp);}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{delete}(pop1);}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{delete}(pop2);}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Exponencial\ functional\ test\ passed\(\backslash\)n"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00028\ \}}
+\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{classMyVensim}{MyVensim}}*\ mV\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}(\textcolor{stringliteral}{"{}mV"{}});}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ pop1\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}pop1"{}},\ 100.0);}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ pop2\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}pop2"{}},\ 0.0);}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ exp\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classExponencial}{Exponencial}}>(\textcolor{stringliteral}{"{}exp"{}},\ pop1,\ pop2);}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}*\ exponencial\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a89287dbe08da1cf23d7a0fc40681bd00}{createModel}}(\textcolor{stringliteral}{"{}Exponencial"{}},\ 0,\ 100);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//Add\ os\ systems\ e\ flows\ ao\ modelo}}
+\DoxyCodeLine{00013\ \ \ \ \ exponencial-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(pop1);}
+\DoxyCodeLine{00014\ \ \ \ \ exponencial-\/>add(pop2);}
+\DoxyCodeLine{00015\ \ \ \ \ exponencial-\/>add(exp);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//Roda\ o\ modelo}}
+\DoxyCodeLine{00018\ \ \ \ \ mV-\/>\mbox{\hyperlink{classMyVensim_a917f68ea1b3df46199437ee899cd787b}{run}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ assert(fabs((round(pop1-\/>getValue()\ *\ 10000)\ -\/\ 10000\ *\ 36.6032))\ <\ 0.0001);}
+\DoxyCodeLine{00021\ \ \ \ \ assert(fabs((round(pop2-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 10000\ *\ 63.3968))\ <\ 0.0001);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{delete}\ pop1;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{delete}\ pop2;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{delete}\ exp;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{delete}\ exponencial;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{delete}\ mV;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Exponencial\ functional\ test\ passed\(\backslash\)n"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00031\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{Model\+IMP\+::add()}}, \mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{System\+IMP\+::get\+Value()}}, and \mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{Model\+IMP\+::run()}}.
+References \mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{Model\+::add()}}, \mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{My\+Vensim\+::create\+Flow()}}, \mbox{\hyperlink{classMyVensim_a89287dbe08da1cf23d7a0fc40681bd00}{My\+Vensim\+::create\+Model()}}, \mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{My\+Vensim\+::create\+System()}}, \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{System\+::get\+Value()}}, and \mbox{\hyperlink{classMyVensim_a917f68ea1b3df46199437ee899cd787b}{My\+Vensim\+::run()}}.
 
 
 
@@ -182,8 +183,7 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{Functional__tests_8hpp_a84ea8bb324c37c6b0d570e76d85f2db2_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -202,37 +202,39 @@ This function performs the logistic test.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00031\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Logistical\ functional\ test"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ p1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}p1"{}},\ 100.0);}
-\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}*\ p2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}(\textcolor{stringliteral}{"{}p2"{}},\ 10.0);}
-\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{classLogistical}{Logistical}}*\ log\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classLogistical}{Logistical}}(\textcolor{stringliteral}{"{}log"{}},\ p1,\ p2);}
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classModelIMP}{ModelIMP}}*\ logistical\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classModelIMP}{ModelIMP}}(\textcolor{stringliteral}{"{}Logistical"{}},\ 0,\ 100);}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//Add\ os\ systems\ e\ flows\ ao\ modelo}}
-\DoxyCodeLine{00039\ \ \ \ \ logistical-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(p1);}
-\DoxyCodeLine{00040\ \ \ \ \ logistical-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(p2);}
-\DoxyCodeLine{00041\ \ \ \ \ logistical-\/>\mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{add}}(log);}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//Roda\ o\ modelo}}
-\DoxyCodeLine{00044\ \ \ \ \ logistical-\/>\mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{run}}();}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \ \ \ \ assert(fabs(round(p1-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000)\ -\/\ 10000\ *\ 88.2167)\ <\ 0.0001);}
-\DoxyCodeLine{00047\ \ \ \ \ assert(fabs(round(p2-\/>\mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ *\ 10000)\ -\/\ 10000\ *\ 21.7833)\ <\ 0.0001);}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{delete}(logistical);}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{delete}(log);}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{delete}(p1);}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{delete}(p2);}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Logistical\ functional\ test\ passed\(\backslash\)n"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00055\ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Logistical\ functional\ test"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classMyVensim}{MyVensim}}*\ mV\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}(\textcolor{stringliteral}{"{}mV"{}});}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ p1\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}p1"{}},\ 100.0);}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ p2\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{createSystem}}(\textcolor{stringliteral}{"{}p2"{}},\ 10.0);}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classFlow}{Flow}}*\ log\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{createFlow}}<\mbox{\hyperlink{classLogistical}{Logistical}}>(\textcolor{stringliteral}{"{}log"{}},\ p1,\ p2);}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}*\ logistical\ =\ mV-\/>\mbox{\hyperlink{classMyVensim_a89287dbe08da1cf23d7a0fc40681bd00}{createModel}}(\textcolor{stringliteral}{"{}Logistical"{}},\ 0,\ 100);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//Add\ os\ systems\ e\ flows\ ao\ modelo}}
+\DoxyCodeLine{00043\ \ \ \ \ logistical-\/>\mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{add}}(p1);}
+\DoxyCodeLine{00044\ \ \ \ \ logistical-\/>add(p2);}
+\DoxyCodeLine{00045\ \ \ \ \ logistical-\/>add(log);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//Roda\ o\ modelo}}
+\DoxyCodeLine{00048\ \ \ \ \ mV-\/>\mbox{\hyperlink{classMyVensim_a917f68ea1b3df46199437ee899cd787b}{run}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ assert(fabs(round(p1-\/>getValue()\ *\ 10000)\ -\/\ 10000\ *\ 88.2167)\ <\ 0.0001);}
+\DoxyCodeLine{00051\ \ \ \ \ assert(fabs(round(p2-\/>\mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}()\ *\ 10000)\ -\/\ 10000\ *\ 21.7833)\ <\ 0.0001);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{delete}\ logistical;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{delete}\ log;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{delete}\ p1;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{delete}\ p2;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{delete}\ mV;}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ Logistical\ functional\ test\ passed\(\backslash\)n"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00060\ \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{Model\+IMP\+::add()}}, \mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{System\+IMP\+::get\+Value()}}, and \mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{Model\+IMP\+::run()}}.
+References \mbox{\hyperlink{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}{Model\+::add()}}, \mbox{\hyperlink{classMyVensim_aa2d3ffdd2ffca118569079b99a964290}{My\+Vensim\+::create\+Flow()}}, \mbox{\hyperlink{classMyVensim_a89287dbe08da1cf23d7a0fc40681bd00}{My\+Vensim\+::create\+Model()}}, \mbox{\hyperlink{classMyVensim_a3acac9c66752dd3b6ae12e1af4a993e3}{My\+Vensim\+::create\+System()}}, \mbox{\hyperlink{classSystem_a41b673faa6c199eb8e4f204639fab4f2}{System\+::get\+Value()}}, and \mbox{\hyperlink{classMyVensim_a917f68ea1b3df46199437ee899cd787b}{My\+Vensim\+::run()}}.
 
 
 
@@ -243,11 +245,10 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=342pt]{Functional__tests_8hpp_ac5a362dfeb59aa1326005e0caee1b51e_cgraph}
+\includegraphics[width=350pt]{Functional__tests_8hpp_ac5a362dfeb59aa1326005e0caee1b51e_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

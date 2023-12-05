@@ -1,0 +1,7 @@
+<map id="test_MyVensim_setModels" name="test_MyVensim_setModels">
+<area shape="rect" id="Node000001" title="This function run the unit test of the MyVensim setModels." alt="" coords="5,31,201,56"/>
+<area shape="rect" id="Node000002" href="$classMyVensim.html#a866e6887e5af954df43e99adc9a7a53b" title="This method returns the vector of Models." alt="" coords="249,5,416,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,30,235,26,236,31,202,35"/>
+<area shape="rect" id="Node000003" href="$classMyVensim.html#afb44c94a795b9d0f3863bac5ffc2e967" title="This method assigns a vector to the models of a MyVensim." alt="" coords="250,55,415,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,51,237,55,236,60,201,56"/>
+</map>

@@ -1,0 +1,72 @@
+\doxysection{My\+Vensim\+IMP.\+hpp}
+\hypertarget{MyVensimIMP_8hpp_source}{}\label{MyVensimIMP_8hpp_source}\index{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/MyVensimIMP.hpp@{/home/pedro/Downloads/UFOP/Periodo6/EngSoftware1/Engenharia\_de\_Software1\_tp1/src/MyVensimIMP.hpp}}
+\mbox{\hyperlink{MyVensimIMP_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ @file\ MyVensimIMP.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ @author\ Pedro\ Augusto\ Sousa\ Gonçalves}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ @brief\ This\ file\ represents\ the\ factory\ implementation\ }}
+\DoxyCodeLine{00005\ \textcolor{comment}{********************************************************/}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ MYVENSIMIMP\_HPP}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ MYVENSIMIMP\_HPP}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MyVensim_8hpp}{MyVensim.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{/**********************************************************************************}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *@brief\ The\ MyVensin\ implementation\ defines\ the\ attributes\ and\ implements\ the\ methods}}
+\DoxyCodeLine{00014\ \textcolor{comment}{**********************************************************************************/}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classMyVensim}{MyVensim}}\{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}\&\ \mbox{\hyperlink{classMyVensimIMP_a969e169d064faf40876efb44da005a03}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}\&\ other);\ \textcolor{comment}{//\ Operador\ de\ atribuição}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140}{MyVensimIMP}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}\&\ other);\ \textcolor{comment}{//Copia\ outro\ MyVensim\ }}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}};\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::vector<Model*>\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}};\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::vector<System*>\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::vector<Flow*>\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}};\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Constructor}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMyVensimIMP_a73e3246050b3fabf4a3ba2f0991f4140}{MyVensimIMP}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructor}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classMyVensimIMP_a1e08b84bc23882e2bf3c11338eff7c16}{\string~MyVensimIMP}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystem}{System}}*\ \mbox{\hyperlink{classMyVensimIMP_a49b99729dfc47bf21bed812b69309372}{createSystem}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ value\ =\ 0.0)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classModel}{Model}}*\ \mbox{\hyperlink{classMyVensimIMP_a6fc05aad2832dbf468fcfaa528f2c2c2}{createModel}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ startTime\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ endTime\ =\ 1)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//add}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add}}(\mbox{\hyperlink{classSystem}{System}}*\ system)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add}}(\mbox{\hyperlink{classFlow}{Flow}}*\ flow)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyVensimIMP_a4332aaf435304c829c7f214429cc9e94}{add}}(\mbox{\hyperlink{classModel}{Model}}*\ model)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{comment}{//remove}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMyVensimIMP_a31c42f86522ca69806c3f101b7b8d640}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSystem}{System}}*\ system)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMyVensimIMP_a31c42f86522ca69806c3f101b7b8d640}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFlow}{Flow}}*\ flow)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMyVensimIMP_a31c42f86522ca69806c3f101b7b8d640}{rmv}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classModel}{Model}}*\ model)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Name}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classMyVensimIMP_ab3e6219267712c8f282b6315856627bb}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyVensimIMP_acfbffb90e5ed988a8e2d51e55b3880f2}{setName}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classMyVensimIMP_a33c8fa9a28d4ef4535b398a85f36f224}{name}});}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Vector}}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ std::vector<System*>\ \mbox{\hyperlink{classMyVensimIMP_a9425ab4d678abb2f782a7d0db1ee706e}{getSystems}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ std::vector<Flow*>\ \mbox{\hyperlink{classMyVensimIMP_a12c13e98149c389a615d390594f89768}{getFlows}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ std::vector<Model*>\ \mbox{\hyperlink{classMyVensimIMP_a72252314cd360036dafbc1f414f2dc22}{getModels}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyVensimIMP_ad035bf7cd0902f45c6d90adc5123d346}{setSystems}}(\textcolor{keyword}{const}\ std::vector<System*>\ \mbox{\hyperlink{classMyVensimIMP_ace6938c69ae5f5c762dbdaa8ff02a2db}{systems}});}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyVensimIMP_ae90f07ae79143b673fec51fef76b752d}{setFlows}}(\textcolor{keyword}{const}\ std::vector<Flow*>\ \mbox{\hyperlink{classMyVensimIMP_a76fc3f9b4f98da5de8f58710048fb59a}{flows}});}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMyVensimIMP_a7913e303d0a5fb61d42b15209f883e71}{setModels}}(\textcolor{keyword}{const}\ std::vector<Model*>\ \mbox{\hyperlink{classMyVensimIMP_a2f7d0c5af835a8f517c11e8b55cfa329}{models}});}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMyVensimIMP_a7e0bb2adf41cd7dbc8d22b8364d35e54}{run}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMyVensimIMP_a62be0721d24306b55f5521ad4cbd4cad}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMyVensimIMP_a0024ae4b853f3385db65d12401ca66cc}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMyVensimIMP}{MyVensimIMP}}\&\ other)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Operador\ de\ igualdade}}
+\DoxyCodeLine{00167\ \};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

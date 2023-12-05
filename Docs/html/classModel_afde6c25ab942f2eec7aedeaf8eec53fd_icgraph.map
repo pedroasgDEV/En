@@ -1,21 +1,36 @@
 <map id="Model::add" name="Model::add">
-<area shape="rect" id="Node000001" title="This method add a System pointer to the vector of a Model." alt="" coords="537,134,632,159"/>
-<area shape="rect" id="Node000002" href="$unit__Model_8cpp.html#acce5f12f0ab4271785b1cea7fce39f44" title="This function run the unit test of the model getFlows and add Flow." alt="" coords="320,5,480,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="562,125,529,92,488,60,465,48,467,43,491,55,533,88,566,122"/>
-<area shape="rect" id="Node000005" href="$unit__Model_8cpp.html#aed8df112d365482bcc0020c51d9ffa56" title="This function run the unit test of the model getSystems and add System." alt="" coords="311,69,489,109"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="529,132,464,112,466,107,531,127"/>
-<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#a65442995018d389354cf7f7f21c49f72" title="This function run the unit test of the model rmv Flow." alt="" coords="317,134,483,159"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="523,149,483,149,483,144,523,144"/>
-<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#a8402e36a13024e0f3f69918641bf6ef0" title="This function run the unit test of the model rmv System." alt="" coords="312,183,488,209"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="524,165,449,186,448,181,523,160"/>
-<area shape="rect" id="Node000008" href="$unit__Model_8cpp.html#a5813490c052f3b21c0fc0293bf71cae7" title="This function run the unit test of the model run." alt="" coords="339,233,461,258"/>
-<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="562,171,530,198,491,222,458,235,457,230,488,218,526,193,559,167"/>
-<area shape="rect" id="Node000003" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="108,134,263,159"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,53,312,60,250,99,203,136,200,132,247,95,309,55,323,48"/>
-<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,134,60,159"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,149,60,149,60,144,94,144"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="312,115,235,136,233,131,311,110"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="304,149,263,149,263,144,304,144"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="330,183,241,162,242,157,331,178"/>
-<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="332,231,310,222,250,192,203,162,206,157,253,187,312,218,334,226"/>
+<area shape="rect" id="Node000001" title="This method add a System pointer to the vector of a Model." alt="" coords="565,225,660,251"/>
+<area shape="rect" id="Node000002" href="$Functional__tests_8cpp.html#ad1f284ae5215afa271c632ab3e02992c" title="This function runs the &quot;complex&quot; test, which has multiple systems and flows." alt="" coords="358,5,498,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="604,213,593,175,576,129,550,83,516,44,497,33,499,28,519,40,555,80,581,127,598,173,609,211"/>
+<area shape="rect" id="Node000004" href="$Functional__tests_8cpp.html#a84ea8bb324c37c6b0d570e76d85f2db2" title="This function performs the exponential functional test." alt="" coords="347,55,509,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="599,214,568,153,545,121,516,93,495,82,498,78,519,89,549,117,573,150,604,211"/>
+<area shape="rect" id="Node000005" href="$Functional__tests_8cpp.html#ac5a362dfeb59aa1326005e0caee1b51e" title="This function performs the logistic test." alt="" coords="357,104,499,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="592,215,559,179,516,144,488,132,490,127,519,140,563,175,596,212"/>
+<area shape="rect" id="Node000006" href="$unit__Model_8cpp.html#acce5f12f0ab4271785b1cea7fce39f44" title="This function run the unit test of the model getFlows and add Flow." alt="" coords="348,154,508,194"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="561,223,486,197,487,192,563,218"/>
+<area shape="rect" id="Node000009" href="$unit__Model_8cpp.html#aed8df112d365482bcc0020c51d9ffa56" title="This function run the unit test of the model getSystems and add System." alt="" coords="339,218,517,258"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="552,241,517,241,517,235,552,235"/>
+<area shape="rect" id="Node000010" href="$unit__Model_8cpp.html#a65442995018d389354cf7f7f21c49f72" title="This function run the unit test of the model rmv Flow." alt="" coords="345,283,511,308"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="563,258,518,273,476,285,474,280,517,267,562,253"/>
+<area shape="rect" id="Node000011" href="$unit__Model_8cpp.html#a8402e36a13024e0f3f69918641bf6ef0" title="This function run the unit test of the model rmv System." alt="" coords="340,332,516,357"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="592,263,560,293,519,322,488,334,486,329,516,317,556,289,589,259"/>
+<area shape="rect" id="Node000012" href="$unit__Model_8cpp.html#a5813490c052f3b21c0fc0293bf71cae7" title="This function run the unit test of the model run." alt="" coords="367,381,489,407"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="602,264,570,318,546,347,519,371,491,385,488,380,516,366,543,343,565,315,597,262"/>
+<area shape="rect" id="Node000013" href="$unit__MyVensim_8cpp.html#a78c1610e42fae2bd5dd0a2dc694349b6" title="This function run the unit test of the MyVensim run." alt="" coords="353,431,503,456"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="608,265,596,300,578,343,553,385,519,421,500,433,497,428,516,417,549,382,574,340,591,298,602,263"/>
+<area shape="rect" id="Node000003" href="$functional__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="172,55,227,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="356,36,227,64,226,59,355,31"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="334,70,227,70,227,65,334,65"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="355,104,226,76,227,70,356,98"/>
+<area shape="rect" id="Node000007" href="$unit__Model_8cpp.html#a397714426fcb0ba9a26d6024108b61cc" title="This function run the unit tests of the model." alt="" coords="122,308,277,333"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="352,202,340,208,302,233,267,261,215,310,211,306,263,257,299,229,337,204,349,197"/>
+<area shape="rect" id="Node000008" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,357,60,383"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="144,340,61,365,59,360,142,335"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="359,265,340,273,236,310,234,305,338,267,358,260"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="332,309,277,315,277,309,331,303"/>
+<area shape="poly" id="edge15_Node000011_Node000007" title=" " alt="" coords="326,337,277,331,277,326,327,331"/>
+<area shape="poly" id="edge17_Node000012_Node000007" title=" " alt="" coords="367,380,338,371,235,336,237,331,339,366,369,375"/>
+<area shape="rect" id="Node000014" href="$unit__MyVensim_8cpp.html#a4128542ba2fee52bfdea1baea28d2b29" title="This function run the unit tests of the MyVensim." alt="" coords="108,381,291,407"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="355,430,258,409,260,404,356,425"/>
+<area shape="poly" id="edge20_Node000014_Node000008" title=" " alt="" coords="97,382,60,376,61,371,98,377"/>
 </map>

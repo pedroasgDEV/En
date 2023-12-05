@@ -28,7 +28,7 @@
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="350,127,366,139,384,164,392,189,393,214,391,239,389,263,390,288,398,312,414,336,419,341,415,345,410,340,393,314,385,288,384,263,386,238,388,214,387,190,379,166,362,143,347,131"/>
 <area shape="rect" id="Node000007" href="$classFlow.html#a325d284a50ca3274b126b21f5c39b9af" title="This destructor is a virtual destructor of the class." alt="" coords="433,449,535,475"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="351,435,420,448,419,453,350,440"/>
-<area shape="rect" id="Node000009" href="$classFlowIMP.html#a1202522653f350d3aa7f79180bcf6bd8" title="This method assigns a string to the name of a flow obj." alt="" coords="412,499,556,524"/>
+<area shape="rect" id="Node000009" href="$classFlowIMP.html#ae3d90a9dbe7d589988b58819a7e126ea" title="This method assigns a string to the name of a flow obj." alt="" coords="412,499,556,524"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="346,500,399,503,398,508,345,505"/>
 <area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="342,250,362,237,373,226,379,214,386,190,392,164,399,151,410,139,416,134,419,138,414,143,403,154,397,166,391,191,384,216,377,229,366,241,345,254"/>
 <area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="341,275,365,286,381,299,390,311,399,324,414,336,426,343,424,348,410,340,395,327,386,315,377,303,363,291,339,280"/>

@@ -7,12 +7,12 @@
 #ifndef SYSTEM_HPP
 #define SYSTEM_HPP
 
+#include <string>
+#include <iostream>
+
 /****************************************************************************************
  *@brief The System Interface is the Interface that defines the methods to be implemented
 ****************************************************************************************/
-
-#include <string>
-#include <iostream>
 
 class System{
     public:

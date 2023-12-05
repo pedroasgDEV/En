@@ -1,0 +1,7 @@
+<map id="test_MyVensim_setName" name="test_MyVensim_setName">
+<area shape="rect" id="Node000001" title="This function run the unit test of the MyVensim setName." alt="" coords="5,31,193,56"/>
+<area shape="rect" id="Node000002" href="$classMyVensim.html#a3b404af8470b6c818736dc35107b67ac" title="This method returns the name of a MyVensim." alt="" coords="241,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,30,228,26,228,31,194,35"/>
+<area shape="rect" id="Node000003" href="$classMyVensim.html#a438279a953af1f285dcd81c5f0210587" title="This method assigns a string to the name of a MyVensim." alt="" coords="242,55,399,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,51,229,55,228,60,193,56"/>
+</map>

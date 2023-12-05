@@ -7,9 +7,7 @@
 #ifndef FUNCTIONAL_TESTS_HPP
 #define FUNCTIONAL_TESTS_HPP
 
-#include "../../../src/ModelIMP.hpp"
-#include "../../../src/SystemIMP.hpp"
-#include "../../../src/FlowIMP.hpp"
+#include "../../../src/MyVensimIMP.hpp"
 #include "Exponencial.hpp"
 #include "Logistical.hpp"
 #include <assert.h>

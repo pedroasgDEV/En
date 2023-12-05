@@ -1,0 +1,7 @@
+<map id="test_MyVensim_getSystems_and_add" name="test_MyVensim_getSystems_and_add">
+<area shape="rect" id="Node000001" title="This function run the unit test of the MyVensim getSystems and add System." alt="" coords="5,23,212,63"/>
+<area shape="rect" id="Node000002" href="$classMyVensim.html#a3acac9c66752dd3b6ae12e1af4a993e3" title="Create a instance of System." alt="" coords="260,5,448,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,30,246,26,247,32,212,35"/>
+<area shape="rect" id="Node000003" href="$classMyVensim.html#aeaab9c99eca7f529a9e45c34028da234" title="This method returns the vector of Systems." alt="" coords="267,55,441,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,51,253,55,253,60,212,56"/>
+</map>

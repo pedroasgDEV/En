@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for Model\+:\nopagebreak
+Inheritance diagram for Model\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,9 +27,9 @@ Collaboration diagram for Model\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 typedef std\+::vector$<$ \mbox{\hyperlink{classSystem}{System}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}{system\+Iterator}}
-\begin{DoxyCompactList}\small\item\em typedef vetors iterators \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em typedef \doxylink{classSystem}{System} vetor iterator \end{DoxyCompactList}\item 
 typedef std\+::vector$<$ \mbox{\hyperlink{classFlow}{Flow}} \texorpdfstring{$\ast$}{*} $>$\+::iterator \mbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{flow\+Iterator}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em typedef \doxylink{classFlow}{Flow} vetor iterator \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -75,6 +76,10 @@ virtual bool \mbox{\hyperlink{classModel_a459b1a5044aa3ed60dd8d56b3f0596f6}{run}
 \doxysubsubsection{\texorpdfstring{flowIterator}{flowIterator}}
 {\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classFlow}{Flow}}\texorpdfstring{$\ast$}{*}$>$\+::iterator \mbox{\hyperlink{classModel_af19b499569caa4d43b69914002e04271}{Model\+::flow\+Iterator}}}
 
+
+
+typedef \doxylink{classFlow}{Flow} vetor iterator 
+
 \Hypertarget{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16}\label{classModel_a32c08d1842bfaf3bc76b65df5c3e0a16} 
 \index{Model@{Model}!systemIterator@{systemIterator}}
 \index{systemIterator@{systemIterator}!Model@{Model}}
@@ -83,7 +88,7 @@ virtual bool \mbox{\hyperlink{classModel_a459b1a5044aa3ed60dd8d56b3f0596f6}{run}
 
 
 
-typedef vetors iterators 
+typedef \doxylink{classSystem}{System} vetor iterator 
 
 
 
@@ -100,7 +105,7 @@ This destructor is a virtual destructor of the class.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00034\ \{\};}
+\DoxyCodeLine{00037\ \{\};}
 
 \end{DoxyCode}
 
@@ -134,7 +139,7 @@ This method add a \doxylink{classFlow}{Flow} pointer to the vector of a \doxylin
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a8a7c7a02efe4eb095cbdfce7d13f1d95}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a244d6e79c0113adc83705bd8786014d6}{Model\+IMP}}.
 
 \Hypertarget{classModel_afde6c25ab942f2eec7aedeaf8eec53fd}\label{classModel_afde6c25ab942f2eec7aedeaf8eec53fd} 
 \index{Model@{Model}!add@{add}}
@@ -153,13 +158,14 @@ This method add a \doxylink{classSystem}{System} pointer to the vector of a \dox
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_adca396efe286751e1ef60a16493ffc00}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a28d45f90470ae97424297077f52a6a43}{Model\+IMP}}.
 
 
 
-Referenced by \mbox{\hyperlink{unit__Model_8cpp_acce5f12f0ab4271785b1cea7fce39f44}{test\+\_\+\+Model\+\_\+get\+Flows\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_aed8df112d365482bcc0020c51d9ffa56}{test\+\_\+\+Model\+\_\+get\+Systems\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Flow()}}, \mbox{\hyperlink{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Sytem()}}, and \mbox{\hyperlink{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7}{test\+\_\+\+Model\+\_\+run()}}.
+Referenced by \mbox{\hyperlink{Functional__tests_8cpp_ad1f284ae5215afa271c632ab3e02992c}{Complex\+\_\+test\+\_\+run()}}, \mbox{\hyperlink{Functional__tests_8cpp_a84ea8bb324c37c6b0d570e76d85f2db2}{exponencial\+\_\+test\+\_\+run()}}, \mbox{\hyperlink{Functional__tests_8cpp_ac5a362dfeb59aa1326005e0caee1b51e}{logistical\+\_\+test\+\_\+run()}}, \mbox{\hyperlink{unit__Model_8cpp_acce5f12f0ab4271785b1cea7fce39f44}{test\+\_\+\+Model\+\_\+get\+Flows\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_aed8df112d365482bcc0020c51d9ffa56}{test\+\_\+\+Model\+\_\+get\+Systems\+\_\+and\+\_\+add()}}, \mbox{\hyperlink{unit__Model_8cpp_a65442995018d389354cf7f7f21c49f72}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Flow()}}, \mbox{\hyperlink{unit__Model_8cpp_a8402e36a13024e0f3f69918641bf6ef0}{test\+\_\+\+Model\+\_\+rmv\+\_\+\+Sytem()}}, \mbox{\hyperlink{unit__Model_8cpp_a5813490c052f3b21c0fc0293bf71cae7}{test\+\_\+\+Model\+\_\+run()}}, and \mbox{\hyperlink{unit__MyVensim_8cpp_a78c1610e42fae2bd5dd0a2dc694349b6}{test\+\_\+\+My\+Vensim\+\_\+run()}}.
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -181,7 +187,7 @@ a int containing the end is returned
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_aafd440b433cdb37cdd3c587f9942e065}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a6bebc761da264d4a7ec7de0ac3608875}{Model\+IMP}}.
 
 
 
@@ -209,7 +215,7 @@ a vector containing Flows is returned
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a1639b3e6da710022501c0ab552ece45a}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a0f9a591dfe8b114c5742cb7fe6ec3689}{Model\+IMP}}.
 
 
 
@@ -237,7 +243,7 @@ a string containing the name is returned
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a11afc532c1c57116505fe332a28b4fe1}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a0945817fc79ef124818d6b58398b0635}{Model\+IMP}}.
 
 
 
@@ -265,7 +271,7 @@ a int containing the start\+Time is returned
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a8c0d8baf745a99311caf654deda25483}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_aca1c969d9f5e372c05ac9522cc64eb24}{Model\+IMP}}.
 
 
 
@@ -293,7 +299,7 @@ a vector containing Systems is returned
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_aea3824cf802120831e027e5a87f06b21}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a95714decb5484b9e38bf46aad13770da}{Model\+IMP}}.
 
 
 
@@ -326,7 +332,7 @@ a bool value, true if can remove, false if not
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_aa53f7b45099315cf52614c761e0a1a02}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a6ccbb34be99b291b3d123166b10bc00c}{Model\+IMP}}.
 
 \Hypertarget{classModel_a912a3ca99158a02b402e2cef8c96bbfe}\label{classModel_a912a3ca99158a02b402e2cef8c96bbfe} 
 \index{Model@{Model}!rmv@{rmv}}
@@ -348,7 +354,7 @@ a bool value, true if can remove, false if not
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a6537bac02944926c884b4f0bfeb45688}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_ad791d67d625bc589c1ea3fd3ba5e2d3c}{Model\+IMP}}.
 
 
 
@@ -376,7 +382,7 @@ a bool value, true if can run, false if not
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a57978a30a8bc32f3d144e78521f43dba}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a3ce1b5cbed3a8ec103f39dbef6837bc5}{Model\+IMP}}.
 
 
 
@@ -406,7 +412,7 @@ This method assigns a int to the end\+Time of a \doxylink{classModel}{Model}.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_ada923e0714239e8016050cfe665a799e}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a1a376d11de11f5eaaf4dce3ab0f87027}{Model\+IMP}}.
 
 
 
@@ -436,7 +442,7 @@ This method assigns a vector to the flows of a \doxylink{classModel}{Model}.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a6179a1fb67eb6f07ef277e72be574686}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a626546ca6d8cfed9d0fab59a67a12b39}{Model\+IMP}}.
 
 
 
@@ -466,7 +472,7 @@ This method assigns a string to the name of a \doxylink{classModel}{Model}.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a92fcbb62f89e5792f9cc07d22dfefa2d}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_adb42011efc4881ed2aec4d5f44bdaaa8}{Model\+IMP}}.
 
 
 
@@ -496,7 +502,7 @@ This method assigns a int to the start\+Time of a \doxylink{classModel}{Model}.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a78633ec177f9b40173ef6e8b7a8877bf}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_a841cb39c6b4a2bdf426c8ac5bf5954a7}{Model\+IMP}}.
 
 
 
@@ -526,7 +532,7 @@ This method assigns a vector to the systems of a \doxylink{classModel}{Model}.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_af92a62af4a67471ab8d5495bea2c2ae2}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_ab245de9db30032f328c59a233982e7fb}{Model\+IMP}}.
 
 
 
@@ -558,7 +564,7 @@ This method assigns a int to the start\+Time and end\+Time of a \doxylink{classM
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModelIMP_a1c086a93fd7d3a7eed2678b1075139e6}{Model\+IMP}}.
+Implemented in \mbox{\hyperlink{classModelIMP_ab97ff8d0a433ceaed36ea51557f066ad}{Model\+IMP}}.
 
 
 

@@ -1,0 +1,82 @@
+<map id="run_MyVensim_unit_test" name="run_MyVensim_unit_test">
+<area shape="rect" id="Node000001" title="This function run the unit tests of the MyVensim." alt="" coords="5,356,188,381"/>
+<area shape="rect" id="Node000002" href="$unit__MyVensim_8cpp.html#ac496b8646b64c60758cfdb8e3d7cddd3" title="This function run the unit test of the MyVensim constructor." alt="" coords="238,55,441,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,355,110,305,135,233,153,194,175,155,202,120,234,89,241,84,244,89,238,93,206,123,180,158,158,196,140,235,115,307,103,356"/>
+<area shape="rect" id="Node000004" href="$unit__MyVensim_8cpp.html#a7324bbdfade906c5c69efe6a395f2524" title="This function run the unit test of the MyVensim destructor." alt="" coords="242,153,437,179"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="102,354,120,321,149,276,188,229,234,189,248,182,251,186,238,194,191,233,153,279,125,323,107,357"/>
+<area shape="rect" id="Node000006" href="$unit__MyVensim_8cpp.html#a383b0a22c654e7ac8fa3657eb83f7634" title="This function run the unit test of the MyVensim equal." alt="" coords="257,204,422,229"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="106,354,157,298,194,267,235,240,253,231,255,236,237,244,197,271,161,302,110,357"/>
+<area shape="rect" id="Node000008" href="$unit__MyVensim_8cpp.html#a6cfda66f4d553a080bda1c4cfae348f5" title="This function run the unit test of the MyVensim getFlows and add Flow." alt="" coords="245,455,433,495"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="120,379,172,409,237,441,256,448,254,453,235,446,170,414,117,384"/>
+<area shape="rect" id="Node000012" href="$unit__MyVensim_8cpp.html#a39c4a79299cd965b31d4dd9c8557c57d" title="This function run the unit test of the MyVensim getModels and add Model." alt="" coords="241,695,438,735"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="104,380,121,426,149,494,188,569,212,606,238,640,264,665,292,686,289,690,260,669,234,644,207,609,183,572,144,496,116,428,99,382"/>
+<area shape="rect" id="Node000015" href="$unit__MyVensim_8cpp.html#aa6d41856dfe65e9528c7122aad8bb1da" title="This function run the unit test of the MyVensim getName." alt="" coords="245,5,434,31"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="97,356,106,298,129,212,146,166,170,120,199,77,234,40,240,36,243,40,238,44,203,80,174,122,151,168,134,214,111,299,102,356"/>
+<area shape="rect" id="Node000016" href="$unit__MyVensim_8cpp.html#ad1eaca4b1f9ce688c4b97871e795a046" title="This function run the unit test of the MyVensim getSystems and add System." alt="" coords="236,822,443,862"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="101,382,105,455,111,509,122,570,139,633,163,697,196,756,238,808,242,812,239,816,234,812,191,759,158,699,134,635,117,571,106,510,99,456,95,382"/>
+<area shape="rect" id="Node000019" href="$unit__MyVensim_8cpp.html#a04c1be568a59a778d1351cdb4a6fb2de" title="This function run the unit test of the MyVensim rmv Flow." alt="" coords="243,255,436,280"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="116,354,168,322,235,290,262,281,263,286,237,295,171,327,119,358"/>
+<area shape="rect" id="Node000021" href="$unit__MyVensim_8cpp.html#a9eeb6499954473b0e1e8669aa806aad4" title="This function run the unit test of the MyVensim rmv Model." alt="" coords="238,305,441,331"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="158,353,264,331,265,336,159,358"/>
+<area shape="rect" id="Node000022" href="$unit__MyVensim_8cpp.html#a5339154721bb6a4ccd02f8a25d0d45d2" title="This function run the unit test of the MyVensim rmv System." alt="" coords="237,356,441,381"/>
+<area shape="poly" id="edge25_Node000001_Node000022" title=" " alt="" coords="188,366,224,366,224,371,188,371"/>
+<area shape="rect" id="Node000023" href="$unit__MyVensim_8cpp.html#a78c1610e42fae2bd5dd0a2dc694349b6" title="This function run the unit test of the MyVensim run." alt="" coords="264,604,415,629"/>
+<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="112,380,318,592,314,596,109,384"/>
+<area shape="rect" id="Node000027" href="$unit__MyVensim_8cpp.html#a7a113a3308902b6b1c4a39c98bd12dff" title="This function run the unit test of the MyVensim setFlows." alt="" coords="246,405,433,431"/>
+<area shape="poly" id="edge35_Node000001_Node000027" title=" " alt="" coords="160,379,263,400,262,405,159,384"/>
+<area shape="rect" id="Node000029" href="$unit__MyVensim_8cpp.html#abbbe9d2cfb351ef1172fd9cccb61d953" title="This function run the unit test of the MyVensim setModels." alt="" coords="241,772,437,797"/>
+<area shape="poly" id="edge38_Node000001_Node000029" title=" " alt="" coords="102,381,109,445,131,542,148,596,171,650,201,701,238,745,266,764,263,769,234,749,197,704,167,653,143,598,125,544,104,446,96,382"/>
+<area shape="rect" id="Node000031" href="$unit__MyVensim_8cpp.html#ad691f8381217e1833351df9ab6f48b4e" title="This function run the unit test of the MyVensim setName." alt="" coords="245,104,433,129"/>
+<area shape="poly" id="edge41_Node000001_Node000031" title=" " alt="" coords="99,355,114,313,141,254,181,192,206,163,234,139,242,133,245,138,238,143,210,167,185,195,146,257,119,315,104,357"/>
+<area shape="rect" id="Node000033" href="$unit__MyVensim_8cpp.html#ab39a5b38a356562ce824599a16cd3cb8" title="This function run the unit test of the MyVensim setSystems." alt="" coords="237,900,442,925"/>
+<area shape="poly" id="edge44_Node000001_Node000033" title=" " alt="" coords="100,382,102,464,107,525,117,594,134,667,158,741,193,810,214,843,238,872,266,892,263,897,234,876,210,846,188,813,153,743,128,669,112,595,102,525,96,464,95,382"/>
+<area shape="rect" id="Node000003" href="$classMyVensim.html#a3b404af8470b6c818736dc35107b67ac" title="This method returns the name of a MyVensim." alt="" coords="505,5,664,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,52,507,31,508,36,404,57"/>
+<area shape="rect" id="Node000005" href="$classMyVensim.html#afa4f2ff96eb2238fffcc375986308e83" title="This destructor is a virtual destructor of the class." alt="" coords="496,104,673,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="403,151,507,130,508,135,404,156"/>
+<area shape="rect" id="Node000007" href="$classMyVensimIMP.html#acfbffb90e5ed988a8e2d51e55b3880f2" title="This method assigns a string to the name of a MyVensim." alt="" coords="494,153,675,179"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="401,201,509,179,510,184,402,206"/>
+<area shape="rect" id="Node000009" href="$classMyVensim.html#aa2d3ffdd2ffca118569079b99a964290" title="Create a instance of Flow." alt="" coords="499,505,670,531"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="434,489,498,500,497,506,433,494"/>
+<area shape="rect" id="Node000011" href="$classMyVensim.html#a29af84ec2ca6c5e3b6ed1977afcd434d" title="This method returns the vector of flows." alt="" coords="506,456,663,481"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="433,470,492,469,492,474,434,475"/>
+<area shape="rect" id="Node000010" href="$classMyVensim.html#adaf2b6fdbe0bf2d613dd888d888fc495" title="This method add a System pointer to the vector." alt="" coords="727,331,849,356"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="656,503,677,492,709,464,736,430,773,367,778,370,741,433,713,467,680,496,658,508"/>
+<area shape="rect" id="Node000013" href="$classMyVensim.html#a89287dbe08da1cf23d7a0fc40681bd00" title="Create a instance of Model." alt="" coords="495,703,674,728"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="438,713,482,713,482,718,438,718"/>
+<area shape="rect" id="Node000014" href="$classMyVensim.html#a866e6887e5af954df43e99adc9a7a53b" title="This method returns the vector of Models." alt="" coords="501,801,668,827"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="391,733,444,758,468,774,492,788,511,795,510,800,490,792,465,778,441,763,388,738"/>
+<area shape="poly" id="edge15_Node000015_Node000003" title=" " alt="" coords="434,15,492,15,492,21,434,21"/>
+<area shape="rect" id="Node000017" href="$classMyVensim.html#a3acac9c66752dd3b6ae12e1af4a993e3" title="Create a instance of System." alt="" coords="491,752,679,777"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="407,819,442,808,490,787,518,779,520,784,492,793,444,812,409,824"/>
+<area shape="rect" id="Node000018" href="$classMyVensim.html#aeaab9c99eca7f529a9e45c34028da234" title="This method returns the vector of Systems." alt="" coords="497,900,672,925"/>
+<area shape="poly" id="edge18_Node000016_Node000018" title=" " alt="" coords="404,860,491,886,520,894,519,899,490,891,402,865"/>
+<area shape="poly" id="edge20_Node000019_Node000010" title=" " alt="" coords="401,252,490,239,587,225,629,225,680,240,708,255,734,275,772,318,768,321,730,279,705,259,678,244,628,231,587,231,491,245,402,257"/>
+<area shape="rect" id="Node000020" href="$classMyVensim.html#a1648e1be6c4aa6882aa5c2b77b39bf4e" title="This method remove a System pointer of the vector." alt="" coords="523,255,647,280"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="436,265,509,265,509,270,436,270"/>
+<area shape="poly" id="edge23_Node000021_Node000010" title=" " alt="" coords="441,321,713,337,713,342,441,326"/>
+<area shape="poly" id="edge24_Node000021_Node000020" title=" " alt="" coords="401,303,509,280,510,285,402,308"/>
+<area shape="poly" id="edge26_Node000022_Node000010" title=" " alt="" coords="442,360,713,345,713,350,442,366"/>
+<area shape="poly" id="edge27_Node000022_Node000020" title=" " alt="" coords="398,353,442,340,500,313,550,285,553,289,502,317,444,344,400,358"/>
+<area shape="poly" id="edge30_Node000023_Node000009" title=" " alt="" coords="362,601,419,572,490,541,516,532,518,537,492,546,422,577,365,606"/>
+<area shape="poly" id="edge31_Node000023_Node000013" title=" " alt="" coords="364,627,421,658,492,689,514,696,513,701,490,694,419,662,362,632"/>
+<area shape="poly" id="edge32_Node000023_Node000017" title=" " alt="" coords="366,627,404,651,444,681,459,698,468,712,477,726,492,738,503,744,500,749,489,743,473,729,463,715,455,701,441,685,401,655,363,632"/>
+<area shape="rect" id="Node000024" href="$classModel.html#afde6c25ab942f2eec7aedeaf8eec53fd" title="This method add a System pointer to the vector of a Model." alt="" coords="537,653,632,679"/>
+<area shape="poly" id="edge29_Node000023_Node000024" title=" " alt="" coords="404,627,524,651,523,656,403,632"/>
+<area shape="rect" id="Node000025" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="This method returns the value of a system." alt="" coords="517,555,653,580"/>
+<area shape="poly" id="edge33_Node000023_Node000025" title=" " alt="" coords="403,601,507,580,508,585,404,607"/>
+<area shape="rect" id="Node000026" href="$classMyVensim.html#a917f68ea1b3df46199437ee899cd787b" title="This method run all model." alt="" coords="525,604,644,629"/>
+<area shape="poly" id="edge34_Node000023_Node000026" title=" " alt="" coords="415,614,511,614,511,619,415,619"/>
+<area shape="poly" id="edge36_Node000027_Node000011" title=" " alt="" coords="402,428,510,451,509,456,401,433"/>
+<area shape="rect" id="Node000028" href="$classMyVensim.html#a85c8db6a6ebb0511dbca38755f6e1052" title="This method assigns a vector to the flows of a MyVensim." alt="" coords="507,407,663,432"/>
+<area shape="poly" id="edge37_Node000027_Node000028" title=" " alt="" coords="433,416,493,416,493,422,433,421"/>
+<area shape="poly" id="edge39_Node000029_Node000014" title=" " alt="" coords="438,794,488,800,487,805,437,799"/>
+<area shape="rect" id="Node000030" href="$classMyVensim.html#afb44c94a795b9d0f3863bac5ffc2e967" title="This method assigns a vector to the models of a MyVensim." alt="" coords="502,851,667,876"/>
+<area shape="poly" id="edge40_Node000029_Node000030" title=" " alt="" coords="406,795,444,808,468,822,492,837,511,844,510,849,490,842,465,827,442,812,404,800"/>
+<area shape="poly" id="edge42_Node000031_Node000003" title=" " alt="" coords="412,101,441,89,456,78,465,65,474,52,489,40,502,33,504,38,492,44,478,56,469,68,460,81,444,94,414,106"/>
+<area shape="rect" id="Node000032" href="$classMyVensim.html#a438279a953af1f285dcd81c5f0210587" title="This method assigns a string to the name of a MyVensim." alt="" coords="506,55,663,80"/>
+<area shape="poly" id="edge43_Node000031_Node000032" title=" " alt="" coords="403,101,507,80,508,85,404,107"/>
+<area shape="poly" id="edge45_Node000033_Node000018" title=" " alt="" coords="442,910,484,910,484,915,442,915"/>
+<area shape="rect" id="Node000034" href="$classMyVensim.html#ac2a57174288e63c1ee1afe4b488f0bcd" title="This method assigns a vector to the systems of a MyVensim." alt="" coords="497,949,672,975"/>
+<area shape="poly" id="edge46_Node000033_Node000034" title=" " alt="" coords="404,923,508,944,507,949,403,928"/>
+</map>

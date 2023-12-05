@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['systemiterator_0',['systemIterator',['../classModel.html#a32c08d1842bfaf3bc76b65df5c3e0a16',1,'Model']]]
+  ['modeliterator_0',['modelIterator',['../classMyVensim.html#a2f7a6fcc75127f9b1cc7e99c7009d801',1,'MyVensim']]]
 ];

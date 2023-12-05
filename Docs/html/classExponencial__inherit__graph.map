@@ -1,7 +1,7 @@
 <map id="Exponencial" name="Exponencial">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,861,236,1060"/>
-<area shape="rect" id="Node000002" href="$classFlowIMP.html" title=" " alt="" coords="19,347,222,813"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,827,123,861,118,861,118,827"/>
-<area shape="rect" id="Node000003" href="$classFlow.html" title=" " alt="" coords="14,5,227,299"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,313,123,346,118,346,118,313"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="16,891,208,1119"/>
+<area shape="rect" id="Node000002" href="$classFlowIMP.html" title=" " alt="" coords="11,347,213,843"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,856,115,890,109,890,109,856"/>
+<area shape="rect" id="Node000003" href="$classFlow.html" title=" " alt="" coords="5,5,219,299"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,313,115,346,109,346,109,313"/>
 </map>

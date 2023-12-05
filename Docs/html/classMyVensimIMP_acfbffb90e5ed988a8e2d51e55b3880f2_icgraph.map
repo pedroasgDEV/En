@@ -1,0 +1,9 @@
+<map id="MyVensimIMP::setName" name="MyVensimIMP::setName">
+<area shape="rect" id="Node000001" title="This method assigns a string to the name of a MyVensim." alt="" coords="552,5,733,31"/>
+<area shape="rect" id="Node000002" href="$unit__MyVensim_8cpp.html#a383b0a22c654e7ac8fa3657eb83f7634" title="This function run the unit test of the MyVensim equal." alt="" coords="339,5,504,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="538,21,504,21,504,15,538,15"/>
+<area shape="rect" id="Node000003" href="$unit__MyVensim_8cpp.html#a4128542ba2fee52bfdea1baea28d2b29" title="This function run the unit tests of the MyVensim." alt="" coords="108,5,291,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,21,291,21,291,15,325,15"/>
+<area shape="rect" id="Node000004" href="$unit__tests_2src_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

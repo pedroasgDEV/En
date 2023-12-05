@@ -14,9 +14,9 @@
 \DoxyCodeLine{00010\ \textcolor{comment}{//Bibliotecas}}
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{System_8hpp}{System.hpp}}"{}}}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{comment}{/****************************************************************************************}}
+\DoxyCodeLine{00013\ \textcolor{comment}{/***********************************************************************************}}
 \DoxyCodeLine{00014\ \textcolor{comment}{\ *@brief\ The\ System\ implementation\ defines\ the\ attributes\ and\ implements\ the\ methods}}
-\DoxyCodeLine{00015\ \textcolor{comment}{****************************************************************************************/}}
+\DoxyCodeLine{00015\ \textcolor{comment}{***********************************************************************************/}}
 \DoxyCodeLine{00016\ }
 \DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSystemIMP}{SystemIMP}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classSystem}{System}}\{}
 \DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{private}:}
@@ -31,15 +31,15 @@
 \DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSystemIMP_a5c02a99f28fc2c9f7f22d9431013156e}{SystemIMP}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}{name}}\ =\ \textcolor{stringliteral}{"{}NO\_NAME"{}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}}\ =\ 0.0);}
 \DoxyCodeLine{00043\ }
 \DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Destructors}}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSystemIMP_a6ed80d6bbeb257e7c2a1f8b0dd20c87a}{\string~SystemIMP}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSystemIMP_ae73736cbfb2fa02a3468dd24e3402cf4}{\string~SystemIMP}}()\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00049\ \ }
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Geters\ e\ seters}}
 \DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Nome}}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classSystemIMP_a58a36632e149edf2739f2b088ad10e8a}{getName}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystemIMP_a45d65645657f33eb85e0bcd09a650502}{setName}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}{name}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classSystemIMP_ae5b3cc282a73f6099be213974b378ddd}{getName}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystemIMP_a36c8f8e9d9a4240f071ba762a73d4b7c}{setName}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{classSystemIMP_a73a8482bda1b56f0491b0c8e1cd6b2f2}{name}})\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Value}}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSystemIMP_a623e879e776efbaff2f52e1b73290179}{getValue}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystemIMP_a0fc4553a15408eb803e37b48988040dd}{setValue}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}});}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classSystemIMP_a84e8db54840d228b4160a59b96be7330}{getValue}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSystemIMP_ae10be70de7d342710c59d8c2c7ccf5a0}{setValue}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classSystemIMP_a63328df317c0d07b045ccf048f17db8d}{value}})\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00073\ }
 \DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Sobrecarga\ de\ operadores}}
 \DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSystemIMP_a76dcccc6a469fb449dbeee35d6925b0e}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSystemIMP}{SystemIMP}}\&\ other)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ Operador\ de\ igualdade}}
