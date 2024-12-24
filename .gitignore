@@ -1,3 +1,5 @@
 //Gitignore
 
 .vscode
+obj/
+bin/
